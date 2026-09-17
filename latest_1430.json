@@ -1,0 +1,111 @@
+{
+  "strategy_version": "V1.2",
+  "mode": "1430",
+  "decision": "NO_TRADE",
+  "retrieved_at_cn": "2026-09-17T14:30:16+08:00",
+  "provider": "MeoZ",
+  "trade_date": "20260917",
+  "run_context": "LIVE",
+  "reason": "CORE_INDEX_GATE_FAILED",
+  "market": {
+    "indices": [
+      {
+        "symbol": "000001.SH",
+        "name": "上证指数",
+        "price": 3875.45,
+        "pct_chg": -0.415,
+        "ma5_live": 3880.95466,
+        "source_time": "2026-09-17T14:30:15+08:00"
+      },
+      {
+        "symbol": "399001.SZ",
+        "name": "深证成指",
+        "price": 13428.23,
+        "pct_chg": -0.197,
+        "ma5_live": 13405.35436,
+        "source_time": "2026-09-17T14:30:12+08:00"
+      },
+      {
+        "symbol": "399006.SZ",
+        "name": "创业板指",
+        "price": 3306.06,
+        "pct_chg": -0.1634,
+        "ma5_live": 3294.61474,
+        "source_time": "2026-09-17T14:30:12+08:00"
+      }
+    ]
+  },
+  "market_gate": {
+    "ma5": false,
+    "turnover": null,
+    "major_index_drop": true,
+    "advance_ratio": null
+  },
+  "gate_details": {
+    "ma5": {
+      "actual": 3875.45,
+      "threshold": 3880.95466,
+      "operator": ">",
+      "source_time": "2026-09-17T14:30:15+08:00"
+    },
+    "major_index_drop": {
+      "actual": {
+        "000001.SH": -0.415,
+        "399001.SZ": -0.197,
+        "399006.SZ": -0.1634
+      },
+      "threshold": -2,
+      "operator": ">",
+      "source_time": "2026-09-17T14:30:12+08:00"
+    }
+  },
+  "filter_stats": {
+    "universe": null,
+    "after_st": null,
+    "after_pct": null,
+    "after_volume_ratio": null,
+    "after_turnover": null,
+    "after_amount": null,
+    "after_listing_age": null,
+    "final_coarse": null
+  },
+  "candidates": [],
+  "data_quality": {
+    "provider": "MeoZ",
+    "request_started": "2026-09-17T14:30:16+08:00",
+    "request_finished": "2026-09-17T14:30:16+08:00",
+    "source_latest_time": "2026-09-17T14:30:12+08:00",
+    "freshness_seconds": 4,
+    "missing_fields": [],
+    "provider_errors": [],
+    "unit_validation": {
+      "amount": "yuan",
+      "volume": "lots_100_shares",
+      "result": "NOT_CHECKED"
+    },
+    "vwap_conflict": false,
+    "fallback_used": false,
+    "confidence": "HIGH",
+    "screening_source_time_available": false,
+    "state": "COMPLETE_FOR_FAILED_GATE",
+    "tushare_enhancement": {
+      "state": "NOT_CONFIGURED",
+      "requests": 0
+    },
+    "request_summary": [
+      {
+        "interface": "indexdaily",
+        "started": "2026-09-17T14:30:16+08:00",
+        "finished": "2026-09-17T14:30:16+08:00",
+        "http_status": 200,
+        "rows": 15,
+        "error": null,
+        "duration_seconds": 0.158
+      }
+    ]
+  },
+  "api_calls_used": 1,
+  "automated_trading": false,
+  "generated_at_cn": "2026-09-17T14:30:16+08:00",
+  "generated_at_cn_source": "ORIGINAL_FILE_MTIME_BACKFILL"
+}
