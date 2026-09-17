@@ -1,0 +1,108 @@
+{
+  "strategy_version": "V1.2",
+  "updated_at_cn": "2026-09-17T14:50:08+08:00",
+  "service_status": "READY",
+  "api_status": "OK",
+  "daily_api_calls_estimated": 9,
+  "api_counter_scope": "THIS_SERVER_ONLY",
+  "daily_api_budget": 10,
+  "last_1430_run": {
+    "at_cn": "2026-09-17T14:30:16+08:00",
+    "decision": "NO_TRADE",
+    "run_context": "LIVE",
+    "api_calls_used": 1
+  },
+  "last_1450_run": {
+    "at_cn": "2026-09-17T14:50:05+08:00",
+    "decision": "NO_TRADE",
+    "run_context": "LIVE",
+    "api_calls_used": 1
+  },
+  "last_success": {
+    "at_cn": "2026-09-17T14:50:05+08:00",
+    "decision": "NO_TRADE",
+    "run_context": "LIVE",
+    "api_calls_used": 1
+  },
+  "latest_trade_date": "20260917",
+  "next_1430_run": {
+    "timer_at_cn": "2026-09-18T14:30:05+08:00",
+    "exchange_open": "1"
+  },
+  "next_1450_run": {
+    "timer_at_cn": "2026-09-18T14:50:05+08:00",
+    "exchange_open": "1"
+  },
+  "timers_enabled": true,
+  "automated_trading": false,
+  "last_api_check": {
+    "at_cn": "2026-09-17T14:32:15+08:00",
+    "interfaces": {
+      "calendar": {
+        "ok": true,
+        "rows": 242
+      },
+      "stockbasic": {
+        "ok": true,
+        "rows": 5643,
+        "returned_fields": [
+          "delist_date",
+          "exchange",
+          "industry",
+          "list_date",
+          "list_status",
+          "market",
+          "name",
+          "symbol"
+        ]
+      },
+      "indexdaily": {
+        "ok": true,
+        "rows": 15,
+        "returned_fields": [
+          "amount",
+          "close",
+          "name",
+          "pct_chg",
+          "pre_close",
+          "servertime",
+          "symbol",
+          "tradedate"
+        ]
+      },
+      "screening": {
+        "ok": true,
+        "rows": 5646
+      },
+      "minute": {
+        "ok": true,
+        "rows": 43
+      }
+    }
+  },
+  "provider_validation": {
+    "passed": true,
+    "run_context": "OFFLINE_SAVED_REAL_RESPONSES",
+    "api_calls_used": 0,
+    "minute_validation": {
+      "local": 9.08641,
+      "provider": 9.086
+    },
+    "candidate_listing_metadata_exclusions": 1,
+    "offline_tests_passed": 25
+  },
+  "tushare_validation": {
+    "token_detected": true,
+    "interfaces": {
+      "index_basic": {
+        "ok": true,
+        "rows": 5
+      },
+      "pro_bar": {
+        "ok": true,
+        "rows": 3
+      }
+    },
+    "passed": true
+  }
+}
