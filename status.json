@@ -1,9 +1,9 @@
 {
   "strategy_version": "V1.2",
-  "updated_at_cn": "2026-09-23T14:30:13+08:00",
+  "updated_at_cn": "2026-09-23T14:50:09+08:00",
   "service_status": "READY",
   "api_status": "OK",
-  "daily_api_calls_estimated": 4,
+  "daily_api_calls_estimated": 6,
   "api_counter_scope": "THIS_SERVER_ONLY",
   "daily_api_budget": 10,
   "last_1430_run": {
@@ -13,16 +13,16 @@
     "api_calls_used": 4
   },
   "last_1450_run": {
-    "at_cn": "2026-09-22T14:50:05+08:00",
-    "decision": "PASS",
+    "at_cn": "2026-09-23T14:50:05+08:00",
+    "decision": "NO_TRADE",
     "run_context": "LIVE",
-    "api_calls_used": 3
+    "api_calls_used": 2
   },
   "last_success": {
-    "at_cn": "2026-09-23T14:30:05+08:00",
-    "decision": "PASS",
+    "at_cn": "2026-09-23T14:50:05+08:00",
+    "decision": "NO_TRADE",
     "run_context": "LIVE",
-    "api_calls_used": 4
+    "api_calls_used": 2
   },
   "latest_trade_date": "20260923",
   "next_1430_run": {
@@ -30,7 +30,7 @@
     "exchange_open": "1"
   },
   "next_1450_run": {
-    "timer_at_cn": "2026-09-23T14:50:05+08:00",
+    "timer_at_cn": "2026-09-24T14:50:05+08:00",
     "exchange_open": "1"
   },
   "timers_enabled": true,
