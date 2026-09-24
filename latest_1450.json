@@ -2,86 +2,61 @@
   "strategy_version": "V1.2",
   "mode": "1450",
   "decision": "NO_TRADE",
-  "retrieved_at_cn": "2026-09-23T14:50:05+08:00",
+  "retrieved_at_cn": "2026-09-24T14:50:05+08:00",
   "provider": "MeoZ",
-  "trade_date": "20260923",
+  "trade_date": "20260924",
   "run_context": "LIVE",
-  "reason": "MARKET_GATE_FAILED",
+  "reason": "CORE_INDEX_GATE_FAILED",
   "market": {
     "indices": [
       {
         "symbol": "000001.SH",
         "name": "上证指数",
-        "price": 3935.77,
-        "pct_chg": -0.414,
-        "ma5_live": 3925.05612,
-        "source_time": "2026-09-23T14:50:03+08:00"
+        "price": 3892.24,
+        "pct_chg": -1.1249,
+        "ma5_live": 3928.53322,
+        "source_time": "2026-09-24T14:50:03+08:00"
       },
       {
         "symbol": "399001.SZ",
         "name": "深证成指",
-        "price": 13623.37,
-        "pct_chg": -0.7314,
-        "ma5_live": 13625.58126,
-        "source_time": "2026-09-23T14:50:03+08:00"
+        "price": 13332.45,
+        "pct_chg": -2.2266,
+        "ma5_live": 13612.63052,
+        "source_time": "2026-09-24T14:50:03+08:00"
       },
       {
         "symbol": "399006.SZ",
         "name": "创业板指",
-        "price": 3375.1,
-        "pct_chg": -0.7303,
-        "ma5_live": 3369.1213,
-        "source_time": "2026-09-23T14:50:03+08:00"
+        "price": 3295.02,
+        "pct_chg": -2.503,
+        "ma5_live": 3369.36526,
+        "source_time": "2026-09-24T14:50:03+08:00"
       }
-    ],
-    "universe": 5647,
-    "valid_trading_stocks": 5556,
-    "advance": 1862,
-    "decline": 3587,
-    "flat": 107,
-    "advance_ratio": 0.3351331893448524,
-    "total_amount_yuan": 1685989868300.0,
-    "excluded_counts": {
-      "no_trade": 12,
-      "non_a_share": 79,
-      "active_listing_metadata_unconfirmed": 1
-    }
+    ]
   },
   "market_gate": {
-    "ma5": true,
-    "turnover": true,
-    "major_index_drop": true,
-    "advance_ratio": false
+    "ma5": false,
+    "turnover": null,
+    "major_index_drop": false,
+    "advance_ratio": null
   },
   "gate_details": {
     "ma5": {
-      "actual": 3935.77,
-      "threshold": 3925.05612,
+      "actual": 3892.24,
+      "threshold": 3928.53322,
       "operator": ">",
-      "source_time": "2026-09-23T14:50:03+08:00"
+      "source_time": "2026-09-24T14:50:03+08:00"
     },
     "major_index_drop": {
       "actual": {
-        "000001.SH": -0.414,
-        "399001.SZ": -0.7314,
-        "399006.SZ": -0.7303
+        "000001.SH": -1.1249,
+        "399001.SZ": -2.2266,
+        "399006.SZ": -2.503
       },
       "threshold": -2,
       "operator": ">",
-      "source_time": "2026-09-23T14:50:03+08:00"
-    },
-    "turnover": {
-      "actual": 1685989868300.0,
-      "threshold": 700000000000,
-      "unit": "CNY",
-      "operator": ">=",
-      "source_time": null
-    },
-    "advance_ratio": {
-      "actual": 0.3351331893448524,
-      "threshold": 0.35,
-      "operator": ">=",
-      "source_time": null
+      "source_time": "2026-09-24T14:50:03+08:00"
     }
   },
   "filter_stats": {
@@ -97,39 +72,22 @@
   "candidates": [],
   "data_quality": {
     "provider": "MeoZ",
-    "request_started": "2026-09-23T14:50:05+08:00",
-    "request_finished": "2026-09-23T14:50:08+08:00",
-    "source_latest_time": "2026-09-23T14:50:03+08:00",
+    "request_started": "2026-09-24T14:50:05+08:00",
+    "request_finished": "2026-09-24T14:50:05+08:00",
+    "source_latest_time": "2026-09-24T14:50:03+08:00",
     "freshness_seconds": 2,
-    "missing_fields": [
-      "active_quote_listing_metadata_unconfirmed_candidate_excluded",
-      "screening.source_timestamp_not_provided_by_api"
-    ],
+    "missing_fields": [],
     "provider_errors": [],
     "unit_validation": {
-      "provider": "MeoZ",
-      "validation_date": "20260923",
-      "schema_signature": "e062261fe7bdf4feeebe7a09b4636e09292353869d2d39cf43dfeacd45d4159b",
-      "validation_started_at": "2026-09-23T14:50:08+08:00",
-      "validated_at": "2026-09-23T14:50:08+08:00",
       "amount": "yuan",
       "volume": "lots_100_shares",
-      "amount_unit": "yuan",
-      "volume_unit": "lots_100_shares",
-      "turnover_rate_unit": "percent",
-      "volume_ratio_unit": "multiple",
-      "unit_basis": "MeoZ field contract; no scale inference or conversion of percent/multiple",
-      "result": "PASS",
-      "cache_used": false,
-      "checked_rows": 5556,
-      "reference_symbols": [],
-      "evidence": []
+      "result": "NOT_CHECKED"
     },
     "vwap_conflict": false,
     "fallback_used": false,
-    "confidence": "MEDIUM",
+    "confidence": "HIGH",
     "screening_source_time_available": false,
-    "state": "DEGRADED",
+    "state": "COMPLETE_FOR_FAILED_GATE",
     "tushare_enhancement": {
       "state": "ENABLED",
       "requests": 0,
@@ -140,26 +98,17 @@
     "request_summary": [
       {
         "interface": "indexdaily",
-        "started": "2026-09-23T14:50:05+08:00",
-        "finished": "2026-09-23T14:50:05+08:00",
+        "started": "2026-09-24T14:50:05+08:00",
+        "finished": "2026-09-24T14:50:05+08:00",
         "http_status": 200,
         "rows": 15,
         "error": null,
-        "duration_seconds": 0.078
-      },
-      {
-        "interface": "screening",
-        "started": "2026-09-23T14:50:07+08:00",
-        "finished": "2026-09-23T14:50:08+08:00",
-        "http_status": 200,
-        "rows": 5647,
-        "error": null,
-        "duration_seconds": 1.393
+        "duration_seconds": 0.087
       }
     ]
   },
-  "api_calls_used": 2,
+  "api_calls_used": 1,
   "automated_trading": false,
-  "generated_at_cn": "2026-09-23T14:50:08+08:00",
+  "generated_at_cn": "2026-09-24T14:50:05+08:00",
   "generated_at_cn_source": "PROGRAM_COMPLETION_CLOCK"
 }
