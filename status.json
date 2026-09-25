@@ -1,6 +1,6 @@
 {
   "strategy_version": "V1.2",
-  "updated_at_cn": "2026-09-25T14:30:05+08:00",
+  "updated_at_cn": "2026-09-25T14:50:05+08:00",
   "service_status": "READY",
   "api_status": "OK",
   "daily_api_calls_estimated": 1,
@@ -13,16 +13,16 @@
     "api_calls_used": 1
   },
   "last_1450_run": {
-    "at_cn": "2026-09-24T14:50:05+08:00",
-    "decision": "NO_TRADE",
-    "run_context": "LIVE",
-    "api_calls_used": 1
-  },
-  "last_success": {
-    "at_cn": "2026-09-25T14:30:05+08:00",
+    "at_cn": "2026-09-25T14:50:05+08:00",
     "decision": "MARKET_CLOSED",
     "run_context": "LIVE",
-    "api_calls_used": 1
+    "api_calls_used": 0
+  },
+  "last_success": {
+    "at_cn": "2026-09-25T14:50:05+08:00",
+    "decision": "MARKET_CLOSED",
+    "run_context": "LIVE",
+    "api_calls_used": 0
   },
   "latest_trade_date": "20260924",
   "next_1430_run": {
@@ -30,8 +30,8 @@
     "exchange_open": "1"
   },
   "next_1450_run": {
-    "timer_at_cn": "2026-09-25T14:50:05+08:00",
-    "exchange_open": "0"
+    "timer_at_cn": "2026-09-28T14:50:05+08:00",
+    "exchange_open": "1"
   },
   "timers_enabled": true,
   "automated_trading": false,
