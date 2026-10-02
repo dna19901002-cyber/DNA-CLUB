@@ -2,7 +2,7 @@
   "strategy_version": "V1.2",
   "mode": "1430",
   "decision": "MARKET_CLOSED",
-  "retrieved_at_cn": "2026-10-01T14:30:05+08:00",
+  "retrieved_at_cn": "2026-10-02T14:30:05+08:00",
   "provider": "MeoZ",
   "trade_date": null,
   "run_context": "LIVE",
@@ -28,8 +28,8 @@
   "candidates": [],
   "data_quality": {
     "provider": "MeoZ",
-    "request_started": "2026-10-01T14:30:05+08:00",
-    "request_finished": "2026-10-01T14:30:05+08:00",
+    "request_started": "2026-10-02T14:30:05+08:00",
+    "request_finished": "2026-10-02T14:30:05+08:00",
     "source_latest_time": null,
     "freshness_seconds": null,
     "missing_fields": [],
@@ -47,17 +47,17 @@
     "request_summary": [
       {
         "interface": "tradecal",
-        "started": "2026-10-01T14:30:05+08:00",
-        "finished": "2026-10-01T14:30:05+08:00",
+        "started": "2026-10-02T14:30:05+08:00",
+        "finished": "2026-10-02T14:30:05+08:00",
         "http_status": 200,
         "rows": 1,
         "error": null,
-        "duration_seconds": 0.073
+        "duration_seconds": 0.078
       }
     ]
   },
   "api_calls_used": 1,
   "automated_trading": false,
-  "generated_at_cn": "2026-10-01T14:30:05+08:00",
+  "generated_at_cn": "2026-10-02T14:30:05+08:00",
   "generated_at_cn_source": "PROGRAM_COMPLETION_CLOCK"
 }
