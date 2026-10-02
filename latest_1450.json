@@ -2,7 +2,7 @@
   "strategy_version": "V1.2",
   "mode": "1450",
   "decision": "MARKET_CLOSED",
-  "retrieved_at_cn": "2026-10-01T14:50:05+08:00",
+  "retrieved_at_cn": "2026-10-02T14:50:05+08:00",
   "provider": "MeoZ",
   "trade_date": null,
   "run_context": "LIVE",
@@ -28,8 +28,8 @@
   "candidates": [],
   "data_quality": {
     "provider": "MeoZ",
-    "request_started": "2026-10-01T14:50:05+08:00",
-    "request_finished": "2026-10-01T14:50:05+08:00",
+    "request_started": "2026-10-02T14:50:05+08:00",
+    "request_finished": "2026-10-02T14:50:05+08:00",
     "source_latest_time": null,
     "freshness_seconds": null,
     "missing_fields": [],
@@ -48,6 +48,6 @@
   },
   "api_calls_used": 0,
   "automated_trading": false,
-  "generated_at_cn": "2026-10-01T14:50:05+08:00",
+  "generated_at_cn": "2026-10-02T14:50:05+08:00",
   "generated_at_cn_source": "PROGRAM_COMPLETION_CLOCK"
 }
