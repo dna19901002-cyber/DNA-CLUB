@@ -1,14 +1,20 @@
 {
   "schema": "ashare-exit-review-v1",
   "strategy_version": "V1.2",
-  "mode": "0950",
+  "mode": "0950_EXIT_REVIEW",
   "trade_date": null,
-  "review_of_trade_date": null,
+  "previous_trade_date": null,
+  "retrieved_at_cn": null,
   "run_context": "INITIALIZATION",
   "decision": "NOT_RUN_YET",
   "selection_state": null,
   "selected_code": null,
-  "candidate_metrics": [],
+  "candidates": [],
+  "data_quality": {
+    "state": "NOT_CHECKED",
+    "minute_complete": false,
+    "provider_errors": []
+  },
   "api_calls_used": 0,
   "tushare_calls_used": 0,
   "automated_trading": false,
