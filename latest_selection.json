@@ -1,0 +1,10 @@
+{
+  "strategy_version": "V1.2",
+  "trade_date": "20260930",
+  "decision": "DATA_INSUFFICIENT",
+  "primary": null,
+  "backup": null,
+  "written_by": "GPT",
+  "written_at_cn": "2026-10-03T18:34:05+08:00",
+  "source_snapshot_sha256": "c3bbbf81d8a65d6005dc206cdab1fc7e6f0c1370a9e683f3d0113822befc3365"
+}
