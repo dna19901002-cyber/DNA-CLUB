@@ -72,6 +72,65 @@
           "candidate_exclusions_do_not_degrade_market_gate": true
         },
         "generated_at_cn": "2026-10-08T14:30:08+08:00"
+      },
+      "1450": {
+        "trade_date": "20261008",
+        "mode": "1450",
+        "decision": "NO_TRADE",
+        "market_gate": {
+          "ma5": false,
+          "turnover": null,
+          "major_index_drop": false,
+          "advance_ratio": null
+        },
+        "candidate_codes": [],
+        "api_calls_used": 1,
+        "tushare_calls_used": 0,
+        "data_quality": {
+          "provider": "MeoZ",
+          "request_started": "2026-10-08T14:50:05+08:00",
+          "request_finished": "2026-10-08T14:50:05+08:00",
+          "source_latest_time": "2026-10-08T14:50:03+08:00",
+          "freshness_seconds": 3,
+          "missing_fields": [],
+          "provider_errors": [],
+          "unit_validation": {
+            "amount": "yuan",
+            "volume": "lots_100_shares",
+            "result": "NOT_CHECKED"
+          },
+          "vwap_conflict": false,
+          "fallback_used": false,
+          "confidence": "HIGH",
+          "screening_source_time_available": false,
+          "state": "COMPLETE_FOR_FAILED_GATE",
+          "tushare_enhancement": {
+            "state": "ENABLED",
+            "requests": 0,
+            "metadata_conflicts": 0,
+            "error": null,
+            "transport": "HTTP_USER_APPROVED"
+          },
+          "request_summary": [
+            {
+              "interface": "indexdaily",
+              "started": "2026-10-08T14:50:05+08:00",
+              "finished": "2026-10-08T14:50:05+08:00",
+              "http_status": 200,
+              "rows": 15,
+              "error": null,
+              "duration_seconds": 0.324
+            }
+          ],
+          "issues": {
+            "EXPECTED_PROVIDER_LIMITATION": [],
+            "CANDIDATE_EXCLUDED": [],
+            "STRATEGY_CAPABILITY_MISSING": [],
+            "CRITICAL": []
+          },
+          "candidate_exclusions_do_not_degrade_market_gate": true
+        },
+        "generated_at_cn": "2026-10-08T14:50:05+08:00"
       }
     },
     {
