@@ -1,13 +1,13 @@
 {
   "strategy_version": "V1.2",
-  "updated_at_cn": "2026-10-08T14:50:05+08:00",
+  "updated_at_cn": "2026-10-09T14:30:08+08:00",
   "service_status": "READY",
   "api_status": "OK",
-  "daily_api_calls_estimated": 3,
+  "daily_api_calls_estimated": 2,
   "api_counter_scope": "THIS_SERVER_ONLY",
   "daily_api_budget": 10,
   "last_1430_run": {
-    "at_cn": "2026-10-08T14:30:05+08:00",
+    "at_cn": "2026-10-09T14:30:05+08:00",
     "decision": "NO_TRADE",
     "run_context": "LIVE",
     "api_calls_used": 2
@@ -19,16 +19,16 @@
     "api_calls_used": 1
   },
   "last_success": {
-    "at_cn": "2026-10-08T14:50:05+08:00",
+    "at_cn": "2026-10-09T14:30:05+08:00",
     "decision": "NO_TRADE",
     "run_context": "LIVE",
-    "api_calls_used": 1
+    "api_calls_used": 2
   },
-  "latest_trade_date": "20261008",
+  "latest_trade_date": "20261009",
   "next_1430_run": {
-    "timer_at_cn": "2026-10-09T14:30:05+08:00",
+    "timer_at_cn": "2026-10-12T14:30:05+08:00",
     "exchange_open": true,
-    "trade_date": "20261009",
+    "trade_date": "20261012",
     "calendar_source": "TUSHARE_TRADE_CAL"
   },
   "next_1450_run": {
@@ -110,7 +110,7 @@
     "passed": true
   },
   "today_market_status": "OPEN",
-  "calendar_date": "20261008",
+  "calendar_date": "20261009",
   "calendar_source": "TUSHARE_TRADE_CAL",
   "latest_1450_content_sha256": "38cf7bc65b2155f9e858b38a4ca7cf966090a558c0f400eee690a0d65bf61a74"
 }

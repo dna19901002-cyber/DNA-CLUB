@@ -2,9 +2,9 @@
   "strategy_version": "V1.2",
   "mode": "1430",
   "decision": "NO_TRADE",
-  "retrieved_at_cn": "2026-10-08T14:30:05+08:00",
+  "retrieved_at_cn": "2026-10-09T14:30:05+08:00",
   "provider": "MeoZ",
-  "trade_date": "20261008",
+  "trade_date": "20261009",
   "run_context": "LIVE",
   "reason": "CORE_INDEX_GATE_FAILED",
   "market": {
@@ -12,51 +12,51 @@
       {
         "symbol": "000001.SH",
         "name": "上证指数",
-        "price": 3796.82,
-        "pct_chg": -1.1811,
-        "ma5_live": 3836.29206,
-        "source_time": "2026-10-08T14:30:06+08:00"
+        "price": 3819.23,
+        "pct_chg": 0.1923,
+        "ma5_live": 3825.48016,
+        "source_time": "2026-10-09T14:30:06+08:00"
       },
       {
         "symbol": "399001.SZ",
         "name": "深证成指",
-        "price": 12549.29,
-        "pct_chg": -2.6252,
-        "ma5_live": 12902.91586,
-        "source_time": "2026-10-08T14:30:06+08:00"
+        "price": 12646.66,
+        "pct_chg": 0.2041,
+        "ma5_live": 12783.17548,
+        "source_time": "2026-10-09T14:30:06+08:00"
       },
       {
         "symbol": "399006.SZ",
         "name": "创业板指",
-        "price": 3014.34,
-        "pct_chg": -3.8574,
-        "ma5_live": 3144.19044,
-        "source_time": "2026-10-08T14:30:06+08:00"
+        "price": 3043.66,
+        "pct_chg": 0.2305,
+        "ma5_live": 3099.59638,
+        "source_time": "2026-10-09T14:30:06+08:00"
       }
     ]
   },
   "market_gate": {
     "ma5": false,
     "turnover": null,
-    "major_index_drop": false,
+    "major_index_drop": true,
     "advance_ratio": null
   },
   "gate_details": {
     "ma5": {
-      "actual": 3796.82,
-      "threshold": 3836.29206,
+      "actual": 3819.23,
+      "threshold": 3825.48016,
       "operator": ">",
-      "source_time": "2026-10-08T14:30:06+08:00"
+      "source_time": "2026-10-09T14:30:06+08:00"
     },
     "major_index_drop": {
       "actual": {
-        "000001.SH": -1.1811,
-        "399001.SZ": -2.6252,
-        "399006.SZ": -3.8574
+        "000001.SH": 0.1923,
+        "399001.SZ": 0.2041,
+        "399006.SZ": 0.2305
       },
       "threshold": -2,
       "operator": ">",
-      "source_time": "2026-10-08T14:30:06+08:00"
+      "source_time": "2026-10-09T14:30:06+08:00"
     }
   },
   "filter_stats": {
@@ -72,10 +72,10 @@
   "candidates": [],
   "data_quality": {
     "provider": "MeoZ",
-    "request_started": "2026-10-08T14:30:05+08:00",
-    "request_finished": "2026-10-08T14:30:08+08:00",
-    "source_latest_time": "2026-10-08T14:30:06+08:00",
-    "freshness_seconds": 2,
+    "request_started": "2026-10-09T14:30:05+08:00",
+    "request_finished": "2026-10-09T14:30:08+08:00",
+    "source_latest_time": "2026-10-09T14:30:06+08:00",
+    "freshness_seconds": 3,
     "missing_fields": [],
     "provider_errors": [],
     "unit_validation": {
@@ -98,21 +98,21 @@
     "request_summary": [
       {
         "interface": "stockbasic",
-        "started": "2026-10-08T14:30:05+08:00",
-        "finished": "2026-10-08T14:30:06+08:00",
+        "started": "2026-10-09T14:30:05+08:00",
+        "finished": "2026-10-09T14:30:06+08:00",
         "http_status": 200,
         "rows": 5651,
         "error": null,
-        "duration_seconds": 1.273
+        "duration_seconds": 1.359
       },
       {
         "interface": "indexdaily",
-        "started": "2026-10-08T14:30:08+08:00",
-        "finished": "2026-10-08T14:30:08+08:00",
+        "started": "2026-10-09T14:30:08+08:00",
+        "finished": "2026-10-09T14:30:08+08:00",
         "http_status": 200,
         "rows": 15,
         "error": null,
-        "duration_seconds": 0.158
+        "duration_seconds": 0.316
       }
     ],
     "issues": {
@@ -127,6 +127,6 @@
   "automated_trading": false,
   "calendar_source": "TUSHARE_TRADE_CAL",
   "tushare_calls_used": 1,
-  "generated_at_cn": "2026-10-08T14:30:08+08:00",
+  "generated_at_cn": "2026-10-09T14:30:08+08:00",
   "generated_at_cn_source": "PROGRAM_COMPLETION_CLOCK"
 }
