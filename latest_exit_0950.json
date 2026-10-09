@@ -2,9 +2,9 @@
   "schema": "ashare-exit-review-v1",
   "strategy_version": "V1.2",
   "mode": "0950_EXIT_REVIEW",
-  "trade_date": "20261008",
-  "previous_trade_date": "20260930",
-  "retrieved_at_cn": "2026-10-08T09:50:05+08:00",
+  "trade_date": "20261009",
+  "previous_trade_date": "20261008",
+  "retrieved_at_cn": "2026-10-09T09:50:05+08:00",
   "run_context": "LIVE",
   "decision": "NO_REVIEW_REQUIRED",
   "selection_state": "NOT_APPLICABLE",
@@ -24,6 +24,6 @@
   "api_calls_used": 0,
   "tushare_calls_used": 0,
   "automated_trading": false,
-  "generated_at_cn": "2026-10-08T09:50:05+08:00",
+  "generated_at_cn": "2026-10-09T09:50:05+08:00",
   "reason": "PREVIOUS_1450_HAD_NO_CANDIDATES"
 }
