@@ -1,8 +1,79 @@
 {
   "schema": "ashare-recent-runs-v1",
   "strategy_version": "V1.2",
-  "trading_days": 14,
+  "trading_days": 15,
   "runs": [
+    {
+      "trade_date": "20261015",
+      "1430": {
+        "trade_date": "20261015",
+        "mode": "1430",
+        "decision": "NO_TRADE",
+        "market_gate": {
+          "ma5": false,
+          "turnover": null,
+          "major_index_drop": false,
+          "advance_ratio": null
+        },
+        "candidate_codes": [],
+        "api_calls_used": 2,
+        "tushare_calls_used": 1,
+        "data_quality": {
+          "provider": "MeoZ",
+          "request_started": "2026-10-15T14:30:05+08:00",
+          "request_finished": "2026-10-15T14:30:07+08:00",
+          "source_latest_time": "2026-10-15T14:30:03+08:00",
+          "freshness_seconds": 4,
+          "missing_fields": [],
+          "provider_errors": [],
+          "unit_validation": {
+            "amount": "yuan",
+            "volume": "lots_100_shares",
+            "result": "NOT_CHECKED"
+          },
+          "vwap_conflict": false,
+          "fallback_used": true,
+          "confidence": "HIGH",
+          "screening_source_time_available": false,
+          "state": "COMPLETE_FOR_FAILED_GATE",
+          "tushare_enhancement": {
+            "state": "DEGRADED",
+            "requests": 1,
+            "metadata_conflicts": 0,
+            "error": "OPTIONAL_METADATA_UNAVAILABLE",
+            "transport": "HTTP_USER_APPROVED"
+          },
+          "request_summary": [
+            {
+              "interface": "stockbasic",
+              "started": "2026-10-15T14:30:05+08:00",
+              "finished": "2026-10-15T14:30:05+08:00",
+              "http_status": 200,
+              "rows": 5653,
+              "error": null,
+              "duration_seconds": 0.466
+            },
+            {
+              "interface": "indexdaily",
+              "started": "2026-10-15T14:30:07+08:00",
+              "finished": "2026-10-15T14:30:07+08:00",
+              "http_status": 200,
+              "rows": 15,
+              "error": null,
+              "duration_seconds": 0.039
+            }
+          ],
+          "issues": {
+            "EXPECTED_PROVIDER_LIMITATION": [],
+            "CANDIDATE_EXCLUDED": [],
+            "STRATEGY_CAPABILITY_MISSING": [],
+            "CRITICAL": []
+          },
+          "candidate_exclusions_do_not_degrade_market_gate": true
+        },
+        "generated_at_cn": "2026-10-15T14:30:07+08:00"
+      }
+    },
     {
       "trade_date": "20261014",
       "1430": {
