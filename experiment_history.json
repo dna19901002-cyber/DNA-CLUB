@@ -821,7 +821,15 @@
     "minimum_commission_cny_each_side": 5,
     "sell_tax_rate": 0.0005,
     "transfer_rate_each_side": 1e-05,
-    "slippage_each_side": 0.0005
+    "slippage_each_side": 0.0005,
+    "max_five_minute_participation": 0.1
   },
-  "automated_trading": false
+  "automated_trading": false,
+  "observation_progress": {
+    "observed_sessions": 0,
+    "consecutive_usable_sessions": 0,
+    "target_sessions": 20,
+    "missing_sessions": [],
+    "comparison_ready": false
+  }
 }
