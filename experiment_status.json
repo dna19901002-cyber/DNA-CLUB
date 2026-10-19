@@ -13,7 +13,8 @@
     "minimum_commission_cny_each_side": 5,
     "sell_tax_rate": 0.0005,
     "transfer_rate_each_side": 1e-05,
-    "slippage_each_side": 0.0005
+    "slippage_each_side": 0.0005,
+    "max_five_minute_participation": 0.1
   },
   "minimum_observation_days": 20,
   "selection_contract": {
@@ -64,5 +65,7 @@
       }
     },
     "automated_trading": false
-  }
+  },
+  "last_verified_at_cn": "2026-10-20T06:30:39.122516+08:00",
+  "offline_tests_passed": 132
 }
