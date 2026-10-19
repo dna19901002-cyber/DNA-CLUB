@@ -41,5 +41,28 @@
     }
   },
   "deployed_at_cn": "2026-10-19T22:20:05.191239+08:00",
-  "first_planned_session": "20261020"
+  "first_planned_session": "20261020",
+  "selection_audit": {
+    "schema": "ashare-experiment-selection-audit-v1",
+    "strategy_version": "V1.2",
+    "checked_at_cn": "2026-10-19T22:21:57.470408+08:00",
+    "trade_date": "20261019",
+    "groups": {
+      "A": {
+        "state": "INVALID",
+        "reason": "TRADE_DATE_INVALID",
+        "remote_trade_date": "20260930",
+        "written_by": "GPT",
+        "decision": "DATA_INSUFFICIENT"
+      },
+      "BC": {
+        "state": "MISSING",
+        "reason": "SOURCE_SNAPSHOT_MISSING",
+        "remote_trade_date": null,
+        "written_by": null,
+        "decision": null
+      }
+    },
+    "automated_trading": false
+  }
 }
