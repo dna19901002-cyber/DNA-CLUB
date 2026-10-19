@@ -1,0 +1,45 @@
+{
+  "strategy_version": "V1.2",
+  "schema": "ashare-experiment-status-v1",
+  "automated_trading": false,
+  "daily_total_meoz_budget": 10,
+  "morning_research_total_cap_including_A": 1,
+  "afternoon_A_worst_case_reserved": 9,
+  "cost_assumptions": {
+    "label": "EXPLICIT_RESEARCH_ASSUMPTIONS_NOT_BROKER_BILL",
+    "notional_cny": 100000,
+    "lot_size": 100,
+    "commission_rate_each_side": 0.0003,
+    "minimum_commission_cny_each_side": 5,
+    "sell_tax_rate": 0.0005,
+    "transfer_rate_each_side": 1e-05,
+    "slippage_each_side": 0.0005
+  },
+  "minimum_observation_days": 20,
+  "selection_contract": {
+    "schema": "ashare-experiment-selection-v1",
+    "strategy_version": "V1.2",
+    "trade_date": "COPY_SNAPSHOT_TRADE_DATE",
+    "written_by": "GPT",
+    "written_at_cn": "ACTUAL_ASIA_SHANGHAI_ISO8601_WITH_OFFSET",
+    "source_snapshot_sha256": "COPY_latest_experiment_1450_content_sha256",
+    "groups": {
+      "B": {
+        "decision": "SIM_BUY|NO_TRADE|DATA_INSUFFICIENT",
+        "primary": "SAME_PRIMARY_SCHEMA_AS_A_OR_NULL",
+        "backup": null
+      },
+      "C": {
+        "decision": "SHADOW_OBSERVATION|DATA_INSUFFICIENT",
+        "observations": [
+          {
+            "code": "EXACT_C_POOL_CODE",
+            "reference_price": "EXACT_CANDIDATE_PRICE"
+          }
+        ]
+      }
+    }
+  },
+  "deployed_at_cn": "2026-10-19T22:20:05.191239+08:00",
+  "first_planned_session": "20261020"
+}

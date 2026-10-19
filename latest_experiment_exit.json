@@ -1,0 +1,10 @@
+{
+  "schema": "ashare-experiment-exit-v1",
+  "strategy_version": "V1.2",
+  "trade_date": null,
+  "run_context": "INITIALIZATION",
+  "state": "AWAITING_NEXT_LIVE_WINDOW",
+  "generated_at_cn": "2026-10-19T22:20:05.191239+08:00",
+  "api_calls_used": 0,
+  "automated_trading": false
+}
