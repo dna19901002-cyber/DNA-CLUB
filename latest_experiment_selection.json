@@ -1,0 +1,19 @@
+{
+  "schema": "ashare-experiment-selection-v1",
+  "strategy_version": "V1.2",
+  "trade_date": null,
+  "written_by": "SERVER_INITIALIZATION",
+  "written_at_cn": "2026-10-19T22:20:39.226625+08:00",
+  "source_snapshot_sha256": null,
+  "groups": {
+    "B": {
+      "decision": "DATA_INSUFFICIENT",
+      "primary": null,
+      "backup": null
+    },
+    "C": {
+      "decision": "DATA_INSUFFICIENT",
+      "observations": []
+    }
+  }
+}
