@@ -46,8 +46,8 @@
   "selection_audit": {
     "schema": "ashare-experiment-selection-audit-v1",
     "strategy_version": "V1.2",
-    "checked_at_cn": "2026-10-20T09:49:45.376207+08:00",
-    "trade_date": "20261019",
+    "checked_at_cn": "2026-10-20T14:54:00.353950+08:00",
+    "trade_date": "20261020",
     "groups": {
       "A": {
         "state": "INVALID",
@@ -57,10 +57,10 @@
         "decision": "DATA_INSUFFICIENT"
       },
       "BC": {
-        "state": "MISSING",
-        "reason": "SOURCE_SNAPSHOT_MISSING",
+        "state": "INVALID",
+        "reason": "EXPERIMENT_SELECTION_SCHEMA_OR_DATE_INVALID",
         "remote_trade_date": null,
-        "written_by": null,
+        "written_by": "SERVER_INITIALIZATION",
         "decision": null
       }
     },
