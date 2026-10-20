@@ -750,17 +750,229 @@
       "gross_return": null,
       "estimated_net_return": null,
       "data_quality": "NO_GPT_SELECTION_OR_EXECUTABLE_ENTRY_EVIDENCE"
+    },
+    {
+      "trade_date": "20261020",
+      "strategy_group": "A",
+      "market_regime": "WITHIN_MINUS_1PCT_MA5",
+      "market_gate_details": {
+        "shanghai_ma5_distance": -0.0003317438193513045,
+        "a_gate": {
+          "ma5": false,
+          "turnover": null,
+          "major_index_drop": true,
+          "advance_ratio": null
+        },
+        "b_gate": {
+          "ma5": true,
+          "turnover": true,
+          "major_index_drop": true,
+          "advance_ratio": true
+        },
+        "b_ma5_operator": "(price / ma5_live - 1) >= -0.01",
+        "major_index_risk": true,
+        "turnover_risk": null,
+        "breadth_risk": null,
+        "unknown_gates": [
+          "turnover",
+          "advance_ratio"
+        ],
+        "market": {
+          "universe": 5654,
+          "valid_trading_stocks": 5567,
+          "advance": 3577,
+          "decline": 1852,
+          "flat": 138,
+          "advance_ratio": 0.6425363750673613,
+          "total_amount_yuan": 1396603626200.0,
+          "excluded_counts": {
+            "no_trade": 7,
+            "non_a_share": 79,
+            "delisting": 1
+          }
+        },
+        "turnover": {
+          "actual": 1396603626200.0,
+          "threshold": 700000000000
+        },
+        "advance_ratio": {
+          "actual": 0.6425363750673613,
+          "threshold": 0.35
+        }
+      },
+      "gate_decision": "NO_TRADE",
+      "candidate_codes": [],
+      "score": null,
+      "primary_code": null,
+      "reference_price": null,
+      "selection_time": null,
+      "observation_count": 0,
+      "entry_evidence": {
+        "state": "REFERENCE_ONLY"
+      },
+      "state": "NO_CONFIRMED_ENTRY",
+      "reliable": false,
+      "exit_evidence": null,
+      "gross_return": null,
+      "estimated_net_return": null,
+      "data_quality": "NO_GPT_SELECTION_OR_EXECUTABLE_ENTRY_EVIDENCE"
+    },
+    {
+      "trade_date": "20261020",
+      "strategy_group": "B",
+      "market_regime": "WITHIN_MINUS_1PCT_MA5",
+      "market_gate_details": {
+        "shanghai_ma5_distance": -0.0003317438193513045,
+        "a_gate": {
+          "ma5": false,
+          "turnover": null,
+          "major_index_drop": true,
+          "advance_ratio": null
+        },
+        "b_gate": {
+          "ma5": true,
+          "turnover": true,
+          "major_index_drop": true,
+          "advance_ratio": true
+        },
+        "b_ma5_operator": "(price / ma5_live - 1) >= -0.01",
+        "major_index_risk": true,
+        "turnover_risk": null,
+        "breadth_risk": null,
+        "unknown_gates": [
+          "turnover",
+          "advance_ratio"
+        ],
+        "market": {
+          "universe": 5654,
+          "valid_trading_stocks": 5567,
+          "advance": 3577,
+          "decline": 1852,
+          "flat": 138,
+          "advance_ratio": 0.6425363750673613,
+          "total_amount_yuan": 1396603626200.0,
+          "excluded_counts": {
+            "no_trade": 7,
+            "non_a_share": 79,
+            "delisting": 1
+          }
+        },
+        "turnover": {
+          "actual": 1396603626200.0,
+          "threshold": 700000000000
+        },
+        "advance_ratio": {
+          "actual": 0.6425363750673613,
+          "threshold": 0.35
+        }
+      },
+      "gate_decision": "PASS",
+      "candidate_codes": [
+        "002956",
+        "002896",
+        "002695",
+        "300226",
+        "300448",
+        "300820",
+        "603418",
+        "002173",
+        "688691",
+        "300421"
+      ],
+      "score": null,
+      "primary_code": null,
+      "reference_price": null,
+      "selection_time": null,
+      "observation_count": 0,
+      "entry_evidence": {
+        "state": "REFERENCE_ONLY"
+      },
+      "state": "NO_CONFIRMED_ENTRY",
+      "reliable": false,
+      "exit_evidence": null,
+      "gross_return": null,
+      "estimated_net_return": null,
+      "data_quality": "NO_GPT_SELECTION_OR_EXECUTABLE_ENTRY_EVIDENCE"
+    },
+    {
+      "trade_date": "20261020",
+      "strategy_group": "C",
+      "market_regime": "WITHIN_MINUS_1PCT_MA5",
+      "market_gate_details": {
+        "shanghai_ma5_distance": -0.0003317438193513045,
+        "a_gate": {
+          "ma5": false,
+          "turnover": null,
+          "major_index_drop": true,
+          "advance_ratio": null
+        },
+        "b_gate": {
+          "ma5": true,
+          "turnover": true,
+          "major_index_drop": true,
+          "advance_ratio": true
+        },
+        "b_ma5_operator": "(price / ma5_live - 1) >= -0.01",
+        "major_index_risk": true,
+        "turnover_risk": null,
+        "breadth_risk": null,
+        "unknown_gates": [
+          "turnover",
+          "advance_ratio"
+        ],
+        "market": {
+          "universe": 5654,
+          "valid_trading_stocks": 5567,
+          "advance": 3577,
+          "decline": 1852,
+          "flat": 138,
+          "advance_ratio": 0.6425363750673613,
+          "total_amount_yuan": 1396603626200.0,
+          "excluded_counts": {
+            "no_trade": 7,
+            "non_a_share": 79,
+            "delisting": 1
+          }
+        },
+        "turnover": {
+          "actual": 1396603626200.0,
+          "threshold": 700000000000
+        },
+        "advance_ratio": {
+          "actual": 0.6425363750673613,
+          "threshold": 0.35
+        }
+      },
+      "gate_decision": "SHADOW_OBSERVATION",
+      "candidate_codes": [
+        "002956",
+        "002896"
+      ],
+      "score": null,
+      "primary_code": null,
+      "reference_price": null,
+      "selection_time": null,
+      "observation_count": 2,
+      "entry_evidence": {
+        "state": "REFERENCE_ONLY"
+      },
+      "state": "NO_CONFIRMED_ENTRY",
+      "reliable": false,
+      "exit_evidence": null,
+      "gross_return": null,
+      "estimated_net_return": null,
+      "data_quality": "NO_GPT_SELECTION_OR_EXECUTABLE_ENTRY_EVIDENCE"
     }
   ],
   "comparison": {
     "A": {
-      "sample_days": 17,
+      "sample_days": 18,
       "allowed_trading_days": 3,
-      "allowed_day_ratio": 0.17647058823529413,
+      "allowed_day_ratio": 0.16666666666666666,
       "modelled_entry_count": 0,
       "completed_reliable_modelled_count": 0,
       "observation_proposal_count": 0,
-      "unreliable_or_incomplete_count": 17,
+      "unreliable_or_incomplete_count": 18,
       "win_rate": null,
       "average_net_return": null,
       "payoff_ratio": null,
@@ -773,13 +985,13 @@
       "conclusion": "INSUFFICIENT_SAMPLE_NO_STRATEGY_SUPERIORITY_CLAIM"
     },
     "B": {
-      "sample_days": 0,
-      "allowed_trading_days": 0,
-      "allowed_day_ratio": null,
+      "sample_days": 1,
+      "allowed_trading_days": 1,
+      "allowed_day_ratio": 1.0,
       "modelled_entry_count": 0,
       "completed_reliable_modelled_count": 0,
       "observation_proposal_count": 0,
-      "unreliable_or_incomplete_count": 0,
+      "unreliable_or_incomplete_count": 1,
       "win_rate": null,
       "average_net_return": null,
       "payoff_ratio": null,
@@ -792,13 +1004,13 @@
       "conclusion": "INSUFFICIENT_SAMPLE_NO_STRATEGY_SUPERIORITY_CLAIM"
     },
     "C": {
-      "sample_days": 0,
+      "sample_days": 1,
       "allowed_trading_days": 0,
-      "allowed_day_ratio": null,
+      "allowed_day_ratio": 0.0,
       "modelled_entry_count": 0,
       "completed_reliable_modelled_count": 0,
-      "observation_proposal_count": 0,
-      "unreliable_or_incomplete_count": 0,
+      "observation_proposal_count": 2,
+      "unreliable_or_incomplete_count": 1,
       "win_rate": null,
       "average_net_return": null,
       "payoff_ratio": null,
@@ -826,10 +1038,14 @@
   },
   "automated_trading": false,
   "observation_progress": {
-    "observed_sessions": 0,
-    "consecutive_usable_sessions": 0,
+    "first_observed_trade_date": "20261020",
+    "last_observed_trade_date": "20261020",
+    "observed_sessions": 1,
+    "consecutive_usable_sessions": 1,
     "target_sessions": 20,
     "missing_sessions": [],
-    "comparison_ready": false
+    "degraded_sessions": [],
+    "comparison_ready": false,
+    "readiness_does_not_prove_strategy_superiority": true
   }
 }
