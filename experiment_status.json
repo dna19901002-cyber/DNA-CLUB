@@ -69,5 +69,11 @@
   "last_verified_at_cn": "2026-10-20T06:37:13.439418+08:00",
   "offline_tests_passed": 135,
   "latest_experiment_trade_date": "20261020",
-  "latest_experiment_1450_content_sha256": "83968d70cc136ccc2d81066f226a979bee5911e412aabdbb1f744b18cc44f15c"
+  "latest_experiment_1450_content_sha256": "83968d70cc136ccc2d81066f226a979bee5911e412aabdbb1f744b18cc44f15c",
+  "last_entry": {
+    "trade_date": "20261020",
+    "confirmed_models": 0,
+    "api_calls_used": 0,
+    "error": null
+  }
 }
