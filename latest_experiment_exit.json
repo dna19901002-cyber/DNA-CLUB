@@ -1,10 +1,43 @@
 {
   "schema": "ashare-experiment-exit-v1",
   "strategy_version": "V1.2",
-  "trade_date": null,
-  "run_context": "INITIALIZATION",
-  "state": "AWAITING_NEXT_LIVE_WINDOW",
-  "generated_at_cn": "2026-10-19T22:20:05.191239+08:00",
+  "trade_date": "20261020",
+  "selection_trade_date": "20261019",
+  "cutoff": "0955",
+  "retrieved_at_cn": "2026-10-20T09:55:05.350129+08:00",
+  "positions": [],
   "api_calls_used": 0,
-  "automated_trading": false
+  "error": null,
+  "automated_trading": false,
+  "run_context": "LIVE_EXPERIMENT",
+  "request_summary": [],
+  "morning_budget_reservation": "A_AFTERNOON_MAX_9_CALLS_RESERVED",
+  "selection_audit": {
+    "schema": "ashare-experiment-selection-audit-v1",
+    "strategy_version": "V1.2",
+    "checked_at_cn": "2026-10-20T09:49:45.376207+08:00",
+    "trade_date": "20261019",
+    "groups": {
+      "A": {
+        "state": "INVALID",
+        "reason": "TRADE_DATE_INVALID",
+        "remote_trade_date": "20260930",
+        "written_by": "GPT",
+        "decision": "DATA_INSUFFICIENT"
+      },
+      "BC": {
+        "state": "MISSING",
+        "reason": "SOURCE_SNAPSHOT_MISSING",
+        "remote_trade_date": null,
+        "written_by": null,
+        "decision": null
+      }
+    },
+    "automated_trading": false
+  },
+  "data_quality": {
+    "state": "AWAITING_VALID_GPT_SELECTION",
+    "minute_cutoff": "0955",
+    "later_prices_never_inferred": true
+  }
 }
