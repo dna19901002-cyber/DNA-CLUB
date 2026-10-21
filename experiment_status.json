@@ -46,8 +46,8 @@
   "selection_audit": {
     "schema": "ashare-experiment-selection-audit-v1",
     "strategy_version": "V1.2",
-    "checked_at_cn": "2026-10-21T09:49:45.434237+08:00",
-    "trade_date": "20261020",
+    "checked_at_cn": "2026-10-21T14:54:00.399778+08:00",
+    "trade_date": "20261021",
     "groups": {
       "A": {
         "state": "INVALID",
