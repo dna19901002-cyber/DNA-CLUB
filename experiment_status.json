@@ -107,5 +107,15 @@
     "gpt_task_20261020": "EXECUTED_BUT_OPENAI_SAFETY_CHECK_BLOCKED_WRITE",
     "gpt_task_20261021": "EXECUTED_BUT_WRITE_BLOCKED_AND_1454_DEADLINE_MISSED",
     "no_strategy_change": true
-  }
+  },
+  "machine_observation_summary": {
+    "machine_proposal_count": 4,
+    "complete_observation_count": 4,
+    "missing_observation_count": 0,
+    "retrospective_sample_count": 4,
+    "modelled_fill_count": 0,
+    "reliable_trade_count": 0
+  },
+  "latest_machine_observation_content_sha256": "bbfc3a58070f0cb4dc813c115a3721cd8ced124f442f8247c2272e53e50c5219",
+  "repair_offline_tests_passed": 153
 }
