@@ -1251,5 +1251,23 @@
     "degraded_sessions": [],
     "comparison_ready": false,
     "readiness_does_not_prove_strategy_superiority": true
-  }
+  },
+  "selection_counts": {
+    "A": {
+      "gpt_confirmed_count": 0,
+      "modelled_fill_count": 0,
+      "completed_reliable_trade_count": 0
+    },
+    "B": {
+      "gpt_confirmed_count": 0,
+      "modelled_fill_count": 0,
+      "completed_reliable_trade_count": 0
+    },
+    "C": {
+      "gpt_confirmed_count": 0,
+      "modelled_fill_count": 0,
+      "completed_reliable_trade_count": 0
+    }
+  },
+  "machine_observation_ledger": "machine_observation_history.json"
 }

@@ -46,7 +46,7 @@
   "selection_audit": {
     "schema": "ashare-experiment-selection-audit-v1",
     "strategy_version": "V1.2",
-    "checked_at_cn": "2026-10-22T09:49:45.428928+08:00",
+    "checked_at_cn": "2026-10-22T11:33:47.541857+08:00",
     "trade_date": "20261021",
     "groups": {
       "A": {
@@ -54,17 +54,41 @@
         "reason": "TRADE_DATE_INVALID",
         "remote_trade_date": "20260930",
         "written_by": "GPT",
-        "decision": "DATA_INSUFFICIENT"
+        "decision": "DATA_INSUFFICIENT",
+        "github_read_receipt": {
+          "blob_sha": "6db66ab5acda386aba82fecf3c16d6925b7fe986",
+          "content_sha256": "f2abde294894347334c70a8e89b0fb4f5e467d67f73258ff954eecc2c7adfe00",
+          "branch": "main",
+          "read_at_cn": "2026-10-22T11:33:48.174684+08:00",
+          "http_status": 200
+        }
       },
       "BC": {
         "state": "INVALID",
         "reason": "EXPERIMENT_SELECTION_SCHEMA_OR_DATE_INVALID",
         "remote_trade_date": null,
         "written_by": "SERVER_INITIALIZATION",
-        "decision": null
+        "decision": null,
+        "github_read_receipt": {
+          "blob_sha": "7a358ec9c2b0901c9b6bc93bfba66b527e180c55",
+          "content_sha256": "50526450c0c9e20c2bde167eec4a81a23bba7c51b63ff010ce8b25b8bea4defe",
+          "branch": "main",
+          "read_at_cn": "2026-10-22T11:33:48.740887+08:00",
+          "http_status": 200
+        }
       }
     },
-    "automated_trading": false
+    "automated_trading": false,
+    "alerts": [
+      {
+        "code": "GPT_SELECTION_PERSISTENCE_FAILED",
+        "severity": "ERROR",
+        "trade_date": "20261021",
+        "reason": "EXPERIMENT_SELECTION_SCHEMA_OR_DATE_INVALID",
+        "machine_proposals_preserved": true
+      }
+    ],
+    "state": "GPT_SELECTION_PERSISTENCE_FAILED"
   },
   "last_verified_at_cn": "2026-10-20T06:37:13.439418+08:00",
   "offline_tests_passed": 135,
@@ -75,5 +99,13 @@
     "confirmed_models": 0,
     "api_calls_used": 0,
     "error": null
+  },
+  "repair_20261022": {
+    "offline_tests_passed": 152,
+    "machine_ledger": "machine_observation_history.json",
+    "gpt_connector_write_probe": "HTTP_403_RESOURCE_NOT_ACCESSIBLE_BY_INTEGRATION",
+    "gpt_task_20261020": "EXECUTED_BUT_OPENAI_SAFETY_CHECK_BLOCKED_WRITE",
+    "gpt_task_20261021": "EXECUTED_BUT_WRITE_BLOCKED_AND_1454_DEADLINE_MISSED",
+    "no_strategy_change": true
   }
 }

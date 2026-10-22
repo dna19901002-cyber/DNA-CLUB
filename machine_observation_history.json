@@ -1243,6 +1243,53 @@
       "run_context": "RETROSPECTIVE_REPLAY"
     }
   ],
+  "raw_sources": [
+    {
+      "trade_date": "20261020",
+      "artifact_name": "tushare_replay_20261021_raw.json",
+      "sha256": "a9ddb49672363d79cd40499e4f0f8c60b2f0aaa6fbc24f33e7bbda25530da3f0",
+      "provider": "TUSHARE_CONFIGURED_PROXY",
+      "volume_unit": "lots_100_shares",
+      "amount_unit": "CNY",
+      "interval": "5m",
+      "receipt": {
+        "provider": "TUSHARE_CONFIGURED_PROXY",
+        "api": "stk_mins",
+        "retrieved_at_cn": "2026-10-22T11:27:55.680774+08:00",
+        "frequency": "5min",
+        "source_volume_unit": "shares",
+        "normalized_volume_unit": "lots_100_shares",
+        "amount_unit": "CNY",
+        "conversion": "normalized_vol=source_vol/100",
+        "docs": "https://tushare.pro/document/2?doc_id=370",
+        "requests": 2,
+        "receipts": [
+          {
+            "code": "002956",
+            "state": "VALIDATED",
+            "http_status": 200,
+            "rows": 5
+          },
+          {
+            "code": "002896",
+            "state": "VALIDATED",
+            "http_status": 200,
+            "rows": 5
+          }
+        ],
+        "run_context": "RETROSPECTIVE_REPLAY"
+      }
+    },
+    {
+      "trade_date": "20261021",
+      "artifact_name": "machine_replay_20261022_raw.json",
+      "sha256": "5e9d3166b96ce89517ca6f3b48b5ceca6ee0b5c434b0fe4f8cc411d1e689bb47",
+      "provider": "MEOZ",
+      "volume_unit": "lots_100_shares",
+      "amount_unit": "CNY",
+      "interval": "5m"
+    }
+  ],
   "gpt_selection_ledger": "experiment_history.json",
   "observation_returns_are_reference_changes_not_trade_returns": true,
   "automated_trading": false
