@@ -101,11 +101,13 @@
     "error": null
   },
   "repair_20261022": {
-    "offline_tests_passed": 153,
+    "offline_tests_passed": 155,
     "existing_gpt_1452_prompt": "SAVED_REOPEN_VERIFIED",
     "existing_gpt_0952_prompt": "SAVED_FULL_RELOAD_VERIFIED",
-    "github_connector_write": "HTTP_403_LAST_PROBE_NOT_RESOLVED",
+    "github_connector_write": "UNRESOLVED_HTTP403_OR_TOOL_SAFETY_BLOCK",
     "machine_ledger": "machine_observation_history.json",
+    "live_1450_proposals_locked": true,
+    "live_1455_failed_closed": true,
     "no_strategy_change": true
   },
   "machine_observation_summary": {
@@ -118,5 +120,5 @@
     "reliable_trade_count": 0
   },
   "latest_machine_observation_content_sha256": "12d31cb4bdff9a7006173b8120123612f8964031d955f7909d2cd797379837b0",
-  "repair_offline_tests_passed": 153
+  "repair_offline_tests_passed": 155
 }
