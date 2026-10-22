@@ -101,21 +101,22 @@
     "error": null
   },
   "repair_20261022": {
-    "offline_tests_passed": 152,
+    "offline_tests_passed": 153,
+    "existing_gpt_1452_prompt": "SAVED_REOPEN_VERIFIED",
+    "existing_gpt_0952_prompt": "SAVED_FULL_RELOAD_VERIFIED",
+    "github_connector_write": "HTTP_403_LAST_PROBE_NOT_RESOLVED",
     "machine_ledger": "machine_observation_history.json",
-    "gpt_connector_write_probe": "HTTP_403_RESOURCE_NOT_ACCESSIBLE_BY_INTEGRATION",
-    "gpt_task_20261020": "EXECUTED_BUT_OPENAI_SAFETY_CHECK_BLOCKED_WRITE",
-    "gpt_task_20261021": "EXECUTED_BUT_WRITE_BLOCKED_AND_1454_DEADLINE_MISSED",
     "no_strategy_change": true
   },
   "machine_observation_summary": {
-    "machine_proposal_count": 4,
+    "machine_proposal_count": 6,
+    "unobserved_proposal_count": 2,
     "complete_observation_count": 4,
     "missing_observation_count": 0,
     "retrospective_sample_count": 4,
     "modelled_fill_count": 0,
     "reliable_trade_count": 0
   },
-  "latest_machine_observation_content_sha256": "bbfc3a58070f0cb4dc813c115a3721cd8ced124f442f8247c2272e53e50c5219",
+  "latest_machine_observation_content_sha256": "12d31cb4bdff9a7006173b8120123612f8964031d955f7909d2cd797379837b0",
   "repair_offline_tests_passed": 153
 }

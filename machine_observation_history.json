@@ -1348,6 +1348,7 @@
   ],
   "summary": {
     "machine_proposal_count": 6,
+    "unobserved_proposal_count": 2,
     "complete_observation_count": 4,
     "missing_observation_count": 0,
     "retrospective_sample_count": 4,
