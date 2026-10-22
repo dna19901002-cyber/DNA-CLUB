@@ -1,10 +1,10 @@
 {
   "schema": "ashare-experiment-exit-v1",
   "strategy_version": "V1.2",
-  "trade_date": "20261021",
-  "selection_trade_date": "20261020",
-  "cutoff": "0955",
-  "retrieved_at_cn": "2026-10-21T09:55:05.349762+08:00",
+  "trade_date": "20261022",
+  "selection_trade_date": "20261021",
+  "cutoff": "0950",
+  "retrieved_at_cn": "2026-10-22T09:50:05.727441+08:00",
   "positions": [],
   "api_calls_used": 0,
   "error": null,
@@ -15,8 +15,8 @@
   "selection_audit": {
     "schema": "ashare-experiment-selection-audit-v1",
     "strategy_version": "V1.2",
-    "checked_at_cn": "2026-10-21T09:49:45.434237+08:00",
-    "trade_date": "20261020",
+    "checked_at_cn": "2026-10-22T09:49:45.428928+08:00",
+    "trade_date": "20261021",
     "groups": {
       "A": {
         "state": "INVALID",
@@ -37,7 +37,7 @@
   },
   "data_quality": {
     "state": "AWAITING_VALID_GPT_SELECTION",
-    "minute_cutoff": "0955",
+    "minute_cutoff": "0950",
     "later_prices_never_inferred": true
   }
 }
