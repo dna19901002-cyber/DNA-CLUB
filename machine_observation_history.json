@@ -1,0 +1,152 @@
+{
+  "schema": "ashare-machine-observation-ledger-v1",
+  "strategy_version": "V1.2",
+  "classification": "MACHINE_PROPOSAL_OBSERVATION",
+  "proposals": [
+    {
+      "schema": "ashare-machine-proposals-v1",
+      "strategy_version": "V1.2",
+      "trade_date": "20261020",
+      "classification": "MACHINE_PROPOSAL_OBSERVATION",
+      "proposals": [
+        {
+          "code": "002956",
+          "name": "西麦食品",
+          "reference_price": 19.01,
+          "rank": 1,
+          "score": 80,
+          "reference_time": "20261020 14:50",
+          "data_quality": {
+            "confidence": "MEDIUM",
+            "missing_fields": [
+              "hot_ths_normal_rank",
+              "hot_dfcf_biaos_rank",
+              "hot_xq_resou_rank",
+              "hot_tdx_resou_rank",
+              "historical_pattern_window_lt_20"
+            ],
+            "vwap_conflict": false,
+            "unit_validation": "PASS",
+            "source_latest_time": "20261020 1450"
+          },
+          "execution_constraints": {
+            "up_limit": 20.15,
+            "down_limit": 16.49
+          }
+        },
+        {
+          "code": "002896",
+          "name": "中大力德",
+          "reference_price": 56.22,
+          "rank": 2,
+          "score": 76,
+          "reference_time": "20261020 14:50",
+          "data_quality": {
+            "confidence": "MEDIUM",
+            "missing_fields": [
+              "hot_ths_normal_rank",
+              "hot_dfcf_biaos_rank",
+              "hot_xq_resou_rank",
+              "hot_tdx_resou_rank",
+              "historical_pattern_window_lt_20"
+            ],
+            "vwap_conflict": false,
+            "unit_validation": "PASS",
+            "source_latest_time": "20261020 1450"
+          },
+          "execution_constraints": {
+            "up_limit": 59.84,
+            "down_limit": 48.96
+          }
+        }
+      ],
+      "source_snapshot_sha256": "83968d70cc136ccc2d81066f226a979bee5911e412aabdbb1f744b18cc44f15c",
+      "snapshot_time": "2026-10-20T14:50:09.919191+08:00",
+      "recorded_at_cn": "2026-10-22T11:21:21.729070+08:00",
+      "run_context": "RETROSPECTIVE_REPLAY",
+      "market_regime": "WITHIN_MINUS_1PCT_MA5",
+      "actual_fill": false,
+      "gpt_confirmed": false,
+      "timing_note": "Ranking reconstructed verbatim from preserved ex-ante snapshot"
+    },
+    {
+      "schema": "ashare-machine-proposals-v1",
+      "strategy_version": "V1.2",
+      "trade_date": "20261021",
+      "classification": "MACHINE_PROPOSAL_OBSERVATION",
+      "proposals": [
+        {
+          "code": "002353",
+          "name": "杰瑞股份",
+          "reference_price": 90.73,
+          "rank": 1,
+          "score": 70,
+          "reference_time": "20261021 14:50",
+          "data_quality": {
+            "confidence": "MEDIUM",
+            "missing_fields": [
+              "hot_ths_normal_rank",
+              "hot_dfcf_biaos_rank",
+              "hot_tdx_resou_rank",
+              "historical_pattern_window_lt_20"
+            ],
+            "vwap_conflict": false,
+            "unit_validation": "PASS",
+            "source_latest_time": "20261021 1450"
+          },
+          "execution_constraints": {
+            "up_limit": 95.26,
+            "down_limit": 77.94
+          }
+        },
+        {
+          "code": "688322",
+          "name": "奥比中光",
+          "reference_price": 92.94,
+          "rank": 2,
+          "score": 66,
+          "reference_time": "20261021 14:50",
+          "data_quality": {
+            "confidence": "MEDIUM",
+            "missing_fields": [
+              "theme_names_kpl",
+              "hot_ths_normal_rank",
+              "hot_dfcf_biaos_rank",
+              "hot_xq_resou_rank",
+              "hot_tdx_resou_rank",
+              "historical_pattern_window_lt_20"
+            ],
+            "vwap_conflict": false,
+            "unit_validation": "PASS",
+            "source_latest_time": "20261021 1450"
+          },
+          "execution_constraints": {
+            "up_limit": 108.8,
+            "down_limit": 72.54
+          }
+        }
+      ],
+      "source_snapshot_sha256": "d40afc10dd6c32678651116c55be5440cf8f633541b7612f36220b191e191c9a",
+      "snapshot_time": "2026-10-21T14:50:10.610376+08:00",
+      "recorded_at_cn": "2026-10-22T11:21:21.736214+08:00",
+      "run_context": "RETROSPECTIVE_REPLAY",
+      "market_regime": "WITHIN_MINUS_1PCT_MA5",
+      "actual_fill": false,
+      "gpt_confirmed": false,
+      "timing_note": "Ranking reconstructed verbatim from preserved ex-ante snapshot"
+    }
+  ],
+  "attempts": [],
+  "summary": {
+    "machine_proposal_count": 4,
+    "complete_observation_count": 0,
+    "missing_observation_count": 0,
+    "retrospective_sample_count": 0,
+    "modelled_fill_count": 0,
+    "reliable_trade_count": 0
+  },
+  "observations": [],
+  "gpt_selection_ledger": "experiment_history.json",
+  "observation_returns_are_reference_changes_not_trade_returns": true,
+  "automated_trading": false
+}
