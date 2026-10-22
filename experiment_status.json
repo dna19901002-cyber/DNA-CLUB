@@ -46,8 +46,8 @@
   "selection_audit": {
     "schema": "ashare-experiment-selection-audit-v1",
     "strategy_version": "V1.2",
-    "checked_at_cn": "2026-10-22T11:33:47.541857+08:00",
-    "trade_date": "20261021",
+    "checked_at_cn": "2026-10-22T14:54:00.358545+08:00",
+    "trade_date": "20261022",
     "groups": {
       "A": {
         "state": "INVALID",
@@ -59,7 +59,7 @@
           "blob_sha": "6db66ab5acda386aba82fecf3c16d6925b7fe986",
           "content_sha256": "f2abde294894347334c70a8e89b0fb4f5e467d67f73258ff954eecc2c7adfe00",
           "branch": "main",
-          "read_at_cn": "2026-10-22T11:33:48.174684+08:00",
+          "read_at_cn": "2026-10-22T14:54:02.058861+08:00",
           "http_status": 200
         }
       },
@@ -73,7 +73,7 @@
           "blob_sha": "7a358ec9c2b0901c9b6bc93bfba66b527e180c55",
           "content_sha256": "50526450c0c9e20c2bde167eec4a81a23bba7c51b63ff010ce8b25b8bea4defe",
           "branch": "main",
-          "read_at_cn": "2026-10-22T11:33:48.740887+08:00",
+          "read_at_cn": "2026-10-22T14:54:02.616215+08:00",
           "http_status": 200
         }
       }
@@ -83,7 +83,7 @@
       {
         "code": "GPT_SELECTION_PERSISTENCE_FAILED",
         "severity": "ERROR",
-        "trade_date": "20261021",
+        "trade_date": "20261022",
         "reason": "EXPERIMENT_SELECTION_SCHEMA_OR_DATE_INVALID",
         "machine_proposals_preserved": true
       }
