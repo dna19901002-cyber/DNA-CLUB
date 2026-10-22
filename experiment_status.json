@@ -92,8 +92,8 @@
   },
   "last_verified_at_cn": "2026-10-20T06:37:13.439418+08:00",
   "offline_tests_passed": 135,
-  "latest_experiment_trade_date": "20261021",
-  "latest_experiment_1450_content_sha256": "d40afc10dd6c32678651116c55be5440cf8f633541b7612f36220b191e191c9a",
+  "latest_experiment_trade_date": "20261022",
+  "latest_experiment_1450_content_sha256": "1a4264161586e454ab32d8b5b33f33b1e9b19c82203a023d2eab66703f49b851",
   "last_entry": {
     "trade_date": "20261021",
     "confirmed_models": 0,

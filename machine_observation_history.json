@@ -134,6 +134,71 @@
       "actual_fill": false,
       "gpt_confirmed": false,
       "timing_note": "Ranking reconstructed verbatim from preserved ex-ante snapshot"
+    },
+    {
+      "schema": "ashare-machine-proposals-v1",
+      "strategy_version": "V1.2",
+      "trade_date": "20261022",
+      "classification": "MACHINE_PROPOSAL_OBSERVATION",
+      "proposals": [
+        {
+          "code": "688151",
+          "name": "华强科技",
+          "reference_price": 17.38,
+          "rank": 1,
+          "score": 75,
+          "reference_time": "20261022 14:50",
+          "data_quality": {
+            "confidence": "MEDIUM",
+            "missing_fields": [
+              "theme_names_kpl",
+              "hot_ths_normal_rank",
+              "hot_xq_resou_rank",
+              "hot_tdx_resou_rank",
+              "historical_pattern_window_lt_20"
+            ],
+            "vwap_conflict": false,
+            "unit_validation": "PASS",
+            "source_latest_time": "20261022 1450"
+          },
+          "execution_constraints": {
+            "up_limit": 20.16,
+            "down_limit": 13.44
+          }
+        },
+        {
+          "code": "002612",
+          "name": "朗姿股份",
+          "reference_price": 15.38,
+          "rank": 2,
+          "score": 73,
+          "reference_time": "20261022 14:50",
+          "data_quality": {
+            "confidence": "MEDIUM",
+            "missing_fields": [
+              "hot_ths_normal_rank",
+              "hot_xq_resou_rank",
+              "hot_tdx_resou_rank",
+              "historical_pattern_window_lt_20"
+            ],
+            "vwap_conflict": false,
+            "unit_validation": "PASS",
+            "source_latest_time": "20261022 1450"
+          },
+          "execution_constraints": {
+            "up_limit": 16.27,
+            "down_limit": 13.31
+          }
+        }
+      ],
+      "source_snapshot_sha256": "1a4264161586e454ab32d8b5b33f33b1e9b19c82203a023d2eab66703f49b851",
+      "snapshot_time": "2026-10-22T14:50:10.736208+08:00",
+      "recorded_at_cn": "2026-10-22T14:50:10.743320+08:00",
+      "run_context": "LIVE_EXPERIMENT",
+      "market_regime": "BELOW_MINUS_1PCT_MA5",
+      "actual_fill": false,
+      "gpt_confirmed": false,
+      "timing_note": "Locked with original 14:50 snapshot"
     }
   ],
   "attempts": [
@@ -1282,7 +1347,7 @@
     }
   ],
   "summary": {
-    "machine_proposal_count": 4,
+    "machine_proposal_count": 6,
     "complete_observation_count": 4,
     "missing_observation_count": 0,
     "retrospective_sample_count": 4,
