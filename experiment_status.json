@@ -46,7 +46,7 @@
   "selection_audit": {
     "schema": "ashare-experiment-selection-audit-v1",
     "strategy_version": "V1.2",
-    "checked_at_cn": "2026-10-22T14:55:05.363371+08:00",
+    "checked_at_cn": "2026-10-23T09:49:45.341423+08:00",
     "trade_date": "20261022",
     "groups": {
       "A": {
@@ -59,7 +59,7 @@
           "blob_sha": "6db66ab5acda386aba82fecf3c16d6925b7fe986",
           "content_sha256": "f2abde294894347334c70a8e89b0fb4f5e467d67f73258ff954eecc2c7adfe00",
           "branch": "main",
-          "read_at_cn": "2026-10-22T14:55:05.909889+08:00",
+          "read_at_cn": "2026-10-23T09:49:45.879514+08:00",
           "http_status": 200
         }
       },
@@ -73,7 +73,7 @@
           "blob_sha": "7a358ec9c2b0901c9b6bc93bfba66b527e180c55",
           "content_sha256": "50526450c0c9e20c2bde167eec4a81a23bba7c51b63ff010ce8b25b8bea4defe",
           "branch": "main",
-          "read_at_cn": "2026-10-22T14:55:06.599232+08:00",
+          "read_at_cn": "2026-10-23T09:49:46.439919+08:00",
           "http_status": 200
         }
       }
