@@ -1370,17 +1370,149 @@
       "gross_return": null,
       "estimated_net_return": null,
       "data_quality": "NO_GPT_SELECTION_OR_EXECUTABLE_ENTRY_EVIDENCE"
+    },
+    {
+      "trade_date": "20261023",
+      "strategy_group": "A",
+      "market_regime": "WITHIN_MINUS_1PCT_MA5",
+      "market_gate_details": {
+        "shanghai_ma5_distance": -0.005248987066922228,
+        "a_gate": {
+          "ma5": false,
+          "turnover": null,
+          "major_index_drop": true,
+          "advance_ratio": null
+        },
+        "b_gate": {
+          "ma5": true,
+          "turnover": null,
+          "major_index_drop": true,
+          "advance_ratio": null
+        },
+        "b_ma5_operator": "(price / ma5_live - 1) >= -0.01",
+        "major_index_risk": true,
+        "turnover_risk": null,
+        "breadth_risk": null,
+        "unknown_gates": [
+          "turnover",
+          "advance_ratio"
+        ]
+      },
+      "gate_decision": "NO_TRADE",
+      "candidate_codes": [],
+      "score": null,
+      "primary_code": null,
+      "reference_price": null,
+      "selection_time": null,
+      "observation_count": 0,
+      "entry_evidence": {
+        "state": "REFERENCE_ONLY"
+      },
+      "state": "NO_CONFIRMED_ENTRY",
+      "reliable": false,
+      "exit_evidence": null,
+      "gross_return": null,
+      "estimated_net_return": null,
+      "data_quality": "NO_GPT_SELECTION_OR_EXECUTABLE_ENTRY_EVIDENCE"
+    },
+    {
+      "trade_date": "20261023",
+      "strategy_group": "B",
+      "market_regime": "WITHIN_MINUS_1PCT_MA5",
+      "market_gate_details": {
+        "shanghai_ma5_distance": -0.005248987066922228,
+        "a_gate": {
+          "ma5": false,
+          "turnover": null,
+          "major_index_drop": true,
+          "advance_ratio": null
+        },
+        "b_gate": {
+          "ma5": true,
+          "turnover": null,
+          "major_index_drop": true,
+          "advance_ratio": null
+        },
+        "b_ma5_operator": "(price / ma5_live - 1) >= -0.01",
+        "major_index_risk": true,
+        "turnover_risk": null,
+        "breadth_risk": null,
+        "unknown_gates": [
+          "turnover",
+          "advance_ratio"
+        ]
+      },
+      "gate_decision": "DATA_INSUFFICIENT",
+      "candidate_codes": [],
+      "score": null,
+      "primary_code": null,
+      "reference_price": null,
+      "selection_time": null,
+      "observation_count": 0,
+      "entry_evidence": {
+        "state": "REFERENCE_ONLY"
+      },
+      "state": "NO_CONFIRMED_ENTRY",
+      "reliable": false,
+      "exit_evidence": null,
+      "gross_return": null,
+      "estimated_net_return": null,
+      "data_quality": "NO_GPT_SELECTION_OR_EXECUTABLE_ENTRY_EVIDENCE"
+    },
+    {
+      "trade_date": "20261023",
+      "strategy_group": "C",
+      "market_regime": "WITHIN_MINUS_1PCT_MA5",
+      "market_gate_details": {
+        "shanghai_ma5_distance": -0.005248987066922228,
+        "a_gate": {
+          "ma5": false,
+          "turnover": null,
+          "major_index_drop": true,
+          "advance_ratio": null
+        },
+        "b_gate": {
+          "ma5": true,
+          "turnover": null,
+          "major_index_drop": true,
+          "advance_ratio": null
+        },
+        "b_ma5_operator": "(price / ma5_live - 1) >= -0.01",
+        "major_index_risk": true,
+        "turnover_risk": null,
+        "breadth_risk": null,
+        "unknown_gates": [
+          "turnover",
+          "advance_ratio"
+        ]
+      },
+      "gate_decision": "DATA_INSUFFICIENT",
+      "candidate_codes": [],
+      "score": null,
+      "primary_code": null,
+      "reference_price": null,
+      "selection_time": null,
+      "observation_count": 0,
+      "entry_evidence": {
+        "state": "REFERENCE_ONLY"
+      },
+      "state": "NO_CONFIRMED_ENTRY",
+      "reliable": false,
+      "exit_evidence": null,
+      "gross_return": null,
+      "estimated_net_return": null,
+      "data_quality": "NO_GPT_SELECTION_OR_EXECUTABLE_ENTRY_EVIDENCE"
     }
   ],
   "comparison": {
     "A": {
-      "sample_days": 20,
+      "sample_days": 21,
       "allowed_trading_days": 3,
-      "allowed_day_ratio": 0.15,
+      "allowed_day_ratio": 0.14285714285714285,
       "modelled_entry_count": 0,
       "completed_reliable_modelled_count": 0,
       "observation_proposal_count": 0,
-      "unreliable_or_incomplete_count": 20,
+      "unreliable_or_incomplete_count": 21,
       "win_rate": null,
       "average_net_return": null,
       "payoff_ratio": null,
@@ -1393,13 +1525,13 @@
       "conclusion": "INSUFFICIENT_SAMPLE_NO_STRATEGY_SUPERIORITY_CLAIM"
     },
     "B": {
-      "sample_days": 3,
+      "sample_days": 4,
       "allowed_trading_days": 1,
-      "allowed_day_ratio": 0.3333333333333333,
+      "allowed_day_ratio": 0.25,
       "modelled_entry_count": 0,
       "completed_reliable_modelled_count": 0,
       "observation_proposal_count": 0,
-      "unreliable_or_incomplete_count": 3,
+      "unreliable_or_incomplete_count": 4,
       "win_rate": null,
       "average_net_return": null,
       "payoff_ratio": null,
@@ -1412,13 +1544,13 @@
       "conclusion": "INSUFFICIENT_SAMPLE_NO_STRATEGY_SUPERIORITY_CLAIM"
     },
     "C": {
-      "sample_days": 3,
+      "sample_days": 4,
       "allowed_trading_days": 0,
       "allowed_day_ratio": 0.0,
       "modelled_entry_count": 0,
       "completed_reliable_modelled_count": 0,
       "observation_proposal_count": 6,
-      "unreliable_or_incomplete_count": 3,
+      "unreliable_or_incomplete_count": 4,
       "win_rate": null,
       "average_net_return": null,
       "payoff_ratio": null,
@@ -1447,12 +1579,14 @@
   "automated_trading": false,
   "observation_progress": {
     "first_observed_trade_date": "20261020",
-    "last_observed_trade_date": "20261022",
-    "observed_sessions": 3,
-    "consecutive_usable_sessions": 3,
+    "last_observed_trade_date": "20261023",
+    "observed_sessions": 4,
+    "consecutive_usable_sessions": 0,
     "target_sessions": 20,
     "missing_sessions": [],
-    "degraded_sessions": [],
+    "degraded_sessions": [
+      "20261023"
+    ],
     "comparison_ready": false,
     "readiness_does_not_prove_strategy_superiority": true
   },
