@@ -3,8 +3,8 @@
   "strategy_version": "V1.2",
   "trade_date": "20261026",
   "selection_trade_date": "20261023",
-  "cutoff": "0950",
-  "retrieved_at_cn": "2026-10-26T09:50:05.721692+08:00",
+  "cutoff": "0955",
+  "retrieved_at_cn": "2026-10-26T09:55:05.347115+08:00",
   "positions": [],
   "api_calls_used": 0,
   "error": null,
@@ -67,7 +67,7 @@
   },
   "data_quality": {
     "state": "AWAITING_VALID_GPT_SELECTION",
-    "minute_cutoff": "0950",
+    "minute_cutoff": "0955",
     "later_prices_never_inferred": true
   }
 }

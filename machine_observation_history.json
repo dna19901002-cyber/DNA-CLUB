@@ -1632,6 +1632,23 @@
       "actual_fill": false,
       "reliable_trade_count": 0,
       "automated_trading": false
+    },
+    {
+      "schema": "ashare-machine-observation-v1",
+      "strategy_version": "V1.2",
+      "method_version": 2,
+      "classification": "MACHINE_PROPOSAL_OBSERVATION",
+      "trade_date": "20261023",
+      "observation_trade_date": "20261026",
+      "source_snapshot_sha256": "2787e75096c22be328c7e19c9b3372520db2944cf028ed83c43f0d372179b010",
+      "proposal_ledger_sha256": "b6384d104e51aea1119bb14e3303c5f71031e33f1129239bfd38f622c1d97597",
+      "raw_minute_sha256": null,
+      "retrieved_at_cn": "2026-10-26T09:55:05.362648+08:00",
+      "run_context": "LIVE_EXPERIMENT",
+      "observations": [],
+      "actual_fill": false,
+      "reliable_trade_count": 0,
+      "automated_trading": false
     }
   ],
   "summary": {
