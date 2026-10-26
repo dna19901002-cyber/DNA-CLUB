@@ -39,70 +39,66 @@
           }
         ]
       }
-    }
+    },
+    "submission_mode": "CONVERSATION_MANUAL_CHECKPOINT",
+    "automatic_github_write_required": false,
+    "manual_checkpoint_usage": "RESEARCH_AUDIT_ONLY",
+    "manual_validation_tool": "selection_workflow.py --trade-date YYYYMMDD --group A|BC --file USER_JSON_PATH"
   },
   "deployed_at_cn": "2026-10-19T22:20:05.191239+08:00",
   "first_planned_session": "20261020",
   "selection_audit": {
     "schema": "ashare-experiment-selection-audit-v1",
     "strategy_version": "V1.2",
-    "checked_at_cn": "2026-10-26T14:55:05.348903+08:00",
+    "checked_at_cn": "2026-10-26T15:25:38.500283+08:00",
     "trade_date": "20261026",
     "groups": {
       "A": {
-        "state": "INVALID",
-        "reason": "TRADE_DATE_INVALID",
-        "remote_trade_date": "20260930",
-        "written_by": "GPT",
-        "decision": "DATA_INSUFFICIENT",
+        "state": "MANUAL_CHECKPOINT_PENDING",
+        "reason": "INTENTIONAL_CONVERSATION_RECORD_MODE",
         "expected_snapshot_sha256": "5d9ff7b672b88c32bbd5e2f33d0bb3ebe8ab05c7d4865585006d895131f1d768",
-        "remote_source_snapshot_sha256": "c3bbbf81d8a65d6005dc206cdab1fc7e6f0c1370a9e683f3d0113822befc3365",
-        "source_sha256_state": "MISMATCH",
-        "selection_timing_state": "NO_CURRENT_DAY_GPT_RECORD",
-        "written_at_cn": "2026-10-03T18:34:05+08:00",
-        "github_read_receipt": {
-          "blob_sha": "6db66ab5acda386aba82fecf3c16d6925b7fe986",
-          "content_sha256": "f2abde294894347334c70a8e89b0fb4f5e467d67f73258ff954eecc2c7adfe00",
-          "branch": "main",
-          "read_at_cn": "2026-10-26T14:55:05.930194+08:00",
-          "http_status": 200
-        }
+        "execution_eligible": false,
+        "github_read_receipt": null,
+        "automatic_github_selection_required": false
       },
       "BC": {
-        "state": "INVALID",
-        "reason": "EXPERIMENT_SELECTION_SCHEMA_OR_DATE_INVALID",
-        "remote_trade_date": null,
-        "written_by": "SERVER_INITIALIZATION",
-        "decision": null,
+        "state": "MANUAL_CHECKPOINT_PENDING",
+        "reason": "INTENTIONAL_CONVERSATION_RECORD_MODE",
         "expected_snapshot_sha256": "4c6c9103064246fb14a7933f5fd2f1895f5e8de61540749028a185c68e1dddc9",
-        "remote_source_snapshot_sha256": null,
-        "source_sha256_state": "MISSING",
-        "selection_timing_state": "NO_CURRENT_DAY_GPT_RECORD",
-        "written_at_cn": "2026-10-19T22:20:39.226625+08:00",
-        "group_decisions": {
-          "B": "DATA_INSUFFICIENT",
-          "C": "DATA_INSUFFICIENT"
-        },
-        "github_read_receipt": {
-          "blob_sha": "7a358ec9c2b0901c9b6bc93bfba66b527e180c55",
-          "content_sha256": "50526450c0c9e20c2bde167eec4a81a23bba7c51b63ff010ce8b25b8bea4defe",
-          "branch": "main",
-          "read_at_cn": "2026-10-26T14:55:07.011675+08:00",
-          "http_status": 200
-        }
+        "execution_eligible": false,
+        "github_read_receipt": null,
+        "automatic_github_selection_required": false
       }
     },
     "automated_trading": false,
-    "alerts": [
-      {
-        "code": "GPT_SELECTION_PERSISTENCE_FAILED",
-        "severity": "ERROR",
+    "selection_workflow": {
+      "mode": "CONVERSATION_MANUAL_CHECKPOINT",
+      "effective_from_trade_date": "20261023",
+      "automatic_github_selection_required": false,
+      "manual_checkpoints_usage": "RESEARCH_AUDIT_ONLY"
+    },
+    "market_data_health": {
+      "A": {
+        "state": "USABLE",
         "trade_date": "20261026",
-        "reason": "EXPERIMENT_SELECTION_SCHEMA_OR_DATE_INVALID",
-        "machine_proposals_preserved": true
+        "run_context": "LIVE",
+        "snapshot_sha256": "5d9ff7b672b88c32bbd5e2f33d0bb3ebe8ab05c7d4865585006d895131f1d768",
+        "data_quality_state": "COMPLETE_FOR_FAILED_GATE",
+        "selection_state_used_as_market_health": false
+      },
+      "BC": {
+        "state": "USABLE",
+        "trade_date": "20261026",
+        "run_context": "LIVE_EXPERIMENT",
+        "snapshot_sha256": "4c6c9103064246fb14a7933f5fd2f1895f5e8de61540749028a185c68e1dddc9",
+        "data_quality_state": "USABLE_WITH_DECLARED_LIMITATIONS",
+        "selection_state_used_as_market_health": false
       }
-    ],
-    "state": "GPT_SELECTION_PERSISTENCE_FAILED"
+    },
+    "alerts": [],
+    "state": "MANUAL_CHECKPOINT_PENDING",
+    "machine_proposals_preserved": true,
+    "selection_failure_is_market_sync_failure": false
   },
   "last_verified_at_cn": "2026-10-20T06:37:13.439418+08:00",
   "offline_tests_passed": 135,
@@ -134,5 +130,11 @@
     "reliable_trade_count": 0
   },
   "latest_machine_observation_content_sha256": "aa940d60d5b75c548e972431c82d6dbca67f2ec29fcd34e9bbc0e6a3731576aa",
-  "repair_offline_tests_passed": 155
+  "repair_offline_tests_passed": 155,
+  "selection_workflow": {
+    "mode": "CONVERSATION_MANUAL_CHECKPOINT",
+    "effective_from_trade_date": "20261023",
+    "automatic_github_selection_required": false,
+    "manual_checkpoints_usage": "RESEARCH_AUDIT_ONLY"
+  }
 }
