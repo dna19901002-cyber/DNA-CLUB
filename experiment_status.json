@@ -46,8 +46,8 @@
   "selection_audit": {
     "schema": "ashare-experiment-selection-audit-v1",
     "strategy_version": "V1.2",
-    "checked_at_cn": "2026-10-26T09:49:45.359552+08:00",
-    "trade_date": "20261023",
+    "checked_at_cn": "2026-10-26T14:55:05.348903+08:00",
+    "trade_date": "20261026",
     "groups": {
       "A": {
         "state": "INVALID",
@@ -55,7 +55,7 @@
         "remote_trade_date": "20260930",
         "written_by": "GPT",
         "decision": "DATA_INSUFFICIENT",
-        "expected_snapshot_sha256": "a9c0d1c0f0df62ae773d0719798e308f9bdc615abfcbdf6ed200ca4b03ccc331",
+        "expected_snapshot_sha256": "5d9ff7b672b88c32bbd5e2f33d0bb3ebe8ab05c7d4865585006d895131f1d768",
         "remote_source_snapshot_sha256": "c3bbbf81d8a65d6005dc206cdab1fc7e6f0c1370a9e683f3d0113822befc3365",
         "source_sha256_state": "MISMATCH",
         "selection_timing_state": "NO_CURRENT_DAY_GPT_RECORD",
@@ -64,7 +64,7 @@
           "blob_sha": "6db66ab5acda386aba82fecf3c16d6925b7fe986",
           "content_sha256": "f2abde294894347334c70a8e89b0fb4f5e467d67f73258ff954eecc2c7adfe00",
           "branch": "main",
-          "read_at_cn": "2026-10-26T09:49:45.971580+08:00",
+          "read_at_cn": "2026-10-26T14:55:05.930194+08:00",
           "http_status": 200
         }
       },
@@ -74,7 +74,7 @@
         "remote_trade_date": null,
         "written_by": "SERVER_INITIALIZATION",
         "decision": null,
-        "expected_snapshot_sha256": "2787e75096c22be328c7e19c9b3372520db2944cf028ed83c43f0d372179b010",
+        "expected_snapshot_sha256": "4c6c9103064246fb14a7933f5fd2f1895f5e8de61540749028a185c68e1dddc9",
         "remote_source_snapshot_sha256": null,
         "source_sha256_state": "MISSING",
         "selection_timing_state": "NO_CURRENT_DAY_GPT_RECORD",
@@ -87,21 +87,29 @@
           "blob_sha": "7a358ec9c2b0901c9b6bc93bfba66b527e180c55",
           "content_sha256": "50526450c0c9e20c2bde167eec4a81a23bba7c51b63ff010ce8b25b8bea4defe",
           "branch": "main",
-          "read_at_cn": "2026-10-26T09:49:46.527583+08:00",
+          "read_at_cn": "2026-10-26T14:55:07.011675+08:00",
           "http_status": 200
         }
       }
     },
     "automated_trading": false,
-    "alerts": [],
-    "state": "SELECTION_AUDITED"
+    "alerts": [
+      {
+        "code": "GPT_SELECTION_PERSISTENCE_FAILED",
+        "severity": "ERROR",
+        "trade_date": "20261026",
+        "reason": "EXPERIMENT_SELECTION_SCHEMA_OR_DATE_INVALID",
+        "machine_proposals_preserved": true
+      }
+    ],
+    "state": "GPT_SELECTION_PERSISTENCE_FAILED"
   },
   "last_verified_at_cn": "2026-10-20T06:37:13.439418+08:00",
   "offline_tests_passed": 135,
-  "latest_experiment_trade_date": "20261023",
-  "latest_experiment_1450_content_sha256": "2787e75096c22be328c7e19c9b3372520db2944cf028ed83c43f0d372179b010",
+  "latest_experiment_trade_date": "20261026",
+  "latest_experiment_1450_content_sha256": "4c6c9103064246fb14a7933f5fd2f1895f5e8de61540749028a185c68e1dddc9",
   "last_entry": {
-    "trade_date": "20261023",
+    "trade_date": "20261026",
     "confirmed_models": 0,
     "api_calls_used": 0,
     "error": null
@@ -117,14 +125,14 @@
     "no_strategy_change": true
   },
   "machine_observation_summary": {
-    "machine_proposal_count": 6,
-    "unobserved_proposal_count": 0,
+    "machine_proposal_count": 8,
+    "unobserved_proposal_count": 2,
     "complete_observation_count": 6,
     "missing_observation_count": 0,
     "retrospective_sample_count": 4,
     "modelled_fill_count": 0,
     "reliable_trade_count": 0
   },
-  "latest_machine_observation_content_sha256": "25edcecdfd81fe2327d493da1dc7b1accf4a4331859d4a92939a7a3b975ad54d",
+  "latest_machine_observation_content_sha256": "aa940d60d5b75c548e972431c82d6dbca67f2ec29fcd34e9bbc0e6a3731576aa",
   "repair_offline_tests_passed": 155
 }

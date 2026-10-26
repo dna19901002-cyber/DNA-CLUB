@@ -214,6 +214,74 @@
       "actual_fill": false,
       "gpt_confirmed": false,
       "timing_note": "Locked with original 14:50 snapshot"
+    },
+    {
+      "schema": "ashare-machine-proposals-v1",
+      "strategy_version": "V1.2",
+      "trade_date": "20261026",
+      "classification": "MACHINE_PROPOSAL_OBSERVATION",
+      "proposals": [
+        {
+          "code": "301395",
+          "name": "仁信新材",
+          "reference_price": 12.96,
+          "rank": 1,
+          "score": 69,
+          "reference_time": "20261026 14:50",
+          "data_quality": {
+            "confidence": "MEDIUM",
+            "missing_fields": [
+              "theme_names_kpl",
+              "hot_ths_normal_rank",
+              "hot_dfcf_biaos_rank",
+              "hot_xq_resou_rank",
+              "hot_tdx_resou_rank",
+              "historical_pattern_window_lt_20"
+            ],
+            "vwap_conflict": false,
+            "unit_validation": "PASS",
+            "source_latest_time": "20261026 1450"
+          },
+          "execution_constraints": {
+            "up_limit": 15.12,
+            "down_limit": 10.08
+          }
+        },
+        {
+          "code": "301479",
+          "name": "弘景光电",
+          "reference_price": 46.08,
+          "rank": 2,
+          "score": 69,
+          "reference_time": "20261026 14:50",
+          "data_quality": {
+            "confidence": "MEDIUM",
+            "missing_fields": [
+              "theme_names_kpl",
+              "hot_ths_normal_rank",
+              "hot_dfcf_biaos_rank",
+              "hot_xq_resou_rank",
+              "hot_tdx_resou_rank",
+              "historical_pattern_window_lt_20"
+            ],
+            "vwap_conflict": false,
+            "unit_validation": "PASS",
+            "source_latest_time": "20261026 1450"
+          },
+          "execution_constraints": {
+            "up_limit": 53.12,
+            "down_limit": 35.42
+          }
+        }
+      ],
+      "source_snapshot_sha256": "4c6c9103064246fb14a7933f5fd2f1895f5e8de61540749028a185c68e1dddc9",
+      "snapshot_time": "2026-10-26T14:50:10.563207+08:00",
+      "recorded_at_cn": "2026-10-26T14:50:10.573102+08:00",
+      "run_context": "LIVE_EXPERIMENT",
+      "market_regime": "WITHIN_MINUS_1PCT_MA5",
+      "actual_fill": false,
+      "gpt_confirmed": false,
+      "timing_note": "Locked with original 14:50 snapshot"
     }
   ],
   "attempts": [
@@ -1652,8 +1720,8 @@
     }
   ],
   "summary": {
-    "machine_proposal_count": 6,
-    "unobserved_proposal_count": 0,
+    "machine_proposal_count": 8,
+    "unobserved_proposal_count": 2,
     "complete_observation_count": 6,
     "missing_observation_count": 0,
     "retrospective_sample_count": 4,
