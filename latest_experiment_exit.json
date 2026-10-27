@@ -1,69 +1,79 @@
 {
   "schema": "ashare-experiment-exit-v1",
   "strategy_version": "V1.2",
-  "trade_date": "20261026",
-  "selection_trade_date": "20261023",
+  "trade_date": "20261027",
+  "selection_trade_date": "20261026",
   "cutoff": "0955",
-  "retrieved_at_cn": "2026-10-26T09:55:05.347115+08:00",
+  "retrieved_at_cn": "2026-10-27T09:55:05.355116+08:00",
   "positions": [],
-  "api_calls_used": 0,
+  "api_calls_used": 1,
   "error": null,
   "automated_trading": false,
   "run_context": "LIVE_EXPERIMENT",
-  "request_summary": [],
+  "request_summary": [
+    {
+      "interface": "minute",
+      "started": "2026-10-27T09:55:05+08:00",
+      "finished": "2026-10-27T09:55:05+08:00",
+      "http_status": 200,
+      "rows": 12,
+      "error": null,
+      "duration_seconds": 0.165
+    }
+  ],
   "morning_budget_reservation": "A_AFTERNOON_MAX_9_CALLS_RESERVED",
   "selection_audit": {
     "schema": "ashare-experiment-selection-audit-v1",
     "strategy_version": "V1.2",
-    "checked_at_cn": "2026-10-26T09:49:45.359552+08:00",
-    "trade_date": "20261023",
+    "checked_at_cn": "2026-10-27T09:49:45.346946+08:00",
+    "trade_date": "20261026",
     "groups": {
       "A": {
-        "state": "INVALID",
-        "reason": "TRADE_DATE_INVALID",
-        "remote_trade_date": "20260930",
-        "written_by": "GPT",
-        "decision": "DATA_INSUFFICIENT",
-        "expected_snapshot_sha256": "a9c0d1c0f0df62ae773d0719798e308f9bdc615abfcbdf6ed200ca4b03ccc331",
-        "remote_source_snapshot_sha256": "c3bbbf81d8a65d6005dc206cdab1fc7e6f0c1370a9e683f3d0113822befc3365",
-        "source_sha256_state": "MISMATCH",
-        "selection_timing_state": "NO_CURRENT_DAY_GPT_RECORD",
-        "written_at_cn": "2026-10-03T18:34:05+08:00",
-        "github_read_receipt": {
-          "blob_sha": "6db66ab5acda386aba82fecf3c16d6925b7fe986",
-          "content_sha256": "f2abde294894347334c70a8e89b0fb4f5e467d67f73258ff954eecc2c7adfe00",
-          "branch": "main",
-          "read_at_cn": "2026-10-26T09:49:45.971580+08:00",
-          "http_status": 200
-        }
+        "state": "MANUAL_CHECKPOINT_PENDING",
+        "reason": "INTENTIONAL_CONVERSATION_RECORD_MODE",
+        "expected_snapshot_sha256": "5d9ff7b672b88c32bbd5e2f33d0bb3ebe8ab05c7d4865585006d895131f1d768",
+        "execution_eligible": false,
+        "github_read_receipt": null,
+        "automatic_github_selection_required": false
       },
       "BC": {
-        "state": "INVALID",
-        "reason": "EXPERIMENT_SELECTION_SCHEMA_OR_DATE_INVALID",
-        "remote_trade_date": null,
-        "written_by": "SERVER_INITIALIZATION",
-        "decision": null,
-        "expected_snapshot_sha256": "2787e75096c22be328c7e19c9b3372520db2944cf028ed83c43f0d372179b010",
-        "remote_source_snapshot_sha256": null,
-        "source_sha256_state": "MISSING",
-        "selection_timing_state": "NO_CURRENT_DAY_GPT_RECORD",
-        "written_at_cn": "2026-10-19T22:20:39.226625+08:00",
-        "group_decisions": {
-          "B": "DATA_INSUFFICIENT",
-          "C": "DATA_INSUFFICIENT"
-        },
-        "github_read_receipt": {
-          "blob_sha": "7a358ec9c2b0901c9b6bc93bfba66b527e180c55",
-          "content_sha256": "50526450c0c9e20c2bde167eec4a81a23bba7c51b63ff010ce8b25b8bea4defe",
-          "branch": "main",
-          "read_at_cn": "2026-10-26T09:49:46.527583+08:00",
-          "http_status": 200
-        }
+        "state": "MANUAL_CHECKPOINT_PENDING",
+        "reason": "INTENTIONAL_CONVERSATION_RECORD_MODE",
+        "expected_snapshot_sha256": "4c6c9103064246fb14a7933f5fd2f1895f5e8de61540749028a185c68e1dddc9",
+        "execution_eligible": false,
+        "github_read_receipt": null,
+        "automatic_github_selection_required": false
       }
     },
     "automated_trading": false,
+    "selection_workflow": {
+      "mode": "CONVERSATION_MANUAL_CHECKPOINT",
+      "effective_from_trade_date": "20261023",
+      "automatic_github_selection_required": false,
+      "manual_checkpoints_usage": "RESEARCH_AUDIT_ONLY"
+    },
+    "market_data_health": {
+      "A": {
+        "state": "USABLE",
+        "trade_date": "20261026",
+        "run_context": "LIVE",
+        "snapshot_sha256": "5d9ff7b672b88c32bbd5e2f33d0bb3ebe8ab05c7d4865585006d895131f1d768",
+        "data_quality_state": "COMPLETE_FOR_FAILED_GATE",
+        "selection_state_used_as_market_health": false
+      },
+      "BC": {
+        "state": "USABLE",
+        "trade_date": "20261026",
+        "run_context": "LIVE_EXPERIMENT",
+        "snapshot_sha256": "4c6c9103064246fb14a7933f5fd2f1895f5e8de61540749028a185c68e1dddc9",
+        "data_quality_state": "USABLE_WITH_DECLARED_LIMITATIONS",
+        "selection_state_used_as_market_health": false
+      }
+    },
     "alerts": [],
-    "state": "SELECTION_AUDITED"
+    "state": "MANUAL_CHECKPOINT_PENDING",
+    "machine_proposals_preserved": true,
+    "selection_failure_is_market_sync_failure": false
   },
   "data_quality": {
     "state": "AWAITING_VALID_GPT_SELECTION",
