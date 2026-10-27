@@ -282,6 +282,73 @@
       "actual_fill": false,
       "gpt_confirmed": false,
       "timing_note": "Locked with original 14:50 snapshot"
+    },
+    {
+      "schema": "ashare-machine-proposals-v1",
+      "strategy_version": "V1.2",
+      "trade_date": "20261027",
+      "classification": "MACHINE_PROPOSAL_OBSERVATION",
+      "proposals": [
+        {
+          "code": "600814",
+          "name": "杭州解百",
+          "reference_price": 7.24,
+          "rank": 1,
+          "score": 72,
+          "reference_time": "20261027 14:50",
+          "data_quality": {
+            "confidence": "MEDIUM",
+            "missing_fields": [
+              "theme_names_kpl",
+              "hot_ths_normal_rank",
+              "hot_dfcf_biaos_rank",
+              "hot_xq_resou_rank",
+              "hot_tdx_resou_rank",
+              "historical_pattern_window_lt_20"
+            ],
+            "vwap_conflict": false,
+            "unit_validation": "PASS",
+            "source_latest_time": "20261027 1450"
+          },
+          "execution_constraints": {
+            "up_limit": 7.76,
+            "down_limit": 6.35
+          }
+        },
+        {
+          "code": "688601",
+          "name": "力芯微",
+          "reference_price": 45.87,
+          "rank": 2,
+          "score": 68,
+          "reference_time": "20261027 14:50",
+          "data_quality": {
+            "confidence": "MEDIUM",
+            "missing_fields": [
+              "theme_names_kpl",
+              "hot_ths_normal_rank",
+              "hot_xq_resou_rank",
+              "hot_tdx_resou_rank",
+              "historical_pattern_window_lt_20"
+            ],
+            "vwap_conflict": false,
+            "unit_validation": "PASS",
+            "source_latest_time": "20261027 1450"
+          },
+          "execution_constraints": {
+            "up_limit": 53.68,
+            "down_limit": 35.78
+          }
+        }
+      ],
+      "source_snapshot_sha256": "c301483fbbab3940bc4f48eb709f7f635ac0366a45ab8afa7e8b39c0e24ec9d2",
+      "snapshot_time": "2026-10-27T14:50:19.480753+08:00",
+      "recorded_at_cn": "2026-10-27T14:50:19.487181+08:00",
+      "run_context": "LIVE_EXPERIMENT",
+      "market_regime": "WITHIN_MINUS_1PCT_MA5",
+      "actual_fill": false,
+      "gpt_confirmed": false,
+      "timing_note": "Locked with original 14:50 snapshot"
     }
   ],
   "attempts": [
@@ -1996,8 +2063,8 @@
     }
   ],
   "summary": {
-    "machine_proposal_count": 8,
-    "unobserved_proposal_count": 0,
+    "machine_proposal_count": 10,
+    "unobserved_proposal_count": 2,
     "complete_observation_count": 8,
     "missing_observation_count": 0,
     "retrospective_sample_count": 4,
