@@ -1,0 +1,79 @@
+{
+  "receipt_version": "astock_ai_knowledge_publication_receipt_v1",
+  "publication_status": "PUBLISHED_TO_ISOLATED_GITHUB_BRANCH",
+  "material_type": "READ_ONLY_MACHINE_KNOWLEDGE_INDEX_CANDIDATE",
+  "repo": "dna19901002-cyber/DNA-CLUB",
+  "branch": "codex/ai-knowledge-index-20261028",
+  "base_source_commit": "3a16bf1241cde17a819eff80f18be2b8245f518a",
+  "index_files_commit_before_receipt": "51d3f77688ddefea85a0a7529a37c257894e2450",
+  "remote_path": "ai-ops/knowledge-index/",
+  "index_files": [
+    {
+      "path": "ai-ops/knowledge-index/AUDIT_SUMMARY.md",
+      "verified_git_blob_sha": "c045a754127eda56adf7a09627fc9bdc3dd62fef",
+      "match_local_candidate": true
+    },
+    {
+      "path": "ai-ops/knowledge-index/README.md",
+      "verified_git_blob_sha": "12d94a376ef5bcda007b3816d7c9fd42aa70d958",
+      "match_local_candidate": true
+    },
+    {
+      "path": "ai-ops/knowledge-index/components.json",
+      "verified_git_blob_sha": "d238a5428482722bb6b3ac02de0c6f26791741e0",
+      "match_local_candidate": true
+    },
+    {
+      "path": "ai-ops/knowledge-index/dependencies.jsonl",
+      "verified_git_blob_sha": "037e8d92b2b41bd287adb15e4a12cdb9c920ccfc",
+      "match_local_candidate": true
+    },
+    {
+      "path": "ai-ops/knowledge-index/evidence.jsonl",
+      "verified_git_blob_sha": "38538fbcdd55da07ac042f62ef26134136cae5e8",
+      "match_local_candidate": true
+    },
+    {
+      "path": "ai-ops/knowledge-index/interfaces.json",
+      "verified_git_blob_sha": "38f802d038666df99379cb5d1371ca036f9ab88e",
+      "match_local_candidate": true
+    },
+    {
+      "path": "ai-ops/knowledge-index/manifest.json",
+      "verified_git_blob_sha": "7dd9330c5afdd34f1f243afdd0bd9f265f5f5841",
+      "match_local_candidate": true
+    },
+    {
+      "path": "ai-ops/knowledge-index/systems.json",
+      "verified_git_blob_sha": "ba36160325663ea6431a64fb4a8bf4ea86e01d61",
+      "match_local_candidate": true
+    },
+    {
+      "path": "ai-ops/knowledge-index/tasks.jsonl",
+      "verified_git_blob_sha": "a0e0a29c4cba5810468a7b7eaed46c36fd5603ce",
+      "match_local_candidate": true
+    },
+    {
+      "path": "ai-ops/knowledge-index/terms.json",
+      "verified_git_blob_sha": "9d7c0a92a2de6b3baf9faba9e51ead7d2f2c7cdb",
+      "match_local_candidate": true
+    },
+    {
+      "path": "ai-ops/knowledge-index/validation_report.json",
+      "verified_git_blob_sha": "775905abc28b56170a26ef93ab24ae8c28f917a0",
+      "match_local_candidate": true
+    }
+  ],
+  "verification": {
+    "file_count": 11,
+    "remote_readback_blob_matches": 11,
+    "all_pass": true,
+    "compare_against": "original reviewed draft byte contents",
+    "source_code_bytes_verified": false,
+    "production_runtime_verified": false
+  },
+  "audit_note": "The original manifest, README and validation_report represent the pre-publication draft snapshot and therefore contain github_write_performed=false and DRAFT_LOCAL. Preserve original bytes; this separate receipt certifies only the subsequently performed isolated-branch publication, not trading permissions, source validation or production acceptance.",
+  "branch_scope": "Only ai-ops/knowledge-index/ added. No main merge, no official Champion/Project Sources changes, no live data, server, monitor, brokerage or scheduled-task modifications.",
+  "access_security": "Public sanitized routing metadata only; no credentials, broker private records or full private strategies.",
+  "independent_scope": "Pilot ai-ops/ files are on a different branch, not merged into this branch."
+}
