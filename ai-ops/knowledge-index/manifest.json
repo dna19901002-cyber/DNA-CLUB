@@ -1,0 +1,178 @@
+{
+  "index_version": "astock_ai_knowledge_index_draft_v1",
+  "generated_at_cn": "2026-10-28T19:27:21+08:00",
+  "target_repository": "dna19901002-cyber/DNA-CLUB",
+  "visibility": "public",
+  "source_branch": "codex/main-codex-architecture-handoff-20261028",
+  "source_commit": "3a16bf1241cde17a819eff80f18be2b8245f518a",
+  "reported_local_worktree_commit": "0e345374a190d9bd3fb57419381284f87fc8ecc8",
+  "reported_local_commit_scope": "unrelated local repository, working_copy_may_differ_from_commit",
+  "index_commit": null,
+  "index_status": "DRAFT_LOCAL",
+  "github_write_performed": false,
+  "source_docs": [
+    {
+      "doc_id": "DOC_01",
+      "path": "ai-ops/engineering/00_system_map_and_boundaries.md",
+      "blob_sha": "378b7e203bbcf260d6702c64b5eef7be0c0624c8",
+      "content_sha256": null,
+      "role": "system_map",
+      "verification_level": "VERIFIED_SOURCE_GITHUB_FILE",
+      "source_commit": "3a16bf1241cde17a819eff80f18be2b8245f518a",
+      "source_branch": "codex/main-codex-architecture-handoff-20261028",
+      "url": "https://github.com/dna19901002-cyber/DNA-CLUB/blob/3a16bf1241cde17a819eff80f18be2b8245f518a/ai-ops/engineering/00_system_map_and_boundaries.md",
+      "note": "GitHub blob SHA and content fetched through connector; SHA256 original bytes not independently computed."
+    },
+    {
+      "doc_id": "DOC_02",
+      "path": "ai-ops/engineering/01_objective_exporter_architecture.md",
+      "blob_sha": "5b316109eb56c3e3447b684fe9d891201903cb05",
+      "content_sha256": null,
+      "role": "exporter",
+      "verification_level": "VERIFIED_SOURCE_GITHUB_FILE",
+      "source_commit": "3a16bf1241cde17a819eff80f18be2b8245f518a",
+      "source_branch": "codex/main-codex-architecture-handoff-20261028",
+      "url": "https://github.com/dna19901002-cyber/DNA-CLUB/blob/3a16bf1241cde17a819eff80f18be2b8245f518a/ai-ops/engineering/01_objective_exporter_architecture.md",
+      "note": "GitHub blob SHA and content fetched through connector; SHA256 original bytes not independently computed."
+    },
+    {
+      "doc_id": "DOC_03",
+      "path": "ai-ops/engineering/02_monitor_architecture_and_acceptance.md",
+      "blob_sha": "c22415aa37679a5ec3893d1c259182b188cfc094",
+      "content_sha256": null,
+      "role": "monitor",
+      "verification_level": "VERIFIED_SOURCE_GITHUB_FILE",
+      "source_commit": "3a16bf1241cde17a819eff80f18be2b8245f518a",
+      "source_branch": "codex/main-codex-architecture-handoff-20261028",
+      "url": "https://github.com/dna19901002-cyber/DNA-CLUB/blob/3a16bf1241cde17a819eff80f18be2b8245f518a/ai-ops/engineering/02_monitor_architecture_and_acceptance.md",
+      "note": "GitHub blob SHA and content fetched through connector; SHA256 original bytes not independently computed."
+    },
+    {
+      "doc_id": "DOC_04",
+      "path": "ai-ops/engineering/03_overnight_pipeline_architecture.md",
+      "blob_sha": "ac3165dbc61a4ed3218e639fcce52f52fcb7a570",
+      "content_sha256": null,
+      "role": "overnight",
+      "verification_level": "VERIFIED_SOURCE_GITHUB_FILE",
+      "source_commit": "3a16bf1241cde17a819eff80f18be2b8245f518a",
+      "source_branch": "codex/main-codex-architecture-handoff-20261028",
+      "url": "https://github.com/dna19901002-cyber/DNA-CLUB/blob/3a16bf1241cde17a819eff80f18be2b8245f518a/ai-ops/engineering/03_overnight_pipeline_architecture.md",
+      "note": "GitHub blob SHA and content fetched through connector; SHA256 original bytes not independently computed."
+    },
+    {
+      "doc_id": "DOC_05",
+      "path": "ai-ops/engineering/04_gpt_project_contract_and_checkpoint_bridge.md",
+      "blob_sha": "f8e0533fcbd9b22b143c1f38ff6e0670fbea2c6b",
+      "content_sha256": null,
+      "role": "gpt_bridge",
+      "verification_level": "VERIFIED_SOURCE_GITHUB_FILE",
+      "source_commit": "3a16bf1241cde17a819eff80f18be2b8245f518a",
+      "source_branch": "codex/main-codex-architecture-handoff-20261028",
+      "url": "https://github.com/dna19901002-cyber/DNA-CLUB/blob/3a16bf1241cde17a819eff80f18be2b8245f518a/ai-ops/engineering/04_gpt_project_contract_and_checkpoint_bridge.md",
+      "note": "GitHub blob SHA and content fetched through connector; SHA256 original bytes not independently computed."
+    },
+    {
+      "doc_id": "DOC_06",
+      "path": "ai-ops/engineering/05_change_log_validation_register.md",
+      "blob_sha": "df41769d38a72aeb53e8879aa65053a3cd444bfc",
+      "content_sha256": null,
+      "role": "verification_register",
+      "verification_level": "VERIFIED_SOURCE_GITHUB_FILE",
+      "source_commit": "3a16bf1241cde17a819eff80f18be2b8245f518a",
+      "source_branch": "codex/main-codex-architecture-handoff-20261028",
+      "url": "https://github.com/dna19901002-cyber/DNA-CLUB/blob/3a16bf1241cde17a819eff80f18be2b8245f518a/ai-ops/engineering/05_change_log_validation_register.md",
+      "note": "GitHub blob SHA and content fetched through connector; SHA256 original bytes not independently computed."
+    },
+    {
+      "doc_id": "DOC_07",
+      "path": "ai-ops/engineering/06_maintenance_handoff_and_safety.md",
+      "blob_sha": "fd466240180306be35cd63feffb0405a4aec2711",
+      "content_sha256": null,
+      "role": "security",
+      "verification_level": "VERIFIED_SOURCE_GITHUB_FILE",
+      "source_commit": "3a16bf1241cde17a819eff80f18be2b8245f518a",
+      "source_branch": "codex/main-codex-architecture-handoff-20261028",
+      "url": "https://github.com/dna19901002-cyber/DNA-CLUB/blob/3a16bf1241cde17a819eff80f18be2b8245f518a/ai-ops/engineering/06_maintenance_handoff_and_safety.md",
+      "note": "GitHub blob SHA and content fetched through connector; SHA256 original bytes not independently computed."
+    },
+    {
+      "doc_id": "DOC_08",
+      "path": "ai-ops/engineering/README.md",
+      "blob_sha": "2f8c0ef0dd917fc9d998a488193f6463ba316f3b",
+      "content_sha256": null,
+      "role": "readme",
+      "verification_level": "VERIFIED_SOURCE_GITHUB_FILE",
+      "source_commit": "3a16bf1241cde17a819eff80f18be2b8245f518a",
+      "source_branch": "codex/main-codex-architecture-handoff-20261028",
+      "url": "https://github.com/dna19901002-cyber/DNA-CLUB/blob/3a16bf1241cde17a819eff80f18be2b8245f518a/ai-ops/engineering/README.md",
+      "note": "GitHub blob SHA and content fetched through connector; SHA256 original bytes not independently computed."
+    },
+    {
+      "doc_id": "DOC_09",
+      "path": "ai-ops/engineering/architecture_evidence_index.json",
+      "blob_sha": "79fe861d7509d0fec325785328f238c6e488876c",
+      "content_sha256": null,
+      "role": "source_code_hash_index",
+      "verification_level": "VERIFIED_SOURCE_GITHUB_FILE",
+      "source_commit": "3a16bf1241cde17a819eff80f18be2b8245f518a",
+      "source_branch": "codex/main-codex-architecture-handoff-20261028",
+      "url": "https://github.com/dna19901002-cyber/DNA-CLUB/blob/3a16bf1241cde17a819eff80f18be2b8245f518a/ai-ops/engineering/architecture_evidence_index.json",
+      "note": "GitHub blob SHA and content fetched through connector; SHA256 original bytes not independently computed."
+    },
+    {
+      "doc_id": "DOC_10",
+      "path": "ai-ops/engineering/public_snapshot_evidence.json",
+      "blob_sha": "3df1ee3b827613527fde6aa7f7e0d30a0c28f050",
+      "content_sha256": null,
+      "role": "historical_snapshot_index",
+      "verification_level": "VERIFIED_SOURCE_GITHUB_FILE",
+      "source_commit": "3a16bf1241cde17a819eff80f18be2b8245f518a",
+      "source_branch": "codex/main-codex-architecture-handoff-20261028",
+      "url": "https://github.com/dna19901002-cyber/DNA-CLUB/blob/3a16bf1241cde17a819eff80f18be2b8245f518a/ai-ops/engineering/public_snapshot_evidence.json",
+      "note": "GitHub blob SHA and content fetched through connector; SHA256 original bytes not independently computed."
+    }
+  ],
+  "source_metadata": {
+    "public_snapshot_pinned_commit": "b8d2ed00131a40b1277430c457d7f4861bb374f7",
+    "public_snapshot_as_of_cn": "2026-10-28 19:03:36 +08:00",
+    "source_code_hash_entries_reported": 40,
+    "source_code_bytes_retrieved": 0
+  },
+  "private_gpt_project_role_access": "NOT_IN_PUBLIC_REPO; MUST_READ_GPT_PROJECT_SOURCES",
+  "auxiliary_context": {
+    "ai_ops_pilot_branch": "codex/baby-codex-002-20261028",
+    "pilot_files_at_handoff_commit": "NOT_FOUND_IN_PINNED_COMMIT",
+    "cross_branch_merge_status": "NOT_MERGED"
+  },
+  "security_scan": {
+    "scope": "generated_machine_index_only",
+    "status": "STATIC_CANDIDATE_SCAN_PASS",
+    "source_docs_review": "read_via_GitHub_connector",
+    "cannot_verify_local_code_or_tokens": true
+  },
+  "conflicts": [
+    {
+      "id": "C_LOCAL_VS_GITHUB_COMMIT",
+      "severity": "provenance",
+      "description": "Engineering README local source_commit differs from published 3a16bf1; represent both, not overwrite.",
+      "resolution": "separate IDs"
+    },
+    {
+      "id": "C_PILOT_VS_ENGINEERING_BRANCH",
+      "severity": "index_navigation",
+      "description": "Pilot ai-ops/AGENTS.md, README.md, STATUS_20261028.md not found in engineering pinned commit; other branch exists.",
+      "resolution": "cross-branch only, no merge without approval"
+    },
+    {
+      "id": "C_RUNTIME_GO_UNKNOWN",
+      "severity": "production",
+      "description": "Engineering documents report offline/limited API success but formal Monitor/full runtime and Task22 remain NO_GO.",
+      "resolution": "read actual production acceptance receipts before upgrade"
+    }
+  ],
+  "allowed_use": "READ_ONLY_KNOWLEDGE_ROUTING",
+  "not_an_authoritative_contract": true,
+  "not_an_executable_monitor_command": true,
+  "proposed_remote_path": "ai-ops/knowledge-index/",
+  "write_approval_required": true
+}
