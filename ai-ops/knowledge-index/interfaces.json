@@ -1,0 +1,148 @@
+{
+  "index_version": "astock_ai_knowledge_index_draft_v1",
+  "items": [
+    {
+      "interface_id": "IF_EXP_01",
+      "from_id": "客观来源",
+      "to_id": "astock_exporter",
+      "artifact": "market_news_bars",
+      "handoff": "PROGRAM_COLLECTS",
+      "time_semantics": "received_at != source_bar_end",
+      "risk_boundary": "no_proven_current_vendor_SLA",
+      "source_document": "ai-ops/engineering/01_objective_exporter_architecture.md",
+      "verification_level": "VERIFIED_SOURCE_OR_REPORTED_WORKFLOW"
+    },
+    {
+      "interface_id": "IF_EXP_02",
+      "from_id": "券商人工证据",
+      "to_id": "astock_exporter",
+      "artifact": "screenshot_or_txt",
+      "handoff": "HUMAN_INPUT",
+      "time_semantics": "capture_time != OCR_time != broker_server_time",
+      "risk_boundary": "broker_facts_require_separate_verification",
+      "source_document": "ai-ops/engineering/01_objective_exporter_architecture.md",
+      "verification_level": "VERIFIED_SOURCE_OR_REPORTED_WORKFLOW"
+    },
+    {
+      "interface_id": "IF_EXP_03",
+      "from_id": "astock_exporter",
+      "to_id": "astock_gpt_preset",
+      "artifact": "paired_json_pdf",
+      "handoff": "USER_MANUAL_UPLOAD",
+      "time_semantics": "bundle_id + PDF_SHA + export_as_of",
+      "risk_boundary": "pair_verified_not_account_verified",
+      "source_document": "ai-ops/engineering/00_system_map_and_boundaries.md",
+      "verification_level": "VERIFIED_SOURCE_OR_REPORTED_WORKFLOW"
+    },
+    {
+      "interface_id": "IF_GPT_01",
+      "from_id": "astock_gpt_preset",
+      "to_id": "astock_monitor",
+      "artifact": "a_stock_monitor_v1",
+      "handoff": "HUMAN_REVIEW_AND_MANUAL_IMPORT",
+      "time_semantics": "generated_at/source_analysis_as_of/valid_until",
+      "risk_boundary": "no_direct_GPT_to_monitor_API",
+      "source_document": "ai-ops/engineering/02_monitor_architecture_and_acceptance.md",
+      "verification_level": "VERIFIED_SOURCE_OR_REPORTED_WORKFLOW"
+    },
+    {
+      "interface_id": "IF_MON_01",
+      "from_id": "astock_monitor",
+      "to_id": "WeCom",
+      "artifact": "notification",
+      "handoff": "PROGRAM_SENDS",
+      "time_semantics": "quote_time + fire_time",
+      "risk_boundary": "API_ACCEPTED_not_user_received",
+      "source_document": "ai-ops/engineering/02_monitor_architecture_and_acceptance.md",
+      "verification_level": "VERIFIED_SOURCE_OR_REPORTED_WORKFLOW"
+    },
+    {
+      "interface_id": "IF_MON_02",
+      "from_id": "WeCom",
+      "to_id": "用户券商人工操作",
+      "artifact": "human_review",
+      "handoff": "HUMAN_ONLY",
+      "time_semantics": "new_quote + minutes + broker_orders + position",
+      "risk_boundary": "never_auto_trade",
+      "source_document": "ai-ops/engineering/00_system_map_and_boundaries.md",
+      "verification_level": "VERIFIED_SOURCE_OR_REPORTED_WORKFLOW"
+    },
+    {
+      "interface_id": "IF_GPT_02",
+      "from_id": "astock_gpt_preset",
+      "to_id": "GPT_PROJECT_SOURCES",
+      "artifact": "three_rolling_states",
+      "handoff": "HUMAN_CHECKPOINT_UPLOAD",
+      "time_semantics": "state_cycle_id/source_bundle_id/cycle_as_of/sync_status/peer_refs",
+      "risk_boundary": "all_three_required; not_public",
+      "source_document": "ai-ops/engineering/04_gpt_project_contract_and_checkpoint_bridge.md",
+      "verification_level": "VERIFIED_SOURCE_OR_REPORTED_WORKFLOW"
+    },
+    {
+      "interface_id": "IF_OVN_01",
+      "from_id": "猫站及既有供应器",
+      "to_id": "overnight_research",
+      "artifact": "afternoon_morning_market_archives",
+      "handoff": "CLOUD_AUTOMATED_REPORTED",
+      "time_semantics": "source_snapshot_time != publish_time",
+      "risk_boundary": "real_server_timer_unverified",
+      "source_document": "ai-ops/engineering/03_overnight_pipeline_architecture.md",
+      "verification_level": "VERIFIED_SOURCE_OR_REPORTED_WORKFLOW"
+    },
+    {
+      "interface_id": "IF_OVN_02",
+      "from_id": "overnight_research",
+      "to_id": "GitHub_main_public_snapshots",
+      "artifact": "latest_1430/latest_1450/latest_exit_0950",
+      "handoff": "SERVER_PUBLISHES_REPORTED",
+      "time_semantics": "14:30/14:50/09:50 checkpoints",
+      "risk_boundary": "current_server_runtime_unknown",
+      "source_document": "ai-ops/engineering/03_overnight_pipeline_architecture.md",
+      "verification_level": "VERIFIED_SOURCE_OR_REPORTED_WORKFLOW"
+    },
+    {
+      "interface_id": "IF_OVN_03",
+      "from_id": "GitHub_main_public_snapshots",
+      "to_id": "GPT_overnight_research",
+      "artifact": "objective_json",
+      "handoff": "GPT_READ_ONLY",
+      "time_semantics": "file_trade_date + first_read_at",
+      "risk_boundary": "publication_not_equal_readable_at",
+      "source_document": "ai-ops/engineering/03_overnight_pipeline_architecture.md",
+      "verification_level": "VERIFIED_SOURCE_OR_REPORTED_WORKFLOW"
+    },
+    {
+      "interface_id": "IF_OVN_04",
+      "from_id": "GPT_overnight_research",
+      "to_id": "selection_checkpoint",
+      "artifact": "manual_selection",
+      "handoff": "HUMAN_CHECKPOINT",
+      "time_semantics": "decision_as_of + frozen_at",
+      "risk_boundary": "machine_proposal_not_GPT_selected",
+      "source_document": "ai-ops/engineering/03_overnight_pipeline_architecture.md",
+      "verification_level": "VERIFIED_SOURCE_OR_REPORTED_WORKFLOW"
+    },
+    {
+      "interface_id": "IF_OVN_05",
+      "from_id": "selection_checkpoint",
+      "to_id": "overnight_research",
+      "artifact": "selection_contract",
+      "handoff": "CONTROLLED_SYNC_REPORTED",
+      "time_semantics": "selection_trade_date + SHA",
+      "risk_boundary": "manual_upload; no_unapproved_auto_GPT_write",
+      "source_document": "ai-ops/engineering/03_overnight_pipeline_architecture.md",
+      "verification_level": "VERIFIED_SOURCE_OR_REPORTED_WORKFLOW"
+    },
+    {
+      "interface_id": "IF_R2_01",
+      "from_id": "existing_overnight_archive",
+      "to_id": "R2_Lite",
+      "artifact": "historical_14_30_14_50_next_morning",
+      "handoff": "READ_ONLY_RESEARCH",
+      "time_semantics": "historical replay != prospective freeze",
+      "risk_boundary": "no_extra_vendor_calls",
+      "source_document": "ai-ops/engineering/03_overnight_pipeline_architecture.md",
+      "verification_level": "VERIFIED_SOURCE_OR_REPORTED_WORKFLOW"
+    }
+  ]
+}
