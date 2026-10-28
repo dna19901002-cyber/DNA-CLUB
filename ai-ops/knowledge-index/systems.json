@@ -1,0 +1,69 @@
+{
+  "index_version": "astock_ai_knowledge_index_draft_v1",
+  "items": [
+    {
+      "system_id": "astock_exporter",
+      "label": "本地客观数据包导出器",
+      "owner": "主Codex（工程）",
+      "purpose": "采集整理客观行情、5m/30m、新闻与人工券商证据，发布成对JSON/PDF",
+      "excludes": [
+        "不做GPT Forecast/Decision",
+        "不自动券商下单"
+      ],
+      "source_docs": [
+        "ai-ops/engineering/00_system_map_and_boundaries.md",
+        "ai-ops/engineering/01_objective_exporter_architecture.md"
+      ],
+      "execution_authority": "NONE",
+      "runtime_verification": "UNKNOWN"
+    },
+    {
+      "system_id": "astock_gpt_preset",
+      "label": "GPT跑预设/V10会话",
+      "owner": "用户与主GPT",
+      "purpose": "接收用户手动上传的配对包与真实账户证据，按私有唯一正式契约做Forecast、Decision、学习、人工检查点",
+      "excludes": [
+        "不是Codex本地自动分析程序",
+        "不从GitHub公开摘要替代八份私有Sources"
+      ],
+      "source_docs": [
+        "ai-ops/engineering/00_system_map_and_boundaries.md",
+        "ai-ops/engineering/04_gpt_project_contract_and_checkpoint_bridge.md"
+      ],
+      "execution_authority": "HUMAN_BROKER_CONFIRMATION_REQUIRED",
+      "runtime_verification": "GPT_PROJECT_SOURCES_RECHECK_REQUIRED"
+    },
+    {
+      "system_id": "astock_monitor",
+      "label": "本地Monitor V9企业微信提醒",
+      "owner": "主Codex维护工程，用户批准提醒",
+      "purpose": "人工导入合法命令后进行行情条件提醒，仅通知",
+      "excludes": [
+        "不自动买卖",
+        "仅触价不等于严格S3结构信号",
+        "通知done不等于券商成交"
+      ],
+      "source_docs": [
+        "ai-ops/engineering/02_monitor_architecture_and_acceptance.md"
+      ],
+      "execution_authority": "NOTIFY_ONLY",
+      "runtime_verification": "FULL_SESSION_NO_GO_AS_OF_SOURCE"
+    },
+    {
+      "system_id": "overnight_research",
+      "label": "独立尾盘隔夜A/B/C+R2研究",
+      "owner": "主Codex云工程、GPT研究、用户",
+      "purpose": "腾讯云采集/归档公开GitHub客观快照；GPT尾盘/次晨研究；人工检查点；R2另行前瞻验证",
+      "excludes": [
+        "不共享A股实盘账本",
+        "机器C提案不等于GPT成交",
+        "不自动GitHub写回GPT选择"
+      ],
+      "source_docs": [
+        "ai-ops/engineering/03_overnight_pipeline_architecture.md"
+      ],
+      "execution_authority": "SIMULATION_RESEARCH_ONLY",
+      "runtime_verification": "CURRENT_CLOUD_RUNTIME_UNKNOWN"
+    }
+  ]
+}
