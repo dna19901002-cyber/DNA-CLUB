@@ -1,0 +1,118 @@
+{
+  "checked_at_cn": "2026-10-28 19:03:36 +08:00",
+  "time_zone": "Asia/Shanghai",
+  "snapshots": [
+    {
+      "path": "status.json",
+      "commit": "b8d2ed00131a40b1277430c457d7f4861bb374f7",
+      "blob_sha": "4c4bef4e50271ad1fcbd6ffbca90ac807e94271d",
+      "summary": {
+        "schema": null,
+        "trade_date": null,
+        "latest_trade_date": "20261028",
+        "mode": null,
+        "run_context": null,
+        "generated_at_cn": null,
+        "retrieved_at_cn": null,
+        "decision": null
+      },
+      "sha256": "77bf0bc234053c570785ba459f3515d801b55b4b51978f846e80f528ffceb0b8"
+    },
+    {
+      "path": "latest_1430.json",
+      "commit": "b8d2ed00131a40b1277430c457d7f4861bb374f7",
+      "blob_sha": "7e43faf7e657ab5b841ff18b1d487260e8eddb57",
+      "summary": {
+        "schema": null,
+        "trade_date": "20261028",
+        "latest_trade_date": null,
+        "mode": "1430",
+        "run_context": "LIVE",
+        "generated_at_cn": "2026-10-28T14:30:14+08:00",
+        "retrieved_at_cn": "2026-10-28T14:30:05+08:00",
+        "decision": "DATA_INSUFFICIENT"
+      },
+      "sha256": "9bbb82208ffb744449d9f2607485e6f79e9e9101c33fcf21f3fb82068126ffdd"
+    },
+    {
+      "path": "latest_1450.json",
+      "commit": "b8d2ed00131a40b1277430c457d7f4861bb374f7",
+      "blob_sha": "420cbffd86c9085087b20503106e3cf4bbad1f31",
+      "summary": {
+        "schema": null,
+        "trade_date": "20261028",
+        "latest_trade_date": null,
+        "mode": "1450",
+        "run_context": "LIVE",
+        "generated_at_cn": "2026-10-28T14:50:09+08:00",
+        "retrieved_at_cn": "2026-10-28T14:50:05+08:00",
+        "decision": "DATA_INSUFFICIENT"
+      },
+      "sha256": "2cf2e83e470cc27cb0a52c604d05662b024459b8554947cd96e78ec867a797c4"
+    },
+    {
+      "path": "latest_exit_0950.json",
+      "commit": "b8d2ed00131a40b1277430c457d7f4861bb374f7",
+      "blob_sha": "2a10d900cd37bee27fa49d5598db38eeb363b403",
+      "summary": {
+        "schema": "ashare-exit-review-v1",
+        "trade_date": "20261028",
+        "latest_trade_date": null,
+        "mode": "0950_EXIT_REVIEW",
+        "run_context": "LIVE",
+        "generated_at_cn": "2026-10-28T09:50:05+08:00",
+        "retrieved_at_cn": "2026-10-28T09:50:05+08:00",
+        "decision": "NO_REVIEW_REQUIRED"
+      },
+      "sha256": "312497fd3465ecde94db9ad433e39b84a921af56fe872f33b0294069846f449f"
+    },
+    {
+      "path": "experiment_status.json",
+      "commit": "b8d2ed00131a40b1277430c457d7f4861bb374f7",
+      "blob_sha": "a318af5b71322ce6a3585d82827bd8b7391bdf00",
+      "summary": {
+        "schema": "ashare-experiment-status-v1",
+        "trade_date": null,
+        "latest_trade_date": null,
+        "mode": null,
+        "run_context": null,
+        "generated_at_cn": null,
+        "retrieved_at_cn": null,
+        "decision": null
+      },
+      "sha256": "b9acc76d6550b1b2e88faa369b6efa7051974b70b7e8dce756b1201f3c5da4cf"
+    },
+    {
+      "path": "latest_experiment_1450.json",
+      "commit": "b8d2ed00131a40b1277430c457d7f4861bb374f7",
+      "blob_sha": "12052718a93020ce4bcd6c528556478aafdb68d6",
+      "summary": {
+        "schema": "ashare-experiment-snapshot-v1",
+        "trade_date": "20261028",
+        "latest_trade_date": null,
+        "mode": null,
+        "run_context": "LIVE_EXPERIMENT",
+        "generated_at_cn": "2026-10-28T14:50:10.688036+08:00",
+        "retrieved_at_cn": "2026-10-28T14:50:10.406126+08:00",
+        "decision": null
+      },
+      "sha256": "051fa2eab85c8762b1e68938cdecfb0f760572894dab6e19752572e130847ef9"
+    },
+    {
+      "path": "latest_experiment_exit.json",
+      "commit": "b8d2ed00131a40b1277430c457d7f4861bb374f7",
+      "blob_sha": "f5f99869e3f978facc3bc7ade140ef1e01478d25",
+      "summary": {
+        "schema": "ashare-experiment-exit-v1",
+        "trade_date": "20261028",
+        "latest_trade_date": null,
+        "mode": null,
+        "run_context": "LIVE_EXPERIMENT",
+        "generated_at_cn": null,
+        "retrieved_at_cn": "2026-10-28T09:55:05.359196+08:00",
+        "decision": null
+      },
+      "sha256": "e2a229602978939d7a87267b3088ce4329cba81f500da5bb73f6549f1363df96"
+    }
+  ]
+}
