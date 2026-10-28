@@ -1,61 +1,39 @@
 {
   "schema": "ashare-experiment-snapshot-v1",
   "strategy_version": "V1.2",
-  "trade_date": "20261027",
+  "trade_date": "20261028",
   "run_context": "LIVE_EXPERIMENT",
-  "retrieved_at_cn": "2026-10-27T14:50:06.713393+08:00",
-  "generated_at_cn": "2026-10-27T14:50:19.480753+08:00",
-  "market_regime": "WITHIN_MINUS_1PCT_MA5",
+  "retrieved_at_cn": "2026-10-28T14:50:10.406126+08:00",
+  "generated_at_cn": "2026-10-28T14:50:10.688036+08:00",
+  "market_regime": "ABOVE_MA5",
   "market_gate_details": {
-    "shanghai_ma5_distance": -0.0059652831416131535,
+    "shanghai_ma5_distance": 0.0010209882309581975,
     "a_gate": {
-      "ma5": false,
+      "ma5": true,
       "turnover": null,
-      "major_index_drop": false,
+      "major_index_drop": true,
       "advance_ratio": null
     },
     "b_gate": {
       "ma5": true,
-      "turnover": true,
-      "major_index_drop": false,
-      "advance_ratio": false
+      "turnover": null,
+      "major_index_drop": true,
+      "advance_ratio": null
     },
     "b_ma5_operator": "(price / ma5_live - 1) >= -0.01",
-    "major_index_risk": false,
+    "major_index_risk": true,
     "turnover_risk": null,
     "breadth_risk": null,
     "unknown_gates": [
       "turnover",
       "advance_ratio"
-    ],
-    "market": {
-      "universe": 5656,
-      "valid_trading_stocks": 5568,
-      "advance": 655,
-      "decline": 4860,
-      "flat": 53,
-      "advance_ratio": 0.11763649425287356,
-      "total_amount_yuan": 1373832806900.0,
-      "excluded_counts": {
-        "no_trade": 7,
-        "delisting": 2,
-        "non_a_share": 79
-      }
-    },
-    "turnover": {
-      "actual": 1373832806900.0,
-      "threshold": 700000000000
-    },
-    "advance_ratio": {
-      "actual": 0.11763649425287356,
-      "threshold": 0.35
-    }
+    ]
   },
   "groups": {
     "B": {
       "strategy_group": "B",
-      "trade_date": "20261027",
-      "decision": "NO_TRADE",
+      "trade_date": "20261028",
+      "decision": "DATA_INSUFFICIENT",
       "candidate_codes": [],
       "candidates": [],
       "score": null,
@@ -68,168 +46,19 @@
       "estimated_net_return": null,
       "market_gate": {
         "ma5": true,
-        "turnover": true,
-        "major_index_drop": false,
-        "advance_ratio": false
+        "turnover": null,
+        "major_index_drop": true,
+        "advance_ratio": null
       },
       "selection_authority": "GPT",
-      "reason": "B_MARKET_GATE_FAILED"
+      "reason": "SCREENING_UNIT_VALIDATION_NOT_COMPLETED"
     },
     "C": {
       "strategy_group": "C",
-      "trade_date": "20261027",
-      "decision": "MACHINE_PROPOSAL_OBSERVATION",
-      "candidate_codes": [
-        "600814",
-        "688601"
-      ],
-      "candidates": [
-        {
-          "symbol": "600814",
-          "code": "600814",
-          "name": "杭州解百",
-          "price": 7.24,
-          "pct_chg": 2.7,
-          "amount": 131645300.0,
-          "volume_ratio": 2.17,
-          "turnover_rate": 7.39,
-          "vwap": 7.213,
-          "vwap_local": 7.213155,
-          "above_vwap": true,
-          "momentum_30m": 0.005563,
-          "tail_position_30m": 0.875,
-          "tail_high_30m": 7.24,
-          "tail_low_30m": 7.16,
-          "tail_vol_share": 0.151567,
-          "tail_new_lows": false,
-          "heavy_volume_selling": false,
-          "weakened_after_1430": false,
-          "theme": null,
-          "hot_ths": null,
-          "hot_dfcf": null,
-          "hot_xq": null,
-          "hot_tdx": null,
-          "score_tail": 25,
-          "score_volume_price": 20,
-          "score_market_theme": 0,
-          "score_pattern": 7,
-          "score_risk": 20,
-          "historical_pattern": {
-            "available_sessions": 4,
-            "window_required": 20,
-            "window_target": 60,
-            "coverage_start": "20260918",
-            "coverage_end": "20260923",
-            "return_5d": null,
-            "return_10d": null,
-            "return_20d": null,
-            "positive_days_20": null,
-            "avg_volume_5d": null,
-            "avg_volume_20d": null,
-            "data_sufficient": false,
-            "score_policy": "ORIGINAL_V1_2_NEUTRAL_7_NO_DEFINED_HISTORICAL_FORMULA"
-          },
-          "pattern_data_insufficient": true,
-          "risk_flags": [],
-          "data_quality": {
-            "confidence": "MEDIUM",
-            "missing_fields": [
-              "theme_names_kpl",
-              "hot_ths_normal_rank",
-              "hot_dfcf_biaos_rank",
-              "hot_xq_resou_rank",
-              "hot_tdx_resou_rank",
-              "historical_pattern_window_lt_20"
-            ],
-            "vwap_conflict": false,
-            "unit_validation": "PASS",
-            "source_latest_time": "20261027 1450"
-          },
-          "score_total": 72,
-          "execution_constraints": {
-            "up_limit": 7.76,
-            "down_limit": 6.35
-          },
-          "reference_price": 7.24,
-          "reference_time": "20261027 14:50",
-          "entry_evidence": {
-            "state": "REFERENCE_ONLY",
-            "actual_fill": false
-          }
-        },
-        {
-          "symbol": "688601",
-          "code": "688601",
-          "name": "力芯微",
-          "price": 45.87,
-          "pct_chg": 2.55,
-          "amount": 217007900.0,
-          "volume_ratio": 1.81,
-          "turnover_rate": 5.59,
-          "vwap": 46.323,
-          "vwap_local": 46.322601,
-          "above_vwap": false,
-          "momentum_30m": 0.021376,
-          "tail_position_30m": 0.779412,
-          "tail_high_30m": 46.17,
-          "tail_low_30m": 44.81,
-          "tail_vol_share": 0.226969,
-          "tail_new_lows": false,
-          "heavy_volume_selling": false,
-          "weakened_after_1430": false,
-          "theme": null,
-          "hot_ths": null,
-          "hot_dfcf": 62,
-          "hot_xq": null,
-          "hot_tdx": null,
-          "score_tail": 16,
-          "score_volume_price": 20,
-          "score_market_theme": 5,
-          "score_pattern": 7,
-          "score_risk": 20,
-          "historical_pattern": {
-            "available_sessions": 4,
-            "window_required": 20,
-            "window_target": 60,
-            "coverage_start": "20260918",
-            "coverage_end": "20260923",
-            "return_5d": null,
-            "return_10d": null,
-            "return_20d": null,
-            "positive_days_20": null,
-            "avg_volume_5d": null,
-            "avg_volume_20d": null,
-            "data_sufficient": false,
-            "score_policy": "ORIGINAL_V1_2_NEUTRAL_7_NO_DEFINED_HISTORICAL_FORMULA"
-          },
-          "pattern_data_insufficient": true,
-          "risk_flags": [],
-          "data_quality": {
-            "confidence": "MEDIUM",
-            "missing_fields": [
-              "theme_names_kpl",
-              "hot_ths_normal_rank",
-              "hot_xq_resou_rank",
-              "hot_tdx_resou_rank",
-              "historical_pattern_window_lt_20"
-            ],
-            "vwap_conflict": false,
-            "unit_validation": "PASS",
-            "source_latest_time": "20261027 1450"
-          },
-          "score_total": 68,
-          "execution_constraints": {
-            "up_limit": 53.68,
-            "down_limit": 35.78
-          },
-          "reference_price": 45.87,
-          "reference_time": "20261027 14:50",
-          "entry_evidence": {
-            "state": "REFERENCE_ONLY",
-            "actual_fill": false
-          }
-        }
-      ],
+      "trade_date": "20261028",
+      "decision": "DATA_INSUFFICIENT",
+      "candidate_codes": [],
+      "candidates": [],
       "score": null,
       "primary_code": null,
       "reference_price": null,
@@ -242,19 +71,21 @@
         "ma5_veto_used": false
       },
       "selection_authority": "GPT",
-      "reason": "RANKED_OBSERVATION_PROPOSALS_AWAIT_GPT"
+      "reason": "SCREENING_UNIT_VALIDATION_NOT_COMPLETED"
     }
   },
   "automated_trading": false,
-  "source_a_1450_content_sha256": "1824dfea7de84671af3b1d960a11a28a1ea0e98a6e6bfa4e0cacc6c90d63ab0e",
-  "api_calls_used": 2,
+  "source_a_1450_content_sha256": "2cf2e83e470cc27cb0a52c604d05662b024459b8554947cd96e78ec867a797c4",
+  "api_calls_used": 0,
   "data_quality": {
-    "state": "USABLE_WITH_DECLARED_LIMITATIONS",
-    "issues": [],
-    "screening_source": "SHARED_B_C_FRESH_REQUEST_AFTER_A",
+    "state": "DEGRADED",
+    "issues": [
+      "SCREENING_UNIT_VALIDATION_NOT_COMPLETED"
+    ],
+    "screening_source": "EXACT_A_1450_SAVED_ROWS",
     "full_market_coverage": {
       "schema": "ashare-code-coverage-v1",
-      "trade_date": "20261027",
+      "trade_date": "20261028",
       "basis": "EXACT_LISTED_A_CODE_SET_ORIGINAL_B_SHARE_EXCLUSIONS",
       "stockbasic_rows": 5656,
       "stockbasic_unique_codes": 5656,
@@ -275,14 +106,12 @@
       "wrong_trade_date_codes": [],
       "delisting_basic_codes": [],
       "delisting_quote_codes": [
-        "002731",
-        "301139"
+        "002731"
       ],
       "zero_turnover_quote_codes": [
         "002717",
         "002827",
         "301468",
-        "600621",
         "601326",
         "605258",
         "688496"
@@ -294,60 +123,6 @@
       "source_timestamp_available": false,
       "minute_completeness": "NOT_CHECKED_BY_COVERAGE"
     },
-    "unit_validation": {
-      "provider": "MeoZ",
-      "validation_date": "20261027",
-      "schema_signature": "e062261fe7bdf4feeebe7a09b4636e09292353869d2d39cf43dfeacd45d4159b",
-      "validation_started_at": "2026-10-27T14:50:10+08:00",
-      "validated_at": "2026-10-27T14:50:10+08:00",
-      "amount": "yuan",
-      "volume": "lots_100_shares",
-      "amount_unit": "yuan",
-      "volume_unit": "lots_100_shares",
-      "turnover_rate_unit": "percent",
-      "volume_ratio_unit": "multiple",
-      "unit_basis": "MeoZ field contract; no scale inference or conversion of percent/multiple",
-      "result": "PASS",
-      "cache_used": false,
-      "checked_rows": 5568,
-      "reference_symbols": [],
-      "evidence": []
-    },
-    "missing_field_exclusions": [],
-    "execution_exclusions": [],
-    "filter_stats": {
-      "universe": 5577,
-      "valid_trading_stocks": 5568,
-      "after_st": 5373,
-      "after_pct": 151,
-      "after_volume_ratio": 81,
-      "after_turnover": 24,
-      "after_amount": 20,
-      "after_listing_age": 20,
-      "final_coarse": 20,
-      "missing_field_exclusions": 0
-    },
-    "screening_source_timestamp_available": false,
-    "candidate_errors": [],
-    "request_summary": [
-      {
-        "interface": "screening",
-        "started": "2026-10-27T14:50:07+08:00",
-        "finished": "2026-10-27T14:50:10+08:00",
-        "http_status": 200,
-        "rows": 5656,
-        "error": null,
-        "duration_seconds": 3.037
-      },
-      {
-        "interface": "minute",
-        "started": "2026-10-27T14:50:10+08:00",
-        "finished": "2026-10-27T14:50:18+08:00",
-        "http_status": 200,
-        "rows": 940,
-        "error": null,
-        "duration_seconds": 8.046
-      }
-    ]
+    "request_summary": []
   }
 }
