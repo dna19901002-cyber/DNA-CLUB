@@ -1,0 +1,12 @@
+{"dependency_id":"DEP_01","from_id":"astock_exporter","to_id":"astock_gpt_preset","relation":"produces","evidence_id":"E_C_01","note":"manual upload, not API"}
+{"dependency_id":"DEP_02","from_id":"astock_gpt_preset","to_id":"astock_monitor","relation":"human_approval_required","evidence_id":"E_C_04","note":"reviewed valid command manually imported"}
+{"dependency_id":"DEP_03","from_id":"astock_monitor","to_id":"user_broker","relation":"must_not_modify","evidence_id":"E_C_05","note":"notification only; user is trader"}
+{"dependency_id":"DEP_04","from_id":"overnight_research","to_id":"GitHub_main_public_snapshots","relation":"produces","evidence_id":"E_C_07","note":"cloud objective files"}
+{"dependency_id":"DEP_05","from_id":"TASK_R2_LITE","to_id":"overnight_research","relation":"shares_archive_with","evidence_id":"E_C_09","note":"retrospective only, do not count forward episodes"}
+{"dependency_id":"DEP_06","from_id":"TASK_OVERNIGHT_20261028","to_id":"TASK_R2_LITE","relation":"must_not_modify","evidence_id":"E_C_08","note":"no concurrent production changes"}
+{"dependency_id":"DEP_07","from_id":"TASK_P3_C","to_id":"TASK_ORDERFLOW14","relation":"shares_research_governance_with","evidence_id":"E_C_11","note":"different H0 hypotheses, dedupe episodes"}
+{"dependency_id":"DEP_08","from_id":"TASK_GPT_STATE","to_id":"GPT_PROJECT_SOURCES","relation":"human_approval_required","evidence_id":"E_C_12","note":"8 role sources, 3 sync files"}
+{"dependency_id":"DEP_09","from_id":"TASK_AI_INDEX","to_id":"TASK_ENG_HANDOFF","relation":"depends_on","evidence_id":"E_C_14","note":"pinned handoff source"}
+{"dependency_id":"DEP_10","from_id":"TASK_AI_INDEX","to_id":"GitHub_main","relation":"must_not_modify","evidence_id":"E_C_16","note":"draft only, no production updates"}
+{"dependency_id":"DEP_11","from_id":"astock_monitor","to_id":"astock_gpt_preset","relation":"must_not_modify","evidence_id":"E_C_05","note":"monitor must not invent strategy or prices"}
+{"dependency_id":"DEP_12","from_id":"overnight_research","to_id":"astock_gpt_preset","relation":"must_not_modify","evidence_id":"E_C_07","note":"never mix simulated account and real broker"}
