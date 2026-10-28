@@ -1,0 +1,63 @@
+{
+  "status": "MATCH",
+  "files": [
+    {
+      "path": "stock_v9_5_ui_condition_order_profile.py",
+      "expected_sha256": "c720ca6caa335b221885b05bd9301736a23655d6f6210f66d4f4f185eefcf945",
+      "current_sha256": "c720ca6caa335b221885b05bd9301736a23655d6f6210f66d4f4f185eefcf945",
+      "match": true
+    },
+    {
+      "path": "pretrade_feature_builder.py",
+      "expected_sha256": "fea9aff9df21eee14ab96d0a8b3e0b86fc6816818763e0335a69cb11dc6d70bb",
+      "current_sha256": "fea9aff9df21eee14ab96d0a8b3e0b86fc6816818763e0335a69cb11dc6d70bb",
+      "match": true
+    },
+    {
+      "path": "minute_cache_evidence.py",
+      "expected_sha256": "c3773a9b973eabdb4ba2c1d4546b88b9a124ab3d2ff41166c7c163e70149f589",
+      "current_sha256": "c3773a9b973eabdb4ba2c1d4546b88b9a124ab3d2ff41166c7c163e70149f589",
+      "match": true
+    },
+    {
+      "path": "research/theme_continuation_v0_5/patch_candidate/pretrade_feature_builder.py",
+      "expected_sha256": "80dd6c6677a77d89e229ca75421d4d17145a6d4d3d54f6a8c445838d4b630a31",
+      "current_sha256": "80dd6c6677a77d89e229ca75421d4d17145a6d4d3d54f6a8c445838d4b630a31",
+      "match": true
+    },
+    {
+      "path": "research/theme_continuation_v0_5/patch_candidate/market_history_integrity.py",
+      "expected_sha256": "8bb93dcdd2df603e993c8f0fb054d16a0a0bcc898177ae8c4fe0759e9b0afbda",
+      "current_sha256": "8bb93dcdd2df603e993c8f0fb054d16a0a0bcc898177ae8c4fe0759e9b0afbda",
+      "match": true
+    },
+    {
+      "path": "research/theme_continuation_v0_5/production_fix_proposal.patch",
+      "expected_sha256": "70f14aff820b93b06eee40ad86d7e1ceff28ca2d6f71069a09dc2251699da83e",
+      "current_sha256": "70f14aff820b93b06eee40ad86d7e1ceff28ca2d6f71069a09dc2251699da83e",
+      "match": true
+    },
+    {
+      "path": "research/theme_continuation_v0_4/r2_recorder.py",
+      "expected_sha256": "0b8fc1b0d338e1b8ca38ea8525cf9ca4a0c647e5eca32a9e6c71714f82ff27fb",
+      "current_sha256": "0b8fc1b0d338e1b8ca38ea8525cf9ca4a0c647e5eca32a9e6c71714f82ff27fb",
+      "match": true
+    },
+    {
+      "path": "research/theme_continuation_v0_4/strict_core.py",
+      "expected_sha256": "eda4c6b5876b1cc3c5d670d867d733ddf68fc8060473852a75ac769a930eea20",
+      "current_sha256": "eda4c6b5876b1cc3c5d670d867d733ddf68fc8060473852a75ac769a930eea20",
+      "match": true
+    }
+  ],
+  "patch_applied": false,
+  "baseline_updated": false,
+  "production_write_authorized": false,
+  "dependencies": [
+    {
+      "path": "research/theme_continuation_v0_1/theme_logic.py",
+      "sha256": "0f0d1c4e07254c581599c10058bd40fb1b3fc5e2d9dbd17a26ace11dcee76b0d",
+      "basis": "V0.6 dependency identity receipt; not a retroactive baseline certification"
+    }
+  ]
+}
