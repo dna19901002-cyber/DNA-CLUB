@@ -1,0 +1,106 @@
+{
+  "schema": "r2_lite_public_evidence_manifest_v1",
+  "published_at_date": "2026-10-28",
+  "study": "R2-Lite subject persistence",
+  "source_archive_sha256": "dfdd0b51a7d5402b97fe7f92914e2f6356e099fbd994fd4c74861146ecde1abb",
+  "source_archive_name": "delivery_reports(1).zip",
+  "v0_6_source_member_count": 9,
+  "verified_v0_6_tests": {
+    "claimed_tests": 72,
+    "passed": true,
+    "original_log_present": true,
+    "test_log_sha256_verified": true,
+    "real_forward_samples": 0,
+    "production_integration": "NOT_AUTHORIZED"
+  },
+  "v0_6_files": [
+    {
+      "source_path": "v0_6_patch_compatibility.md",
+      "published_path": "v0_6/v0_6_patch_compatibility.md",
+      "size": 4532,
+      "sha256": "fa6cd458874de494d73ae8c2b5cb4d57453e2bce9447b237b6b5cd91d213902c",
+      "git_blob_sha1": "e48431a2bd254b2618bf267747778c0ede041832",
+      "artifact_type": "ORIGINAL_V0_6_DELIVERY_MEMBER"
+    },
+    {
+      "source_path": "v0_6_timing_evidence.json",
+      "published_path": "v0_6/v0_6_timing_evidence.json",
+      "size": 5525,
+      "sha256": "578217a8f93342543f5eea9ebe8f95ac1f647b0d88748ec2737ea1138cdb5f85",
+      "git_blob_sha1": "e07a95acee8b1e1353dd8ba45b47109a99acb325",
+      "artifact_type": "ORIGINAL_V0_6_DELIVERY_MEMBER"
+    },
+    {
+      "source_path": "v0_6_end_to_end_acceptance.md",
+      "published_path": "v0_6/v0_6_end_to_end_acceptance.md",
+      "size": 6203,
+      "sha256": "cf8b384f6600568cfd7900935d8d69935f4f319615f1cc9c9903d8e08b6923d6",
+      "git_blob_sha1": "c1cdeb06880dd863b58cf3caa0a171c74406b70a",
+      "artifact_type": "ORIGINAL_V0_6_DELIVERY_MEMBER"
+    },
+    {
+      "source_path": "v0_6_test_results.json",
+      "published_path": "v0_6/v0_6_test_results.json",
+      "size": 1514,
+      "sha256": "64808c6379e226236a767f3474eb322a1b0b61928d9fe49ce78f04c4129fe0b8",
+      "git_blob_sha1": "b60350727b9e16944b21038981be19cad775e707",
+      "artifact_type": "ORIGINAL_V0_6_DELIVERY_MEMBER"
+    },
+    {
+      "source_path": "v0_6_go_no_go.md",
+      "published_path": "v0_6/v0_6_go_no_go.md",
+      "size": 2520,
+      "sha256": "cf2c7284b19f4dc0854bf6a6cc520f81b9e132dca2cdd267798f3c7581d578ab",
+      "git_blob_sha1": "255c0c3e933ffd2521cec41f08a57a891e99eeec",
+      "artifact_type": "ORIGINAL_V0_6_DELIVERY_MEMBER"
+    },
+    {
+      "source_path": "manual_runbook.md",
+      "published_path": "v0_6/manual_runbook.md",
+      "size": 4197,
+      "sha256": "244fe7c8314f0d0beda7c873b6fcdfe9bc7e9ddc9c12ee5b626767c759812f79",
+      "git_blob_sha1": "75d2f5dec8b8e00da7cbd6f309be9c6c1ef0cfb0",
+      "artifact_type": "ORIGINAL_V0_6_DELIVERY_MEMBER"
+    },
+    {
+      "source_path": "evidence/tests.log",
+      "published_path": "v0_6/evidence/tests.log",
+      "size": 9932,
+      "sha256": "5f2526831ef06adbeac07c919dd0e04d4bede3dee817b365a4e88f36a0b138c3",
+      "git_blob_sha1": "7aa6c602c168e18a280a10187e2896dabda735e9",
+      "artifact_type": "ORIGINAL_V0_6_DELIVERY_MEMBER"
+    },
+    {
+      "source_path": "evidence/version_gate.json",
+      "published_path": "v0_6/evidence/version_gate.json",
+      "size": 2764,
+      "sha256": "a26fad23e3388fff50a2b84fa6edd48d94ac3ea1c909e95bdae9ea3d3b7b9174",
+      "git_blob_sha1": "1daac3ea39c18dc4a611c9c50bbdc14e64ff6850",
+      "artifact_type": "ORIGINAL_V0_6_DELIVERY_MEMBER"
+    },
+    {
+      "source_path": "evidence/patch_check.json",
+      "published_path": "v0_6/evidence/patch_check.json",
+      "size": 143,
+      "sha256": "10ee29c24107dbdb67b6f4715b076f4fa407562c09573d376c78c3b8d44978c2",
+      "git_blob_sha1": "10a92a9ffcde2db6b37a486bbb536847a0c36984",
+      "artifact_type": "ORIGINAL_V0_6_DELIVERY_MEMBER"
+    }
+  ],
+  "v0_6_study_result_status": "PROTOCOL_READY_END_TO_END_NOT_READY",
+  "v0_6_source_code_uploaded": false,
+  "forty_seven": {
+    "handoff_text_extracted": true,
+    "source_original_test_log_present": false,
+    "patch_zip_present": false,
+    "portable_verification_json_present": false,
+    "claim": "47/47 offline tests as reported, not independently rerun"
+  },
+  "daily_archives": {
+    "files_present": false,
+    "verified_local_path": null,
+    "verified_remote_readonly_path": null
+  },
+  "sensitive_credentials_uploaded": false,
+  "purpose": "AUDIT_ONLY_NO_PRODUCTION_NO_TRADING"
+}
