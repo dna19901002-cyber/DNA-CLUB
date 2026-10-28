@@ -50,13 +50,13 @@
   "selection_audit": {
     "schema": "ashare-experiment-selection-audit-v1",
     "strategy_version": "V1.2",
-    "checked_at_cn": "2026-10-28T09:49:45.340462+08:00",
-    "trade_date": "20261027",
+    "checked_at_cn": "2026-10-28T14:54:00.345190+08:00",
+    "trade_date": "20261028",
     "groups": {
       "A": {
         "state": "MANUAL_CHECKPOINT_PENDING",
         "reason": "INTENTIONAL_CONVERSATION_RECORD_MODE",
-        "expected_snapshot_sha256": "1824dfea7de84671af3b1d960a11a28a1ea0e98a6e6bfa4e0cacc6c90d63ab0e",
+        "expected_snapshot_sha256": "2cf2e83e470cc27cb0a52c604d05662b024459b8554947cd96e78ec867a797c4",
         "execution_eligible": false,
         "github_read_receipt": null,
         "automatic_github_selection_required": false
@@ -64,7 +64,7 @@
       "BC": {
         "state": "MANUAL_CHECKPOINT_PENDING",
         "reason": "INTENTIONAL_CONVERSATION_RECORD_MODE",
-        "expected_snapshot_sha256": "c301483fbbab3940bc4f48eb709f7f635ac0366a45ab8afa7e8b39c0e24ec9d2",
+        "expected_snapshot_sha256": "051fa2eab85c8762b1e68938cdecfb0f760572894dab6e19752572e130847ef9",
         "execution_eligible": false,
         "github_read_receipt": null,
         "automatic_github_selection_required": false
@@ -79,19 +79,19 @@
     },
     "market_data_health": {
       "A": {
-        "state": "USABLE",
-        "trade_date": "20261027",
+        "state": "DATA_INSUFFICIENT",
+        "trade_date": "20261028",
         "run_context": "LIVE",
-        "snapshot_sha256": "1824dfea7de84671af3b1d960a11a28a1ea0e98a6e6bfa4e0cacc6c90d63ab0e",
-        "data_quality_state": "COMPLETE_FOR_FAILED_GATE",
+        "snapshot_sha256": "2cf2e83e470cc27cb0a52c604d05662b024459b8554947cd96e78ec867a797c4",
+        "data_quality_state": "CRITICAL",
         "selection_state_used_as_market_health": false
       },
       "BC": {
-        "state": "USABLE",
-        "trade_date": "20261027",
+        "state": "DATA_INSUFFICIENT",
+        "trade_date": "20261028",
         "run_context": "LIVE_EXPERIMENT",
-        "snapshot_sha256": "c301483fbbab3940bc4f48eb709f7f635ac0366a45ab8afa7e8b39c0e24ec9d2",
-        "data_quality_state": "USABLE_WITH_DECLARED_LIMITATIONS",
+        "snapshot_sha256": "051fa2eab85c8762b1e68938cdecfb0f760572894dab6e19752572e130847ef9",
+        "data_quality_state": "DEGRADED",
         "selection_state_used_as_market_health": false
       }
     },
