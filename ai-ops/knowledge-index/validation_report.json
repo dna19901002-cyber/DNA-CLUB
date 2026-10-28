@@ -1,0 +1,135 @@
+{
+  "generated_at_cn": "2026-10-28T19:27:21+08:00",
+  "status": "LOCAL_DRAFT_VALIDATED_NOT_GITHUB_PUBLISHED",
+  "source_document_count": 10,
+  "source_code_hash_records_reported": 40,
+  "source_code_bytes_checked": 0,
+  "file_inventory": [
+    {
+      "path": "manifest.json",
+      "bytes": 9607,
+      "sha256": "93c9dce952c839d636e8f816de66d756003619e3ae73c3b0d7627f8acf6ff445",
+      "validated": true
+    },
+    {
+      "path": "systems.json",
+      "bytes": 2659,
+      "sha256": "fa57570691503e15e61cbeed451f3b60ecd7126589c8c220868f7ccba42503fd",
+      "validated": true
+    },
+    {
+      "path": "components.json",
+      "bytes": 11809,
+      "sha256": "69efd4830394f7c25e597d9e832648cecc0de95a66931b5427f32ba3ec89c0f7",
+      "validated": true
+    },
+    {
+      "path": "interfaces.json",
+      "bytes": 6313,
+      "sha256": "dac698af8477c4930d17204e39e266dbfb240a172721fd5360795362f9166caa",
+      "validated": true
+    },
+    {
+      "path": "evidence.jsonl",
+      "bytes": 14395,
+      "sha256": "2ae845c1a72cddf605acbf2360c6aa71929aa2ce117d353ee3972cd716fedfcd",
+      "validated": true
+    },
+    {
+      "path": "tasks.jsonl",
+      "bytes": 4510,
+      "sha256": "e20f3baad43b1af1fe177d44a21688bfffa1e4b35bfbf7e31086d9bfdcfdb23d",
+      "validated": true
+    },
+    {
+      "path": "dependencies.jsonl",
+      "bytes": 2153,
+      "sha256": "d8dde7bf716eb821e31f354cfe26ef118695eded0916e83fbb9d4c9804426657",
+      "validated": true
+    },
+    {
+      "path": "terms.json",
+      "bytes": 3865,
+      "sha256": "b162efc65bf75c0b65ac65287312d385ed5e7cf50f94682179d49a32faf6f8a6",
+      "validated": true
+    },
+    {
+      "path": "README.md",
+      "bytes": 2135,
+      "sha256": "7b794a6d2b8514a42ff9ad4925f2659ab7cc3dbf372e01852d7ae03dfbf5cb0f",
+      "validated": true
+    },
+    {
+      "path": "AUDIT_SUMMARY.md",
+      "bytes": 989,
+      "sha256": "ec3db47669823e868bb8569b3664a2e4d16474eaf7513f4cba23e28e69f29dd7",
+      "validated": true
+    }
+  ],
+  "record_counts": {
+    "systems": 4,
+    "components": 17,
+    "interfaces": 13,
+    "evidence": 26,
+    "tasks": 10,
+    "dependencies": 12,
+    "terms": 18
+  },
+  "checks": {
+    "json_parse": "PASS",
+    "jsonl_parse": "PASS",
+    "unique_ids": "PASS",
+    "foreign_key_integrity": "PASS",
+    "github_blob_sha_metadata": "SOURCE_FETCH_MATCHED_DIRECTORY",
+    "original_source_sha256": "NOT_CALCULATED",
+    "static_generated_sensitive_scan": "PASS",
+    "production_runtime_test": "NOT_PERFORMED",
+    "github_write": "NOT_PERFORMED",
+    "five_retrieval_probes": "PASS"
+  },
+  "blockers": [
+    "No live 10/29 Monitor full session evidence",
+    "No direct local/private source code bytes for the 40 reported SHA256 paths",
+    "Separate ai-ops pilot branch and engineering branch not merged",
+    "Current 8 private GPT Project Sources need separate access and refresh",
+    "User approval required before writing index to new GitHub branch"
+  ],
+  "approval_required_for": "proposed ai-ops/knowledge-index/ in a dedicated new branch only",
+  "retrieval_probes": [
+    {
+      "query": "Monitor 验收",
+      "task_id": "TASK_MONITOR",
+      "evidence_id": "E_C_05",
+      "source_doc": "02_monitor_architecture_and_acceptance.md",
+      "result": "PASS"
+    },
+    {
+      "query": "R2 交叉依赖",
+      "task_id": "TASK_R2_LITE",
+      "evidence_id": "E_C_09",
+      "source_doc": "05_change_log_validation_register.md",
+      "result": "PASS"
+    },
+    {
+      "query": "GPT 八源入口",
+      "task_id": "TASK_GPT_STATE",
+      "evidence_id": "E_C_12",
+      "source_doc": "04_gpt_project_contract_and_checkpoint_bridge.md",
+      "result": "PASS"
+    },
+    {
+      "query": "尾盘单元异常",
+      "task_id": "TASK_OVERNIGHT_20261028",
+      "evidence_id": "E_C_08",
+      "source_doc": "03_overnight_pipeline_architecture.md",
+      "result": "PASS"
+    },
+    {
+      "query": "导出器人工上传",
+      "task_id": "TASK_ENG_HANDOFF",
+      "evidence_id": "E_C_01",
+      "source_doc": "01_objective_exporter_architecture.md",
+      "result": "PASS"
+    }
+  ]
+}
