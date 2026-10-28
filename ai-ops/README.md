@@ -13,8 +13,20 @@
 2. 读取 `STATUS_20261028.md`，区分 VERIFIED_FILE / PRIOR_REPORTED / NEEDS_RECHECK。
 3. 读取 `tasks/BABY-CODEX-001.md`，先回述任务、限制、数据来源与当前疑点。
 4. 只读查看 main 上 `status.json`、`latest_1450.json`、`latest_exit_0950.json`、`experiment_status.json`。
-5. 明确本次所读原始文件的SHA、实际交易日期、生成时间和运行模式；只对独立试验任务作最小更新。
+5. 记录本次所读文件的取证 Git Commit SHA、Git Blob SHA、原始字节 SHA-256，以及实际交易日期、生成时间和运行模式的真实 JSON 路径；字段不存在写 `ABSENT`，存在但值为 `null` 时保留 `null`。只对独立试验任务作最小更新。
 6. 工作结束回报：发现、改动、验证、证据、仍待人工确认。绝不能把读取成功或离线测试通过冒充生产执行许可。
+
+## 字段路径与三种SHA的记录方式
+
+逐份检查 `trade_date`、`run_context`、`generated_at_cn`，记录实际 JSON 路径和值，不假定它们都在顶层。例如 `experiment_status.json` 顶层字段缺失时，分别写 `$.trade_date=ABSENT`、`$.run_context=ABSENT`、`$.generated_at_cn=ABSENT`；若存在相关嵌套字段，再单列 `$.selection_audit.trade_date`、`$.selection_audit.market_data_health.A.run_context`、`$.selection_audit.market_data_health.BC.run_context` 的实际值。`checked_at_cn`、`retrieved_at_cn`、`last_verified_at_cn` 只按自身语义和真实路径记录，不替代缺失的生成时间。以上是路径示例，仍须核对当次原文件；`LIVE` 标签也不代表读取时刻的实时数据。
+
+| 记录项 | 定位或校验对象 | 使用边界 |
+| --- | --- | --- |
+| Git Commit SHA | 一次提交，固定本轮完整仓库版本 | 先记录分支与解析出的实际提交SHA，再按该提交读取文件；分支名会移动，不能代替提交SHA |
+| Git Blob SHA | 该提交树中某个路径对应的文件内容对象 | 记录文件路径与blob SHA，校验读取的字节属于该提交；blob不包含文件名，相同字节可出现在多个路径或提交中 |
+| SHA-256 | 下载所得文件原始字节的内容摘要 | 用于比对JSON中的快照引用或独立校验下载内容；保持原始编码和换行，不在重新序列化JSON后计算并冒充原文件摘要 |
+
+三者分别记录，不互相替代。Git Blob SHA包含Git对象头参与哈希，与对文件原始字节直接计算的SHA-256不是同一种值；Git对象ID使用仓库的对象格式，本仓库现有Commit/Blob SHA为40位SHA-1对象ID。结果文件自身的最终blob/SHA-256和Commit SHA放在提交后回执中，避免自引用。
 
 ## 严格边界
 - 公开仓库**不得发布**任何券商账户/真实持仓明细、个人身份信息、API密钥、私有策略契约原文、原始预测台账。
