@@ -1,0 +1,95 @@
+{
+  "schema_version": "astock_ai_terms_draft_v1",
+  "terms": [
+    {
+      "term": "跑预设",
+      "meaning": "GPT会话中执行完整A股分析，导出器不执行投资分析",
+      "source": "ai-ops/engineering/00_system_map_and_boundaries.md"
+    },
+    {
+      "term": "a_stock_monitor_v1",
+      "meaning": "Monitor接收器现有机器协议；索引不是可导入规则",
+      "source": "ai-ops/engineering/02_monitor_architecture_and_acceptance.md"
+    },
+    {
+      "term": "notify_only",
+      "meaning": "true；仅通知，不自动下单",
+      "source": "ai-ops/engineering/02_monitor_architecture_and_acceptance.md"
+    },
+    {
+      "term": "requires_manual_confirmation",
+      "meaning": "true；用户券商人工复核",
+      "source": "ai-ops/engineering/02_monitor_architecture_and_acceptance.md"
+    },
+    {
+      "term": "bundle_verified",
+      "meaning": "JSON/PDF配对已核实，不等于券商账户、分钟完整或K线最终性",
+      "source": "ai-ops/engineering/01_objective_exporter_architecture.md"
+    },
+    {
+      "term": "bar_completed",
+      "meaning": "冻结时点应该完成的分钟bar；不代表上游不可修订最终版",
+      "source": "ai-ops/engineering/01_objective_exporter_architecture.md"
+    },
+    {
+      "term": "fetch_status / bar_validity / path_freshness / execution_evidence",
+      "meaning": "四个独立证据层，不是保证旧JSON存在同名字段",
+      "source": "ai-ops/engineering/01_objective_exporter_architecture.md"
+    },
+    {
+      "term": "R2-Lite",
+      "meaning": "题材持续性独立研究；历史回放与前瞻冻结分开",
+      "source": "ai-ops/engineering/03_overnight_pipeline_architecture.md"
+    },
+    {
+      "term": "A/B/C",
+      "meaning": "在上下文中需区分跑预设A/B/C研究与隔夜A/B/C模拟；不能共享账户/样本",
+      "source": "ai-ops/engineering/00_system_map_and_boundaries.md"
+    },
+    {
+      "term": "GPT_selection",
+      "meaning": "用户授权的GPT研究选择检查点，不等于机器C候选",
+      "source": "ai-ops/engineering/03_overnight_pipeline_architecture.md"
+    },
+    {
+      "term": "retrospective",
+      "meaning": "历史资料回放，不能事后伪造前瞻冻结",
+      "source": "ai-ops/engineering/03_overnight_pipeline_architecture.md"
+    },
+    {
+      "term": "prospective",
+      "meaning": "事前可读、事前冻结且次晨路径可核的未来样本",
+      "source": "ai-ops/engineering/03_overnight_pipeline_architecture.md"
+    },
+    {
+      "term": "source_commit_local",
+      "meaning": "主Codex本机工作副本所引用的commit，不是本次GitHub交付commit",
+      "source": "ai-ops/engineering/README.md"
+    },
+    {
+      "term": "source_commit_github",
+      "meaning": "本次上传工程文档的GitHub固定commit 3a16bf1",
+      "source": "ai-ops/engineering/README.md"
+    },
+    {
+      "term": "PB4",
+      "meaning": "突破确认后仍需健康回踩和再启动复核，不因价格突破立即加仓",
+      "source": "ai-ops/engineering/02_monitor_architecture_and_acceptance.md"
+    },
+    {
+      "term": "S3",
+      "meaning": "严格结构信号；价格触价单独只能算触价提醒",
+      "source": "ai-ops/engineering/02_monitor_architecture_and_acceptance.md"
+    },
+    {
+      "term": "CODE_INSTALLED / OFFLINE_PASS / API_ACCEPTED / FULL_SESSION / PRODUCTION_GO",
+      "meaning": "互不等价的Monitor验收阶段；一次消息API成功不是整日通过",
+      "source": "ai-ops/engineering/02_monitor_architecture_and_acceptance.md"
+    },
+    {
+      "term": "GPT_PROJECT_SOURCE_REQUIRED",
+      "meaning": "八份私有正式角色只从授权GPT Project Sources读取，公开GitHub仅提供角色指针",
+      "source": "ai-ops/engineering/04_gpt_project_contract_and_checkpoint_bridge.md"
+    }
+  ]
+}
