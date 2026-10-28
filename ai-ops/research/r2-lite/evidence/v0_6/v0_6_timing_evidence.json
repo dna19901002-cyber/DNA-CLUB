@@ -1,0 +1,121 @@
+{
+  "schema": "theme-v0.6-timing-readiness",
+  "prepared_at": "2026-10-25T21:03:03.758841+08:00",
+  "prepared_at_is_not_source_first_read_at": true,
+  "source_deliverables": [
+    {
+      "path": "research\\theme_continuation_v0_5\\v0_5_date_integrity_report.md",
+      "sha256": "23806155b18c27e2e2b53ee51bdd284de4b4c25053dc9707877aae14c862b815"
+    },
+    {
+      "path": "research\\theme_continuation_v0_5\\v0_5_profile_recalculation_audit.md",
+      "sha256": "6be78e97bdd03774edcbbc7b410a6f89a3a1a95584b9a63c7af7b36599bf30fa"
+    },
+    {
+      "path": "research\\theme_continuation_v0_5\\v0_5_r2_lite_operational_readiness.md",
+      "sha256": "91a3ccdfc630f070361617a97dcd37e90962da5450efbd9d6741b59ca82e9102"
+    },
+    {
+      "path": "research\\theme_continuation_v0_5\\v0_5_test_results.json",
+      "sha256": "b6daf40e3296e80663fdae7acfa2eed27d22ac4a00576087e174c0f26366bdc0"
+    },
+    {
+      "path": "research\\theme_continuation_v0_5\\v0_5_go_no_go.md",
+      "sha256": "1fa58e8b3e8d1407d78cf0493519f5c46ef3ccdaffb718ac55917f6327db5b61"
+    }
+  ],
+  "actual_trials": [],
+  "actual_manual_opportunities": 0,
+  "qualified_real_frozen_signals": 0,
+  "reliable_trades": 0,
+  "current_trial": {
+    "market_trade_date": null,
+    "server_snapshot_generated_at": null,
+    "source_commit_at": null,
+    "source_first_read_at": null,
+    "read_started_at": null,
+    "read_completed_at": null,
+    "frozen_at": null,
+    "snapshot_sha256": null,
+    "calendar_sha256": null,
+    "selected_codes": [],
+    "eligibility_result": "UNKNOWN",
+    "result_status": "NOT_STARTED_AWAITING_MANUAL_TRIGGER",
+    "actual_fill": false,
+    "reliable_trade": false,
+    "gross_return": null,
+    "estimated_net_return": null,
+    "record_class": "TEMPLATE_NOT_AN_OBSERVATION"
+  },
+  "trial_gate": {
+    "distinct_real_day_opportunities": 0,
+    "maximum_without_qualified_receipt": 3,
+    "stop_triggered": false,
+    "historical_commit_dates_are_not_trials": true,
+    "automatic_wait_or_retry_enabled": false,
+    "restart_requires_verified_path_or_manual_execution_change_and_separate_review": true
+  },
+  "first_read_definition": {
+    "method": "Actual byte read start/end, SHA verification, immutable separate first-read receipt referencing measured read receipt",
+    "scope": "First successful read of this path and content by this fixed research reader; not global earliest server availability",
+    "source_first_read_at": "Measured successful read completion, never commit timestamp, mtime or research preparation time",
+    "independent_from": "Server generation and commit metadata; separate locally fsynced receipt",
+    "clock_trust": "Local OS wall clock plus monotonic read duration; not third-party notarization. Live clock/provenance still require manual review."
+  },
+  "freeze_definition": {
+    "frozen_at": "V0.6 measurement after immutable V0.4 candidate/source/batch writes return; microsecond comparison <=14:52:00+08:00",
+    "late_provisional_records": "Kept with provisional_freeze_completed_at and DATA_INSUFFICIENT; no admitted signal; never observe or count them",
+    "original_v04_frozen_at": "V0.4 preparation-start timestamp retained unchanged; not substituted for completion time"
+  },
+  "historical_reference_only_not_trials": [
+    {
+      "market_trade_date": "2026-10-21",
+      "server_snapshot_generated_at": "2026-10-21T14:50:10.610376+08:00",
+      "source_commit_at": "2026-10-21T14:50:33+08:00",
+      "snapshot_sha256": "d40afc10dd6c32678651116c55be5440cf8f633541b7612f36220b191e191c9a",
+      "source_first_read_at": null,
+      "frozen_at": null,
+      "result_status": "HISTORICAL_REFERENCE_ONLY_NOT_R2_SIGNAL",
+      "counted_as_trial": false
+    },
+    {
+      "market_trade_date": "2026-10-22",
+      "server_snapshot_generated_at": "2026-10-22T14:50:10.736208+08:00",
+      "source_commit_at": "2026-10-22T14:50:31+08:00",
+      "snapshot_sha256": "1a4264161586e454ab32d8b5b33f33b1e9b19c82203a023d2eab66703f49b851",
+      "source_first_read_at": null,
+      "frozen_at": null,
+      "result_status": "HISTORICAL_REFERENCE_ONLY_NOT_R2_SIGNAL",
+      "counted_as_trial": false
+    },
+    {
+      "market_trade_date": "2026-10-23",
+      "server_snapshot_generated_at": "2026-10-23T14:50:09.223215+08:00",
+      "source_commit_at": "2026-10-23T14:52:07+08:00",
+      "snapshot_sha256": "2787e75096c22be328c7e19c9b3372520db2944cf028ed83c43f0d372179b010",
+      "source_first_read_at": null,
+      "frozen_at": null,
+      "result_status": "HISTORICAL_REFERENCE_ONLY_NOT_R2_SIGNAL",
+      "counted_as_trial": false
+    }
+  ],
+  "current_0955_exit_reference": {
+    "sha256": "983395ad4beecc557446913bd9aff97e523b3cb0cb097c7fa4472ea60511e7c5",
+    "positions_count": 0,
+    "trade_date": "20261023",
+    "cutoff": "0955",
+    "full_R2_price_observation_proven_by_this_file": false,
+    "proof_of_complete_stock_price_observation": false
+  },
+  "pending_evidence": [
+    "Verified original exchange calendar and SHA covering signal day through next real session",
+    "Full current-day C snapshot and independently preserved measured first-read receipt",
+    "Actual completion no later than exact 14:52:00",
+    "Separate point-in-time 0950/0955 raw minutes tied to the frozen code, date, original basis and source SHA"
+  ],
+  "R2_LITE_END_TO_END": "NOT_READY",
+  "new_market_calls": 0,
+  "new_tasks": 0,
+  "orders": 0,
+  "production_files_modified": false
+}
