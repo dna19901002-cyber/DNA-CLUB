@@ -1,0 +1,7 @@
+{
+  "command": "git apply --check <unchanged V0.5 patch>",
+  "exit_code": 0,
+  "stdout": "",
+  "stderr": "",
+  "patch_applied": false
+}
