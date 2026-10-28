@@ -349,6 +349,21 @@
       "actual_fill": false,
       "gpt_confirmed": false,
       "timing_note": "Locked with original 14:50 snapshot"
+    },
+    {
+      "schema": "ashare-machine-proposals-v1",
+      "strategy_version": "V1.2",
+      "trade_date": "20261028",
+      "classification": "MACHINE_PROPOSAL_OBSERVATION",
+      "proposals": [],
+      "source_snapshot_sha256": "051fa2eab85c8762b1e68938cdecfb0f760572894dab6e19752572e130847ef9",
+      "snapshot_time": "2026-10-28T14:50:10.688036+08:00",
+      "recorded_at_cn": "2026-10-28T14:50:10.695165+08:00",
+      "run_context": "LIVE_EXPERIMENT",
+      "market_regime": "ABOVE_MA5",
+      "actual_fill": false,
+      "gpt_confirmed": false,
+      "timing_note": "Locked with original 14:50 snapshot"
     }
   ],
   "attempts": [
