@@ -1,6 +1,7 @@
 # BABY-CODEX-001 | 跨账号理解与最小维护试验
 
 status: READY_FOR_BABY_CODEX
+write_read_test: VERIFIED_BY_MAIN_GPT_20261028
 scope: PUBLIC_DOC_ONLY
 owner: 宝宝Codex（尚未实际认领）
 reviewer: 主GPT/宝宝GPT（验收建议），人工决定合并
