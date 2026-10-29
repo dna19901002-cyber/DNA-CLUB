@@ -50,7 +50,7 @@
   "selection_audit": {
     "schema": "ashare-experiment-selection-audit-v1",
     "strategy_version": "V1.2",
-    "checked_at_cn": "2026-10-28T14:55:05.361715+08:00",
+    "checked_at_cn": "2026-10-29T09:49:45.413684+08:00",
     "trade_date": "20261028",
     "groups": {
       "A": {
