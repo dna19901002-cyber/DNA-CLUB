@@ -122,14 +122,14 @@
   },
   "machine_observation_summary": {
     "machine_proposal_count": 12,
-    "unobserved_proposal_count": 2,
-    "complete_observation_count": 10,
+    "unobserved_proposal_count": 0,
+    "complete_observation_count": 12,
     "missing_observation_count": 0,
     "retrospective_sample_count": 4,
     "modelled_fill_count": 0,
     "reliable_trade_count": 0
   },
-  "latest_machine_observation_content_sha256": "da69d9e458c3e411046307dc6837d1ffde0a4033a479082be7318610858ff5e2",
+  "latest_machine_observation_content_sha256": "98d4414294208b08b58414f849b5e71a1d2b0790cfa4a5f6af829b1c5e502664",
   "repair_offline_tests_passed": 155,
   "selection_workflow": {
     "mode": "CONVERSATION_MANUAL_CHECKPOINT",

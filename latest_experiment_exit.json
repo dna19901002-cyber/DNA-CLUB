@@ -3,14 +3,24 @@
   "strategy_version": "V1.2",
   "trade_date": "20261030",
   "selection_trade_date": "20261029",
-  "cutoff": "0950",
-  "retrieved_at_cn": "2026-10-30T09:50:05.741107+08:00",
+  "cutoff": "0955",
+  "retrieved_at_cn": "2026-10-30T09:55:05.353041+08:00",
   "positions": [],
-  "api_calls_used": 0,
+  "api_calls_used": 1,
   "error": null,
   "automated_trading": false,
   "run_context": "LIVE_EXPERIMENT",
-  "request_summary": [],
+  "request_summary": [
+    {
+      "interface": "minute",
+      "started": "2026-10-30T09:55:05+08:00",
+      "finished": "2026-10-30T09:55:05+08:00",
+      "http_status": 200,
+      "rows": 12,
+      "error": null,
+      "duration_seconds": 0.083
+    }
+  ],
   "morning_budget_reservation": "A_AFTERNOON_MAX_9_CALLS_RESERVED",
   "selection_audit": {
     "schema": "ashare-experiment-selection-audit-v1",
@@ -67,7 +77,7 @@
   },
   "data_quality": {
     "state": "AWAITING_VALID_GPT_SELECTION",
-    "minute_cutoff": "0950",
+    "minute_cutoff": "0955",
     "later_prices_never_inferred": true
   }
 }
