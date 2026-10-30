@@ -1,13 +1,13 @@
 {
   "schema": "ashare-experiment-snapshot-v1",
   "strategy_version": "V1.2",
-  "trade_date": "20261029",
+  "trade_date": "20261030",
   "run_context": "LIVE_EXPERIMENT",
-  "retrieved_at_cn": "2026-10-29T14:50:06.834511+08:00",
-  "generated_at_cn": "2026-10-29T14:50:11.444870+08:00",
-  "market_regime": "WITHIN_MINUS_1PCT_MA5",
+  "retrieved_at_cn": "2026-10-30T14:50:05.980546+08:00",
+  "generated_at_cn": "2026-10-30T14:50:10.171967+08:00",
+  "market_regime": "BELOW_MINUS_1PCT_MA5",
   "market_gate_details": {
-    "shanghai_ma5_distance": -0.0059622396082340545,
+    "shanghai_ma5_distance": -0.01436126968046958,
     "a_gate": {
       "ma5": false,
       "turnover": null,
@@ -15,7 +15,7 @@
       "advance_ratio": null
     },
     "b_gate": {
-      "ma5": true,
+      "ma5": false,
       "turnover": true,
       "major_index_drop": false,
       "advance_ratio": false
@@ -30,32 +30,31 @@
     ],
     "market": {
       "universe": 5656,
-      "valid_trading_stocks": 5569,
-      "advance": 795,
-      "decline": 4699,
-      "flat": 75,
-      "advance_ratio": 0.1427545340276531,
-      "total_amount_yuan": 1482557111700.0,
+      "valid_trading_stocks": 5570,
+      "advance": 948,
+      "decline": 4542,
+      "flat": 80,
+      "advance_ratio": 0.170197486535009,
+      "total_amount_yuan": 1590196231300.0,
       "excluded_counts": {
-        "no_trade": 7,
+        "no_trade": 6,
         "delisting": 1,
-        "non_a_share": 79,
-        "active_listing_metadata_unconfirmed": 1
+        "non_a_share": 79
       }
     },
     "turnover": {
-      "actual": 1482557111700.0,
+      "actual": 1590196231300.0,
       "threshold": 700000000000
     },
     "advance_ratio": {
-      "actual": 0.1427545340276531,
+      "actual": 0.170197486535009,
       "threshold": 0.35
     }
   },
   "groups": {
     "B": {
       "strategy_group": "B",
-      "trade_date": "20261029",
+      "trade_date": "20261030",
       "decision": "NO_TRADE",
       "candidate_codes": [],
       "candidates": [],
@@ -68,7 +67,7 @@
       "gross_return": null,
       "estimated_net_return": null,
       "market_gate": {
-        "ma5": true,
+        "ma5": false,
         "turnover": true,
         "major_index_drop": false,
         "advance_ratio": false
@@ -78,41 +77,41 @@
     },
     "C": {
       "strategy_group": "C",
-      "trade_date": "20261029",
+      "trade_date": "20261030",
       "decision": "MACHINE_PROPOSAL_OBSERVATION",
       "candidate_codes": [
-        "300629",
-        "603517"
+        "003010",
+        "600059"
       ],
       "candidates": [
         {
-          "symbol": "300629",
-          "code": "300629",
-          "name": "新劲刚",
-          "price": 17.9,
-          "pct_chg": 3.35,
-          "amount": 231603400.0,
-          "volume_ratio": 1.68,
-          "turnover_rate": 6.71,
-          "vwap": 17.853,
-          "vwap_local": 17.852627,
+          "symbol": "003010",
+          "code": "003010",
+          "name": "若羽臣",
+          "price": 27.2,
+          "pct_chg": 4.9,
+          "amount": 272046900.0,
+          "volume_ratio": 1.69,
+          "turnover_rate": 5.88,
+          "vwap": 26.738,
+          "vwap_local": 26.737765,
           "above_vwap": true,
-          "momentum_30m": -0.000558,
-          "tail_position_30m": 0.642857,
-          "tail_high_30m": 17.95,
-          "tail_low_30m": 17.81,
-          "tail_vol_share": 0.080792,
+          "momentum_30m": 0.010765,
+          "tail_position_30m": 0.969697,
+          "tail_high_30m": 27.24,
+          "tail_low_30m": 26.91,
+          "tail_vol_share": 0.109275,
           "tail_new_lows": false,
           "heavy_volume_selling": false,
           "weakened_after_1430": false,
-          "theme": null,
+          "theme": "美容护理",
           "hot_ths": null,
-          "hot_dfcf": 21,
+          "hot_dfcf": null,
           "hot_xq": null,
           "hot_tdx": null,
-          "score_tail": 13,
+          "score_tail": 25,
           "score_volume_price": 20,
-          "score_market_theme": 5,
+          "score_market_theme": 8,
           "score_pattern": 7,
           "score_risk": 20,
           "historical_pattern": {
@@ -125,7 +124,7 @@
             "return_10d": null,
             "return_20d": null,
             "positive_days_20": null,
-            "avg_volume_5d": 48296.8,
+            "avg_volume_5d": 57832.2,
             "avg_volume_20d": null,
             "data_sufficient": false,
             "score_policy": "ORIGINAL_V1_2_NEUTRAL_7_NO_DEFINED_HISTORICAL_FORMULA"
@@ -135,56 +134,56 @@
           "data_quality": {
             "confidence": "MEDIUM",
             "missing_fields": [
-              "theme_names_kpl",
               "hot_ths_normal_rank",
+              "hot_dfcf_biaos_rank",
               "hot_xq_resou_rank",
               "hot_tdx_resou_rank",
               "historical_pattern_window_lt_20"
             ],
             "vwap_conflict": false,
             "unit_validation": "PASS",
-            "source_latest_time": "20261029 1450"
+            "source_latest_time": "20261030 1450"
           },
-          "score_total": 65,
+          "score_total": 80,
           "execution_constraints": {
-            "up_limit": 20.78,
-            "down_limit": 13.86
+            "up_limit": 28.52,
+            "down_limit": 23.34
           },
-          "reference_price": 17.9,
-          "reference_time": "20261029 14:50",
+          "reference_price": 27.2,
+          "reference_time": "20261030 14:50",
           "entry_evidence": {
             "state": "REFERENCE_ONLY",
             "actual_fill": false
           }
         },
         {
-          "symbol": "603517",
-          "code": "603517",
-          "name": "绝味食品",
-          "price": 10.96,
-          "pct_chg": 4.08,
-          "amount": 173655800.0,
-          "volume_ratio": 1.52,
-          "turnover_rate": 5.07,
-          "vwap": 10.829,
-          "vwap_local": 10.828818,
+          "symbol": "600059",
+          "code": "600059",
+          "name": "古越龙山",
+          "price": 8.15,
+          "pct_chg": 2.9,
+          "amount": 316936900.0,
+          "volume_ratio": 1.56,
+          "turnover_rate": 6.95,
+          "vwap": 8.138,
+          "vwap_local": 8.137727,
           "above_vwap": true,
-          "momentum_30m": -0.000911,
-          "tail_position_30m": 0.555556,
-          "tail_high_30m": 11.01,
-          "tail_low_30m": 10.92,
-          "tail_vol_share": 0.080127,
+          "momentum_30m": -0.003667,
+          "tail_position_30m": 0.25,
+          "tail_high_30m": 8.21,
+          "tail_low_30m": 8.13,
+          "tail_vol_share": 0.118323,
           "tail_new_lows": false,
           "heavy_volume_selling": false,
           "weakened_after_1430": false,
-          "theme": null,
+          "theme": "酿酒",
           "hot_ths": null,
           "hot_dfcf": null,
-          "hot_xq": 63,
+          "hot_xq": null,
           "hot_tdx": null,
           "score_tail": 13,
           "score_volume_price": 20,
-          "score_market_theme": 5,
+          "score_market_theme": 8,
           "score_pattern": 7,
           "score_risk": 20,
           "historical_pattern": {
@@ -197,7 +196,7 @@
             "return_10d": null,
             "return_20d": null,
             "positive_days_20": null,
-            "avg_volume_5d": 58873.8,
+            "avg_volume_5d": 884689.4,
             "avg_volume_20d": null,
             "data_sufficient": false,
             "score_policy": "ORIGINAL_V1_2_NEUTRAL_7_NO_DEFINED_HISTORICAL_FORMULA"
@@ -207,23 +206,23 @@
           "data_quality": {
             "confidence": "MEDIUM",
             "missing_fields": [
-              "theme_names_kpl",
               "hot_ths_normal_rank",
               "hot_dfcf_biaos_rank",
+              "hot_xq_resou_rank",
               "hot_tdx_resou_rank",
               "historical_pattern_window_lt_20"
             ],
             "vwap_conflict": false,
             "unit_validation": "PASS",
-            "source_latest_time": "20261029 1450"
+            "source_latest_time": "20261030 1450"
           },
-          "score_total": 65,
+          "score_total": 68,
           "execution_constraints": {
-            "up_limit": 11.58,
-            "down_limit": 9.48
+            "up_limit": 8.71,
+            "down_limit": 7.13
           },
-          "reference_price": 10.96,
-          "reference_time": "20261029 14:50",
+          "reference_price": 8.15,
+          "reference_time": "20261030 14:50",
           "entry_evidence": {
             "state": "REFERENCE_ONLY",
             "actual_fill": false
@@ -246,7 +245,7 @@
     }
   },
   "automated_trading": false,
-  "source_a_1450_content_sha256": "bf108c0db0f40e35de7c982ad7585b7b562ffebd4fcc17fb53f32c497b964a3d",
+  "source_a_1450_content_sha256": "4f0dbb489b99dd81705e777e269f77d924bd26eab6f03929764815fbc86825d3",
   "api_calls_used": 2,
   "data_quality": {
     "state": "USABLE_WITH_DECLARED_LIMITATIONS",
@@ -254,22 +253,20 @@
     "screening_source": "SHARED_B_C_FRESH_REQUEST_AFTER_A",
     "full_market_coverage": {
       "schema": "ashare-code-coverage-v1",
-      "trade_date": "20261029",
+      "trade_date": "20261030",
       "basis": "EXACT_LISTED_A_CODE_SET_ORIGINAL_B_SHARE_EXCLUSIONS",
-      "stockbasic_rows": 5655,
-      "stockbasic_unique_codes": 5655,
-      "listed_a_codes_count": 5576,
+      "stockbasic_rows": 5656,
+      "stockbasic_unique_codes": 5656,
+      "listed_a_codes_count": 5577,
       "listed_non_a_codes_count": 79,
       "screening_rows": 5656,
       "screening_unique_codes": 5656,
-      "covered_listed_a_codes_count": 5576,
+      "covered_listed_a_codes_count": 5577,
       "listed_a_coverage_ratio": 1.0,
       "missing_listed_a_codes": [],
       "missing_listed_a_records": [],
       "missing_non_a_codes": [],
-      "extra_quote_codes_without_listed_basic": [
-        "920306"
-      ],
+      "extra_quote_codes_without_listed_basic": [],
       "duplicate_stockbasic_codes": [],
       "duplicate_screening_codes": [],
       "invalid_stockbasic_symbol_rows": [],
@@ -282,7 +279,6 @@
       "zero_turnover_quote_codes": [
         "002717",
         "002827",
-        "301468",
         "601326",
         "605258",
         "688121",
@@ -297,10 +293,10 @@
     },
     "unit_validation": {
       "provider": "MeoZ",
-      "validation_date": "20261029",
+      "validation_date": "20261030",
       "schema_signature": "e062261fe7bdf4feeebe7a09b4636e09292353869d2d39cf43dfeacd45d4159b",
-      "validation_started_at": "2026-10-29T14:50:10+08:00",
-      "validated_at": "2026-10-29T14:50:10+08:00",
+      "validation_started_at": "2026-10-30T14:50:09+08:00",
+      "validated_at": "2026-10-30T14:50:09+08:00",
       "amount": "yuan",
       "volume": "lots_100_shares",
       "amount_unit": "yuan",
@@ -310,49 +306,47 @@
       "unit_basis": "MeoZ field contract; no scale inference or conversion of percent/multiple",
       "result": "PASS",
       "cache_used": false,
-      "checked_rows": 5569,
+      "checked_rows": 5570,
       "reference_symbols": [],
       "evidence": [],
       "input_rows": 5655,
       "invalid_row_count": 0,
       "invalid_rows": []
     },
-    "missing_field_exclusions": [
-      "listing_metadata:920306"
-    ],
+    "missing_field_exclusions": [],
     "execution_exclusions": [],
     "filter_stats": {
-      "universe": 5576,
-      "valid_trading_stocks": 5569,
-      "after_st": 5374,
-      "after_pct": 193,
-      "after_volume_ratio": 98,
-      "after_turnover": 36,
-      "after_amount": 32,
-      "after_listing_age": 32,
-      "final_coarse": 32,
-      "missing_field_exclusions": 1
+      "universe": 5577,
+      "valid_trading_stocks": 5570,
+      "after_st": 5376,
+      "after_pct": 229,
+      "after_volume_ratio": 121,
+      "after_turnover": 30,
+      "after_amount": 25,
+      "after_listing_age": 25,
+      "final_coarse": 25,
+      "missing_field_exclusions": 0
     },
     "screening_source_timestamp_available": false,
     "candidate_errors": [],
     "request_summary": [
       {
         "interface": "screening",
-        "started": "2026-10-29T14:50:07+08:00",
-        "finished": "2026-10-29T14:50:10+08:00",
+        "started": "2026-10-30T14:50:07+08:00",
+        "finished": "2026-10-30T14:50:08+08:00",
         "http_status": 200,
         "rows": 5656,
         "error": null,
-        "duration_seconds": 2.752
+        "duration_seconds": 1.588
       },
       {
         "interface": "minute",
-        "started": "2026-10-29T14:50:10+08:00",
-        "finished": "2026-10-29T14:50:10+08:00",
+        "started": "2026-10-30T14:50:09+08:00",
+        "finished": "2026-10-30T14:50:09+08:00",
         "http_status": 200,
-        "rows": 1504,
+        "rows": 1175,
         "error": null,
-        "duration_seconds": 0.155
+        "duration_seconds": 0.138
       }
     ]
   }
