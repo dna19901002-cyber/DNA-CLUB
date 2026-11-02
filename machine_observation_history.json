@@ -496,6 +496,71 @@
       "actual_fill": false,
       "gpt_confirmed": false,
       "timing_note": "Locked with original 14:50 snapshot"
+    },
+    {
+      "schema": "ashare-machine-proposals-v1",
+      "strategy_version": "V1.2",
+      "trade_date": "20261102",
+      "classification": "MACHINE_PROPOSAL_OBSERVATION",
+      "proposals": [
+        {
+          "code": "000568",
+          "name": "泸州老窖",
+          "reference_price": 79.85,
+          "rank": 1,
+          "score": 72,
+          "reference_time": "20261102 14:50",
+          "data_quality": {
+            "confidence": "MEDIUM",
+            "missing_fields": [
+              "hot_dfcf_biaos_rank",
+              "hot_tdx_resou_rank",
+              "historical_pattern_window_lt_20"
+            ],
+            "vwap_conflict": false,
+            "unit_validation": "PASS",
+            "source_latest_time": "20261102 1450"
+          },
+          "execution_constraints": {
+            "up_limit": 84.78,
+            "down_limit": 69.36
+          }
+        },
+        {
+          "code": "300845",
+          "name": "捷安高科",
+          "reference_price": 13.33,
+          "rank": 2,
+          "score": 72,
+          "reference_time": "20261102 14:50",
+          "data_quality": {
+            "confidence": "MEDIUM",
+            "missing_fields": [
+              "theme_names_kpl",
+              "hot_ths_normal_rank",
+              "hot_dfcf_biaos_rank",
+              "hot_xq_resou_rank",
+              "hot_tdx_resou_rank",
+              "historical_pattern_window_lt_20"
+            ],
+            "vwap_conflict": false,
+            "unit_validation": "PASS",
+            "source_latest_time": "20261102 1450"
+          },
+          "execution_constraints": {
+            "up_limit": 15.46,
+            "down_limit": 10.3
+          }
+        }
+      ],
+      "source_snapshot_sha256": "ed8a735b2db56f8f6c649e0b4a4e950ff51ccbef5128aba4e98e00e7dc263161",
+      "snapshot_time": "2026-11-02T14:50:14.121717+08:00",
+      "recorded_at_cn": "2026-11-02T14:50:14.131166+08:00",
+      "run_context": "LIVE_EXPERIMENT",
+      "market_regime": "WITHIN_MINUS_1PCT_MA5",
+      "actual_fill": false,
+      "gpt_confirmed": false,
+      "timing_note": "Locked with original 14:50 snapshot"
     }
   ],
   "attempts": [
@@ -3037,8 +3102,8 @@
     }
   ],
   "summary": {
-    "machine_proposal_count": 14,
-    "unobserved_proposal_count": 0,
+    "machine_proposal_count": 16,
+    "unobserved_proposal_count": 2,
     "complete_observation_count": 14,
     "missing_observation_count": 0,
     "retrospective_sample_count": 4,
