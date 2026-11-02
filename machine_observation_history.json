@@ -2765,12 +2765,281 @@
       "actual_fill": false,
       "reliable_trade_count": 0,
       "automated_trading": false
+    },
+    {
+      "schema": "ashare-machine-observation-v1",
+      "strategy_version": "V1.2",
+      "method_version": 2,
+      "classification": "MACHINE_PROPOSAL_OBSERVATION",
+      "trade_date": "20261030",
+      "observation_trade_date": "20261102",
+      "source_snapshot_sha256": "540d07711170bdbdd0573d8476e24ea22cdfcade6bcec809c7a92bb21152d678",
+      "proposal_ledger_sha256": "22da3faf7ad81968651d90aa6a602e1fa0c584cc828fdbdcd0d009480c5dde7a",
+      "raw_minute_sha256": "19476031d699e4edaf3bcfdd349b3be9da0df7b05e3ecb3e6035adad8ed52d21",
+      "retrieved_at_cn": "2026-11-02T09:55:05.443009+08:00",
+      "run_context": "LIVE_EXPERIMENT",
+      "observations": [
+        {
+          "code": "003010",
+          "name": "若羽臣",
+          "reference_price": 27.2,
+          "rank": 1,
+          "score": 80,
+          "reference_time": "20261030 14:50",
+          "data_quality": {
+            "confidence": "MEDIUM",
+            "missing_fields": [
+              "hot_ths_normal_rank",
+              "hot_dfcf_biaos_rank",
+              "hot_xq_resou_rank",
+              "hot_tdx_resou_rank",
+              "historical_pattern_window_lt_20"
+            ],
+            "vwap_conflict": false,
+            "unit_validation": "PASS",
+            "source_latest_time": "20261030 1450"
+          },
+          "execution_constraints": {
+            "up_limit": 28.52,
+            "down_limit": 23.34
+          },
+          "classification": "MACHINE_PROPOSAL_OBSERVATION",
+          "observation_trade_date": "20261102",
+          "state": "OBSERVATION_COMPLETE",
+          "minute_complete": true,
+          "actual_fill": false,
+          "gpt_confirmed": false,
+          "reliable_trade": false,
+          "gross_return": null,
+          "estimated_net_return": null,
+          "tp_pct": 0.03,
+          "sl_pct": -0.01,
+          "reason": null,
+          "minute_bars": [
+            {
+              "open": 27.47,
+              "high": 27.6,
+              "low": 26.91,
+              "close": 27.15,
+              "vol": 8095.0,
+              "amount": 22014600.0,
+              "time": "0935"
+            },
+            {
+              "open": 27.18,
+              "high": 28.02,
+              "low": 27.18,
+              "close": 27.6,
+              "vol": 9422.0,
+              "amount": 26061500.0,
+              "time": "0940"
+            },
+            {
+              "open": 27.6,
+              "high": 27.86,
+              "low": 27.42,
+              "close": 27.69,
+              "vol": 3379.0,
+              "amount": 9330400.0,
+              "time": "0945"
+            },
+            {
+              "open": 27.7,
+              "high": 28.34,
+              "low": 27.69,
+              "close": 28.14,
+              "vol": 7309.0,
+              "amount": 20511500.0,
+              "time": "0950"
+            },
+            {
+              "open": 28.14,
+              "high": 28.24,
+              "low": 27.96,
+              "close": 28.23,
+              "vol": 2918.0,
+              "amount": 8208300.0,
+              "time": "0955"
+            }
+          ],
+          "open": 27.47,
+          "open_change": 0.00992647058823537,
+          "high_0930_0955": 28.34,
+          "low_0930_0955": 26.91,
+          "maximum_change": 0.041911764705882426,
+          "minimum_change": -0.010661764705882315,
+          "high_time_intervals": [
+            {
+              "start": "09:45",
+              "end": "09:50"
+            }
+          ],
+          "low_time_intervals": [
+            {
+              "start": "09:30",
+              "end": "09:35"
+            }
+          ],
+          "last_0950": 28.14,
+          "change_0950": 0.034558823529411864,
+          "last_0955": 28.23,
+          "observation_return_0955": 0.037867647058823506,
+          "hypothetical_tp_touched": true,
+          "hypothetical_sl_touched": true,
+          "hypothetical_first_trigger_order": "SL_BEFORE_TP",
+          "ambiguous_bar_intervals": [],
+          "first_tp_interval": {
+            "start": "09:35",
+            "end": "09:40"
+          },
+          "first_sl_interval": {
+            "start": "09:30",
+            "end": "09:35"
+          },
+          "minute_source_latest_time": "20261102 0955",
+          "resolution": "5m",
+          "execution_limitations": [
+            "REFERENCE_PRICE_NOT_ENTRY",
+            "NO_EXECUTED_EXIT",
+            "EXTREMA_TIME_IS_5M_INTERVAL_NOT_TICK",
+            "QUEUE_AND_LIMIT_FILL_NOT_PROVEN"
+          ],
+          "flat_price_bars": []
+        },
+        {
+          "code": "600059",
+          "name": "古越龙山",
+          "reference_price": 8.15,
+          "rank": 2,
+          "score": 68,
+          "reference_time": "20261030 14:50",
+          "data_quality": {
+            "confidence": "MEDIUM",
+            "missing_fields": [
+              "hot_ths_normal_rank",
+              "hot_dfcf_biaos_rank",
+              "hot_xq_resou_rank",
+              "hot_tdx_resou_rank",
+              "historical_pattern_window_lt_20"
+            ],
+            "vwap_conflict": false,
+            "unit_validation": "PASS",
+            "source_latest_time": "20261030 1450"
+          },
+          "execution_constraints": {
+            "up_limit": 8.71,
+            "down_limit": 7.13
+          },
+          "classification": "MACHINE_PROPOSAL_OBSERVATION",
+          "observation_trade_date": "20261102",
+          "state": "OBSERVATION_COMPLETE",
+          "minute_complete": true,
+          "actual_fill": false,
+          "gpt_confirmed": false,
+          "reliable_trade": false,
+          "gross_return": null,
+          "estimated_net_return": null,
+          "tp_pct": 0.03,
+          "sl_pct": -0.01,
+          "reason": null,
+          "minute_bars": [
+            {
+              "open": 8.12,
+              "high": 8.19,
+              "low": 8.07,
+              "close": 8.08,
+              "vol": 34269.0,
+              "amount": 27836000.0,
+              "time": "0935"
+            },
+            {
+              "open": 8.08,
+              "high": 8.13,
+              "low": 8.06,
+              "close": 8.12,
+              "vol": 14984.0,
+              "amount": 12132800.0,
+              "time": "0940"
+            },
+            {
+              "open": 8.12,
+              "high": 8.22,
+              "low": 8.11,
+              "close": 8.18,
+              "vol": 20342.0,
+              "amount": 16620200.0,
+              "time": "0945"
+            },
+            {
+              "open": 8.18,
+              "high": 8.26,
+              "low": 8.17,
+              "close": 8.24,
+              "vol": 24685.0,
+              "amount": 20304600.0,
+              "time": "0950"
+            },
+            {
+              "open": 8.25,
+              "high": 8.36,
+              "low": 8.24,
+              "close": 8.32,
+              "vol": 36698.0,
+              "amount": 30463800.0,
+              "time": "0955"
+            }
+          ],
+          "open": 8.12,
+          "open_change": -0.0036809815950921143,
+          "high_0930_0955": 8.36,
+          "low_0930_0955": 8.06,
+          "maximum_change": 0.025766871165644023,
+          "minimum_change": -0.01104294478527601,
+          "high_time_intervals": [
+            {
+              "start": "09:50",
+              "end": "09:55"
+            }
+          ],
+          "low_time_intervals": [
+            {
+              "start": "09:35",
+              "end": "09:40"
+            }
+          ],
+          "last_0950": 8.24,
+          "change_0950": 0.01104294478527601,
+          "last_0955": 8.32,
+          "observation_return_0955": 0.020858895705521352,
+          "hypothetical_tp_touched": false,
+          "hypothetical_sl_touched": true,
+          "hypothetical_first_trigger_order": "SL_ONLY",
+          "ambiguous_bar_intervals": [],
+          "first_tp_interval": null,
+          "first_sl_interval": {
+            "start": "09:35",
+            "end": "09:40"
+          },
+          "minute_source_latest_time": "20261102 0955",
+          "resolution": "5m",
+          "execution_limitations": [
+            "REFERENCE_PRICE_NOT_ENTRY",
+            "NO_EXECUTED_EXIT",
+            "EXTREMA_TIME_IS_5M_INTERVAL_NOT_TICK",
+            "QUEUE_AND_LIMIT_FILL_NOT_PROVEN"
+          ],
+          "flat_price_bars": []
+        }
+      ],
+      "actual_fill": false,
+      "reliable_trade_count": 0,
+      "automated_trading": false
     }
   ],
   "summary": {
     "machine_proposal_count": 14,
-    "unobserved_proposal_count": 2,
-    "complete_observation_count": 12,
+    "unobserved_proposal_count": 0,
+    "complete_observation_count": 14,
     "missing_observation_count": 0,
     "retrospective_sample_count": 4,
     "modelled_fill_count": 0,
@@ -4331,6 +4600,263 @@
       "trade_date": "20261029",
       "run_context": "LIVE_EXPERIMENT",
       "method_version": 2
+    },
+    {
+      "code": "003010",
+      "name": "若羽臣",
+      "reference_price": 27.2,
+      "rank": 1,
+      "score": 80,
+      "reference_time": "20261030 14:50",
+      "data_quality": {
+        "confidence": "MEDIUM",
+        "missing_fields": [
+          "hot_ths_normal_rank",
+          "hot_dfcf_biaos_rank",
+          "hot_xq_resou_rank",
+          "hot_tdx_resou_rank",
+          "historical_pattern_window_lt_20"
+        ],
+        "vwap_conflict": false,
+        "unit_validation": "PASS",
+        "source_latest_time": "20261030 1450"
+      },
+      "execution_constraints": {
+        "up_limit": 28.52,
+        "down_limit": 23.34
+      },
+      "classification": "MACHINE_PROPOSAL_OBSERVATION",
+      "observation_trade_date": "20261102",
+      "state": "OBSERVATION_COMPLETE",
+      "minute_complete": true,
+      "actual_fill": false,
+      "gpt_confirmed": false,
+      "reliable_trade": false,
+      "gross_return": null,
+      "estimated_net_return": null,
+      "tp_pct": 0.03,
+      "sl_pct": -0.01,
+      "reason": null,
+      "minute_bars": [
+        {
+          "open": 27.47,
+          "high": 27.6,
+          "low": 26.91,
+          "close": 27.15,
+          "vol": 8095.0,
+          "amount": 22014600.0,
+          "time": "0935"
+        },
+        {
+          "open": 27.18,
+          "high": 28.02,
+          "low": 27.18,
+          "close": 27.6,
+          "vol": 9422.0,
+          "amount": 26061500.0,
+          "time": "0940"
+        },
+        {
+          "open": 27.6,
+          "high": 27.86,
+          "low": 27.42,
+          "close": 27.69,
+          "vol": 3379.0,
+          "amount": 9330400.0,
+          "time": "0945"
+        },
+        {
+          "open": 27.7,
+          "high": 28.34,
+          "low": 27.69,
+          "close": 28.14,
+          "vol": 7309.0,
+          "amount": 20511500.0,
+          "time": "0950"
+        },
+        {
+          "open": 28.14,
+          "high": 28.24,
+          "low": 27.96,
+          "close": 28.23,
+          "vol": 2918.0,
+          "amount": 8208300.0,
+          "time": "0955"
+        }
+      ],
+      "open": 27.47,
+      "open_change": 0.00992647058823537,
+      "high_0930_0955": 28.34,
+      "low_0930_0955": 26.91,
+      "maximum_change": 0.041911764705882426,
+      "minimum_change": -0.010661764705882315,
+      "high_time_intervals": [
+        {
+          "start": "09:45",
+          "end": "09:50"
+        }
+      ],
+      "low_time_intervals": [
+        {
+          "start": "09:30",
+          "end": "09:35"
+        }
+      ],
+      "last_0950": 28.14,
+      "change_0950": 0.034558823529411864,
+      "last_0955": 28.23,
+      "observation_return_0955": 0.037867647058823506,
+      "hypothetical_tp_touched": true,
+      "hypothetical_sl_touched": true,
+      "hypothetical_first_trigger_order": "SL_BEFORE_TP",
+      "ambiguous_bar_intervals": [],
+      "first_tp_interval": {
+        "start": "09:35",
+        "end": "09:40"
+      },
+      "first_sl_interval": {
+        "start": "09:30",
+        "end": "09:35"
+      },
+      "minute_source_latest_time": "20261102 0955",
+      "resolution": "5m",
+      "execution_limitations": [
+        "REFERENCE_PRICE_NOT_ENTRY",
+        "NO_EXECUTED_EXIT",
+        "EXTREMA_TIME_IS_5M_INTERVAL_NOT_TICK",
+        "QUEUE_AND_LIMIT_FILL_NOT_PROVEN"
+      ],
+      "flat_price_bars": [],
+      "trade_date": "20261030",
+      "run_context": "LIVE_EXPERIMENT",
+      "method_version": 2
+    },
+    {
+      "code": "600059",
+      "name": "古越龙山",
+      "reference_price": 8.15,
+      "rank": 2,
+      "score": 68,
+      "reference_time": "20261030 14:50",
+      "data_quality": {
+        "confidence": "MEDIUM",
+        "missing_fields": [
+          "hot_ths_normal_rank",
+          "hot_dfcf_biaos_rank",
+          "hot_xq_resou_rank",
+          "hot_tdx_resou_rank",
+          "historical_pattern_window_lt_20"
+        ],
+        "vwap_conflict": false,
+        "unit_validation": "PASS",
+        "source_latest_time": "20261030 1450"
+      },
+      "execution_constraints": {
+        "up_limit": 8.71,
+        "down_limit": 7.13
+      },
+      "classification": "MACHINE_PROPOSAL_OBSERVATION",
+      "observation_trade_date": "20261102",
+      "state": "OBSERVATION_COMPLETE",
+      "minute_complete": true,
+      "actual_fill": false,
+      "gpt_confirmed": false,
+      "reliable_trade": false,
+      "gross_return": null,
+      "estimated_net_return": null,
+      "tp_pct": 0.03,
+      "sl_pct": -0.01,
+      "reason": null,
+      "minute_bars": [
+        {
+          "open": 8.12,
+          "high": 8.19,
+          "low": 8.07,
+          "close": 8.08,
+          "vol": 34269.0,
+          "amount": 27836000.0,
+          "time": "0935"
+        },
+        {
+          "open": 8.08,
+          "high": 8.13,
+          "low": 8.06,
+          "close": 8.12,
+          "vol": 14984.0,
+          "amount": 12132800.0,
+          "time": "0940"
+        },
+        {
+          "open": 8.12,
+          "high": 8.22,
+          "low": 8.11,
+          "close": 8.18,
+          "vol": 20342.0,
+          "amount": 16620200.0,
+          "time": "0945"
+        },
+        {
+          "open": 8.18,
+          "high": 8.26,
+          "low": 8.17,
+          "close": 8.24,
+          "vol": 24685.0,
+          "amount": 20304600.0,
+          "time": "0950"
+        },
+        {
+          "open": 8.25,
+          "high": 8.36,
+          "low": 8.24,
+          "close": 8.32,
+          "vol": 36698.0,
+          "amount": 30463800.0,
+          "time": "0955"
+        }
+      ],
+      "open": 8.12,
+      "open_change": -0.0036809815950921143,
+      "high_0930_0955": 8.36,
+      "low_0930_0955": 8.06,
+      "maximum_change": 0.025766871165644023,
+      "minimum_change": -0.01104294478527601,
+      "high_time_intervals": [
+        {
+          "start": "09:50",
+          "end": "09:55"
+        }
+      ],
+      "low_time_intervals": [
+        {
+          "start": "09:35",
+          "end": "09:40"
+        }
+      ],
+      "last_0950": 8.24,
+      "change_0950": 0.01104294478527601,
+      "last_0955": 8.32,
+      "observation_return_0955": 0.020858895705521352,
+      "hypothetical_tp_touched": false,
+      "hypothetical_sl_touched": true,
+      "hypothetical_first_trigger_order": "SL_ONLY",
+      "ambiguous_bar_intervals": [],
+      "first_tp_interval": null,
+      "first_sl_interval": {
+        "start": "09:35",
+        "end": "09:40"
+      },
+      "minute_source_latest_time": "20261102 0955",
+      "resolution": "5m",
+      "execution_limitations": [
+        "REFERENCE_PRICE_NOT_ENTRY",
+        "NO_EXECUTED_EXIT",
+        "EXTREMA_TIME_IS_5M_INTERVAL_NOT_TICK",
+        "QUEUE_AND_LIMIT_FILL_NOT_PROVEN"
+      ],
+      "flat_price_bars": [],
+      "trade_date": "20261030",
+      "run_context": "LIVE_EXPERIMENT",
+      "method_version": 2
     }
   ],
   "raw_sources": [
@@ -4411,6 +4937,15 @@
       "trade_date": "20261029",
       "artifact_name": "exit_20261030_0955_raw.json",
       "sha256": "d56f934d247d313f3498b825718bf8e0a0d20e6f0ed79c7b301ec8ccec5b585d",
+      "provider": "MEOZ",
+      "volume_unit": "lots_100_shares",
+      "amount_unit": "CNY",
+      "interval": "5m"
+    },
+    {
+      "trade_date": "20261030",
+      "artifact_name": "exit_20261102_0955_raw.json",
+      "sha256": "19476031d699e4edaf3bcfdd349b3be9da0df7b05e3ecb3e6035adad8ed52d21",
       "provider": "MEOZ",
       "volume_unit": "lots_100_shares",
       "amount_unit": "CNY",
