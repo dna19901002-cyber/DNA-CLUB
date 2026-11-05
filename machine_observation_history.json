@@ -695,6 +695,71 @@
       "actual_fill": false,
       "gpt_confirmed": false,
       "timing_note": "Locked with original 14:50 snapshot"
+    },
+    {
+      "schema": "ashare-machine-proposals-v1",
+      "strategy_version": "V1.2",
+      "trade_date": "20261105",
+      "classification": "MACHINE_PROPOSAL_OBSERVATION",
+      "proposals": [
+        {
+          "code": "002155",
+          "name": "湖南黄金",
+          "reference_price": 20.19,
+          "rank": 1,
+          "score": 79,
+          "reference_time": "20261105 14:50",
+          "data_quality": {
+            "confidence": "MEDIUM",
+            "missing_fields": [
+              "hot_dfcf_biaos_rank",
+              "hot_xq_resou_rank",
+              "hot_tdx_resou_rank",
+              "historical_pattern_window_lt_20"
+            ],
+            "vwap_conflict": false,
+            "unit_validation": "PASS",
+            "source_latest_time": "20261105 1450"
+          },
+          "execution_constraints": {
+            "up_limit": 21.25,
+            "down_limit": 17.39
+          }
+        },
+        {
+          "code": "300859",
+          "name": "西域旅游",
+          "reference_price": 22.67,
+          "rank": 2,
+          "score": 77,
+          "reference_time": "20261105 14:50",
+          "data_quality": {
+            "confidence": "MEDIUM",
+            "missing_fields": [
+              "theme_names_kpl",
+              "hot_ths_normal_rank",
+              "hot_xq_resou_rank",
+              "hot_tdx_resou_rank",
+              "historical_pattern_window_lt_20"
+            ],
+            "vwap_conflict": false,
+            "unit_validation": "PASS",
+            "source_latest_time": "20261105 1450"
+          },
+          "execution_constraints": {
+            "up_limit": 25.91,
+            "down_limit": 17.27
+          }
+        }
+      ],
+      "source_snapshot_sha256": "572fc38bc8d45f969627375e99ca68f884f4959878cc9460d3a15579e4b0acf3",
+      "snapshot_time": "2026-11-05T14:50:12.974883+08:00",
+      "recorded_at_cn": "2026-11-05T14:50:12.982479+08:00",
+      "run_context": "LIVE_EXPERIMENT",
+      "market_regime": "ABOVE_MA5",
+      "actual_fill": false,
+      "gpt_confirmed": false,
+      "timing_note": "Locked with original 14:50 snapshot"
     }
   ],
   "attempts": [
@@ -3858,8 +3923,8 @@
     }
   ],
   "summary": {
-    "machine_proposal_count": 20,
-    "unobserved_proposal_count": 0,
+    "machine_proposal_count": 22,
+    "unobserved_proposal_count": 2,
     "complete_observation_count": 18,
     "missing_observation_count": 2,
     "retrospective_sample_count": 4,
