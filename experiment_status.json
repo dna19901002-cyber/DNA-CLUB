@@ -50,7 +50,7 @@
   "selection_audit": {
     "schema": "ashare-experiment-selection-audit-v1",
     "strategy_version": "V1.2",
-    "checked_at_cn": "2026-11-04T14:55:05.352177+08:00",
+    "checked_at_cn": "2026-11-05T09:49:45.357886+08:00",
     "trade_date": "20261104",
     "groups": {
       "A": {
@@ -79,7 +79,7 @@
     },
     "market_data_health": {
       "A": {
-        "state": "DATA_INSUFFICIENT",
+        "state": "USABLE",
         "trade_date": "20261104",
         "run_context": "LIVE",
         "snapshot_sha256": "9777df9b8dee5c0417d03d81d49e28bfc646edf57b924c34739794f7eee19bbf",
