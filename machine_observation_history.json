@@ -3761,13 +3761,107 @@
       "actual_fill": false,
       "reliable_trade_count": 0,
       "automated_trading": false
+    },
+    {
+      "schema": "ashare-machine-observation-v1",
+      "strategy_version": "V1.2",
+      "method_version": 2,
+      "classification": "MACHINE_PROPOSAL_OBSERVATION",
+      "trade_date": "20261104",
+      "observation_trade_date": "20261105",
+      "source_snapshot_sha256": "d44d7943f0ed30ea2bb509cdf2078c4ed74df793cc80edcc922e50a542a0e676",
+      "proposal_ledger_sha256": "109d6bf5c01c29b573b1bd6ac3539112ba8b87c0b4bd0188b9fbf940250b3377",
+      "raw_minute_sha256": "cd4c30e6bc78b1104931eeeffd3db78e96929dda2f1ec7c07ec369bb8c58aa54",
+      "retrieved_at_cn": "2026-11-05T09:55:05.373493+08:00",
+      "run_context": "LIVE_EXPERIMENT",
+      "observations": [
+        {
+          "code": "002240",
+          "name": "盛新锂能",
+          "reference_price": 19.79,
+          "rank": 1,
+          "score": 69,
+          "reference_time": "20261104 14:50",
+          "data_quality": {
+            "confidence": "MEDIUM",
+            "missing_fields": [
+              "theme_names_kpl",
+              "hot_ths_normal_rank",
+              "hot_dfcf_biaos_rank",
+              "hot_xq_resou_rank",
+              "hot_tdx_resou_rank",
+              "historical_pattern_window_lt_20"
+            ],
+            "vwap_conflict": false,
+            "unit_validation": "PASS",
+            "source_latest_time": "20261104 1450"
+          },
+          "execution_constraints": {
+            "up_limit": 21.11,
+            "down_limit": 17.27
+          },
+          "classification": "MACHINE_PROPOSAL_OBSERVATION",
+          "observation_trade_date": "20261105",
+          "state": "DATA_INSUFFICIENT",
+          "minute_complete": false,
+          "actual_fill": false,
+          "gpt_confirmed": false,
+          "reliable_trade": false,
+          "gross_return": null,
+          "estimated_net_return": null,
+          "tp_pct": 0.03,
+          "sl_pct": -0.01,
+          "reason": "LOCAL_DAILY_API_BUDGET_EXHAUSTED"
+        },
+        {
+          "code": "301381",
+          "name": "赛维时代",
+          "reference_price": 24.92,
+          "rank": 2,
+          "score": 69,
+          "reference_time": "20261104 14:50",
+          "data_quality": {
+            "confidence": "MEDIUM",
+            "missing_fields": [
+              "theme_names_kpl",
+              "hot_ths_normal_rank",
+              "hot_dfcf_biaos_rank",
+              "hot_xq_resou_rank",
+              "hot_tdx_resou_rank",
+              "historical_pattern_window_lt_20"
+            ],
+            "vwap_conflict": false,
+            "unit_validation": "PASS",
+            "source_latest_time": "20261104 1450"
+          },
+          "execution_constraints": {
+            "up_limit": 29.15,
+            "down_limit": 19.43
+          },
+          "classification": "MACHINE_PROPOSAL_OBSERVATION",
+          "observation_trade_date": "20261105",
+          "state": "DATA_INSUFFICIENT",
+          "minute_complete": false,
+          "actual_fill": false,
+          "gpt_confirmed": false,
+          "reliable_trade": false,
+          "gross_return": null,
+          "estimated_net_return": null,
+          "tp_pct": 0.03,
+          "sl_pct": -0.01,
+          "reason": "LOCAL_DAILY_API_BUDGET_EXHAUSTED"
+        }
+      ],
+      "actual_fill": false,
+      "reliable_trade_count": 0,
+      "automated_trading": false
     }
   ],
   "summary": {
     "machine_proposal_count": 20,
-    "unobserved_proposal_count": 2,
+    "unobserved_proposal_count": 0,
     "complete_observation_count": 18,
-    "missing_observation_count": 0,
+    "missing_observation_count": 2,
     "retrospective_sample_count": 4,
     "modelled_fill_count": 0,
     "reliable_trade_count": 0
@@ -6088,6 +6182,88 @@
       "trade_date": "20261103",
       "run_context": "LIVE_EXPERIMENT",
       "method_version": 2
+    },
+    {
+      "code": "002240",
+      "name": "盛新锂能",
+      "reference_price": 19.79,
+      "rank": 1,
+      "score": 69,
+      "reference_time": "20261104 14:50",
+      "data_quality": {
+        "confidence": "MEDIUM",
+        "missing_fields": [
+          "theme_names_kpl",
+          "hot_ths_normal_rank",
+          "hot_dfcf_biaos_rank",
+          "hot_xq_resou_rank",
+          "hot_tdx_resou_rank",
+          "historical_pattern_window_lt_20"
+        ],
+        "vwap_conflict": false,
+        "unit_validation": "PASS",
+        "source_latest_time": "20261104 1450"
+      },
+      "execution_constraints": {
+        "up_limit": 21.11,
+        "down_limit": 17.27
+      },
+      "classification": "MACHINE_PROPOSAL_OBSERVATION",
+      "observation_trade_date": "20261105",
+      "state": "DATA_INSUFFICIENT",
+      "minute_complete": false,
+      "actual_fill": false,
+      "gpt_confirmed": false,
+      "reliable_trade": false,
+      "gross_return": null,
+      "estimated_net_return": null,
+      "tp_pct": 0.03,
+      "sl_pct": -0.01,
+      "reason": "LOCAL_DAILY_API_BUDGET_EXHAUSTED",
+      "trade_date": "20261104",
+      "run_context": "LIVE_EXPERIMENT",
+      "method_version": 2
+    },
+    {
+      "code": "301381",
+      "name": "赛维时代",
+      "reference_price": 24.92,
+      "rank": 2,
+      "score": 69,
+      "reference_time": "20261104 14:50",
+      "data_quality": {
+        "confidence": "MEDIUM",
+        "missing_fields": [
+          "theme_names_kpl",
+          "hot_ths_normal_rank",
+          "hot_dfcf_biaos_rank",
+          "hot_xq_resou_rank",
+          "hot_tdx_resou_rank",
+          "historical_pattern_window_lt_20"
+        ],
+        "vwap_conflict": false,
+        "unit_validation": "PASS",
+        "source_latest_time": "20261104 1450"
+      },
+      "execution_constraints": {
+        "up_limit": 29.15,
+        "down_limit": 19.43
+      },
+      "classification": "MACHINE_PROPOSAL_OBSERVATION",
+      "observation_trade_date": "20261105",
+      "state": "DATA_INSUFFICIENT",
+      "minute_complete": false,
+      "actual_fill": false,
+      "gpt_confirmed": false,
+      "reliable_trade": false,
+      "gross_return": null,
+      "estimated_net_return": null,
+      "tp_pct": 0.03,
+      "sl_pct": -0.01,
+      "reason": "LOCAL_DAILY_API_BUDGET_EXHAUSTED",
+      "trade_date": "20261104",
+      "run_context": "LIVE_EXPERIMENT",
+      "method_version": 2
     }
   ],
   "raw_sources": [
@@ -6195,6 +6371,24 @@
       "trade_date": "20261103",
       "artifact_name": "exit_20261104_0955_raw.json",
       "sha256": "ae051a4a0ed80e75a15b9597f5f8cf228998e8329af0839df7be5b586ffac766",
+      "provider": "MEOZ",
+      "volume_unit": "lots_100_shares",
+      "amount_unit": "CNY",
+      "interval": "5m"
+    },
+    {
+      "trade_date": "20261104",
+      "artifact_name": "exit_20261105_0950_raw.json",
+      "sha256": "cd4c30e6bc78b1104931eeeffd3db78e96929dda2f1ec7c07ec369bb8c58aa54",
+      "provider": "MEOZ",
+      "volume_unit": "lots_100_shares",
+      "amount_unit": "CNY",
+      "interval": "5m"
+    },
+    {
+      "trade_date": "20261104",
+      "artifact_name": "exit_20261105_0955_raw.json",
+      "sha256": "cd4c30e6bc78b1104931eeeffd3db78e96929dda2f1ec7c07ec369bb8c58aa54",
       "provider": "MEOZ",
       "volume_unit": "lots_100_shares",
       "amount_unit": "CNY",
