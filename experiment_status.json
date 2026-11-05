@@ -50,13 +50,13 @@
   "selection_audit": {
     "schema": "ashare-experiment-selection-audit-v1",
     "strategy_version": "V1.2",
-    "checked_at_cn": "2026-11-05T09:49:45.357886+08:00",
-    "trade_date": "20261104",
+    "checked_at_cn": "2026-11-05T14:54:00.357784+08:00",
+    "trade_date": "20261105",
     "groups": {
       "A": {
         "state": "MANUAL_CHECKPOINT_PENDING",
         "reason": "INTENTIONAL_CONVERSATION_RECORD_MODE",
-        "expected_snapshot_sha256": "9777df9b8dee5c0417d03d81d49e28bfc646edf57b924c34739794f7eee19bbf",
+        "expected_snapshot_sha256": "4f66d83bc59a6fda6d2424066d4c6298a7679531e20686f8c4380a9ce9cd7ebc",
         "execution_eligible": false,
         "github_read_receipt": null,
         "automatic_github_selection_required": false
@@ -64,7 +64,7 @@
       "BC": {
         "state": "MANUAL_CHECKPOINT_PENDING",
         "reason": "INTENTIONAL_CONVERSATION_RECORD_MODE",
-        "expected_snapshot_sha256": "d44d7943f0ed30ea2bb509cdf2078c4ed74df793cc80edcc922e50a542a0e676",
+        "expected_snapshot_sha256": "572fc38bc8d45f969627375e99ca68f884f4959878cc9460d3a15579e4b0acf3",
         "execution_eligible": false,
         "github_read_receipt": null,
         "automatic_github_selection_required": false
@@ -80,17 +80,17 @@
     "market_data_health": {
       "A": {
         "state": "USABLE",
-        "trade_date": "20261104",
+        "trade_date": "20261105",
         "run_context": "LIVE",
-        "snapshot_sha256": "9777df9b8dee5c0417d03d81d49e28bfc646edf57b924c34739794f7eee19bbf",
+        "snapshot_sha256": "4f66d83bc59a6fda6d2424066d4c6298a7679531e20686f8c4380a9ce9cd7ebc",
         "data_quality_state": "DEGRADED_CAPABILITY",
         "selection_state_used_as_market_health": false
       },
       "BC": {
         "state": "USABLE",
-        "trade_date": "20261104",
+        "trade_date": "20261105",
         "run_context": "LIVE_EXPERIMENT",
-        "snapshot_sha256": "d44d7943f0ed30ea2bb509cdf2078c4ed74df793cc80edcc922e50a542a0e676",
+        "snapshot_sha256": "572fc38bc8d45f969627375e99ca68f884f4959878cc9460d3a15579e4b0acf3",
         "data_quality_state": "USABLE_WITH_DECLARED_LIMITATIONS",
         "selection_state_used_as_market_health": false
       }
