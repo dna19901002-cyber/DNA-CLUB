@@ -4,6 +4,140 @@
   "trading_days": 20,
   "runs": [
     {
+      "trade_date": "20261105",
+      "1430": {
+        "trade_date": "20261105",
+        "mode": "1430",
+        "decision": "PASS",
+        "market_gate": {
+          "ma5": true,
+          "turnover": true,
+          "major_index_drop": true,
+          "advance_ratio": true
+        },
+        "candidate_codes": [
+          "002155",
+          "600584",
+          "002015",
+          "002241",
+          "002971",
+          "002812",
+          "301168",
+          "600605",
+          "300617",
+          "600547"
+        ],
+        "api_calls_used": 4,
+        "tushare_calls_used": 1,
+        "data_quality": {
+          "provider": "MeoZ",
+          "request_started": "2026-11-05T14:30:05+08:00",
+          "request_finished": "2026-11-05T14:30:22+08:00",
+          "source_latest_time": "2026-11-05T14:30:09+08:00",
+          "freshness_seconds": 3,
+          "missing_fields": [
+            "screening.source_timestamp_not_provided_by_api",
+            "historical_pattern_window_lt_20"
+          ],
+          "provider_errors": [],
+          "unit_validation": {
+            "provider": "MeoZ",
+            "validation_date": "20261105",
+            "schema_signature": "e062261fe7bdf4feeebe7a09b4636e09292353869d2d39cf43dfeacd45d4159b",
+            "validation_started_at": "2026-11-05T14:30:18+08:00",
+            "validated_at": "2026-11-05T14:30:18+08:00",
+            "amount": "yuan",
+            "volume": "lots_100_shares",
+            "amount_unit": "yuan",
+            "volume_unit": "lots_100_shares",
+            "turnover_rate_unit": "percent",
+            "volume_ratio_unit": "multiple",
+            "unit_basis": "MeoZ field contract; no scale inference or conversion of percent/multiple",
+            "result": "PASS",
+            "cache_used": false,
+            "checked_rows": 5570,
+            "reference_symbols": [],
+            "evidence": [],
+            "input_rows": 5656,
+            "invalid_row_count": 0,
+            "invalid_rows": []
+          },
+          "vwap_conflict": false,
+          "fallback_used": false,
+          "confidence": "MEDIUM",
+          "screening_source_time_available": false,
+          "state": "DEGRADED_CAPABILITY",
+          "tushare_enhancement": {
+            "state": "ENABLED",
+            "requests": 1,
+            "metadata_conflicts": 0,
+            "error": null,
+            "transport": "HTTPS"
+          },
+          "issues": {
+            "EXPECTED_PROVIDER_LIMITATION": [
+              {
+                "code": "SCREENING_SOURCE_TIMESTAMP_NOT_PROVIDED"
+              }
+            ],
+            "CANDIDATE_EXCLUDED": [],
+            "STRATEGY_CAPABILITY_MISSING": [
+              {
+                "code": "HISTORICAL_PATTERN_WINDOW_LT_20",
+                "candidates": 10
+              }
+            ],
+            "CRITICAL": []
+          },
+          "candidate_errors": [],
+          "historical_pattern_candidates": {
+            "available": 10,
+            "sufficient_20_sessions": 0
+          },
+          "request_summary": [
+            {
+              "interface": "stockbasic",
+              "started": "2026-11-05T14:30:05+08:00",
+              "finished": "2026-11-05T14:30:08+08:00",
+              "http_status": 200,
+              "rows": 5657,
+              "error": null,
+              "duration_seconds": 3.518
+            },
+            {
+              "interface": "indexdaily",
+              "started": "2026-11-05T14:30:10+08:00",
+              "finished": "2026-11-05T14:30:12+08:00",
+              "http_status": 200,
+              "rows": 15,
+              "error": null,
+              "duration_seconds": 1.955
+            },
+            {
+              "interface": "screening",
+              "started": "2026-11-05T14:30:12+08:00",
+              "finished": "2026-11-05T14:30:18+08:00",
+              "http_status": 200,
+              "rows": 5657,
+              "error": null,
+              "duration_seconds": 5.772
+            },
+            {
+              "interface": "minute",
+              "started": "2026-11-05T14:30:18+08:00",
+              "finished": "2026-11-05T14:30:22+08:00",
+              "http_status": 200,
+              "rows": 3783,
+              "error": null,
+              "duration_seconds": 3.228
+            }
+          ],
+          "candidate_exclusions_do_not_degrade_market_gate": true
+        },
+        "generated_at_cn": "2026-11-05T14:30:22+08:00"
+      }
+    },
+    {
       "trade_date": "20261104",
       "1430": {
         "trade_date": "20261104",
@@ -2663,136 +2797,6 @@
           "candidate_exclusions_do_not_degrade_market_gate": true
         },
         "generated_at_cn": "2026-10-09T14:50:05+08:00"
-      }
-    },
-    {
-      "trade_date": "20261008",
-      "1430": {
-        "trade_date": "20261008",
-        "mode": "1430",
-        "decision": "NO_TRADE",
-        "market_gate": {
-          "ma5": false,
-          "turnover": null,
-          "major_index_drop": false,
-          "advance_ratio": null
-        },
-        "candidate_codes": [],
-        "api_calls_used": 2,
-        "tushare_calls_used": 1,
-        "data_quality": {
-          "provider": "MeoZ",
-          "request_started": "2026-10-08T14:30:05+08:00",
-          "request_finished": "2026-10-08T14:30:08+08:00",
-          "source_latest_time": "2026-10-08T14:30:06+08:00",
-          "freshness_seconds": 2,
-          "missing_fields": [],
-          "provider_errors": [],
-          "unit_validation": {
-            "amount": "yuan",
-            "volume": "lots_100_shares",
-            "result": "NOT_CHECKED"
-          },
-          "vwap_conflict": false,
-          "fallback_used": false,
-          "confidence": "HIGH",
-          "screening_source_time_available": false,
-          "state": "COMPLETE_FOR_FAILED_GATE",
-          "tushare_enhancement": {
-            "state": "ENABLED",
-            "requests": 1,
-            "metadata_conflicts": 0,
-            "error": null,
-            "transport": "HTTP_USER_APPROVED"
-          },
-          "request_summary": [
-            {
-              "interface": "stockbasic",
-              "started": "2026-10-08T14:30:05+08:00",
-              "finished": "2026-10-08T14:30:06+08:00",
-              "http_status": 200,
-              "rows": 5651,
-              "error": null,
-              "duration_seconds": 1.273
-            },
-            {
-              "interface": "indexdaily",
-              "started": "2026-10-08T14:30:08+08:00",
-              "finished": "2026-10-08T14:30:08+08:00",
-              "http_status": 200,
-              "rows": 15,
-              "error": null,
-              "duration_seconds": 0.158
-            }
-          ],
-          "issues": {
-            "EXPECTED_PROVIDER_LIMITATION": [],
-            "CANDIDATE_EXCLUDED": [],
-            "STRATEGY_CAPABILITY_MISSING": [],
-            "CRITICAL": []
-          },
-          "candidate_exclusions_do_not_degrade_market_gate": true
-        },
-        "generated_at_cn": "2026-10-08T14:30:08+08:00"
-      },
-      "1450": {
-        "trade_date": "20261008",
-        "mode": "1450",
-        "decision": "NO_TRADE",
-        "market_gate": {
-          "ma5": false,
-          "turnover": null,
-          "major_index_drop": false,
-          "advance_ratio": null
-        },
-        "candidate_codes": [],
-        "api_calls_used": 1,
-        "tushare_calls_used": 0,
-        "data_quality": {
-          "provider": "MeoZ",
-          "request_started": "2026-10-08T14:50:05+08:00",
-          "request_finished": "2026-10-08T14:50:05+08:00",
-          "source_latest_time": "2026-10-08T14:50:03+08:00",
-          "freshness_seconds": 3,
-          "missing_fields": [],
-          "provider_errors": [],
-          "unit_validation": {
-            "amount": "yuan",
-            "volume": "lots_100_shares",
-            "result": "NOT_CHECKED"
-          },
-          "vwap_conflict": false,
-          "fallback_used": false,
-          "confidence": "HIGH",
-          "screening_source_time_available": false,
-          "state": "COMPLETE_FOR_FAILED_GATE",
-          "tushare_enhancement": {
-            "state": "ENABLED",
-            "requests": 0,
-            "metadata_conflicts": 0,
-            "error": null,
-            "transport": "HTTP_USER_APPROVED"
-          },
-          "request_summary": [
-            {
-              "interface": "indexdaily",
-              "started": "2026-10-08T14:50:05+08:00",
-              "finished": "2026-10-08T14:50:05+08:00",
-              "http_status": 200,
-              "rows": 15,
-              "error": null,
-              "duration_seconds": 0.324
-            }
-          ],
-          "issues": {
-            "EXPECTED_PROVIDER_LIMITATION": [],
-            "CANDIDATE_EXCLUDED": [],
-            "STRATEGY_CAPABILITY_MISSING": [],
-            "CRITICAL": []
-          },
-          "candidate_exclusions_do_not_degrade_market_gate": true
-        },
-        "generated_at_cn": "2026-10-08T14:50:05+08:00"
       }
     }
   ]
