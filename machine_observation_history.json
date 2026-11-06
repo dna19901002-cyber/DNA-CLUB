@@ -760,6 +760,72 @@
       "actual_fill": false,
       "gpt_confirmed": false,
       "timing_note": "Locked with original 14:50 snapshot"
+    },
+    {
+      "schema": "ashare-machine-proposals-v1",
+      "strategy_version": "V1.2",
+      "trade_date": "20261106",
+      "classification": "MACHINE_PROPOSAL_OBSERVATION",
+      "proposals": [
+        {
+          "code": "002124",
+          "name": "天邦食品",
+          "reference_price": 2.0,
+          "rank": 1,
+          "score": 76,
+          "reference_time": "20261106 14:50",
+          "data_quality": {
+            "confidence": "MEDIUM",
+            "missing_fields": [
+              "hot_ths_normal_rank",
+              "hot_dfcf_biaos_rank",
+              "hot_xq_resou_rank",
+              "hot_tdx_resou_rank",
+              "historical_pattern_window_lt_20"
+            ],
+            "vwap_conflict": false,
+            "unit_validation": "PASS",
+            "source_latest_time": "20261106 1450"
+          },
+          "execution_constraints": {
+            "up_limit": 2.1,
+            "down_limit": 1.72
+          }
+        },
+        {
+          "code": "002025",
+          "name": "航天电器",
+          "reference_price": 52.27,
+          "rank": 2,
+          "score": 71,
+          "reference_time": "20261106 14:50",
+          "data_quality": {
+            "confidence": "MEDIUM",
+            "missing_fields": [
+              "hot_ths_normal_rank",
+              "hot_dfcf_biaos_rank",
+              "hot_xq_resou_rank",
+              "hot_tdx_resou_rank",
+              "historical_pattern_window_lt_20"
+            ],
+            "vwap_conflict": false,
+            "unit_validation": "PASS",
+            "source_latest_time": "20261106 1450"
+          },
+          "execution_constraints": {
+            "up_limit": 55.31,
+            "down_limit": 45.25
+          }
+        }
+      ],
+      "source_snapshot_sha256": "6ecbb739b73d833456dd5dba27476800a5684c0c162f6fe9eb5b3f62f560e51f",
+      "snapshot_time": "2026-11-06T14:50:10.391507+08:00",
+      "recorded_at_cn": "2026-11-06T14:50:10.398941+08:00",
+      "run_context": "LIVE_EXPERIMENT",
+      "market_regime": "WITHIN_MINUS_1PCT_MA5",
+      "actual_fill": false,
+      "gpt_confirmed": false,
+      "timing_note": "Locked with original 14:50 snapshot"
     }
   ],
   "attempts": [
@@ -4282,8 +4348,8 @@
     }
   ],
   "summary": {
-    "machine_proposal_count": 22,
-    "unobserved_proposal_count": 0,
+    "machine_proposal_count": 24,
+    "unobserved_proposal_count": 2,
     "complete_observation_count": 20,
     "missing_observation_count": 2,
     "retrospective_sample_count": 6,
