@@ -4188,13 +4188,104 @@
       "actual_fill": false,
       "reliable_trade_count": 0,
       "automated_trading": false
+    },
+    {
+      "schema": "ashare-machine-observation-v1",
+      "strategy_version": "V1.2",
+      "method_version": 2,
+      "classification": "MACHINE_PROPOSAL_OBSERVATION",
+      "trade_date": "20261105",
+      "observation_trade_date": "20261106",
+      "source_snapshot_sha256": "572fc38bc8d45f969627375e99ca68f884f4959878cc9460d3a15579e4b0acf3",
+      "proposal_ledger_sha256": "f79180a6eb26a80d8e4eaba768b4885d3c95f3bf4c42c3bbb064509faec7ee36",
+      "raw_minute_sha256": "569c5900baac639cc67a79884ee039efed75dd5517d776a6a3455514c7cd8be3",
+      "retrieved_at_cn": "2026-11-06T09:55:05.374733+08:00",
+      "run_context": "LIVE_EXPERIMENT",
+      "observations": [
+        {
+          "code": "002155",
+          "name": "湖南黄金",
+          "reference_price": 20.19,
+          "rank": 1,
+          "score": 79,
+          "reference_time": "20261105 14:50",
+          "data_quality": {
+            "confidence": "MEDIUM",
+            "missing_fields": [
+              "hot_dfcf_biaos_rank",
+              "hot_xq_resou_rank",
+              "hot_tdx_resou_rank",
+              "historical_pattern_window_lt_20"
+            ],
+            "vwap_conflict": false,
+            "unit_validation": "PASS",
+            "source_latest_time": "20261105 1450"
+          },
+          "execution_constraints": {
+            "up_limit": 21.25,
+            "down_limit": 17.39
+          },
+          "classification": "MACHINE_PROPOSAL_OBSERVATION",
+          "observation_trade_date": "20261106",
+          "state": "DATA_INSUFFICIENT",
+          "minute_complete": false,
+          "actual_fill": false,
+          "gpt_confirmed": false,
+          "reliable_trade": false,
+          "gross_return": null,
+          "estimated_net_return": null,
+          "tp_pct": 0.03,
+          "sl_pct": -0.01,
+          "reason": "LOCAL_DAILY_API_BUDGET_EXHAUSTED"
+        },
+        {
+          "code": "300859",
+          "name": "西域旅游",
+          "reference_price": 22.67,
+          "rank": 2,
+          "score": 77,
+          "reference_time": "20261105 14:50",
+          "data_quality": {
+            "confidence": "MEDIUM",
+            "missing_fields": [
+              "theme_names_kpl",
+              "hot_ths_normal_rank",
+              "hot_xq_resou_rank",
+              "hot_tdx_resou_rank",
+              "historical_pattern_window_lt_20"
+            ],
+            "vwap_conflict": false,
+            "unit_validation": "PASS",
+            "source_latest_time": "20261105 1450"
+          },
+          "execution_constraints": {
+            "up_limit": 25.91,
+            "down_limit": 17.27
+          },
+          "classification": "MACHINE_PROPOSAL_OBSERVATION",
+          "observation_trade_date": "20261106",
+          "state": "DATA_INSUFFICIENT",
+          "minute_complete": false,
+          "actual_fill": false,
+          "gpt_confirmed": false,
+          "reliable_trade": false,
+          "gross_return": null,
+          "estimated_net_return": null,
+          "tp_pct": 0.03,
+          "sl_pct": -0.01,
+          "reason": "LOCAL_DAILY_API_BUDGET_EXHAUSTED"
+        }
+      ],
+      "actual_fill": false,
+      "reliable_trade_count": 0,
+      "automated_trading": false
     }
   ],
   "summary": {
     "machine_proposal_count": 22,
-    "unobserved_proposal_count": 2,
+    "unobserved_proposal_count": 0,
     "complete_observation_count": 20,
-    "missing_observation_count": 0,
+    "missing_observation_count": 2,
     "retrospective_sample_count": 6,
     "modelled_fill_count": 0,
     "reliable_trade_count": 0
@@ -6771,6 +6862,85 @@
       "trade_date": "20261104",
       "run_context": "RETROSPECTIVE_REPLAY",
       "method_version": 2
+    },
+    {
+      "code": "002155",
+      "name": "湖南黄金",
+      "reference_price": 20.19,
+      "rank": 1,
+      "score": 79,
+      "reference_time": "20261105 14:50",
+      "data_quality": {
+        "confidence": "MEDIUM",
+        "missing_fields": [
+          "hot_dfcf_biaos_rank",
+          "hot_xq_resou_rank",
+          "hot_tdx_resou_rank",
+          "historical_pattern_window_lt_20"
+        ],
+        "vwap_conflict": false,
+        "unit_validation": "PASS",
+        "source_latest_time": "20261105 1450"
+      },
+      "execution_constraints": {
+        "up_limit": 21.25,
+        "down_limit": 17.39
+      },
+      "classification": "MACHINE_PROPOSAL_OBSERVATION",
+      "observation_trade_date": "20261106",
+      "state": "DATA_INSUFFICIENT",
+      "minute_complete": false,
+      "actual_fill": false,
+      "gpt_confirmed": false,
+      "reliable_trade": false,
+      "gross_return": null,
+      "estimated_net_return": null,
+      "tp_pct": 0.03,
+      "sl_pct": -0.01,
+      "reason": "LOCAL_DAILY_API_BUDGET_EXHAUSTED",
+      "trade_date": "20261105",
+      "run_context": "LIVE_EXPERIMENT",
+      "method_version": 2
+    },
+    {
+      "code": "300859",
+      "name": "西域旅游",
+      "reference_price": 22.67,
+      "rank": 2,
+      "score": 77,
+      "reference_time": "20261105 14:50",
+      "data_quality": {
+        "confidence": "MEDIUM",
+        "missing_fields": [
+          "theme_names_kpl",
+          "hot_ths_normal_rank",
+          "hot_xq_resou_rank",
+          "hot_tdx_resou_rank",
+          "historical_pattern_window_lt_20"
+        ],
+        "vwap_conflict": false,
+        "unit_validation": "PASS",
+        "source_latest_time": "20261105 1450"
+      },
+      "execution_constraints": {
+        "up_limit": 25.91,
+        "down_limit": 17.27
+      },
+      "classification": "MACHINE_PROPOSAL_OBSERVATION",
+      "observation_trade_date": "20261106",
+      "state": "DATA_INSUFFICIENT",
+      "minute_complete": false,
+      "actual_fill": false,
+      "gpt_confirmed": false,
+      "reliable_trade": false,
+      "gross_return": null,
+      "estimated_net_return": null,
+      "tp_pct": 0.03,
+      "sl_pct": -0.01,
+      "reason": "LOCAL_DAILY_API_BUDGET_EXHAUSTED",
+      "trade_date": "20261105",
+      "run_context": "LIVE_EXPERIMENT",
+      "method_version": 2
     }
   ],
   "raw_sources": [
@@ -6905,6 +7075,24 @@
       "trade_date": "20261104",
       "artifact_name": "machine_replay_20261105_raw.json",
       "sha256": "69f7304283f69adf11b9dd95819fa0e8cb31465fc184968d627d49249883f75d",
+      "provider": "MEOZ",
+      "volume_unit": "lots_100_shares",
+      "amount_unit": "CNY",
+      "interval": "5m"
+    },
+    {
+      "trade_date": "20261105",
+      "artifact_name": "exit_20261106_0950_raw.json",
+      "sha256": "569c5900baac639cc67a79884ee039efed75dd5517d776a6a3455514c7cd8be3",
+      "provider": "MEOZ",
+      "volume_unit": "lots_100_shares",
+      "amount_unit": "CNY",
+      "interval": "5m"
+    },
+    {
+      "trade_date": "20261105",
+      "artifact_name": "exit_20261106_0955_raw.json",
+      "sha256": "569c5900baac639cc67a79884ee039efed75dd5517d776a6a3455514c7cd8be3",
       "provider": "MEOZ",
       "volume_unit": "lots_100_shares",
       "amount_unit": "CNY",
