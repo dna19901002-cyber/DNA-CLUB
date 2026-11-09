@@ -50,7 +50,7 @@
   "selection_audit": {
     "schema": "ashare-experiment-selection-audit-v1",
     "strategy_version": "V1.2",
-    "checked_at_cn": "2026-11-09T14:54:00.347154+08:00",
+    "checked_at_cn": "2026-11-09T14:55:05.359919+08:00",
     "trade_date": "20261109",
     "groups": {
       "A": {
@@ -105,7 +105,7 @@
   "latest_experiment_trade_date": "20261109",
   "latest_experiment_1450_content_sha256": "773f33503611a0ab3c3caa41fec332c5e0c840afbb29d32ada42561b246d5cc5",
   "last_entry": {
-    "trade_date": "20261106",
+    "trade_date": "20261109",
     "confirmed_models": 0,
     "api_calls_used": 0,
     "error": null
