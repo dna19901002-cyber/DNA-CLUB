@@ -102,8 +102,8 @@
   },
   "last_verified_at_cn": "2026-10-20T06:37:13.439418+08:00",
   "offline_tests_passed": 135,
-  "latest_experiment_trade_date": "20261106",
-  "latest_experiment_1450_content_sha256": "6ecbb739b73d833456dd5dba27476800a5684c0c162f6fe9eb5b3f62f560e51f",
+  "latest_experiment_trade_date": "20261109",
+  "latest_experiment_1450_content_sha256": "773f33503611a0ab3c3caa41fec332c5e0c840afbb29d32ada42561b246d5cc5",
   "last_entry": {
     "trade_date": "20261106",
     "confirmed_models": 0,
@@ -121,15 +121,15 @@
     "no_strategy_change": true
   },
   "machine_observation_summary": {
-    "machine_proposal_count": 24,
-    "unobserved_proposal_count": 0,
+    "machine_proposal_count": 26,
+    "unobserved_proposal_count": 2,
     "complete_observation_count": 24,
     "missing_observation_count": 0,
     "retrospective_sample_count": 8,
     "modelled_fill_count": 0,
     "reliable_trade_count": 0
   },
-  "latest_machine_observation_content_sha256": "4529b669657c5bb57137fa9ee40d507e88bc0a32f3a93c89d8d349b88616fbab",
+  "latest_machine_observation_content_sha256": "3bdaaae8cb7f21f94938b9e9f4e28030e981efd254dce847808c3a87a5c34f03",
   "repair_offline_tests_passed": 155,
   "selection_workflow": {
     "mode": "CONVERSATION_MANUAL_CHECKPOINT",
