@@ -826,6 +826,73 @@
       "actual_fill": false,
       "gpt_confirmed": false,
       "timing_note": "Locked with original 14:50 snapshot"
+    },
+    {
+      "schema": "ashare-machine-proposals-v1",
+      "strategy_version": "V1.2",
+      "trade_date": "20261109",
+      "classification": "MACHINE_PROPOSAL_OBSERVATION",
+      "proposals": [
+        {
+          "code": "600758",
+          "name": "辽宁能源",
+          "reference_price": 3.23,
+          "rank": 1,
+          "score": 80,
+          "reference_time": "20261109 14:50",
+          "data_quality": {
+            "confidence": "MEDIUM",
+            "missing_fields": [
+              "hot_ths_normal_rank",
+              "hot_dfcf_biaos_rank",
+              "hot_xq_resou_rank",
+              "hot_tdx_resou_rank",
+              "historical_pattern_window_lt_20"
+            ],
+            "vwap_conflict": false,
+            "unit_validation": "PASS",
+            "source_latest_time": "20261109 1450"
+          },
+          "execution_constraints": {
+            "up_limit": 3.4,
+            "down_limit": 2.78
+          }
+        },
+        {
+          "code": "600368",
+          "name": "五洲交通",
+          "reference_price": 4.38,
+          "rank": 2,
+          "score": 69,
+          "reference_time": "20261109 14:50",
+          "data_quality": {
+            "confidence": "MEDIUM",
+            "missing_fields": [
+              "theme_names_kpl",
+              "hot_ths_normal_rank",
+              "hot_dfcf_biaos_rank",
+              "hot_xq_resou_rank",
+              "hot_tdx_resou_rank",
+              "historical_pattern_window_lt_20"
+            ],
+            "vwap_conflict": false,
+            "unit_validation": "PASS",
+            "source_latest_time": "20261109 1450"
+          },
+          "execution_constraints": {
+            "up_limit": 4.62,
+            "down_limit": 3.78
+          }
+        }
+      ],
+      "source_snapshot_sha256": "773f33503611a0ab3c3caa41fec332c5e0c840afbb29d32ada42561b246d5cc5",
+      "snapshot_time": "2026-11-09T14:50:14.254491+08:00",
+      "recorded_at_cn": "2026-11-09T14:50:14.263814+08:00",
+      "run_context": "LIVE_EXPERIMENT",
+      "market_regime": "ABOVE_MA5",
+      "actual_fill": false,
+      "gpt_confirmed": false,
+      "timing_note": "Locked with original 14:50 snapshot"
     }
   ],
   "attempts": [
@@ -4894,8 +4961,8 @@
     }
   ],
   "summary": {
-    "machine_proposal_count": 24,
-    "unobserved_proposal_count": 0,
+    "machine_proposal_count": 26,
+    "unobserved_proposal_count": 2,
     "complete_observation_count": 24,
     "missing_observation_count": 0,
     "retrospective_sample_count": 8,
