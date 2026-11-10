@@ -5118,14 +5118,285 @@
       "actual_fill": false,
       "reliable_trade_count": 0,
       "automated_trading": false
+    },
+    {
+      "schema": "ashare-machine-observation-v1",
+      "strategy_version": "V1.2",
+      "method_version": 2,
+      "classification": "MACHINE_PROPOSAL_OBSERVATION",
+      "trade_date": "20261109",
+      "observation_trade_date": "20261110",
+      "source_snapshot_sha256": "773f33503611a0ab3c3caa41fec332c5e0c840afbb29d32ada42561b246d5cc5",
+      "proposal_ledger_sha256": "8254793ec9d15f694351d9d59a3b125eb8534292d6ea15deeb9546787da983a8",
+      "raw_minute_sha256": "830dfa7fc266cfec6edfb5fe96eaacce6c00a515bae31e6ec20a08ff1c597885",
+      "retrieved_at_cn": "2026-11-10T15:10:00.503341+08:00",
+      "run_context": "RETROSPECTIVE_REPLAY",
+      "observations": [
+        {
+          "code": "600758",
+          "name": "辽宁能源",
+          "reference_price": 3.23,
+          "rank": 1,
+          "score": 80,
+          "reference_time": "20261109 14:50",
+          "data_quality": {
+            "confidence": "MEDIUM",
+            "missing_fields": [
+              "hot_ths_normal_rank",
+              "hot_dfcf_biaos_rank",
+              "hot_xq_resou_rank",
+              "hot_tdx_resou_rank",
+              "historical_pattern_window_lt_20"
+            ],
+            "vwap_conflict": false,
+            "unit_validation": "PASS",
+            "source_latest_time": "20261109 1450"
+          },
+          "execution_constraints": {
+            "up_limit": 3.4,
+            "down_limit": 2.78
+          },
+          "classification": "MACHINE_PROPOSAL_OBSERVATION",
+          "observation_trade_date": "20261110",
+          "state": "OBSERVATION_COMPLETE",
+          "minute_complete": true,
+          "actual_fill": false,
+          "gpt_confirmed": false,
+          "reliable_trade": false,
+          "gross_return": null,
+          "estimated_net_return": null,
+          "tp_pct": 0.03,
+          "sl_pct": -0.01,
+          "reason": null,
+          "minute_bars": [
+            {
+              "open": 3.21,
+              "high": 3.21,
+              "low": 3.15,
+              "close": 3.19,
+              "vol": 57340.0,
+              "amount": 18263700.0,
+              "time": "0935"
+            },
+            {
+              "open": 3.2,
+              "high": 3.21,
+              "low": 3.18,
+              "close": 3.2,
+              "vol": 22889.0,
+              "amount": 7301500.0,
+              "time": "0940"
+            },
+            {
+              "open": 3.21,
+              "high": 3.25,
+              "low": 3.21,
+              "close": 3.24,
+              "vol": 30470.0,
+              "amount": 9846400.0,
+              "time": "0945"
+            },
+            {
+              "open": 3.24,
+              "high": 3.26,
+              "low": 3.23,
+              "close": 3.25,
+              "vol": 27037.0,
+              "amount": 8775500.0,
+              "time": "0950"
+            },
+            {
+              "open": 3.26,
+              "high": 3.27,
+              "low": 3.24,
+              "close": 3.25,
+              "vol": 27624.0,
+              "amount": 8995100.0,
+              "time": "0955"
+            }
+          ],
+          "open": 3.21,
+          "open_change": -0.006191950464396245,
+          "high_0930_0955": 3.27,
+          "low_0930_0955": 3.15,
+          "maximum_change": 0.01238390092879249,
+          "minimum_change": -0.024767801857585203,
+          "high_time_intervals": [
+            {
+              "start": "09:50",
+              "end": "09:55"
+            }
+          ],
+          "low_time_intervals": [
+            {
+              "start": "09:30",
+              "end": "09:35"
+            }
+          ],
+          "last_0950": 3.25,
+          "change_0950": 0.006191950464396356,
+          "last_0955": 3.25,
+          "observation_return_0955": 0.006191950464396356,
+          "hypothetical_tp_touched": false,
+          "hypothetical_sl_touched": true,
+          "hypothetical_first_trigger_order": "SL_ONLY",
+          "ambiguous_bar_intervals": [],
+          "first_tp_interval": null,
+          "first_sl_interval": {
+            "start": "09:30",
+            "end": "09:35"
+          },
+          "minute_source_latest_time": "20261110 0955",
+          "resolution": "5m",
+          "execution_limitations": [
+            "REFERENCE_PRICE_NOT_ENTRY",
+            "NO_EXECUTED_EXIT",
+            "EXTREMA_TIME_IS_5M_INTERVAL_NOT_TICK",
+            "QUEUE_AND_LIMIT_FILL_NOT_PROVEN"
+          ],
+          "flat_price_bars": []
+        },
+        {
+          "code": "600368",
+          "name": "五洲交通",
+          "reference_price": 4.38,
+          "rank": 2,
+          "score": 69,
+          "reference_time": "20261109 14:50",
+          "data_quality": {
+            "confidence": "MEDIUM",
+            "missing_fields": [
+              "theme_names_kpl",
+              "hot_ths_normal_rank",
+              "hot_dfcf_biaos_rank",
+              "hot_xq_resou_rank",
+              "hot_tdx_resou_rank",
+              "historical_pattern_window_lt_20"
+            ],
+            "vwap_conflict": false,
+            "unit_validation": "PASS",
+            "source_latest_time": "20261109 1450"
+          },
+          "execution_constraints": {
+            "up_limit": 4.62,
+            "down_limit": 3.78
+          },
+          "classification": "MACHINE_PROPOSAL_OBSERVATION",
+          "observation_trade_date": "20261110",
+          "state": "OBSERVATION_COMPLETE",
+          "minute_complete": true,
+          "actual_fill": false,
+          "gpt_confirmed": false,
+          "reliable_trade": false,
+          "gross_return": null,
+          "estimated_net_return": null,
+          "tp_pct": 0.03,
+          "sl_pct": -0.01,
+          "reason": null,
+          "minute_bars": [
+            {
+              "open": 4.38,
+              "high": 4.38,
+              "low": 4.32,
+              "close": 4.32,
+              "vol": 31185.0,
+              "amount": 13555200.0,
+              "time": "0935"
+            },
+            {
+              "open": 4.32,
+              "high": 4.34,
+              "low": 4.31,
+              "close": 4.32,
+              "vol": 16646.0,
+              "amount": 7197600.0,
+              "time": "0940"
+            },
+            {
+              "open": 4.33,
+              "high": 4.33,
+              "low": 4.31,
+              "close": 4.32,
+              "vol": 6575.0,
+              "amount": 2841000.0,
+              "time": "0945"
+            },
+            {
+              "open": 4.33,
+              "high": 4.34,
+              "low": 4.32,
+              "close": 4.33,
+              "vol": 10883.0,
+              "amount": 4713100.0,
+              "time": "0950"
+            },
+            {
+              "open": 4.33,
+              "high": 4.34,
+              "low": 4.32,
+              "close": 4.33,
+              "vol": 3238.0,
+              "amount": 1401200.0,
+              "time": "0955"
+            }
+          ],
+          "open": 4.38,
+          "open_change": 0.0,
+          "high_0930_0955": 4.38,
+          "low_0930_0955": 4.31,
+          "maximum_change": 0.0,
+          "minimum_change": -0.01598173515981738,
+          "high_time_intervals": [
+            {
+              "start": "09:30",
+              "end": "09:35"
+            }
+          ],
+          "low_time_intervals": [
+            {
+              "start": "09:35",
+              "end": "09:40"
+            },
+            {
+              "start": "09:40",
+              "end": "09:45"
+            }
+          ],
+          "last_0950": 4.33,
+          "change_0950": -0.011415525114155223,
+          "last_0955": 4.33,
+          "observation_return_0955": -0.011415525114155223,
+          "hypothetical_tp_touched": false,
+          "hypothetical_sl_touched": true,
+          "hypothetical_first_trigger_order": "SL_ONLY",
+          "ambiguous_bar_intervals": [],
+          "first_tp_interval": null,
+          "first_sl_interval": {
+            "start": "09:30",
+            "end": "09:35"
+          },
+          "minute_source_latest_time": "20261110 0955",
+          "resolution": "5m",
+          "execution_limitations": [
+            "REFERENCE_PRICE_NOT_ENTRY",
+            "NO_EXECUTED_EXIT",
+            "EXTREMA_TIME_IS_5M_INTERVAL_NOT_TICK",
+            "QUEUE_AND_LIMIT_FILL_NOT_PROVEN"
+          ],
+          "flat_price_bars": []
+        }
+      ],
+      "actual_fill": false,
+      "reliable_trade_count": 0,
+      "automated_trading": false
     }
   ],
   "summary": {
     "machine_proposal_count": 28,
     "unobserved_proposal_count": 2,
-    "complete_observation_count": 24,
-    "missing_observation_count": 2,
-    "retrospective_sample_count": 8,
+    "complete_observation_count": 26,
+    "missing_observation_count": 0,
+    "retrospective_sample_count": 10,
     "modelled_fill_count": 0,
     "reliable_trade_count": 0
   },
@@ -8250,8 +8521,8 @@
       },
       "classification": "MACHINE_PROPOSAL_OBSERVATION",
       "observation_trade_date": "20261110",
-      "state": "DATA_INSUFFICIENT",
-      "minute_complete": false,
+      "state": "OBSERVATION_COMPLETE",
+      "minute_complete": true,
       "actual_fill": false,
       "gpt_confirmed": false,
       "reliable_trade": false,
@@ -8259,9 +8530,96 @@
       "estimated_net_return": null,
       "tp_pct": 0.03,
       "sl_pct": -0.01,
-      "reason": "LOCAL_DAILY_API_BUDGET_EXHAUSTED",
+      "reason": null,
+      "minute_bars": [
+        {
+          "open": 3.21,
+          "high": 3.21,
+          "low": 3.15,
+          "close": 3.19,
+          "vol": 57340.0,
+          "amount": 18263700.0,
+          "time": "0935"
+        },
+        {
+          "open": 3.2,
+          "high": 3.21,
+          "low": 3.18,
+          "close": 3.2,
+          "vol": 22889.0,
+          "amount": 7301500.0,
+          "time": "0940"
+        },
+        {
+          "open": 3.21,
+          "high": 3.25,
+          "low": 3.21,
+          "close": 3.24,
+          "vol": 30470.0,
+          "amount": 9846400.0,
+          "time": "0945"
+        },
+        {
+          "open": 3.24,
+          "high": 3.26,
+          "low": 3.23,
+          "close": 3.25,
+          "vol": 27037.0,
+          "amount": 8775500.0,
+          "time": "0950"
+        },
+        {
+          "open": 3.26,
+          "high": 3.27,
+          "low": 3.24,
+          "close": 3.25,
+          "vol": 27624.0,
+          "amount": 8995100.0,
+          "time": "0955"
+        }
+      ],
+      "open": 3.21,
+      "open_change": -0.006191950464396245,
+      "high_0930_0955": 3.27,
+      "low_0930_0955": 3.15,
+      "maximum_change": 0.01238390092879249,
+      "minimum_change": -0.024767801857585203,
+      "high_time_intervals": [
+        {
+          "start": "09:50",
+          "end": "09:55"
+        }
+      ],
+      "low_time_intervals": [
+        {
+          "start": "09:30",
+          "end": "09:35"
+        }
+      ],
+      "last_0950": 3.25,
+      "change_0950": 0.006191950464396356,
+      "last_0955": 3.25,
+      "observation_return_0955": 0.006191950464396356,
+      "hypothetical_tp_touched": false,
+      "hypothetical_sl_touched": true,
+      "hypothetical_first_trigger_order": "SL_ONLY",
+      "ambiguous_bar_intervals": [],
+      "first_tp_interval": null,
+      "first_sl_interval": {
+        "start": "09:30",
+        "end": "09:35"
+      },
+      "minute_source_latest_time": "20261110 0955",
+      "resolution": "5m",
+      "execution_limitations": [
+        "REFERENCE_PRICE_NOT_ENTRY",
+        "NO_EXECUTED_EXIT",
+        "EXTREMA_TIME_IS_5M_INTERVAL_NOT_TICK",
+        "QUEUE_AND_LIMIT_FILL_NOT_PROVEN"
+      ],
+      "flat_price_bars": [],
       "trade_date": "20261109",
-      "run_context": "LIVE_EXPERIMENT",
+      "run_context": "RETROSPECTIVE_REPLAY",
       "method_version": 2
     },
     {
@@ -8291,8 +8649,8 @@
       },
       "classification": "MACHINE_PROPOSAL_OBSERVATION",
       "observation_trade_date": "20261110",
-      "state": "DATA_INSUFFICIENT",
-      "minute_complete": false,
+      "state": "OBSERVATION_COMPLETE",
+      "minute_complete": true,
       "actual_fill": false,
       "gpt_confirmed": false,
       "reliable_trade": false,
@@ -8300,9 +8658,100 @@
       "estimated_net_return": null,
       "tp_pct": 0.03,
       "sl_pct": -0.01,
-      "reason": "LOCAL_DAILY_API_BUDGET_EXHAUSTED",
+      "reason": null,
+      "minute_bars": [
+        {
+          "open": 4.38,
+          "high": 4.38,
+          "low": 4.32,
+          "close": 4.32,
+          "vol": 31185.0,
+          "amount": 13555200.0,
+          "time": "0935"
+        },
+        {
+          "open": 4.32,
+          "high": 4.34,
+          "low": 4.31,
+          "close": 4.32,
+          "vol": 16646.0,
+          "amount": 7197600.0,
+          "time": "0940"
+        },
+        {
+          "open": 4.33,
+          "high": 4.33,
+          "low": 4.31,
+          "close": 4.32,
+          "vol": 6575.0,
+          "amount": 2841000.0,
+          "time": "0945"
+        },
+        {
+          "open": 4.33,
+          "high": 4.34,
+          "low": 4.32,
+          "close": 4.33,
+          "vol": 10883.0,
+          "amount": 4713100.0,
+          "time": "0950"
+        },
+        {
+          "open": 4.33,
+          "high": 4.34,
+          "low": 4.32,
+          "close": 4.33,
+          "vol": 3238.0,
+          "amount": 1401200.0,
+          "time": "0955"
+        }
+      ],
+      "open": 4.38,
+      "open_change": 0.0,
+      "high_0930_0955": 4.38,
+      "low_0930_0955": 4.31,
+      "maximum_change": 0.0,
+      "minimum_change": -0.01598173515981738,
+      "high_time_intervals": [
+        {
+          "start": "09:30",
+          "end": "09:35"
+        }
+      ],
+      "low_time_intervals": [
+        {
+          "start": "09:35",
+          "end": "09:40"
+        },
+        {
+          "start": "09:40",
+          "end": "09:45"
+        }
+      ],
+      "last_0950": 4.33,
+      "change_0950": -0.011415525114155223,
+      "last_0955": 4.33,
+      "observation_return_0955": -0.011415525114155223,
+      "hypothetical_tp_touched": false,
+      "hypothetical_sl_touched": true,
+      "hypothetical_first_trigger_order": "SL_ONLY",
+      "ambiguous_bar_intervals": [],
+      "first_tp_interval": null,
+      "first_sl_interval": {
+        "start": "09:30",
+        "end": "09:35"
+      },
+      "minute_source_latest_time": "20261110 0955",
+      "resolution": "5m",
+      "execution_limitations": [
+        "REFERENCE_PRICE_NOT_ENTRY",
+        "NO_EXECUTED_EXIT",
+        "EXTREMA_TIME_IS_5M_INTERVAL_NOT_TICK",
+        "QUEUE_AND_LIMIT_FILL_NOT_PROVEN"
+      ],
+      "flat_price_bars": [],
       "trade_date": "20261109",
-      "run_context": "LIVE_EXPERIMENT",
+      "run_context": "RETROSPECTIVE_REPLAY",
       "method_version": 2
     }
   ],
@@ -8492,6 +8941,15 @@
       "trade_date": "20261109",
       "artifact_name": "exit_20261110_0955_raw.json",
       "sha256": "f8ade3fb6d385b3f334ef47ad6222bc7efdc183a88dcf1c1e12232c226a7b7ea",
+      "provider": "MEOZ",
+      "volume_unit": "lots_100_shares",
+      "amount_unit": "CNY",
+      "interval": "5m"
+    },
+    {
+      "trade_date": "20261109",
+      "artifact_name": "machine_replay_20261110_raw.json",
+      "sha256": "830dfa7fc266cfec6edfb5fe96eaacce6c00a515bae31e6ec20a08ff1c597885",
       "provider": "MEOZ",
       "volume_unit": "lots_100_shares",
       "amount_unit": "CNY",
