@@ -50,13 +50,13 @@
   "selection_audit": {
     "schema": "ashare-experiment-selection-audit-v1",
     "strategy_version": "V1.2",
-    "checked_at_cn": "2026-11-10T09:49:45.387770+08:00",
-    "trade_date": "20261109",
+    "checked_at_cn": "2026-11-10T14:55:05.339817+08:00",
+    "trade_date": "20261110",
     "groups": {
       "A": {
         "state": "MANUAL_CHECKPOINT_PENDING",
         "reason": "INTENTIONAL_CONVERSATION_RECORD_MODE",
-        "expected_snapshot_sha256": "07be88746608007adc25c92222e12f963b325f7a7f84fd940a548415e3044d61",
+        "expected_snapshot_sha256": "9c0ce6fc862807bf2cc8a860da7c6165e9c553e97be8e0155aaa44d8e7dcd7df",
         "execution_eligible": false,
         "github_read_receipt": null,
         "automatic_github_selection_required": false
@@ -64,7 +64,7 @@
       "BC": {
         "state": "MANUAL_CHECKPOINT_PENDING",
         "reason": "INTENTIONAL_CONVERSATION_RECORD_MODE",
-        "expected_snapshot_sha256": "773f33503611a0ab3c3caa41fec332c5e0c840afbb29d32ada42561b246d5cc5",
+        "expected_snapshot_sha256": "17c8a2d808442d808bb9615cf5b959cab26b8b89028a80cc2bbeab8a3d6cec7d",
         "execution_eligible": false,
         "github_read_receipt": null,
         "automatic_github_selection_required": false
@@ -80,17 +80,17 @@
     "market_data_health": {
       "A": {
         "state": "USABLE",
-        "trade_date": "20261109",
+        "trade_date": "20261110",
         "run_context": "LIVE",
-        "snapshot_sha256": "07be88746608007adc25c92222e12f963b325f7a7f84fd940a548415e3044d61",
-        "data_quality_state": "DEGRADED_CAPABILITY",
+        "snapshot_sha256": "9c0ce6fc862807bf2cc8a860da7c6165e9c553e97be8e0155aaa44d8e7dcd7df",
+        "data_quality_state": "COMPLETE_FOR_FAILED_GATE",
         "selection_state_used_as_market_health": false
       },
       "BC": {
         "state": "USABLE",
-        "trade_date": "20261109",
+        "trade_date": "20261110",
         "run_context": "LIVE_EXPERIMENT",
-        "snapshot_sha256": "773f33503611a0ab3c3caa41fec332c5e0c840afbb29d32ada42561b246d5cc5",
+        "snapshot_sha256": "17c8a2d808442d808bb9615cf5b959cab26b8b89028a80cc2bbeab8a3d6cec7d",
         "data_quality_state": "USABLE_WITH_DECLARED_LIMITATIONS",
         "selection_state_used_as_market_health": false
       }
@@ -105,7 +105,7 @@
   "latest_experiment_trade_date": "20261110",
   "latest_experiment_1450_content_sha256": "17c8a2d808442d808bb9615cf5b959cab26b8b89028a80cc2bbeab8a3d6cec7d",
   "last_entry": {
-    "trade_date": "20261109",
+    "trade_date": "20261110",
     "confirmed_models": 0,
     "api_calls_used": 0,
     "error": null
