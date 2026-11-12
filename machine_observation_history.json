@@ -1026,6 +1026,72 @@
       "actual_fill": false,
       "gpt_confirmed": false,
       "timing_note": "Locked with original 14:50 snapshot"
+    },
+    {
+      "schema": "ashare-machine-proposals-v1",
+      "strategy_version": "V1.2",
+      "trade_date": "20261112",
+      "classification": "MACHINE_PROPOSAL_OBSERVATION",
+      "proposals": [
+        {
+          "code": "601789",
+          "name": "宁波建工",
+          "reference_price": 3.99,
+          "rank": 1,
+          "score": 71,
+          "reference_time": "20261112 14:50",
+          "data_quality": {
+            "confidence": "MEDIUM",
+            "missing_fields": [
+              "theme_names_kpl",
+              "hot_ths_normal_rank",
+              "hot_xq_resou_rank",
+              "hot_tdx_resou_rank",
+              "historical_pattern_window_lt_20"
+            ],
+            "vwap_conflict": false,
+            "unit_validation": "PASS",
+            "source_latest_time": "20261112 1450"
+          },
+          "execution_constraints": {
+            "up_limit": 4.28,
+            "down_limit": 3.5
+          }
+        },
+        {
+          "code": "002158",
+          "name": "汉钟精机",
+          "reference_price": 22.83,
+          "rank": 2,
+          "score": 67,
+          "reference_time": "20261112 14:50",
+          "data_quality": {
+            "confidence": "MEDIUM",
+            "missing_fields": [
+              "hot_ths_normal_rank",
+              "hot_dfcf_biaos_rank",
+              "hot_xq_resou_rank",
+              "hot_tdx_resou_rank",
+              "historical_pattern_window_lt_20"
+            ],
+            "vwap_conflict": false,
+            "unit_validation": "PASS",
+            "source_latest_time": "20261112 1450"
+          },
+          "execution_constraints": {
+            "up_limit": 24.2,
+            "down_limit": 19.8
+          }
+        }
+      ],
+      "source_snapshot_sha256": "6dae79aebef141e5f6029aeeeba14ee596c79c080a969ce227e99cb726ff57a6",
+      "snapshot_time": "2026-11-12T14:50:10.355103+08:00",
+      "recorded_at_cn": "2026-11-12T14:50:10.360671+08:00",
+      "run_context": "LIVE_EXPERIMENT",
+      "market_regime": "WITHIN_MINUS_1PCT_MA5",
+      "actual_fill": false,
+      "gpt_confirmed": false,
+      "timing_note": "Locked with original 14:50 snapshot"
     }
   ],
   "attempts": [
@@ -5818,8 +5884,8 @@
     }
   ],
   "summary": {
-    "machine_proposal_count": 30,
-    "unobserved_proposal_count": 0,
+    "machine_proposal_count": 32,
+    "unobserved_proposal_count": 2,
     "complete_observation_count": 28,
     "missing_observation_count": 2,
     "retrospective_sample_count": 10,
