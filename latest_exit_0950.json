@@ -2,28 +2,690 @@
   "schema": "ashare-exit-review-v1",
   "strategy_version": "V1.2",
   "mode": "0950_EXIT_REVIEW",
-  "trade_date": "20261111",
-  "previous_trade_date": "20261110",
-  "retrieved_at_cn": "2026-11-11T09:50:05+08:00",
+  "trade_date": "20261112",
+  "previous_trade_date": "20261111",
+  "retrieved_at_cn": "2026-11-12T09:50:05+08:00",
   "run_context": "LIVE",
-  "decision": "NO_REVIEW_REQUIRED",
-  "selection_state": "NOT_APPLICABLE",
-  "selection_error": null,
+  "decision": "REVIEW_DATA_READY",
+  "selection_state": "MANUAL_CHECKPOINT_PENDING",
+  "selection_error": "INTENTIONAL_CONVERSATION_RECORD_MODE",
   "selected_code": null,
   "selection_trade_date": null,
   "reference_price": null,
   "tp_pct": null,
   "sl_pct": null,
   "forced_exit_time": null,
-  "candidates": [],
+  "candidates": [
+    {
+      "symbol": "000910",
+      "code": "000910",
+      "entry_reference": 5.33,
+      "open": 5.25,
+      "high_0930_0950": 5.34,
+      "low_0930_0950": 5.2,
+      "last_0950": 5.2,
+      "return_to_0950": -0.02439,
+      "max_return_to_0950": 0.001876,
+      "min_return_to_0950": -0.02439,
+      "tp_3pct_touched": false,
+      "sl_minus_1pct_touched": true,
+      "observed_buckets": [
+        "0935",
+        "0940",
+        "0945",
+        "0950"
+      ],
+      "minute_source_latest_time": "20261112 09:50",
+      "minute_complete": true,
+      "minute_bars": [
+        {
+          "time": "0935",
+          "open": 5.25,
+          "high": 5.34,
+          "low": 5.25,
+          "close": 5.29,
+          "vol": 22780.0,
+          "amount": 12049000.0
+        },
+        {
+          "time": "0940",
+          "open": 5.3,
+          "high": 5.3,
+          "low": 5.22,
+          "close": 5.22,
+          "vol": 11008.0,
+          "amount": 5777200.0
+        },
+        {
+          "time": "0945",
+          "open": 5.23,
+          "high": 5.23,
+          "low": 5.2,
+          "close": 5.23,
+          "vol": 10549.0,
+          "amount": 5497600.0
+        },
+        {
+          "time": "0950",
+          "open": 5.23,
+          "high": 5.24,
+          "low": 5.2,
+          "close": 5.2,
+          "vol": 7848.0,
+          "amount": 4099300.0
+        }
+      ],
+      "first_tp_sl_trigger": {
+        "time": "0935",
+        "event": "SL",
+        "high": 5.34,
+        "low": 5.25
+      }
+    },
+    {
+      "symbol": "002303",
+      "code": "002303",
+      "entry_reference": 4.89,
+      "open": 4.85,
+      "high_0930_0950": 4.88,
+      "low_0930_0950": 4.78,
+      "last_0950": 4.83,
+      "return_to_0950": -0.01227,
+      "max_return_to_0950": -0.002045,
+      "min_return_to_0950": -0.022495,
+      "tp_3pct_touched": false,
+      "sl_minus_1pct_touched": true,
+      "observed_buckets": [
+        "0935",
+        "0940",
+        "0945",
+        "0950"
+      ],
+      "minute_source_latest_time": "20261112 09:50",
+      "minute_complete": true,
+      "minute_bars": [
+        {
+          "time": "0935",
+          "open": 4.85,
+          "high": 4.88,
+          "low": 4.78,
+          "close": 4.81,
+          "vol": 73882.0,
+          "amount": 35592900.0
+        },
+        {
+          "time": "0940",
+          "open": 4.82,
+          "high": 4.86,
+          "low": 4.81,
+          "close": 4.86,
+          "vol": 38304.0,
+          "amount": 18463200.0
+        },
+        {
+          "time": "0945",
+          "open": 4.84,
+          "high": 4.84,
+          "low": 4.79,
+          "close": 4.83,
+          "vol": 23815.0,
+          "amount": 11449700.0
+        },
+        {
+          "time": "0950",
+          "open": 4.82,
+          "high": 4.84,
+          "low": 4.81,
+          "close": 4.83,
+          "vol": 13883.0,
+          "amount": 6697100.0
+        }
+      ],
+      "first_tp_sl_trigger": {
+        "time": "0935",
+        "event": "SL",
+        "high": 4.88,
+        "low": 4.78
+      }
+    },
+    {
+      "symbol": "002590",
+      "code": "002590",
+      "entry_reference": 10.19,
+      "open": 10.25,
+      "high_0930_0950": 10.29,
+      "low_0930_0950": 10.08,
+      "last_0950": 10.1,
+      "return_to_0950": -0.008832,
+      "max_return_to_0950": 0.009814,
+      "min_return_to_0950": -0.010795,
+      "tp_3pct_touched": false,
+      "sl_minus_1pct_touched": true,
+      "observed_buckets": [
+        "0935",
+        "0940",
+        "0945",
+        "0950"
+      ],
+      "minute_source_latest_time": "20261112 09:50",
+      "minute_complete": true,
+      "minute_bars": [
+        {
+          "time": "0935",
+          "open": 10.25,
+          "high": 10.29,
+          "low": 10.18,
+          "close": 10.23,
+          "vol": 10553.0,
+          "amount": 10818500.0
+        },
+        {
+          "time": "0940",
+          "open": 10.22,
+          "high": 10.26,
+          "low": 10.16,
+          "close": 10.18,
+          "vol": 7833.0,
+          "amount": 7999600.0
+        },
+        {
+          "time": "0945",
+          "open": 10.16,
+          "high": 10.16,
+          "low": 10.08,
+          "close": 10.09,
+          "vol": 7759.0,
+          "amount": 7843500.0
+        },
+        {
+          "time": "0950",
+          "open": 10.1,
+          "high": 10.13,
+          "low": 10.08,
+          "close": 10.1,
+          "vol": 4753.0,
+          "amount": 4802400.0
+        }
+      ],
+      "first_tp_sl_trigger": {
+        "time": "0945",
+        "event": "SL",
+        "high": 10.16,
+        "low": 10.08
+      }
+    },
+    {
+      "symbol": "000007",
+      "code": "000007",
+      "entry_reference": 9.79,
+      "open": 9.76,
+      "high_0930_0950": 9.83,
+      "low_0930_0950": 9.63,
+      "last_0950": 9.7,
+      "return_to_0950": -0.009193,
+      "max_return_to_0950": 0.004086,
+      "min_return_to_0950": -0.016343,
+      "tp_3pct_touched": false,
+      "sl_minus_1pct_touched": true,
+      "observed_buckets": [
+        "0935",
+        "0940",
+        "0945",
+        "0950"
+      ],
+      "minute_source_latest_time": "20261112 09:50",
+      "minute_complete": true,
+      "minute_bars": [
+        {
+          "time": "0935",
+          "open": 9.76,
+          "high": 9.83,
+          "low": 9.63,
+          "close": 9.79,
+          "vol": 5089.0,
+          "amount": 4974300.0
+        },
+        {
+          "time": "0940",
+          "open": 9.79,
+          "high": 9.82,
+          "low": 9.72,
+          "close": 9.73,
+          "vol": 2479.0,
+          "amount": 2421300.0
+        },
+        {
+          "time": "0945",
+          "open": 9.72,
+          "high": 9.72,
+          "low": 9.64,
+          "close": 9.7,
+          "vol": 3964.0,
+          "amount": 3838300.0
+        },
+        {
+          "time": "0950",
+          "open": 9.7,
+          "high": 9.77,
+          "low": 9.69,
+          "close": 9.7,
+          "vol": 2611.0,
+          "amount": 2542500.0
+        }
+      ],
+      "first_tp_sl_trigger": {
+        "time": "0935",
+        "event": "SL",
+        "high": 9.83,
+        "low": 9.63
+      }
+    },
+    {
+      "symbol": "002036",
+      "code": "002036",
+      "entry_reference": 5.94,
+      "open": 5.97,
+      "high_0930_0950": 6.0,
+      "low_0930_0950": 5.85,
+      "last_0950": 5.95,
+      "return_to_0950": 0.001684,
+      "max_return_to_0950": 0.010101,
+      "min_return_to_0950": -0.015152,
+      "tp_3pct_touched": false,
+      "sl_minus_1pct_touched": true,
+      "observed_buckets": [
+        "0935",
+        "0940",
+        "0945",
+        "0950"
+      ],
+      "minute_source_latest_time": "20261112 09:50",
+      "minute_complete": true,
+      "minute_bars": [
+        {
+          "time": "0935",
+          "open": 5.97,
+          "high": 5.99,
+          "low": 5.85,
+          "close": 5.96,
+          "vol": 112613.0,
+          "amount": 66710300.0
+        },
+        {
+          "time": "0940",
+          "open": 5.95,
+          "high": 6.0,
+          "low": 5.93,
+          "close": 5.97,
+          "vol": 42867.0,
+          "amount": 25551700.0
+        },
+        {
+          "time": "0945",
+          "open": 5.97,
+          "high": 5.98,
+          "low": 5.88,
+          "close": 5.93,
+          "vol": 37019.0,
+          "amount": 21923900.0
+        },
+        {
+          "time": "0950",
+          "open": 5.93,
+          "high": 5.96,
+          "low": 5.91,
+          "close": 5.95,
+          "vol": 17308.0,
+          "amount": 10271900.0
+        }
+      ],
+      "first_tp_sl_trigger": {
+        "time": "0935",
+        "event": "SL",
+        "high": 5.99,
+        "low": 5.85
+      }
+    },
+    {
+      "symbol": "600611",
+      "code": "600611",
+      "entry_reference": 4.3,
+      "open": 4.29,
+      "high_0930_0950": 4.34,
+      "low_0930_0950": 4.2,
+      "last_0950": 4.22,
+      "return_to_0950": -0.018605,
+      "max_return_to_0950": 0.009302,
+      "min_return_to_0950": -0.023256,
+      "tp_3pct_touched": false,
+      "sl_minus_1pct_touched": true,
+      "observed_buckets": [
+        "0935",
+        "0940",
+        "0945",
+        "0950"
+      ],
+      "minute_source_latest_time": "20261112 09:50",
+      "minute_complete": true,
+      "minute_bars": [
+        {
+          "time": "0935",
+          "open": 4.29,
+          "high": 4.34,
+          "low": 4.2,
+          "close": 4.29,
+          "vol": 125150.0,
+          "amount": 53544700.0
+        },
+        {
+          "time": "0940",
+          "open": 4.28,
+          "high": 4.32,
+          "low": 4.27,
+          "close": 4.28,
+          "vol": 31423.0,
+          "amount": 13516000.0
+        },
+        {
+          "time": "0945",
+          "open": 4.28,
+          "high": 4.28,
+          "low": 4.22,
+          "close": 4.23,
+          "vol": 49385.0,
+          "amount": 20952200.0
+        },
+        {
+          "time": "0950",
+          "open": 4.23,
+          "high": 4.25,
+          "low": 4.2,
+          "close": 4.22,
+          "vol": 52740.0,
+          "amount": 22267700.0
+        }
+      ],
+      "first_tp_sl_trigger": {
+        "time": "0935",
+        "event": "SL",
+        "high": 4.34,
+        "low": 4.2
+      }
+    },
+    {
+      "symbol": "601118",
+      "code": "601118",
+      "entry_reference": 5.63,
+      "open": 5.66,
+      "high_0930_0950": 5.73,
+      "low_0930_0950": 5.48,
+      "last_0950": 5.54,
+      "return_to_0950": -0.015986,
+      "max_return_to_0950": 0.017762,
+      "min_return_to_0950": -0.026643,
+      "tp_3pct_touched": false,
+      "sl_minus_1pct_touched": true,
+      "observed_buckets": [
+        "0935",
+        "0940",
+        "0945",
+        "0950"
+      ],
+      "minute_source_latest_time": "20261112 09:50",
+      "minute_complete": true,
+      "minute_bars": [
+        {
+          "time": "0935",
+          "open": 5.66,
+          "high": 5.73,
+          "low": 5.59,
+          "close": 5.61,
+          "vol": 130364.0,
+          "amount": 73614000.0
+        },
+        {
+          "time": "0940",
+          "open": 5.6,
+          "high": 5.62,
+          "low": 5.5,
+          "close": 5.5,
+          "vol": 114153.0,
+          "amount": 63328200.0
+        },
+        {
+          "time": "0945",
+          "open": 5.5,
+          "high": 5.55,
+          "low": 5.48,
+          "close": 5.51,
+          "vol": 80740.0,
+          "amount": 44477000.0
+        },
+        {
+          "time": "0950",
+          "open": 5.52,
+          "high": 5.55,
+          "low": 5.49,
+          "close": 5.54,
+          "vol": 48086.0,
+          "amount": 26559000.0
+        }
+      ],
+      "first_tp_sl_trigger": {
+        "time": "0940",
+        "event": "SL",
+        "high": 5.62,
+        "low": 5.5
+      }
+    },
+    {
+      "symbol": "002825",
+      "code": "002825",
+      "entry_reference": 9.15,
+      "open": 9.13,
+      "high_0930_0950": 9.46,
+      "low_0930_0950": 9.13,
+      "last_0950": 9.34,
+      "return_to_0950": 0.020765,
+      "max_return_to_0950": 0.03388,
+      "min_return_to_0950": -0.002186,
+      "tp_3pct_touched": true,
+      "sl_minus_1pct_touched": false,
+      "observed_buckets": [
+        "0935",
+        "0940",
+        "0945",
+        "0950"
+      ],
+      "minute_source_latest_time": "20261112 09:50",
+      "minute_complete": true,
+      "minute_bars": [
+        {
+          "time": "0935",
+          "open": 9.13,
+          "high": 9.38,
+          "low": 9.13,
+          "close": 9.34,
+          "vol": 11219.0,
+          "amount": 10399300.0
+        },
+        {
+          "time": "0940",
+          "open": 9.34,
+          "high": 9.46,
+          "low": 9.32,
+          "close": 9.36,
+          "vol": 9530.0,
+          "amount": 8944100.0
+        },
+        {
+          "time": "0945",
+          "open": 9.35,
+          "high": 9.35,
+          "low": 9.25,
+          "close": 9.32,
+          "vol": 6388.0,
+          "amount": 5939200.0
+        },
+        {
+          "time": "0950",
+          "open": 9.33,
+          "high": 9.35,
+          "low": 9.31,
+          "close": 9.34,
+          "vol": 2485.0,
+          "amount": 2319000.0
+        }
+      ],
+      "first_tp_sl_trigger": {
+        "time": "0940",
+        "event": "TP",
+        "high": 9.46,
+        "low": 9.32
+      }
+    },
+    {
+      "symbol": "002398",
+      "code": "002398",
+      "entry_reference": 3.99,
+      "open": 3.94,
+      "high_0930_0950": 3.97,
+      "low_0930_0950": 3.89,
+      "last_0950": 3.92,
+      "return_to_0950": -0.017544,
+      "max_return_to_0950": -0.005013,
+      "min_return_to_0950": -0.025063,
+      "tp_3pct_touched": false,
+      "sl_minus_1pct_touched": true,
+      "observed_buckets": [
+        "0935",
+        "0940",
+        "0945",
+        "0950"
+      ],
+      "minute_source_latest_time": "20261112 09:50",
+      "minute_complete": true,
+      "minute_bars": [
+        {
+          "time": "0935",
+          "open": 3.94,
+          "high": 3.97,
+          "low": 3.9,
+          "close": 3.91,
+          "vol": 47799.0,
+          "amount": 18757200.0
+        },
+        {
+          "time": "0940",
+          "open": 3.91,
+          "high": 3.94,
+          "low": 3.89,
+          "close": 3.94,
+          "vol": 42347.0,
+          "amount": 16538000.0
+        },
+        {
+          "time": "0945",
+          "open": 3.92,
+          "high": 3.93,
+          "low": 3.89,
+          "close": 3.92,
+          "vol": 30279.0,
+          "amount": 11824800.0
+        },
+        {
+          "time": "0950",
+          "open": 3.92,
+          "high": 3.92,
+          "low": 3.9,
+          "close": 3.92,
+          "vol": 6407.0,
+          "amount": 2506600.0
+        }
+      ],
+      "first_tp_sl_trigger": {
+        "time": "0935",
+        "event": "SL",
+        "high": 3.97,
+        "low": 3.9
+      }
+    },
+    {
+      "symbol": "300565",
+      "code": "300565",
+      "entry_reference": 9.07,
+      "open": 9.1,
+      "high_0930_0950": 9.11,
+      "low_0930_0950": 8.95,
+      "last_0950": 9.05,
+      "return_to_0950": -0.002205,
+      "max_return_to_0950": 0.00441,
+      "min_return_to_0950": -0.01323,
+      "tp_3pct_touched": false,
+      "sl_minus_1pct_touched": true,
+      "observed_buckets": [
+        "0935",
+        "0940",
+        "0945",
+        "0950"
+      ],
+      "minute_source_latest_time": "20261112 09:50",
+      "minute_complete": true,
+      "minute_bars": [
+        {
+          "time": "0935",
+          "open": 9.1,
+          "high": 9.11,
+          "low": 9.0,
+          "close": 9.09,
+          "vol": 10326.0,
+          "amount": 9364200.0
+        },
+        {
+          "time": "0940",
+          "open": 9.09,
+          "high": 9.11,
+          "low": 9.03,
+          "close": 9.03,
+          "vol": 6523.0,
+          "amount": 5914300.0
+        },
+        {
+          "time": "0945",
+          "open": 9.03,
+          "high": 9.04,
+          "low": 8.95,
+          "close": 9.03,
+          "vol": 7810.0,
+          "amount": 7016400.0
+        },
+        {
+          "time": "0950",
+          "open": 9.02,
+          "high": 9.06,
+          "low": 9.0,
+          "close": 9.05,
+          "vol": 4469.0,
+          "amount": 4033400.0
+        }
+      ],
+      "first_tp_sl_trigger": {
+        "time": "0945",
+        "event": "SL",
+        "high": 9.04,
+        "low": 8.95
+      }
+    }
+  ],
   "data_quality": {
     "state": "COMPLETE",
     "minute_complete": true,
-    "provider_errors": []
+    "provider_errors": [],
+    "source_latest_time": "20261112 09:50"
   },
-  "api_calls_used": 0,
+  "api_calls_used": 1,
   "tushare_calls_used": 0,
   "automated_trading": false,
-  "generated_at_cn": "2026-11-11T09:50:05+08:00",
-  "reason": "PREVIOUS_1450_HAD_NO_CANDIDATES"
+  "generated_at_cn": "2026-11-12T09:50:05+08:00",
+  "reason": "OBJECTIVE_0950_DATA_ONLY"
 }
