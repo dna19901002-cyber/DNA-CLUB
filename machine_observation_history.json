@@ -5723,13 +5723,105 @@
       "actual_fill": false,
       "reliable_trade_count": 0,
       "automated_trading": false
+    },
+    {
+      "schema": "ashare-machine-observation-v1",
+      "strategy_version": "V1.2",
+      "method_version": 2,
+      "classification": "MACHINE_PROPOSAL_OBSERVATION",
+      "trade_date": "20261111",
+      "observation_trade_date": "20261112",
+      "source_snapshot_sha256": "143eb126338075fef4489d571379b60afe5f3769ab9cd8437a623393e44b7ebc",
+      "proposal_ledger_sha256": "d5056c4697ca53521f128b0997bf2e8e8f3f85a528e78e584f1284bb79fe04e3",
+      "raw_minute_sha256": "834dfd48a59841ec1d807221cf27ae7d3b2311ca4e15e3b917854119ed0a961f",
+      "retrieved_at_cn": "2026-11-12T09:55:05.368582+08:00",
+      "run_context": "LIVE_EXPERIMENT",
+      "observations": [
+        {
+          "code": "000910",
+          "name": "大亚圣象",
+          "reference_price": 5.33,
+          "rank": 1,
+          "score": 77,
+          "reference_time": "20261111 14:50",
+          "data_quality": {
+            "confidence": "MEDIUM",
+            "missing_fields": [
+              "hot_ths_normal_rank",
+              "hot_dfcf_biaos_rank",
+              "hot_xq_resou_rank",
+              "hot_tdx_resou_rank",
+              "historical_pattern_window_lt_20"
+            ],
+            "vwap_conflict": false,
+            "unit_validation": "PASS",
+            "source_latest_time": "20261111 1450"
+          },
+          "execution_constraints": {
+            "up_limit": 5.67,
+            "down_limit": 4.64
+          },
+          "classification": "MACHINE_PROPOSAL_OBSERVATION",
+          "observation_trade_date": "20261112",
+          "state": "DATA_INSUFFICIENT",
+          "minute_complete": false,
+          "actual_fill": false,
+          "gpt_confirmed": false,
+          "reliable_trade": false,
+          "gross_return": null,
+          "estimated_net_return": null,
+          "tp_pct": 0.03,
+          "sl_pct": -0.01,
+          "reason": "LOCAL_DAILY_API_BUDGET_EXHAUSTED"
+        },
+        {
+          "code": "002303",
+          "name": "美盈森",
+          "reference_price": 4.89,
+          "rank": 2,
+          "score": 76,
+          "reference_time": "20261111 14:50",
+          "data_quality": {
+            "confidence": "MEDIUM",
+            "missing_fields": [
+              "hot_ths_normal_rank",
+              "hot_dfcf_biaos_rank",
+              "hot_xq_resou_rank",
+              "hot_tdx_resou_rank",
+              "historical_pattern_window_lt_20"
+            ],
+            "vwap_conflict": false,
+            "unit_validation": "PASS",
+            "source_latest_time": "20261111 1450"
+          },
+          "execution_constraints": {
+            "up_limit": 5.2,
+            "down_limit": 4.26
+          },
+          "classification": "MACHINE_PROPOSAL_OBSERVATION",
+          "observation_trade_date": "20261112",
+          "state": "DATA_INSUFFICIENT",
+          "minute_complete": false,
+          "actual_fill": false,
+          "gpt_confirmed": false,
+          "reliable_trade": false,
+          "gross_return": null,
+          "estimated_net_return": null,
+          "tp_pct": 0.03,
+          "sl_pct": -0.01,
+          "reason": "LOCAL_DAILY_API_BUDGET_EXHAUSTED"
+        }
+      ],
+      "actual_fill": false,
+      "reliable_trade_count": 0,
+      "automated_trading": false
     }
   ],
   "summary": {
     "machine_proposal_count": 30,
-    "unobserved_proposal_count": 2,
+    "unobserved_proposal_count": 0,
     "complete_observation_count": 28,
-    "missing_observation_count": 0,
+    "missing_observation_count": 2,
     "retrospective_sample_count": 10,
     "modelled_fill_count": 0,
     "reliable_trade_count": 0
@@ -9343,6 +9435,86 @@
       "trade_date": "20261110",
       "run_context": "LIVE_EXPERIMENT",
       "method_version": 2
+    },
+    {
+      "code": "000910",
+      "name": "大亚圣象",
+      "reference_price": 5.33,
+      "rank": 1,
+      "score": 77,
+      "reference_time": "20261111 14:50",
+      "data_quality": {
+        "confidence": "MEDIUM",
+        "missing_fields": [
+          "hot_ths_normal_rank",
+          "hot_dfcf_biaos_rank",
+          "hot_xq_resou_rank",
+          "hot_tdx_resou_rank",
+          "historical_pattern_window_lt_20"
+        ],
+        "vwap_conflict": false,
+        "unit_validation": "PASS",
+        "source_latest_time": "20261111 1450"
+      },
+      "execution_constraints": {
+        "up_limit": 5.67,
+        "down_limit": 4.64
+      },
+      "classification": "MACHINE_PROPOSAL_OBSERVATION",
+      "observation_trade_date": "20261112",
+      "state": "DATA_INSUFFICIENT",
+      "minute_complete": false,
+      "actual_fill": false,
+      "gpt_confirmed": false,
+      "reliable_trade": false,
+      "gross_return": null,
+      "estimated_net_return": null,
+      "tp_pct": 0.03,
+      "sl_pct": -0.01,
+      "reason": "LOCAL_DAILY_API_BUDGET_EXHAUSTED",
+      "trade_date": "20261111",
+      "run_context": "LIVE_EXPERIMENT",
+      "method_version": 2
+    },
+    {
+      "code": "002303",
+      "name": "美盈森",
+      "reference_price": 4.89,
+      "rank": 2,
+      "score": 76,
+      "reference_time": "20261111 14:50",
+      "data_quality": {
+        "confidence": "MEDIUM",
+        "missing_fields": [
+          "hot_ths_normal_rank",
+          "hot_dfcf_biaos_rank",
+          "hot_xq_resou_rank",
+          "hot_tdx_resou_rank",
+          "historical_pattern_window_lt_20"
+        ],
+        "vwap_conflict": false,
+        "unit_validation": "PASS",
+        "source_latest_time": "20261111 1450"
+      },
+      "execution_constraints": {
+        "up_limit": 5.2,
+        "down_limit": 4.26
+      },
+      "classification": "MACHINE_PROPOSAL_OBSERVATION",
+      "observation_trade_date": "20261112",
+      "state": "DATA_INSUFFICIENT",
+      "minute_complete": false,
+      "actual_fill": false,
+      "gpt_confirmed": false,
+      "reliable_trade": false,
+      "gross_return": null,
+      "estimated_net_return": null,
+      "tp_pct": 0.03,
+      "sl_pct": -0.01,
+      "reason": "LOCAL_DAILY_API_BUDGET_EXHAUSTED",
+      "trade_date": "20261111",
+      "run_context": "LIVE_EXPERIMENT",
+      "method_version": 2
     }
   ],
   "raw_sources": [
@@ -9549,6 +9721,24 @@
       "trade_date": "20261110",
       "artifact_name": "exit_20261111_0955_raw.json",
       "sha256": "3f8cdc6418ff7a781eaa60040d81871b3c3f34052b0a8e02f3a036ed12009afa",
+      "provider": "MEOZ",
+      "volume_unit": "lots_100_shares",
+      "amount_unit": "CNY",
+      "interval": "5m"
+    },
+    {
+      "trade_date": "20261111",
+      "artifact_name": "exit_20261112_0950_raw.json",
+      "sha256": "834dfd48a59841ec1d807221cf27ae7d3b2311ca4e15e3b917854119ed0a961f",
+      "provider": "MEOZ",
+      "volume_unit": "lots_100_shares",
+      "amount_unit": "CNY",
+      "interval": "5m"
+    },
+    {
+      "trade_date": "20261111",
+      "artifact_name": "exit_20261112_0955_raw.json",
+      "sha256": "834dfd48a59841ec1d807221cf27ae7d3b2311ca4e15e3b917854119ed0a961f",
       "provider": "MEOZ",
       "volume_unit": "lots_100_shares",
       "amount_unit": "CNY",
