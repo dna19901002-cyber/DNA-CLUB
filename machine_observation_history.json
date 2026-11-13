@@ -1092,6 +1092,74 @@
       "actual_fill": false,
       "gpt_confirmed": false,
       "timing_note": "Locked with original 14:50 snapshot"
+    },
+    {
+      "schema": "ashare-machine-proposals-v1",
+      "strategy_version": "V1.2",
+      "trade_date": "20261113",
+      "classification": "MACHINE_PROPOSAL_OBSERVATION",
+      "proposals": [
+        {
+          "code": "002495",
+          "name": "佳隆股份",
+          "reference_price": 2.25,
+          "rank": 1,
+          "score": 72,
+          "reference_time": "20261113 14:50",
+          "data_quality": {
+            "confidence": "MEDIUM",
+            "missing_fields": [
+              "theme_names_kpl",
+              "hot_ths_normal_rank",
+              "hot_dfcf_biaos_rank",
+              "hot_xq_resou_rank",
+              "hot_tdx_resou_rank",
+              "historical_pattern_window_lt_20"
+            ],
+            "vwap_conflict": false,
+            "unit_validation": "PASS",
+            "source_latest_time": "20261113 1450"
+          },
+          "execution_constraints": {
+            "up_limit": 2.41,
+            "down_limit": 1.97
+          }
+        },
+        {
+          "code": "301575",
+          "name": "艾芬达",
+          "reference_price": 22.3,
+          "rank": 2,
+          "score": 72,
+          "reference_time": "20261113 14:50",
+          "data_quality": {
+            "confidence": "MEDIUM",
+            "missing_fields": [
+              "theme_names_kpl",
+              "hot_ths_normal_rank",
+              "hot_dfcf_biaos_rank",
+              "hot_xq_resou_rank",
+              "hot_tdx_resou_rank",
+              "historical_pattern_window_lt_20"
+            ],
+            "vwap_conflict": false,
+            "unit_validation": "PASS",
+            "source_latest_time": "20261113 1450"
+          },
+          "execution_constraints": {
+            "up_limit": 26.11,
+            "down_limit": 17.41
+          }
+        }
+      ],
+      "source_snapshot_sha256": "90a34825addf621dbfc0747f6cc00783b5200c5fae20b2ea31cd8e2ad8e48b93",
+      "snapshot_time": "2026-11-13T14:50:10.042558+08:00",
+      "recorded_at_cn": "2026-11-13T14:50:10.047925+08:00",
+      "run_context": "LIVE_EXPERIMENT",
+      "market_regime": "WITHIN_MINUS_1PCT_MA5",
+      "actual_fill": false,
+      "gpt_confirmed": false,
+      "timing_note": "Locked with original 14:50 snapshot"
     }
   ],
   "attempts": [
@@ -6432,8 +6500,8 @@
     }
   ],
   "summary": {
-    "machine_proposal_count": 32,
-    "unobserved_proposal_count": 0,
+    "machine_proposal_count": 34,
+    "unobserved_proposal_count": 2,
     "complete_observation_count": 32,
     "missing_observation_count": 0,
     "retrospective_sample_count": 12,
