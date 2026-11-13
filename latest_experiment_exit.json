@@ -1,27 +1,27 @@
 {
   "schema": "ashare-experiment-exit-v1",
   "strategy_version": "V1.2",
-  "trade_date": "20261112",
-  "selection_trade_date": "20261111",
-  "cutoff": "0955",
-  "retrieved_at_cn": "2026-11-12T09:55:05.346954+08:00",
+  "trade_date": "20261113",
+  "selection_trade_date": "20261112",
+  "cutoff": "0950",
+  "retrieved_at_cn": "2026-11-13T09:50:05.751164+08:00",
   "positions": [],
   "api_calls_used": 0,
-  "error": "LOCAL_DAILY_API_BUDGET_EXHAUSTED",
+  "error": null,
   "automated_trading": false,
   "run_context": "LIVE_EXPERIMENT",
   "request_summary": [],
-  "morning_budget_reservation": "A_AFTERNOON_MAX_9_CALLS_RESERVED",
+  "morning_budget_reservation": "DYNAMIC_RESERVE_MIN_10_RESEARCH_CEILING_90",
   "selection_audit": {
     "schema": "ashare-experiment-selection-audit-v1",
     "strategy_version": "V1.2",
-    "checked_at_cn": "2026-11-12T09:49:45.345922+08:00",
-    "trade_date": "20261111",
+    "checked_at_cn": "2026-11-13T09:49:45.384509+08:00",
+    "trade_date": "20261112",
     "groups": {
       "A": {
         "state": "MANUAL_CHECKPOINT_PENDING",
         "reason": "INTENTIONAL_CONVERSATION_RECORD_MODE",
-        "expected_snapshot_sha256": "d5065c1310181f87b5ac2c9865dbc2efc12b8d65040393b5a108ab8839e80187",
+        "expected_snapshot_sha256": "ae0a1f762503f2992a5cd4e4b530083b20e9f9f9f04a3f826f47275ab5a8ff91",
         "execution_eligible": false,
         "github_read_receipt": null,
         "automatic_github_selection_required": false
@@ -29,7 +29,7 @@
       "BC": {
         "state": "MANUAL_CHECKPOINT_PENDING",
         "reason": "INTENTIONAL_CONVERSATION_RECORD_MODE",
-        "expected_snapshot_sha256": "143eb126338075fef4489d571379b60afe5f3769ab9cd8437a623393e44b7ebc",
+        "expected_snapshot_sha256": "6dae79aebef141e5f6029aeeeba14ee596c79c080a969ce227e99cb726ff57a6",
         "execution_eligible": false,
         "github_read_receipt": null,
         "automatic_github_selection_required": false
@@ -45,17 +45,17 @@
     "market_data_health": {
       "A": {
         "state": "USABLE",
-        "trade_date": "20261111",
+        "trade_date": "20261112",
         "run_context": "LIVE",
-        "snapshot_sha256": "d5065c1310181f87b5ac2c9865dbc2efc12b8d65040393b5a108ab8839e80187",
-        "data_quality_state": "DEGRADED_CAPABILITY",
+        "snapshot_sha256": "ae0a1f762503f2992a5cd4e4b530083b20e9f9f9f04a3f826f47275ab5a8ff91",
+        "data_quality_state": "COMPLETE_FOR_FAILED_GATE",
         "selection_state_used_as_market_health": false
       },
       "BC": {
         "state": "USABLE",
-        "trade_date": "20261111",
+        "trade_date": "20261112",
         "run_context": "LIVE_EXPERIMENT",
-        "snapshot_sha256": "143eb126338075fef4489d571379b60afe5f3769ab9cd8437a623393e44b7ebc",
+        "snapshot_sha256": "6dae79aebef141e5f6029aeeeba14ee596c79c080a969ce227e99cb726ff57a6",
         "data_quality_state": "USABLE_WITH_DECLARED_LIMITATIONS",
         "selection_state_used_as_market_health": false
       }
@@ -66,8 +66,8 @@
     "selection_failure_is_market_sync_failure": false
   },
   "data_quality": {
-    "state": "BUDGET_DEGRADED",
-    "minute_cutoff": "0955",
+    "state": "AWAITING_VALID_GPT_SELECTION",
+    "minute_cutoff": "0950",
     "later_prices_never_inferred": true
   }
 }
