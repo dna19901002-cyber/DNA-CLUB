@@ -1,13 +1,13 @@
 {
   "schema": "ashare-experiment-snapshot-v1",
   "strategy_version": "V1.2",
-  "trade_date": "20261113",
+  "trade_date": "20261116",
   "run_context": "LIVE_EXPERIMENT",
-  "retrieved_at_cn": "2026-11-13T14:50:05.948843+08:00",
-  "generated_at_cn": "2026-11-13T14:50:10.042558+08:00",
-  "market_regime": "WITHIN_MINUS_1PCT_MA5",
+  "retrieved_at_cn": "2026-11-16T14:50:05.928223+08:00",
+  "generated_at_cn": "2026-11-16T14:50:12.174844+08:00",
+  "market_regime": "BELOW_MINUS_1PCT_MA5",
   "market_gate_details": {
-    "shanghai_ma5_distance": -0.008435602845469514,
+    "shanghai_ma5_distance": -0.014031787218674263,
     "a_gate": {
       "ma5": false,
       "turnover": null,
@@ -15,7 +15,7 @@
       "advance_ratio": null
     },
     "b_gate": {
-      "ma5": true,
+      "ma5": false,
       "turnover": true,
       "major_index_drop": false,
       "advance_ratio": false
@@ -29,32 +29,31 @@
       "advance_ratio"
     ],
     "market": {
-      "universe": 5659,
-      "valid_trading_stocks": 5571,
-      "advance": 705,
-      "decline": 4796,
-      "flat": 70,
-      "advance_ratio": 0.12654819601507808,
-      "total_amount_yuan": 1588223175000.0,
+      "universe": 5658,
+      "valid_trading_stocks": 5572,
+      "advance": 1004,
+      "decline": 4496,
+      "flat": 72,
+      "advance_ratio": 0.18018664752333094,
+      "total_amount_yuan": 1419252642000.0,
       "excluded_counts": {
-        "no_trade": 8,
-        "delisting": 1,
+        "no_trade": 7,
         "non_a_share": 79
       }
     },
     "turnover": {
-      "actual": 1588223175000.0,
+      "actual": 1419252642000.0,
       "threshold": 700000000000
     },
     "advance_ratio": {
-      "actual": 0.12654819601507808,
+      "actual": 0.18018664752333094,
       "threshold": 0.35
     }
   },
   "groups": {
     "B": {
       "strategy_group": "B",
-      "trade_date": "20261113",
+      "trade_date": "20261116",
       "decision": "NO_TRADE",
       "candidate_codes": [],
       "candidates": [],
@@ -67,7 +66,7 @@
       "gross_return": null,
       "estimated_net_return": null,
       "market_gate": {
-        "ma5": true,
+        "ma5": false,
         "turnover": true,
         "major_index_drop": false,
         "advance_ratio": false
@@ -77,41 +76,41 @@
     },
     "C": {
       "strategy_group": "C",
-      "trade_date": "20261113",
+      "trade_date": "20261116",
       "decision": "MACHINE_PROPOSAL_OBSERVATION",
       "candidate_codes": [
-        "002495",
-        "301575"
+        "002946",
+        "002853"
       ],
       "candidates": [
         {
-          "symbol": "002495",
-          "code": "002495",
-          "name": "佳隆股份",
-          "price": 2.25,
-          "pct_chg": 2.74,
-          "amount": 108091400.0,
-          "volume_ratio": 2.21,
-          "turnover_rate": 8.62,
-          "vwap": 2.207,
-          "vwap_local": 2.207441,
+          "symbol": "002946",
+          "code": "002946",
+          "name": "新乳业",
+          "price": 18.02,
+          "pct_chg": 4.95,
+          "amount": 244163800.0,
+          "volume_ratio": 1.67,
+          "turnover_rate": 7.15,
+          "vwap": 17.758,
+          "vwap_local": 17.757507,
           "above_vwap": true,
-          "momentum_30m": 0.008929,
-          "tail_position_30m": 1.0,
-          "tail_high_30m": 2.26,
-          "tail_low_30m": 2.22,
-          "tail_vol_share": 0.147221,
+          "momentum_30m": 0.0039,
+          "tail_position_30m": 0.769231,
+          "tail_high_30m": 18.05,
+          "tail_low_30m": 17.92,
+          "tail_vol_share": 0.069407,
           "tail_new_lows": false,
           "heavy_volume_selling": false,
           "weakened_after_1430": false,
-          "theme": null,
+          "theme": "食品饮料,三季报增长",
           "hot_ths": null,
           "hot_dfcf": null,
           "hot_xq": null,
           "hot_tdx": null,
-          "score_tail": 25,
+          "score_tail": 19,
           "score_volume_price": 20,
-          "score_market_theme": 0,
+          "score_market_theme": 8,
           "score_pattern": 7,
           "score_risk": 20,
           "historical_pattern": {
@@ -120,11 +119,11 @@
             "window_target": 60,
             "coverage_start": "20260918",
             "coverage_end": "20261111",
-            "return_5d": -0.103306,
+            "return_5d": 0.157895,
             "return_10d": null,
             "return_20d": null,
             "positive_days_20": null,
-            "avg_volume_5d": 249464.8,
+            "avg_volume_5d": 95002.4,
             "avg_volume_20d": null,
             "data_sufficient": false,
             "score_policy": "ORIGINAL_V1_2_NEUTRAL_7_NO_DEFINED_HISTORICAL_FORMULA"
@@ -134,7 +133,6 @@
           "data_quality": {
             "confidence": "MEDIUM",
             "missing_fields": [
-              "theme_names_kpl",
               "hot_ths_normal_rank",
               "hot_dfcf_biaos_rank",
               "hot_xq_resou_rank",
@@ -143,48 +141,48 @@
             ],
             "vwap_conflict": false,
             "unit_validation": "PASS",
-            "source_latest_time": "20261113 1450"
+            "source_latest_time": "20261116 1450"
           },
-          "score_total": 72,
+          "score_total": 74,
           "execution_constraints": {
-            "up_limit": 2.41,
-            "down_limit": 1.97
+            "up_limit": 18.89,
+            "down_limit": 15.45
           },
-          "reference_price": 2.25,
-          "reference_time": "20261113 14:50",
+          "reference_price": 18.02,
+          "reference_time": "20261116 14:50",
           "entry_evidence": {
             "state": "REFERENCE_ONLY",
             "actual_fill": false
           }
         },
         {
-          "symbol": "301575",
-          "code": "301575",
-          "name": "艾芬达",
-          "price": 22.3,
-          "pct_chg": 2.48,
-          "amount": 117328900.0,
-          "volume_ratio": 2.02,
-          "turnover_rate": 7.31,
-          "vwap": 22.054,
-          "vwap_local": 22.053893,
+          "symbol": "002853",
+          "code": "002853",
+          "name": "皮阿诺",
+          "price": 22.79,
+          "pct_chg": 4.69,
+          "amount": 156662900.0,
+          "volume_ratio": 4.37,
+          "turnover_rate": 8.01,
+          "vwap": 22.387,
+          "vwap_local": 22.386698,
           "above_vwap": true,
-          "momentum_30m": 0.013636,
-          "tail_position_30m": 0.906977,
-          "tail_high_30m": 22.34,
-          "tail_low_30m": 21.91,
-          "tail_vol_share": 0.159364,
+          "momentum_30m": 0.034968,
+          "tail_position_30m": 0.955556,
+          "tail_high_30m": 22.85,
+          "tail_low_30m": 21.5,
+          "tail_vol_share": 0.064295,
           "tail_new_lows": false,
           "heavy_volume_selling": false,
           "weakened_after_1430": false,
-          "theme": null,
+          "theme": "芯片",
           "hot_ths": null,
           "hot_dfcf": null,
           "hot_xq": null,
           "hot_tdx": null,
-          "score_tail": 25,
-          "score_volume_price": 20,
-          "score_market_theme": 0,
+          "score_tail": 21,
+          "score_volume_price": 17,
+          "score_market_theme": 8,
           "score_pattern": 7,
           "score_risk": 20,
           "historical_pattern": {
@@ -193,11 +191,11 @@
             "window_target": 60,
             "coverage_start": "20260918",
             "coverage_end": "20261111",
-            "return_5d": -0.161905,
+            "return_5d": -0.109016,
             "return_10d": null,
             "return_20d": null,
             "positive_days_20": null,
-            "avg_volume_5d": 17783.0,
+            "avg_volume_5d": 10290.4,
             "avg_volume_20d": null,
             "data_sufficient": false,
             "score_policy": "ORIGINAL_V1_2_NEUTRAL_7_NO_DEFINED_HISTORICAL_FORMULA"
@@ -207,7 +205,6 @@
           "data_quality": {
             "confidence": "MEDIUM",
             "missing_fields": [
-              "theme_names_kpl",
               "hot_ths_normal_rank",
               "hot_dfcf_biaos_rank",
               "hot_xq_resou_rank",
@@ -216,15 +213,15 @@
             ],
             "vwap_conflict": false,
             "unit_validation": "PASS",
-            "source_latest_time": "20261113 1450"
+            "source_latest_time": "20261116 1450"
           },
-          "score_total": 72,
+          "score_total": 73,
           "execution_constraints": {
-            "up_limit": 26.11,
-            "down_limit": 17.41
+            "up_limit": 23.95,
+            "down_limit": 19.59
           },
-          "reference_price": 22.3,
-          "reference_time": "20261113 14:50",
+          "reference_price": 22.79,
+          "reference_time": "20261116 14:50",
           "entry_evidence": {
             "state": "REFERENCE_ONLY",
             "actual_fill": false
@@ -247,7 +244,7 @@
     }
   },
   "automated_trading": false,
-  "source_a_1450_content_sha256": "b5d31b51a95e6d471f2d282d95466c19b886921962bca799d741695c5617b54b",
+  "source_a_1450_content_sha256": "62e038a7aaa77103a780453710fdae4cf286f45caa5a61387e37a2f4b827fd5c",
   "api_calls_used": 2,
   "data_quality": {
     "state": "USABLE_WITH_DECLARED_LIMITATIONS",
@@ -255,15 +252,15 @@
     "screening_source": "SHARED_B_C_FRESH_REQUEST_AFTER_A",
     "full_market_coverage": {
       "schema": "ashare-code-coverage-v1",
-      "trade_date": "20261113",
+      "trade_date": "20261116",
       "basis": "EXACT_LISTED_A_CODE_SET_ORIGINAL_B_SHARE_EXCLUSIONS",
-      "stockbasic_rows": 5659,
-      "stockbasic_unique_codes": 5659,
-      "listed_a_codes_count": 5580,
+      "stockbasic_rows": 5658,
+      "stockbasic_unique_codes": 5658,
+      "listed_a_codes_count": 5579,
       "listed_non_a_codes_count": 79,
-      "screening_rows": 5659,
-      "screening_unique_codes": 5659,
-      "covered_listed_a_codes_count": 5580,
+      "screening_rows": 5658,
+      "screening_unique_codes": 5658,
+      "covered_listed_a_codes_count": 5579,
       "listed_a_coverage_ratio": 1.0,
       "missing_listed_a_codes": [],
       "missing_listed_a_records": [],
@@ -278,10 +275,9 @@
       "delisting_quote_codes": [],
       "zero_turnover_quote_codes": [
         "000635",
-        "000831",
-        "002129",
         "002717",
         "600185",
+        "605255",
         "688121",
         "688496",
         "688798"
@@ -295,10 +291,10 @@
     },
     "unit_validation": {
       "provider": "MeoZ",
-      "validation_date": "20261113",
+      "validation_date": "20261116",
       "schema_signature": "e062261fe7bdf4feeebe7a09b4636e09292353869d2d39cf43dfeacd45d4159b",
-      "validation_started_at": "2026-11-13T14:50:09+08:00",
-      "validated_at": "2026-11-13T14:50:09+08:00",
+      "validation_started_at": "2026-11-16T14:50:10+08:00",
+      "validated_at": "2026-11-16T14:50:10+08:00",
       "amount": "yuan",
       "volume": "lots_100_shares",
       "amount_unit": "yuan",
@@ -308,47 +304,49 @@
       "unit_basis": "MeoZ field contract; no scale inference or conversion of percent/multiple",
       "result": "PASS",
       "cache_used": false,
-      "checked_rows": 5571,
+      "checked_rows": 5572,
       "reference_symbols": [],
       "evidence": [],
       "input_rows": 5658,
       "invalid_row_count": 0,
       "invalid_rows": []
     },
-    "missing_field_exclusions": [],
+    "missing_field_exclusions": [
+      "volume_ratio:000831"
+    ],
     "execution_exclusions": [],
     "filter_stats": {
-      "universe": 5580,
-      "valid_trading_stocks": 5571,
-      "after_st": 5378,
-      "after_pct": 158,
-      "after_volume_ratio": 91,
-      "after_turnover": 36,
-      "after_amount": 28,
-      "after_listing_age": 28,
-      "final_coarse": 28,
-      "missing_field_exclusions": 0
+      "universe": 5579,
+      "valid_trading_stocks": 5572,
+      "after_st": 5379,
+      "after_pct": 242,
+      "after_volume_ratio": 125,
+      "after_turnover": 22,
+      "after_amount": 16,
+      "after_listing_age": 16,
+      "final_coarse": 16,
+      "missing_field_exclusions": 1
     },
     "screening_source_timestamp_available": false,
     "candidate_errors": [],
     "request_summary": [
       {
         "interface": "screening",
-        "started": "2026-11-13T14:50:07+08:00",
-        "finished": "2026-11-13T14:50:08+08:00",
+        "started": "2026-11-16T14:50:07+08:00",
+        "finished": "2026-11-16T14:50:10+08:00",
         "http_status": 200,
-        "rows": 5659,
+        "rows": 5658,
         "error": null,
-        "duration_seconds": 1.463
+        "duration_seconds": 2.657
       },
       {
         "interface": "minute",
-        "started": "2026-11-13T14:50:09+08:00",
-        "finished": "2026-11-13T14:50:09+08:00",
+        "started": "2026-11-16T14:50:10+08:00",
+        "finished": "2026-11-16T14:50:11+08:00",
         "http_status": 200,
-        "rows": 1316,
+        "rows": 752,
         "error": null,
-        "duration_seconds": 0.124
+        "duration_seconds": 0.551
       }
     ]
   }
