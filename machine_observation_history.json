@@ -1160,6 +1160,72 @@
       "actual_fill": false,
       "gpt_confirmed": false,
       "timing_note": "Locked with original 14:50 snapshot"
+    },
+    {
+      "schema": "ashare-machine-proposals-v1",
+      "strategy_version": "V1.2",
+      "trade_date": "20261116",
+      "classification": "MACHINE_PROPOSAL_OBSERVATION",
+      "proposals": [
+        {
+          "code": "002946",
+          "name": "新乳业",
+          "reference_price": 18.02,
+          "rank": 1,
+          "score": 74,
+          "reference_time": "20261116 14:50",
+          "data_quality": {
+            "confidence": "MEDIUM",
+            "missing_fields": [
+              "hot_ths_normal_rank",
+              "hot_dfcf_biaos_rank",
+              "hot_xq_resou_rank",
+              "hot_tdx_resou_rank",
+              "historical_pattern_window_lt_20"
+            ],
+            "vwap_conflict": false,
+            "unit_validation": "PASS",
+            "source_latest_time": "20261116 1450"
+          },
+          "execution_constraints": {
+            "up_limit": 18.89,
+            "down_limit": 15.45
+          }
+        },
+        {
+          "code": "002853",
+          "name": "皮阿诺",
+          "reference_price": 22.79,
+          "rank": 2,
+          "score": 73,
+          "reference_time": "20261116 14:50",
+          "data_quality": {
+            "confidence": "MEDIUM",
+            "missing_fields": [
+              "hot_ths_normal_rank",
+              "hot_dfcf_biaos_rank",
+              "hot_xq_resou_rank",
+              "hot_tdx_resou_rank",
+              "historical_pattern_window_lt_20"
+            ],
+            "vwap_conflict": false,
+            "unit_validation": "PASS",
+            "source_latest_time": "20261116 1450"
+          },
+          "execution_constraints": {
+            "up_limit": 23.95,
+            "down_limit": 19.59
+          }
+        }
+      ],
+      "source_snapshot_sha256": "f2b3244b389a3bebfe8c30e52c879f4774f8599896349aa997fbebfe4d1dace6",
+      "snapshot_time": "2026-11-16T14:50:12.174844+08:00",
+      "recorded_at_cn": "2026-11-16T14:50:12.182499+08:00",
+      "run_context": "LIVE_EXPERIMENT",
+      "market_regime": "BELOW_MINUS_1PCT_MA5",
+      "actual_fill": false,
+      "gpt_confirmed": false,
+      "timing_note": "Locked with original 14:50 snapshot"
     }
   ],
   "attempts": [
@@ -6768,8 +6834,8 @@
     }
   ],
   "summary": {
-    "machine_proposal_count": 34,
-    "unobserved_proposal_count": 0,
+    "machine_proposal_count": 36,
+    "unobserved_proposal_count": 2,
     "complete_observation_count": 34,
     "missing_observation_count": 0,
     "retrospective_sample_count": 12,
