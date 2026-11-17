@@ -6831,12 +6831,275 @@
       "actual_fill": false,
       "reliable_trade_count": 0,
       "automated_trading": false
+    },
+    {
+      "schema": "ashare-machine-observation-v1",
+      "strategy_version": "V1.2",
+      "method_version": 2,
+      "classification": "MACHINE_PROPOSAL_OBSERVATION",
+      "trade_date": "20261116",
+      "observation_trade_date": "20261117",
+      "source_snapshot_sha256": "f2b3244b389a3bebfe8c30e52c879f4774f8599896349aa997fbebfe4d1dace6",
+      "proposal_ledger_sha256": "37577e7c6987761e4af706349da3a692486d17a4122509a05205fa7b29a623cd",
+      "raw_minute_sha256": "f81a393bd9e7e5b900a73646ff3dd2c3ef49720c4d9ed0e56cd3eee05cefa1e7",
+      "retrieved_at_cn": "2026-11-17T09:55:07.008502+08:00",
+      "run_context": "LIVE_EXPERIMENT",
+      "observations": [
+        {
+          "code": "002946",
+          "name": "新乳业",
+          "reference_price": 18.02,
+          "rank": 1,
+          "score": 74,
+          "reference_time": "20261116 14:50",
+          "data_quality": {
+            "confidence": "MEDIUM",
+            "missing_fields": [
+              "hot_ths_normal_rank",
+              "hot_dfcf_biaos_rank",
+              "hot_xq_resou_rank",
+              "hot_tdx_resou_rank",
+              "historical_pattern_window_lt_20"
+            ],
+            "vwap_conflict": false,
+            "unit_validation": "PASS",
+            "source_latest_time": "20261116 1450"
+          },
+          "execution_constraints": {
+            "up_limit": 18.89,
+            "down_limit": 15.45
+          },
+          "classification": "MACHINE_PROPOSAL_OBSERVATION",
+          "observation_trade_date": "20261117",
+          "state": "OBSERVATION_COMPLETE",
+          "minute_complete": true,
+          "actual_fill": false,
+          "gpt_confirmed": false,
+          "reliable_trade": false,
+          "gross_return": null,
+          "estimated_net_return": null,
+          "tp_pct": 0.03,
+          "sl_pct": -0.01,
+          "reason": null,
+          "minute_bars": [
+            {
+              "open": 17.96,
+              "high": 18.21,
+              "low": 17.86,
+              "close": 18.08,
+              "vol": 11853.0,
+              "amount": 21374800.0,
+              "time": "0935"
+            },
+            {
+              "open": 18.08,
+              "high": 18.14,
+              "low": 18.02,
+              "close": 18.08,
+              "vol": 4784.0,
+              "amount": 8651000.0,
+              "time": "0940"
+            },
+            {
+              "open": 18.08,
+              "high": 18.16,
+              "low": 17.9,
+              "close": 17.9,
+              "vol": 5516.0,
+              "amount": 9947900.0,
+              "time": "0945"
+            },
+            {
+              "open": 17.97,
+              "high": 18.17,
+              "low": 17.92,
+              "close": 17.99,
+              "vol": 5295.0,
+              "amount": 9564900.0,
+              "time": "0950"
+            },
+            {
+              "open": 17.99,
+              "high": 18.13,
+              "low": 17.93,
+              "close": 18.06,
+              "vol": 5170.0,
+              "amount": 9329900.0,
+              "time": "0955"
+            }
+          ],
+          "open": 17.96,
+          "open_change": -0.0033296337402884957,
+          "high_0930_0955": 18.21,
+          "low_0930_0955": 17.86,
+          "maximum_change": 0.010543840177580588,
+          "minimum_change": -0.008879023307436174,
+          "high_time_intervals": [
+            {
+              "start": "09:30",
+              "end": "09:35"
+            }
+          ],
+          "low_time_intervals": [
+            {
+              "start": "09:30",
+              "end": "09:35"
+            }
+          ],
+          "last_0950": 17.99,
+          "change_0950": -0.0016648168701443034,
+          "last_0955": 18.06,
+          "observation_return_0955": 0.002219755826859071,
+          "hypothetical_tp_touched": false,
+          "hypothetical_sl_touched": false,
+          "hypothetical_first_trigger_order": "NEITHER_TOUCHED",
+          "ambiguous_bar_intervals": [],
+          "first_tp_interval": null,
+          "first_sl_interval": null,
+          "minute_source_latest_time": "20261117 0955",
+          "resolution": "5m",
+          "execution_limitations": [
+            "REFERENCE_PRICE_NOT_ENTRY",
+            "NO_EXECUTED_EXIT",
+            "EXTREMA_TIME_IS_5M_INTERVAL_NOT_TICK",
+            "QUEUE_AND_LIMIT_FILL_NOT_PROVEN"
+          ],
+          "flat_price_bars": []
+        },
+        {
+          "code": "002853",
+          "name": "皮阿诺",
+          "reference_price": 22.79,
+          "rank": 2,
+          "score": 73,
+          "reference_time": "20261116 14:50",
+          "data_quality": {
+            "confidence": "MEDIUM",
+            "missing_fields": [
+              "hot_ths_normal_rank",
+              "hot_dfcf_biaos_rank",
+              "hot_xq_resou_rank",
+              "hot_tdx_resou_rank",
+              "historical_pattern_window_lt_20"
+            ],
+            "vwap_conflict": false,
+            "unit_validation": "PASS",
+            "source_latest_time": "20261116 1450"
+          },
+          "execution_constraints": {
+            "up_limit": 23.95,
+            "down_limit": 19.59
+          },
+          "classification": "MACHINE_PROPOSAL_OBSERVATION",
+          "observation_trade_date": "20261117",
+          "state": "OBSERVATION_COMPLETE",
+          "minute_complete": true,
+          "actual_fill": false,
+          "gpt_confirmed": false,
+          "reliable_trade": false,
+          "gross_return": null,
+          "estimated_net_return": null,
+          "tp_pct": 0.03,
+          "sl_pct": -0.01,
+          "reason": null,
+          "minute_bars": [
+            {
+              "open": 22.62,
+              "high": 22.62,
+              "low": 21.2,
+              "close": 21.61,
+              "vol": 8455.0,
+              "amount": 18474900.0,
+              "time": "0935"
+            },
+            {
+              "open": 21.61,
+              "high": 21.8,
+              "low": 21.43,
+              "close": 21.43,
+              "vol": 3042.0,
+              "amount": 6568800.0,
+              "time": "0940"
+            },
+            {
+              "open": 21.45,
+              "high": 21.76,
+              "low": 21.31,
+              "close": 21.32,
+              "vol": 2071.0,
+              "amount": 4450300.0,
+              "time": "0945"
+            },
+            {
+              "open": 21.36,
+              "high": 21.36,
+              "low": 20.78,
+              "close": 20.82,
+              "vol": 4574.0,
+              "amount": 9643000.0,
+              "time": "0950"
+            },
+            {
+              "open": 20.82,
+              "high": 21.19,
+              "low": 20.82,
+              "close": 21.01,
+              "vol": 1579.0,
+              "amount": 3319800.0,
+              "time": "0955"
+            }
+          ],
+          "open": 22.62,
+          "open_change": -0.007459412022816969,
+          "high_0930_0955": 22.62,
+          "low_0930_0955": 20.78,
+          "maximum_change": -0.007459412022816969,
+          "minimum_change": -0.08819657744624831,
+          "high_time_intervals": [
+            {
+              "start": "09:30",
+              "end": "09:35"
+            }
+          ],
+          "low_time_intervals": [
+            {
+              "start": "09:45",
+              "end": "09:50"
+            }
+          ],
+          "last_0950": 20.82,
+          "change_0950": -0.08644142167617375,
+          "last_0955": 21.01,
+          "observation_return_0955": -0.07810443176831938,
+          "hypothetical_tp_touched": false,
+          "hypothetical_sl_touched": true,
+          "hypothetical_first_trigger_order": "SL_ONLY",
+          "ambiguous_bar_intervals": [],
+          "first_tp_interval": null,
+          "first_sl_interval": {
+            "start": "09:30",
+            "end": "09:35"
+          },
+          "minute_source_latest_time": "20261117 0955",
+          "resolution": "5m",
+          "execution_limitations": [
+            "REFERENCE_PRICE_NOT_ENTRY",
+            "NO_EXECUTED_EXIT",
+            "EXTREMA_TIME_IS_5M_INTERVAL_NOT_TICK",
+            "QUEUE_AND_LIMIT_FILL_NOT_PROVEN"
+          ],
+          "flat_price_bars": []
+        }
+      ],
+      "actual_fill": false,
+      "reliable_trade_count": 0,
+      "automated_trading": false
     }
   ],
   "summary": {
     "machine_proposal_count": 36,
-    "unobserved_proposal_count": 2,
-    "complete_observation_count": 34,
+    "unobserved_proposal_count": 0,
+    "complete_observation_count": 36,
     "missing_observation_count": 0,
     "retrospective_sample_count": 12,
     "modelled_fill_count": 0,
@@ -11231,6 +11494,257 @@
       "trade_date": "20261113",
       "run_context": "LIVE_EXPERIMENT",
       "method_version": 2
+    },
+    {
+      "code": "002946",
+      "name": "新乳业",
+      "reference_price": 18.02,
+      "rank": 1,
+      "score": 74,
+      "reference_time": "20261116 14:50",
+      "data_quality": {
+        "confidence": "MEDIUM",
+        "missing_fields": [
+          "hot_ths_normal_rank",
+          "hot_dfcf_biaos_rank",
+          "hot_xq_resou_rank",
+          "hot_tdx_resou_rank",
+          "historical_pattern_window_lt_20"
+        ],
+        "vwap_conflict": false,
+        "unit_validation": "PASS",
+        "source_latest_time": "20261116 1450"
+      },
+      "execution_constraints": {
+        "up_limit": 18.89,
+        "down_limit": 15.45
+      },
+      "classification": "MACHINE_PROPOSAL_OBSERVATION",
+      "observation_trade_date": "20261117",
+      "state": "OBSERVATION_COMPLETE",
+      "minute_complete": true,
+      "actual_fill": false,
+      "gpt_confirmed": false,
+      "reliable_trade": false,
+      "gross_return": null,
+      "estimated_net_return": null,
+      "tp_pct": 0.03,
+      "sl_pct": -0.01,
+      "reason": null,
+      "minute_bars": [
+        {
+          "open": 17.96,
+          "high": 18.21,
+          "low": 17.86,
+          "close": 18.08,
+          "vol": 11853.0,
+          "amount": 21374800.0,
+          "time": "0935"
+        },
+        {
+          "open": 18.08,
+          "high": 18.14,
+          "low": 18.02,
+          "close": 18.08,
+          "vol": 4784.0,
+          "amount": 8651000.0,
+          "time": "0940"
+        },
+        {
+          "open": 18.08,
+          "high": 18.16,
+          "low": 17.9,
+          "close": 17.9,
+          "vol": 5516.0,
+          "amount": 9947900.0,
+          "time": "0945"
+        },
+        {
+          "open": 17.97,
+          "high": 18.17,
+          "low": 17.92,
+          "close": 17.99,
+          "vol": 5295.0,
+          "amount": 9564900.0,
+          "time": "0950"
+        },
+        {
+          "open": 17.99,
+          "high": 18.13,
+          "low": 17.93,
+          "close": 18.06,
+          "vol": 5170.0,
+          "amount": 9329900.0,
+          "time": "0955"
+        }
+      ],
+      "open": 17.96,
+      "open_change": -0.0033296337402884957,
+      "high_0930_0955": 18.21,
+      "low_0930_0955": 17.86,
+      "maximum_change": 0.010543840177580588,
+      "minimum_change": -0.008879023307436174,
+      "high_time_intervals": [
+        {
+          "start": "09:30",
+          "end": "09:35"
+        }
+      ],
+      "low_time_intervals": [
+        {
+          "start": "09:30",
+          "end": "09:35"
+        }
+      ],
+      "last_0950": 17.99,
+      "change_0950": -0.0016648168701443034,
+      "last_0955": 18.06,
+      "observation_return_0955": 0.002219755826859071,
+      "hypothetical_tp_touched": false,
+      "hypothetical_sl_touched": false,
+      "hypothetical_first_trigger_order": "NEITHER_TOUCHED",
+      "ambiguous_bar_intervals": [],
+      "first_tp_interval": null,
+      "first_sl_interval": null,
+      "minute_source_latest_time": "20261117 0955",
+      "resolution": "5m",
+      "execution_limitations": [
+        "REFERENCE_PRICE_NOT_ENTRY",
+        "NO_EXECUTED_EXIT",
+        "EXTREMA_TIME_IS_5M_INTERVAL_NOT_TICK",
+        "QUEUE_AND_LIMIT_FILL_NOT_PROVEN"
+      ],
+      "flat_price_bars": [],
+      "trade_date": "20261116",
+      "run_context": "LIVE_EXPERIMENT",
+      "method_version": 2
+    },
+    {
+      "code": "002853",
+      "name": "皮阿诺",
+      "reference_price": 22.79,
+      "rank": 2,
+      "score": 73,
+      "reference_time": "20261116 14:50",
+      "data_quality": {
+        "confidence": "MEDIUM",
+        "missing_fields": [
+          "hot_ths_normal_rank",
+          "hot_dfcf_biaos_rank",
+          "hot_xq_resou_rank",
+          "hot_tdx_resou_rank",
+          "historical_pattern_window_lt_20"
+        ],
+        "vwap_conflict": false,
+        "unit_validation": "PASS",
+        "source_latest_time": "20261116 1450"
+      },
+      "execution_constraints": {
+        "up_limit": 23.95,
+        "down_limit": 19.59
+      },
+      "classification": "MACHINE_PROPOSAL_OBSERVATION",
+      "observation_trade_date": "20261117",
+      "state": "OBSERVATION_COMPLETE",
+      "minute_complete": true,
+      "actual_fill": false,
+      "gpt_confirmed": false,
+      "reliable_trade": false,
+      "gross_return": null,
+      "estimated_net_return": null,
+      "tp_pct": 0.03,
+      "sl_pct": -0.01,
+      "reason": null,
+      "minute_bars": [
+        {
+          "open": 22.62,
+          "high": 22.62,
+          "low": 21.2,
+          "close": 21.61,
+          "vol": 8455.0,
+          "amount": 18474900.0,
+          "time": "0935"
+        },
+        {
+          "open": 21.61,
+          "high": 21.8,
+          "low": 21.43,
+          "close": 21.43,
+          "vol": 3042.0,
+          "amount": 6568800.0,
+          "time": "0940"
+        },
+        {
+          "open": 21.45,
+          "high": 21.76,
+          "low": 21.31,
+          "close": 21.32,
+          "vol": 2071.0,
+          "amount": 4450300.0,
+          "time": "0945"
+        },
+        {
+          "open": 21.36,
+          "high": 21.36,
+          "low": 20.78,
+          "close": 20.82,
+          "vol": 4574.0,
+          "amount": 9643000.0,
+          "time": "0950"
+        },
+        {
+          "open": 20.82,
+          "high": 21.19,
+          "low": 20.82,
+          "close": 21.01,
+          "vol": 1579.0,
+          "amount": 3319800.0,
+          "time": "0955"
+        }
+      ],
+      "open": 22.62,
+      "open_change": -0.007459412022816969,
+      "high_0930_0955": 22.62,
+      "low_0930_0955": 20.78,
+      "maximum_change": -0.007459412022816969,
+      "minimum_change": -0.08819657744624831,
+      "high_time_intervals": [
+        {
+          "start": "09:30",
+          "end": "09:35"
+        }
+      ],
+      "low_time_intervals": [
+        {
+          "start": "09:45",
+          "end": "09:50"
+        }
+      ],
+      "last_0950": 20.82,
+      "change_0950": -0.08644142167617375,
+      "last_0955": 21.01,
+      "observation_return_0955": -0.07810443176831938,
+      "hypothetical_tp_touched": false,
+      "hypothetical_sl_touched": true,
+      "hypothetical_first_trigger_order": "SL_ONLY",
+      "ambiguous_bar_intervals": [],
+      "first_tp_interval": null,
+      "first_sl_interval": {
+        "start": "09:30",
+        "end": "09:35"
+      },
+      "minute_source_latest_time": "20261117 0955",
+      "resolution": "5m",
+      "execution_limitations": [
+        "REFERENCE_PRICE_NOT_ENTRY",
+        "NO_EXECUTED_EXIT",
+        "EXTREMA_TIME_IS_5M_INTERVAL_NOT_TICK",
+        "QUEUE_AND_LIMIT_FILL_NOT_PROVEN"
+      ],
+      "flat_price_bars": [],
+      "trade_date": "20261116",
+      "run_context": "LIVE_EXPERIMENT",
+      "method_version": 2
     }
   ],
   "raw_sources": [
@@ -11482,6 +11996,15 @@
       "trade_date": "20261113",
       "artifact_name": "exit_20261116_0955_raw.json",
       "sha256": "45f43bab62307eafb3916e37513e9b085934b0c160c4a7e53e9d2f0900cc4e4c",
+      "provider": "MEOZ",
+      "volume_unit": "lots_100_shares",
+      "amount_unit": "CNY",
+      "interval": "5m"
+    },
+    {
+      "trade_date": "20261116",
+      "artifact_name": "exit_20261117_0955_raw.json",
+      "sha256": "f81a393bd9e7e5b900a73646ff3dd2c3ef49720c4d9ed0e56cd3eee05cefa1e7",
       "provider": "MEOZ",
       "volume_unit": "lots_100_shares",
       "amount_unit": "CNY",
