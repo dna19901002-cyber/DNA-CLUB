@@ -3,8 +3,8 @@
   "schema": "ashare-experiment-status-v1",
   "automated_trading": false,
   "daily_total_meoz_budget": 100,
-  "morning_research_total_cap_including_A": 90,
-  "afternoon_A_worst_case_reserved": 10,
+  "morning_research_total_cap_including_A": 88,
+  "afternoon_A_worst_case_reserved": 12,
   "cost_assumptions": {
     "label": "EXPLICIT_RESEARCH_ASSUMPTIONS_NOT_BROKER_BILL",
     "notional_cny": 100000,
@@ -50,7 +50,7 @@
   "selection_audit": {
     "schema": "ashare-experiment-selection-audit-v1",
     "strategy_version": "V1.2",
-    "checked_at_cn": "2026-11-17T14:55:05.356535+08:00",
+    "checked_at_cn": "2026-11-18T09:49:45.364567+08:00",
     "trade_date": "20261117",
     "groups": {
       "A": {
