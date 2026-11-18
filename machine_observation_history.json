@@ -1293,6 +1293,71 @@
       "actual_fill": false,
       "gpt_confirmed": false,
       "timing_note": "Locked with original 14:50 snapshot"
+    },
+    {
+      "schema": "ashare-machine-proposals-v1",
+      "strategy_version": "V1.2",
+      "trade_date": "20261118",
+      "classification": "MACHINE_PROPOSAL_OBSERVATION",
+      "proposals": [
+        {
+          "code": "300464",
+          "name": "星徽股份",
+          "reference_price": 6.51,
+          "rank": 1,
+          "score": 78,
+          "reference_time": "20261118 14:50",
+          "data_quality": {
+            "confidence": "MEDIUM",
+            "missing_fields": [
+              "hot_ths_normal_rank",
+              "hot_xq_resou_rank",
+              "hot_tdx_resou_rank",
+              "historical_pattern_window_lt_20"
+            ],
+            "vwap_conflict": false,
+            "unit_validation": "PASS",
+            "source_latest_time": "20261118 1450"
+          },
+          "execution_constraints": {
+            "up_limit": 7.62,
+            "down_limit": 5.08
+          }
+        },
+        {
+          "code": "000034",
+          "name": "神州数码",
+          "reference_price": 22.92,
+          "rank": 2,
+          "score": 77,
+          "reference_time": "20261118 14:50",
+          "data_quality": {
+            "confidence": "MEDIUM",
+            "missing_fields": [
+              "theme_names_kpl",
+              "hot_ths_normal_rank",
+              "hot_dfcf_biaos_rank",
+              "hot_tdx_resou_rank",
+              "historical_pattern_window_lt_20"
+            ],
+            "vwap_conflict": false,
+            "unit_validation": "PASS",
+            "source_latest_time": "20261118 1450"
+          },
+          "execution_constraints": {
+            "up_limit": 24.28,
+            "down_limit": 19.86
+          }
+        }
+      ],
+      "source_snapshot_sha256": "4d792bcd80ebbaaa585b6b4e5e69e6f3261a77d413001e2f102898a44b8fc48f",
+      "snapshot_time": "2026-11-18T14:50:16.021643+08:00",
+      "recorded_at_cn": "2026-11-18T14:50:16.028334+08:00",
+      "run_context": "LIVE_EXPERIMENT",
+      "market_regime": "WITHIN_MINUS_1PCT_MA5",
+      "actual_fill": false,
+      "gpt_confirmed": false,
+      "timing_note": "Locked with original 14:50 snapshot"
     }
   ],
   "attempts": [
@@ -7431,8 +7496,8 @@
     }
   ],
   "summary": {
-    "machine_proposal_count": 38,
-    "unobserved_proposal_count": 0,
+    "machine_proposal_count": 40,
+    "unobserved_proposal_count": 2,
     "complete_observation_count": 38,
     "missing_observation_count": 0,
     "retrospective_sample_count": 12,
