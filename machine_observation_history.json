@@ -1424,6 +1424,71 @@
       "actual_fill": false,
       "gpt_confirmed": false,
       "timing_note": "Locked with original 14:50 snapshot"
+    },
+    {
+      "schema": "ashare-machine-proposals-v1",
+      "strategy_version": "V1.2",
+      "trade_date": "20261120",
+      "classification": "MACHINE_PROPOSAL_OBSERVATION",
+      "proposals": [
+        {
+          "code": "002668",
+          "name": "TCL智家",
+          "reference_price": 9.41,
+          "rank": 1,
+          "score": 75,
+          "reference_time": "20261120 14:50",
+          "data_quality": {
+            "confidence": "MEDIUM",
+            "missing_fields": [
+              "hot_ths_normal_rank",
+              "hot_dfcf_biaos_rank",
+              "hot_xq_resou_rank",
+              "hot_tdx_resou_rank",
+              "historical_pattern_window_lt_20"
+            ],
+            "vwap_conflict": false,
+            "unit_validation": "PASS",
+            "source_latest_time": "20261120 1450"
+          },
+          "execution_constraints": {
+            "up_limit": 10.1,
+            "down_limit": 8.26
+          }
+        },
+        {
+          "code": "000656",
+          "name": "金科股份",
+          "reference_price": 1.05,
+          "rank": 2,
+          "score": 72,
+          "reference_time": "20261120 14:50",
+          "data_quality": {
+            "confidence": "MEDIUM",
+            "missing_fields": [
+              "hot_dfcf_biaos_rank",
+              "hot_xq_resou_rank",
+              "hot_tdx_resou_rank",
+              "historical_pattern_window_lt_20"
+            ],
+            "vwap_conflict": false,
+            "unit_validation": "PASS",
+            "source_latest_time": "20261120 1450"
+          },
+          "execution_constraints": {
+            "up_limit": 1.12,
+            "down_limit": 0.92
+          }
+        }
+      ],
+      "source_snapshot_sha256": "07fa1b768a9652a2c02e169771c970d801cf3156736fa355c5baf2985cce4835",
+      "snapshot_time": "2026-11-20T14:50:11.427741+08:00",
+      "recorded_at_cn": "2026-11-20T14:50:11.433487+08:00",
+      "run_context": "LIVE_EXPERIMENT",
+      "market_regime": "BELOW_MINUS_1PCT_MA5",
+      "actual_fill": false,
+      "gpt_confirmed": false,
+      "timing_note": "Locked with original 14:50 snapshot"
     }
   ],
   "attempts": [
@@ -8105,8 +8170,8 @@
     }
   ],
   "summary": {
-    "machine_proposal_count": 42,
-    "unobserved_proposal_count": 0,
+    "machine_proposal_count": 44,
+    "unobserved_proposal_count": 2,
     "complete_observation_count": 42,
     "missing_observation_count": 0,
     "retrospective_sample_count": 12,
