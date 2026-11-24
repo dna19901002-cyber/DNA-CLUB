@@ -50,13 +50,13 @@
   "selection_audit": {
     "schema": "ashare-experiment-selection-audit-v1",
     "strategy_version": "V1.2",
-    "checked_at_cn": "2026-11-24T09:49:45.350607+08:00",
-    "trade_date": "20261123",
+    "checked_at_cn": "2026-11-24T14:54:00.359097+08:00",
+    "trade_date": "20261124",
     "groups": {
       "A": {
         "state": "MANUAL_CHECKPOINT_PENDING",
         "reason": "INTENTIONAL_CONVERSATION_RECORD_MODE",
-        "expected_snapshot_sha256": "d6d6e95afbe2e015c10623a182a14b7409ec6244b2eba6e39dcc97e2972569e4",
+        "expected_snapshot_sha256": "dc1ea7be18f4558864afa7422b7386a65735b334d72d340628e00db27186f152",
         "execution_eligible": false,
         "github_read_receipt": null,
         "automatic_github_selection_required": false
@@ -64,7 +64,7 @@
       "BC": {
         "state": "MANUAL_CHECKPOINT_PENDING",
         "reason": "INTENTIONAL_CONVERSATION_RECORD_MODE",
-        "expected_snapshot_sha256": "614aef387fa4b721bb62883fee45d56f29bc4d9f71d89123eeba49b6b85bcbc1",
+        "expected_snapshot_sha256": "2ba27d58c29e52a28ebf27f77265fa1a28e3e650e38dac870f0646966fa4dc07",
         "execution_eligible": false,
         "github_read_receipt": null,
         "automatic_github_selection_required": false
@@ -80,17 +80,17 @@
     "market_data_health": {
       "A": {
         "state": "USABLE",
-        "trade_date": "20261123",
+        "trade_date": "20261124",
         "run_context": "LIVE",
-        "snapshot_sha256": "d6d6e95afbe2e015c10623a182a14b7409ec6244b2eba6e39dcc97e2972569e4",
+        "snapshot_sha256": "dc1ea7be18f4558864afa7422b7386a65735b334d72d340628e00db27186f152",
         "data_quality_state": "COMPLETE_FOR_FAILED_GATE",
         "selection_state_used_as_market_health": false
       },
       "BC": {
         "state": "USABLE",
-        "trade_date": "20261123",
+        "trade_date": "20261124",
         "run_context": "LIVE_EXPERIMENT",
-        "snapshot_sha256": "614aef387fa4b721bb62883fee45d56f29bc4d9f71d89123eeba49b6b85bcbc1",
+        "snapshot_sha256": "2ba27d58c29e52a28ebf27f77265fa1a28e3e650e38dac870f0646966fa4dc07",
         "data_quality_state": "USABLE_WITH_DECLARED_LIMITATIONS",
         "selection_state_used_as_market_health": false
       }
