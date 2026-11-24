@@ -8498,12 +8498,275 @@
       "actual_fill": false,
       "reliable_trade_count": 0,
       "automated_trading": false
+    },
+    {
+      "schema": "ashare-machine-observation-v1",
+      "strategy_version": "V1.2",
+      "method_version": 2,
+      "classification": "MACHINE_PROPOSAL_OBSERVATION",
+      "trade_date": "20261123",
+      "observation_trade_date": "20261124",
+      "source_snapshot_sha256": "614aef387fa4b721bb62883fee45d56f29bc4d9f71d89123eeba49b6b85bcbc1",
+      "proposal_ledger_sha256": "dd5a945c45e96f05c192cbd03ed24b63c63e80d9a21a35e58c21e096d9328e13",
+      "raw_minute_sha256": "429a7d5e23c30ae86af455f89a4f6aba1402226517904fbccb3057b5644fc8bd",
+      "retrieved_at_cn": "2026-11-24T09:55:08.592603+08:00",
+      "run_context": "LIVE_EXPERIMENT",
+      "observations": [
+        {
+          "code": "003019",
+          "name": "宸展光电",
+          "reference_price": 21.75,
+          "rank": 1,
+          "score": 77,
+          "reference_time": "20261123 14:50",
+          "data_quality": {
+            "confidence": "MEDIUM",
+            "missing_fields": [
+              "hot_ths_normal_rank",
+              "hot_dfcf_biaos_rank",
+              "hot_xq_resou_rank",
+              "hot_tdx_resou_rank",
+              "historical_pattern_window_lt_20"
+            ],
+            "vwap_conflict": false,
+            "unit_validation": "PASS",
+            "source_latest_time": "20261123 1450"
+          },
+          "execution_constraints": {
+            "up_limit": 22.8,
+            "down_limit": 18.66
+          },
+          "classification": "MACHINE_PROPOSAL_OBSERVATION",
+          "observation_trade_date": "20261124",
+          "state": "OBSERVATION_COMPLETE",
+          "minute_complete": true,
+          "actual_fill": false,
+          "gpt_confirmed": false,
+          "reliable_trade": false,
+          "gross_return": null,
+          "estimated_net_return": null,
+          "tp_pct": 0.03,
+          "sl_pct": -0.01,
+          "reason": null,
+          "minute_bars": [
+            {
+              "open": 22.5,
+              "high": 22.76,
+              "low": 22.5,
+              "close": 22.7,
+              "vol": 4318.0,
+              "amount": 9769400.0,
+              "time": "0935"
+            },
+            {
+              "open": 22.7,
+              "high": 22.77,
+              "low": 22.6,
+              "close": 22.61,
+              "vol": 1969.0,
+              "amount": 4464600.0,
+              "time": "0940"
+            },
+            {
+              "open": 22.61,
+              "high": 22.87,
+              "low": 22.55,
+              "close": 22.75,
+              "vol": 3453.0,
+              "amount": 7827000.0,
+              "time": "0945"
+            },
+            {
+              "open": 22.75,
+              "high": 22.8,
+              "low": 22.66,
+              "close": 22.79,
+              "vol": 751.0,
+              "amount": 1709300.0,
+              "time": "0950"
+            },
+            {
+              "open": 22.79,
+              "high": 22.8,
+              "low": 22.61,
+              "close": 22.62,
+              "vol": 979.0,
+              "amount": 2223600.0,
+              "time": "0955"
+            }
+          ],
+          "open": 22.5,
+          "open_change": 0.034482758620689724,
+          "high_0930_0955": 22.87,
+          "low_0930_0955": 22.5,
+          "maximum_change": 0.05149425287356335,
+          "minimum_change": 0.034482758620689724,
+          "high_time_intervals": [
+            {
+              "start": "09:40",
+              "end": "09:45"
+            }
+          ],
+          "low_time_intervals": [
+            {
+              "start": "09:30",
+              "end": "09:35"
+            }
+          ],
+          "last_0950": 22.79,
+          "change_0950": 0.04781609195402292,
+          "last_0955": 22.62,
+          "observation_return_0955": 0.040000000000000036,
+          "hypothetical_tp_touched": true,
+          "hypothetical_sl_touched": false,
+          "hypothetical_first_trigger_order": "TP_ONLY",
+          "ambiguous_bar_intervals": [],
+          "first_tp_interval": {
+            "start": "09:30",
+            "end": "09:35"
+          },
+          "first_sl_interval": null,
+          "minute_source_latest_time": "20261124 0955",
+          "resolution": "5m",
+          "execution_limitations": [
+            "REFERENCE_PRICE_NOT_ENTRY",
+            "NO_EXECUTED_EXIT",
+            "EXTREMA_TIME_IS_5M_INTERVAL_NOT_TICK",
+            "QUEUE_AND_LIMIT_FILL_NOT_PROVEN"
+          ],
+          "flat_price_bars": []
+        },
+        {
+          "code": "002041",
+          "name": "登海种业",
+          "reference_price": 8.25,
+          "rank": 2,
+          "score": 75,
+          "reference_time": "20261123 14:50",
+          "data_quality": {
+            "confidence": "MEDIUM",
+            "missing_fields": [
+              "hot_ths_normal_rank",
+              "hot_dfcf_biaos_rank",
+              "hot_xq_resou_rank",
+              "hot_tdx_resou_rank",
+              "historical_pattern_window_lt_20"
+            ],
+            "vwap_conflict": false,
+            "unit_validation": "PASS",
+            "source_latest_time": "20261123 1450"
+          },
+          "execution_constraints": {
+            "up_limit": 8.72,
+            "down_limit": 7.14
+          },
+          "classification": "MACHINE_PROPOSAL_OBSERVATION",
+          "observation_trade_date": "20261124",
+          "state": "OBSERVATION_COMPLETE",
+          "minute_complete": true,
+          "actual_fill": false,
+          "gpt_confirmed": false,
+          "reliable_trade": false,
+          "gross_return": null,
+          "estimated_net_return": null,
+          "tp_pct": 0.03,
+          "sl_pct": -0.01,
+          "reason": null,
+          "minute_bars": [
+            {
+              "open": 8.25,
+              "high": 8.45,
+              "low": 8.2,
+              "close": 8.4,
+              "vol": 28347.0,
+              "amount": 23582000.0,
+              "time": "0935"
+            },
+            {
+              "open": 8.4,
+              "high": 8.44,
+              "low": 8.38,
+              "close": 8.38,
+              "vol": 11062.0,
+              "amount": 9300600.0,
+              "time": "0940"
+            },
+            {
+              "open": 8.38,
+              "high": 8.41,
+              "low": 8.34,
+              "close": 8.36,
+              "vol": 9728.0,
+              "amount": 8151700.0,
+              "time": "0945"
+            },
+            {
+              "open": 8.35,
+              "high": 8.39,
+              "low": 8.35,
+              "close": 8.37,
+              "vol": 3215.0,
+              "amount": 2689500.0,
+              "time": "0950"
+            },
+            {
+              "open": 8.37,
+              "high": 8.37,
+              "low": 8.31,
+              "close": 8.31,
+              "vol": 4392.0,
+              "amount": 3664900.0,
+              "time": "0955"
+            }
+          ],
+          "open": 8.25,
+          "open_change": 0.0,
+          "high_0930_0955": 8.45,
+          "low_0930_0955": 8.2,
+          "maximum_change": 0.024242424242424176,
+          "minimum_change": -0.0060606060606061,
+          "high_time_intervals": [
+            {
+              "start": "09:30",
+              "end": "09:35"
+            }
+          ],
+          "low_time_intervals": [
+            {
+              "start": "09:30",
+              "end": "09:35"
+            }
+          ],
+          "last_0950": 8.37,
+          "change_0950": 0.014545454545454417,
+          "last_0955": 8.31,
+          "observation_return_0955": 0.0072727272727273196,
+          "hypothetical_tp_touched": false,
+          "hypothetical_sl_touched": false,
+          "hypothetical_first_trigger_order": "NEITHER_TOUCHED",
+          "ambiguous_bar_intervals": [],
+          "first_tp_interval": null,
+          "first_sl_interval": null,
+          "minute_source_latest_time": "20261124 0955",
+          "resolution": "5m",
+          "execution_limitations": [
+            "REFERENCE_PRICE_NOT_ENTRY",
+            "NO_EXECUTED_EXIT",
+            "EXTREMA_TIME_IS_5M_INTERVAL_NOT_TICK",
+            "QUEUE_AND_LIMIT_FILL_NOT_PROVEN"
+          ],
+          "flat_price_bars": []
+        }
+      ],
+      "actual_fill": false,
+      "reliable_trade_count": 0,
+      "automated_trading": false
     }
   ],
   "summary": {
     "machine_proposal_count": 46,
-    "unobserved_proposal_count": 2,
-    "complete_observation_count": 44,
+    "unobserved_proposal_count": 0,
+    "complete_observation_count": 46,
     "missing_observation_count": 0,
     "retrospective_sample_count": 12,
     "modelled_fill_count": 0,
@@ -14176,6 +14439,257 @@
       "trade_date": "20261120",
       "run_context": "LIVE_EXPERIMENT",
       "method_version": 2
+    },
+    {
+      "code": "003019",
+      "name": "宸展光电",
+      "reference_price": 21.75,
+      "rank": 1,
+      "score": 77,
+      "reference_time": "20261123 14:50",
+      "data_quality": {
+        "confidence": "MEDIUM",
+        "missing_fields": [
+          "hot_ths_normal_rank",
+          "hot_dfcf_biaos_rank",
+          "hot_xq_resou_rank",
+          "hot_tdx_resou_rank",
+          "historical_pattern_window_lt_20"
+        ],
+        "vwap_conflict": false,
+        "unit_validation": "PASS",
+        "source_latest_time": "20261123 1450"
+      },
+      "execution_constraints": {
+        "up_limit": 22.8,
+        "down_limit": 18.66
+      },
+      "classification": "MACHINE_PROPOSAL_OBSERVATION",
+      "observation_trade_date": "20261124",
+      "state": "OBSERVATION_COMPLETE",
+      "minute_complete": true,
+      "actual_fill": false,
+      "gpt_confirmed": false,
+      "reliable_trade": false,
+      "gross_return": null,
+      "estimated_net_return": null,
+      "tp_pct": 0.03,
+      "sl_pct": -0.01,
+      "reason": null,
+      "minute_bars": [
+        {
+          "open": 22.5,
+          "high": 22.76,
+          "low": 22.5,
+          "close": 22.7,
+          "vol": 4318.0,
+          "amount": 9769400.0,
+          "time": "0935"
+        },
+        {
+          "open": 22.7,
+          "high": 22.77,
+          "low": 22.6,
+          "close": 22.61,
+          "vol": 1969.0,
+          "amount": 4464600.0,
+          "time": "0940"
+        },
+        {
+          "open": 22.61,
+          "high": 22.87,
+          "low": 22.55,
+          "close": 22.75,
+          "vol": 3453.0,
+          "amount": 7827000.0,
+          "time": "0945"
+        },
+        {
+          "open": 22.75,
+          "high": 22.8,
+          "low": 22.66,
+          "close": 22.79,
+          "vol": 751.0,
+          "amount": 1709300.0,
+          "time": "0950"
+        },
+        {
+          "open": 22.79,
+          "high": 22.8,
+          "low": 22.61,
+          "close": 22.62,
+          "vol": 979.0,
+          "amount": 2223600.0,
+          "time": "0955"
+        }
+      ],
+      "open": 22.5,
+      "open_change": 0.034482758620689724,
+      "high_0930_0955": 22.87,
+      "low_0930_0955": 22.5,
+      "maximum_change": 0.05149425287356335,
+      "minimum_change": 0.034482758620689724,
+      "high_time_intervals": [
+        {
+          "start": "09:40",
+          "end": "09:45"
+        }
+      ],
+      "low_time_intervals": [
+        {
+          "start": "09:30",
+          "end": "09:35"
+        }
+      ],
+      "last_0950": 22.79,
+      "change_0950": 0.04781609195402292,
+      "last_0955": 22.62,
+      "observation_return_0955": 0.040000000000000036,
+      "hypothetical_tp_touched": true,
+      "hypothetical_sl_touched": false,
+      "hypothetical_first_trigger_order": "TP_ONLY",
+      "ambiguous_bar_intervals": [],
+      "first_tp_interval": {
+        "start": "09:30",
+        "end": "09:35"
+      },
+      "first_sl_interval": null,
+      "minute_source_latest_time": "20261124 0955",
+      "resolution": "5m",
+      "execution_limitations": [
+        "REFERENCE_PRICE_NOT_ENTRY",
+        "NO_EXECUTED_EXIT",
+        "EXTREMA_TIME_IS_5M_INTERVAL_NOT_TICK",
+        "QUEUE_AND_LIMIT_FILL_NOT_PROVEN"
+      ],
+      "flat_price_bars": [],
+      "trade_date": "20261123",
+      "run_context": "LIVE_EXPERIMENT",
+      "method_version": 2
+    },
+    {
+      "code": "002041",
+      "name": "登海种业",
+      "reference_price": 8.25,
+      "rank": 2,
+      "score": 75,
+      "reference_time": "20261123 14:50",
+      "data_quality": {
+        "confidence": "MEDIUM",
+        "missing_fields": [
+          "hot_ths_normal_rank",
+          "hot_dfcf_biaos_rank",
+          "hot_xq_resou_rank",
+          "hot_tdx_resou_rank",
+          "historical_pattern_window_lt_20"
+        ],
+        "vwap_conflict": false,
+        "unit_validation": "PASS",
+        "source_latest_time": "20261123 1450"
+      },
+      "execution_constraints": {
+        "up_limit": 8.72,
+        "down_limit": 7.14
+      },
+      "classification": "MACHINE_PROPOSAL_OBSERVATION",
+      "observation_trade_date": "20261124",
+      "state": "OBSERVATION_COMPLETE",
+      "minute_complete": true,
+      "actual_fill": false,
+      "gpt_confirmed": false,
+      "reliable_trade": false,
+      "gross_return": null,
+      "estimated_net_return": null,
+      "tp_pct": 0.03,
+      "sl_pct": -0.01,
+      "reason": null,
+      "minute_bars": [
+        {
+          "open": 8.25,
+          "high": 8.45,
+          "low": 8.2,
+          "close": 8.4,
+          "vol": 28347.0,
+          "amount": 23582000.0,
+          "time": "0935"
+        },
+        {
+          "open": 8.4,
+          "high": 8.44,
+          "low": 8.38,
+          "close": 8.38,
+          "vol": 11062.0,
+          "amount": 9300600.0,
+          "time": "0940"
+        },
+        {
+          "open": 8.38,
+          "high": 8.41,
+          "low": 8.34,
+          "close": 8.36,
+          "vol": 9728.0,
+          "amount": 8151700.0,
+          "time": "0945"
+        },
+        {
+          "open": 8.35,
+          "high": 8.39,
+          "low": 8.35,
+          "close": 8.37,
+          "vol": 3215.0,
+          "amount": 2689500.0,
+          "time": "0950"
+        },
+        {
+          "open": 8.37,
+          "high": 8.37,
+          "low": 8.31,
+          "close": 8.31,
+          "vol": 4392.0,
+          "amount": 3664900.0,
+          "time": "0955"
+        }
+      ],
+      "open": 8.25,
+      "open_change": 0.0,
+      "high_0930_0955": 8.45,
+      "low_0930_0955": 8.2,
+      "maximum_change": 0.024242424242424176,
+      "minimum_change": -0.0060606060606061,
+      "high_time_intervals": [
+        {
+          "start": "09:30",
+          "end": "09:35"
+        }
+      ],
+      "low_time_intervals": [
+        {
+          "start": "09:30",
+          "end": "09:35"
+        }
+      ],
+      "last_0950": 8.37,
+      "change_0950": 0.014545454545454417,
+      "last_0955": 8.31,
+      "observation_return_0955": 0.0072727272727273196,
+      "hypothetical_tp_touched": false,
+      "hypothetical_sl_touched": false,
+      "hypothetical_first_trigger_order": "NEITHER_TOUCHED",
+      "ambiguous_bar_intervals": [],
+      "first_tp_interval": null,
+      "first_sl_interval": null,
+      "minute_source_latest_time": "20261124 0955",
+      "resolution": "5m",
+      "execution_limitations": [
+        "REFERENCE_PRICE_NOT_ENTRY",
+        "NO_EXECUTED_EXIT",
+        "EXTREMA_TIME_IS_5M_INTERVAL_NOT_TICK",
+        "QUEUE_AND_LIMIT_FILL_NOT_PROVEN"
+      ],
+      "flat_price_bars": [],
+      "trade_date": "20261123",
+      "run_context": "LIVE_EXPERIMENT",
+      "method_version": 2
     }
   ],
   "raw_sources": [
@@ -14472,6 +14986,15 @@
       "trade_date": "20261120",
       "artifact_name": "exit_20261123_0955_raw.json",
       "sha256": "c8ff1f61512ce86125b02d1de8370fcb831f922708cf0668978472600f311e6d",
+      "provider": "MEOZ",
+      "volume_unit": "lots_100_shares",
+      "amount_unit": "CNY",
+      "interval": "5m"
+    },
+    {
+      "trade_date": "20261123",
+      "artifact_name": "exit_20261124_0955_raw.json",
+      "sha256": "429a7d5e23c30ae86af455f89a4f6aba1402226517904fbccb3057b5644fc8bd",
       "provider": "MEOZ",
       "volume_unit": "lots_100_shares",
       "amount_unit": "CNY",
