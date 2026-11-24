@@ -1555,6 +1555,73 @@
       "actual_fill": false,
       "gpt_confirmed": false,
       "timing_note": "Locked with original 14:50 snapshot"
+    },
+    {
+      "schema": "ashare-machine-proposals-v1",
+      "strategy_version": "V1.2",
+      "trade_date": "20261124",
+      "classification": "MACHINE_PROPOSAL_OBSERVATION",
+      "proposals": [
+        {
+          "code": "301168",
+          "name": "通灵股份",
+          "reference_price": 42.9,
+          "rank": 1,
+          "score": 75,
+          "reference_time": "20261124 14:50",
+          "data_quality": {
+            "confidence": "MEDIUM",
+            "missing_fields": [
+              "theme_names_kpl",
+              "hot_ths_normal_rank",
+              "hot_xq_resou_rank",
+              "hot_tdx_resou_rank",
+              "historical_pattern_window_lt_20"
+            ],
+            "vwap_conflict": false,
+            "unit_validation": "PASS",
+            "source_latest_time": "20261124 1450"
+          },
+          "execution_constraints": {
+            "up_limit": 49.1,
+            "down_limit": 32.74
+          }
+        },
+        {
+          "code": "603223",
+          "name": "恒通股份",
+          "reference_price": 8.46,
+          "rank": 2,
+          "score": 72,
+          "reference_time": "20261124 14:50",
+          "data_quality": {
+            "confidence": "MEDIUM",
+            "missing_fields": [
+              "theme_names_kpl",
+              "hot_ths_normal_rank",
+              "hot_dfcf_biaos_rank",
+              "hot_xq_resou_rank",
+              "hot_tdx_resou_rank",
+              "historical_pattern_window_lt_20"
+            ],
+            "vwap_conflict": false,
+            "unit_validation": "PASS",
+            "source_latest_time": "20261124 1450"
+          },
+          "execution_constraints": {
+            "up_limit": 9.06,
+            "down_limit": 7.42
+          }
+        }
+      ],
+      "source_snapshot_sha256": "2ba27d58c29e52a28ebf27f77265fa1a28e3e650e38dac870f0646966fa4dc07",
+      "snapshot_time": "2026-11-24T14:50:11.174442+08:00",
+      "recorded_at_cn": "2026-11-24T14:50:11.184889+08:00",
+      "run_context": "LIVE_EXPERIMENT",
+      "market_regime": "WITHIN_MINUS_1PCT_MA5",
+      "actual_fill": false,
+      "gpt_confirmed": false,
+      "timing_note": "Locked with original 14:50 snapshot"
     }
   ],
   "attempts": [
@@ -8764,8 +8831,8 @@
     }
   ],
   "summary": {
-    "machine_proposal_count": 46,
-    "unobserved_proposal_count": 0,
+    "machine_proposal_count": 48,
+    "unobserved_proposal_count": 2,
     "complete_observation_count": 46,
     "missing_observation_count": 0,
     "retrospective_sample_count": 12,
