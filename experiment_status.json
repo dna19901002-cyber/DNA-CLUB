@@ -3,8 +3,8 @@
   "schema": "ashare-experiment-status-v1",
   "automated_trading": false,
   "daily_total_meoz_budget": 100,
-  "morning_research_total_cap_including_A": 88,
-  "afternoon_A_worst_case_reserved": 12,
+  "morning_research_total_cap_including_A": 90,
+  "afternoon_A_worst_case_reserved": 10,
   "cost_assumptions": {
     "label": "EXPLICIT_RESEARCH_ASSUMPTIONS_NOT_BROKER_BILL",
     "notional_cny": 100000,
@@ -102,8 +102,8 @@
   },
   "last_verified_at_cn": "2026-10-20T06:37:13.439418+08:00",
   "offline_tests_passed": 135,
-  "latest_experiment_trade_date": "20261125",
-  "latest_experiment_1450_content_sha256": "b1f854122654c24c0d20398f9893ca39f04eefae1fdd4ad455a7155ac621a70a",
+  "latest_experiment_trade_date": "20261126",
+  "latest_experiment_1450_content_sha256": "ed57e39d7eb2c6c139077ab0d69a77ed9251d63f724171696644e6633ae7cac6",
   "last_entry": {
     "trade_date": "20261125",
     "confirmed_models": 0,
@@ -121,15 +121,15 @@
     "no_strategy_change": true
   },
   "machine_observation_summary": {
-    "machine_proposal_count": 50,
-    "unobserved_proposal_count": 0,
+    "machine_proposal_count": 52,
+    "unobserved_proposal_count": 2,
     "complete_observation_count": 50,
     "missing_observation_count": 0,
     "retrospective_sample_count": 12,
     "modelled_fill_count": 0,
     "reliable_trade_count": 0
   },
-  "latest_machine_observation_content_sha256": "2ba802b40d7671df5daf49e5e86380017fb4d5a11f8a43064d697487d356594e",
+  "latest_machine_observation_content_sha256": "fe76b1573138af1029b955c05d162c68cbe21e882495a6faee632e06aba88f94",
   "repair_offline_tests_passed": 155,
   "selection_workflow": {
     "mode": "CONVERSATION_MANUAL_CHECKPOINT",
