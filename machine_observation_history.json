@@ -9162,12 +9162,282 @@
       "actual_fill": false,
       "reliable_trade_count": 0,
       "automated_trading": false
+    },
+    {
+      "schema": "ashare-machine-observation-v1",
+      "strategy_version": "V1.2",
+      "method_version": 2,
+      "classification": "MACHINE_PROPOSAL_OBSERVATION",
+      "trade_date": "20261125",
+      "observation_trade_date": "20261126",
+      "source_snapshot_sha256": "b1f854122654c24c0d20398f9893ca39f04eefae1fdd4ad455a7155ac621a70a",
+      "proposal_ledger_sha256": "4e44e46e39a7f7b772622d76b9206f90a65398ac3e0d6aef5795bc6cfd8600fe",
+      "raw_minute_sha256": "3f8176ed39c79bfa51fc3da6b060f493ac2f92f95a3389145beaa96e237ea987",
+      "retrieved_at_cn": "2026-11-26T09:55:05.737703+08:00",
+      "run_context": "LIVE_EXPERIMENT",
+      "observations": [
+        {
+          "code": "002253",
+          "name": "川大智胜",
+          "reference_price": 6.86,
+          "rank": 1,
+          "score": 65,
+          "reference_time": "20261125 14:50",
+          "data_quality": {
+            "confidence": "MEDIUM",
+            "missing_fields": [
+              "theme_names_kpl",
+              "hot_ths_normal_rank",
+              "hot_xq_resou_rank",
+              "hot_tdx_resou_rank",
+              "historical_pattern_window_lt_20"
+            ],
+            "vwap_conflict": false,
+            "unit_validation": "PASS",
+            "source_latest_time": "20261125 1450"
+          },
+          "execution_constraints": {
+            "up_limit": 7.26,
+            "down_limit": 5.94
+          },
+          "classification": "MACHINE_PROPOSAL_OBSERVATION",
+          "observation_trade_date": "20261126",
+          "state": "OBSERVATION_COMPLETE",
+          "minute_complete": true,
+          "actual_fill": false,
+          "gpt_confirmed": false,
+          "reliable_trade": false,
+          "gross_return": null,
+          "estimated_net_return": null,
+          "tp_pct": 0.03,
+          "sl_pct": -0.01,
+          "reason": null,
+          "minute_bars": [
+            {
+              "open": 6.83,
+              "high": 6.84,
+              "low": 6.56,
+              "close": 6.57,
+              "vol": 19547.0,
+              "amount": 13069600.0,
+              "time": "0935"
+            },
+            {
+              "open": 6.55,
+              "high": 6.55,
+              "low": 6.46,
+              "close": 6.49,
+              "vol": 9165.0,
+              "amount": 5958100.0,
+              "time": "0940"
+            },
+            {
+              "open": 6.48,
+              "high": 6.53,
+              "low": 6.48,
+              "close": 6.5,
+              "vol": 5393.0,
+              "amount": 3512100.0,
+              "time": "0945"
+            },
+            {
+              "open": 6.46,
+              "high": 6.5,
+              "low": 6.42,
+              "close": 6.49,
+              "vol": 5466.0,
+              "amount": 3528800.0,
+              "time": "0950"
+            },
+            {
+              "open": 6.49,
+              "high": 6.61,
+              "low": 6.49,
+              "close": 6.54,
+              "vol": 4635.0,
+              "amount": 3043000.0,
+              "time": "0955"
+            }
+          ],
+          "open": 6.83,
+          "open_change": -0.004373177842565634,
+          "high_0930_0955": 6.84,
+          "low_0930_0955": 6.42,
+          "maximum_change": -0.00291545189504383,
+          "minimum_change": -0.06413994169096215,
+          "high_time_intervals": [
+            {
+              "start": "09:30",
+              "end": "09:35"
+            }
+          ],
+          "low_time_intervals": [
+            {
+              "start": "09:45",
+              "end": "09:50"
+            }
+          ],
+          "last_0950": 6.49,
+          "change_0950": -0.05393586005830908,
+          "last_0955": 6.54,
+          "observation_return_0955": -0.04664723032069973,
+          "hypothetical_tp_touched": false,
+          "hypothetical_sl_touched": true,
+          "hypothetical_first_trigger_order": "SL_ONLY",
+          "ambiguous_bar_intervals": [],
+          "first_tp_interval": null,
+          "first_sl_interval": {
+            "start": "09:30",
+            "end": "09:35"
+          },
+          "minute_source_latest_time": "20261126 0955",
+          "resolution": "5m",
+          "execution_limitations": [
+            "REFERENCE_PRICE_NOT_ENTRY",
+            "NO_EXECUTED_EXIT",
+            "EXTREMA_TIME_IS_5M_INTERVAL_NOT_TICK",
+            "QUEUE_AND_LIMIT_FILL_NOT_PROVEN"
+          ],
+          "flat_price_bars": []
+        },
+        {
+          "code": "688115",
+          "name": "思林杰",
+          "reference_price": 43.8,
+          "rank": 2,
+          "score": 65,
+          "reference_time": "20261125 14:50",
+          "data_quality": {
+            "confidence": "MEDIUM",
+            "missing_fields": [
+              "theme_names_kpl",
+              "hot_ths_normal_rank",
+              "hot_dfcf_biaos_rank",
+              "hot_xq_resou_rank",
+              "hot_tdx_resou_rank",
+              "historical_pattern_window_lt_20"
+            ],
+            "vwap_conflict": false,
+            "unit_validation": "PASS",
+            "source_latest_time": "20261125 1450"
+          },
+          "execution_constraints": {
+            "up_limit": 50.28,
+            "down_limit": 33.52
+          },
+          "classification": "MACHINE_PROPOSAL_OBSERVATION",
+          "observation_trade_date": "20261126",
+          "state": "OBSERVATION_COMPLETE",
+          "minute_complete": true,
+          "actual_fill": false,
+          "gpt_confirmed": false,
+          "reliable_trade": false,
+          "gross_return": null,
+          "estimated_net_return": null,
+          "tp_pct": 0.03,
+          "sl_pct": -0.01,
+          "reason": null,
+          "minute_bars": [
+            {
+              "open": 44.48,
+              "high": 45.5,
+              "low": 44.21,
+              "close": 44.31,
+              "vol": 3357.0,
+              "amount": 15049100.0,
+              "time": "0935"
+            },
+            {
+              "open": 44.31,
+              "high": 44.34,
+              "low": 42.99,
+              "close": 43.44,
+              "vol": 1870.0,
+              "amount": 8137900.0,
+              "time": "0940"
+            },
+            {
+              "open": 43.28,
+              "high": 43.9,
+              "low": 43.25,
+              "close": 43.47,
+              "vol": 1083.0,
+              "amount": 4727300.0,
+              "time": "0945"
+            },
+            {
+              "open": 43.47,
+              "high": 43.9,
+              "low": 43.38,
+              "close": 43.6,
+              "vol": 395.0,
+              "amount": 1721300.0,
+              "time": "0950"
+            },
+            {
+              "open": 43.6,
+              "high": 44.04,
+              "low": 43.6,
+              "close": 43.92,
+              "vol": 601.0,
+              "amount": 2639600.0,
+              "time": "0955"
+            }
+          ],
+          "open": 44.48,
+          "open_change": 0.01552511415525104,
+          "high_0930_0955": 45.5,
+          "low_0930_0955": 42.99,
+          "maximum_change": 0.038812785388127935,
+          "minimum_change": -0.018493150684931403,
+          "high_time_intervals": [
+            {
+              "start": "09:30",
+              "end": "09:35"
+            }
+          ],
+          "low_time_intervals": [
+            {
+              "start": "09:35",
+              "end": "09:40"
+            }
+          ],
+          "last_0950": 43.6,
+          "change_0950": -0.004566210045662045,
+          "last_0955": 43.92,
+          "observation_return_0955": 0.00273972602739736,
+          "hypothetical_tp_touched": true,
+          "hypothetical_sl_touched": true,
+          "hypothetical_first_trigger_order": "TP_BEFORE_SL",
+          "ambiguous_bar_intervals": [],
+          "first_tp_interval": {
+            "start": "09:30",
+            "end": "09:35"
+          },
+          "first_sl_interval": {
+            "start": "09:35",
+            "end": "09:40"
+          },
+          "minute_source_latest_time": "20261126 0955",
+          "resolution": "5m",
+          "execution_limitations": [
+            "REFERENCE_PRICE_NOT_ENTRY",
+            "NO_EXECUTED_EXIT",
+            "EXTREMA_TIME_IS_5M_INTERVAL_NOT_TICK",
+            "QUEUE_AND_LIMIT_FILL_NOT_PROVEN"
+          ],
+          "flat_price_bars": []
+        }
+      ],
+      "actual_fill": false,
+      "reliable_trade_count": 0,
+      "automated_trading": false
     }
   ],
   "summary": {
     "machine_proposal_count": 50,
-    "unobserved_proposal_count": 2,
-    "complete_observation_count": 48,
+    "unobserved_proposal_count": 0,
+    "complete_observation_count": 50,
     "missing_observation_count": 0,
     "retrospective_sample_count": 12,
     "modelled_fill_count": 0,
@@ -15346,6 +15616,264 @@
       "trade_date": "20261124",
       "run_context": "LIVE_EXPERIMENT",
       "method_version": 2
+    },
+    {
+      "code": "002253",
+      "name": "川大智胜",
+      "reference_price": 6.86,
+      "rank": 1,
+      "score": 65,
+      "reference_time": "20261125 14:50",
+      "data_quality": {
+        "confidence": "MEDIUM",
+        "missing_fields": [
+          "theme_names_kpl",
+          "hot_ths_normal_rank",
+          "hot_xq_resou_rank",
+          "hot_tdx_resou_rank",
+          "historical_pattern_window_lt_20"
+        ],
+        "vwap_conflict": false,
+        "unit_validation": "PASS",
+        "source_latest_time": "20261125 1450"
+      },
+      "execution_constraints": {
+        "up_limit": 7.26,
+        "down_limit": 5.94
+      },
+      "classification": "MACHINE_PROPOSAL_OBSERVATION",
+      "observation_trade_date": "20261126",
+      "state": "OBSERVATION_COMPLETE",
+      "minute_complete": true,
+      "actual_fill": false,
+      "gpt_confirmed": false,
+      "reliable_trade": false,
+      "gross_return": null,
+      "estimated_net_return": null,
+      "tp_pct": 0.03,
+      "sl_pct": -0.01,
+      "reason": null,
+      "minute_bars": [
+        {
+          "open": 6.83,
+          "high": 6.84,
+          "low": 6.56,
+          "close": 6.57,
+          "vol": 19547.0,
+          "amount": 13069600.0,
+          "time": "0935"
+        },
+        {
+          "open": 6.55,
+          "high": 6.55,
+          "low": 6.46,
+          "close": 6.49,
+          "vol": 9165.0,
+          "amount": 5958100.0,
+          "time": "0940"
+        },
+        {
+          "open": 6.48,
+          "high": 6.53,
+          "low": 6.48,
+          "close": 6.5,
+          "vol": 5393.0,
+          "amount": 3512100.0,
+          "time": "0945"
+        },
+        {
+          "open": 6.46,
+          "high": 6.5,
+          "low": 6.42,
+          "close": 6.49,
+          "vol": 5466.0,
+          "amount": 3528800.0,
+          "time": "0950"
+        },
+        {
+          "open": 6.49,
+          "high": 6.61,
+          "low": 6.49,
+          "close": 6.54,
+          "vol": 4635.0,
+          "amount": 3043000.0,
+          "time": "0955"
+        }
+      ],
+      "open": 6.83,
+      "open_change": -0.004373177842565634,
+      "high_0930_0955": 6.84,
+      "low_0930_0955": 6.42,
+      "maximum_change": -0.00291545189504383,
+      "minimum_change": -0.06413994169096215,
+      "high_time_intervals": [
+        {
+          "start": "09:30",
+          "end": "09:35"
+        }
+      ],
+      "low_time_intervals": [
+        {
+          "start": "09:45",
+          "end": "09:50"
+        }
+      ],
+      "last_0950": 6.49,
+      "change_0950": -0.05393586005830908,
+      "last_0955": 6.54,
+      "observation_return_0955": -0.04664723032069973,
+      "hypothetical_tp_touched": false,
+      "hypothetical_sl_touched": true,
+      "hypothetical_first_trigger_order": "SL_ONLY",
+      "ambiguous_bar_intervals": [],
+      "first_tp_interval": null,
+      "first_sl_interval": {
+        "start": "09:30",
+        "end": "09:35"
+      },
+      "minute_source_latest_time": "20261126 0955",
+      "resolution": "5m",
+      "execution_limitations": [
+        "REFERENCE_PRICE_NOT_ENTRY",
+        "NO_EXECUTED_EXIT",
+        "EXTREMA_TIME_IS_5M_INTERVAL_NOT_TICK",
+        "QUEUE_AND_LIMIT_FILL_NOT_PROVEN"
+      ],
+      "flat_price_bars": [],
+      "trade_date": "20261125",
+      "run_context": "LIVE_EXPERIMENT",
+      "method_version": 2
+    },
+    {
+      "code": "688115",
+      "name": "思林杰",
+      "reference_price": 43.8,
+      "rank": 2,
+      "score": 65,
+      "reference_time": "20261125 14:50",
+      "data_quality": {
+        "confidence": "MEDIUM",
+        "missing_fields": [
+          "theme_names_kpl",
+          "hot_ths_normal_rank",
+          "hot_dfcf_biaos_rank",
+          "hot_xq_resou_rank",
+          "hot_tdx_resou_rank",
+          "historical_pattern_window_lt_20"
+        ],
+        "vwap_conflict": false,
+        "unit_validation": "PASS",
+        "source_latest_time": "20261125 1450"
+      },
+      "execution_constraints": {
+        "up_limit": 50.28,
+        "down_limit": 33.52
+      },
+      "classification": "MACHINE_PROPOSAL_OBSERVATION",
+      "observation_trade_date": "20261126",
+      "state": "OBSERVATION_COMPLETE",
+      "minute_complete": true,
+      "actual_fill": false,
+      "gpt_confirmed": false,
+      "reliable_trade": false,
+      "gross_return": null,
+      "estimated_net_return": null,
+      "tp_pct": 0.03,
+      "sl_pct": -0.01,
+      "reason": null,
+      "minute_bars": [
+        {
+          "open": 44.48,
+          "high": 45.5,
+          "low": 44.21,
+          "close": 44.31,
+          "vol": 3357.0,
+          "amount": 15049100.0,
+          "time": "0935"
+        },
+        {
+          "open": 44.31,
+          "high": 44.34,
+          "low": 42.99,
+          "close": 43.44,
+          "vol": 1870.0,
+          "amount": 8137900.0,
+          "time": "0940"
+        },
+        {
+          "open": 43.28,
+          "high": 43.9,
+          "low": 43.25,
+          "close": 43.47,
+          "vol": 1083.0,
+          "amount": 4727300.0,
+          "time": "0945"
+        },
+        {
+          "open": 43.47,
+          "high": 43.9,
+          "low": 43.38,
+          "close": 43.6,
+          "vol": 395.0,
+          "amount": 1721300.0,
+          "time": "0950"
+        },
+        {
+          "open": 43.6,
+          "high": 44.04,
+          "low": 43.6,
+          "close": 43.92,
+          "vol": 601.0,
+          "amount": 2639600.0,
+          "time": "0955"
+        }
+      ],
+      "open": 44.48,
+      "open_change": 0.01552511415525104,
+      "high_0930_0955": 45.5,
+      "low_0930_0955": 42.99,
+      "maximum_change": 0.038812785388127935,
+      "minimum_change": -0.018493150684931403,
+      "high_time_intervals": [
+        {
+          "start": "09:30",
+          "end": "09:35"
+        }
+      ],
+      "low_time_intervals": [
+        {
+          "start": "09:35",
+          "end": "09:40"
+        }
+      ],
+      "last_0950": 43.6,
+      "change_0950": -0.004566210045662045,
+      "last_0955": 43.92,
+      "observation_return_0955": 0.00273972602739736,
+      "hypothetical_tp_touched": true,
+      "hypothetical_sl_touched": true,
+      "hypothetical_first_trigger_order": "TP_BEFORE_SL",
+      "ambiguous_bar_intervals": [],
+      "first_tp_interval": {
+        "start": "09:30",
+        "end": "09:35"
+      },
+      "first_sl_interval": {
+        "start": "09:35",
+        "end": "09:40"
+      },
+      "minute_source_latest_time": "20261126 0955",
+      "resolution": "5m",
+      "execution_limitations": [
+        "REFERENCE_PRICE_NOT_ENTRY",
+        "NO_EXECUTED_EXIT",
+        "EXTREMA_TIME_IS_5M_INTERVAL_NOT_TICK",
+        "QUEUE_AND_LIMIT_FILL_NOT_PROVEN"
+      ],
+      "flat_price_bars": [],
+      "trade_date": "20261125",
+      "run_context": "LIVE_EXPERIMENT",
+      "method_version": 2
     }
   ],
   "raw_sources": [
@@ -15660,6 +16188,15 @@
       "trade_date": "20261124",
       "artifact_name": "exit_20261125_0955_raw.json",
       "sha256": "f2d3390896c4a6d31842f000bab6dc5a6a33a118beb8ae0fa10a2656a6b73360",
+      "provider": "MEOZ",
+      "volume_unit": "lots_100_shares",
+      "amount_unit": "CNY",
+      "interval": "5m"
+    },
+    {
+      "trade_date": "20261125",
+      "artifact_name": "exit_20261126_0955_raw.json",
+      "sha256": "3f8176ed39c79bfa51fc3da6b060f493ac2f92f95a3389145beaa96e237ea987",
       "provider": "MEOZ",
       "volume_unit": "lots_100_shares",
       "amount_unit": "CNY",
