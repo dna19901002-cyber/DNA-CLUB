@@ -1689,6 +1689,72 @@
       "actual_fill": false,
       "gpt_confirmed": false,
       "timing_note": "Locked with original 14:50 snapshot"
+    },
+    {
+      "schema": "ashare-machine-proposals-v1",
+      "strategy_version": "V1.2",
+      "trade_date": "20261126",
+      "classification": "MACHINE_PROPOSAL_OBSERVATION",
+      "proposals": [
+        {
+          "code": "002026",
+          "name": "山东威达",
+          "reference_price": 11.29,
+          "rank": 1,
+          "score": 80,
+          "reference_time": "20261126 14:50",
+          "data_quality": {
+            "confidence": "MEDIUM",
+            "missing_fields": [
+              "hot_ths_normal_rank",
+              "hot_dfcf_biaos_rank",
+              "hot_xq_resou_rank",
+              "hot_tdx_resou_rank",
+              "historical_pattern_window_lt_20"
+            ],
+            "vwap_conflict": false,
+            "unit_validation": "PASS",
+            "source_latest_time": "20261126 1450"
+          },
+          "execution_constraints": {
+            "up_limit": 11.89,
+            "down_limit": 9.73
+          }
+        },
+        {
+          "code": "600470",
+          "name": "六国化工",
+          "reference_price": 4.17,
+          "rank": 2,
+          "score": 80,
+          "reference_time": "20261126 14:50",
+          "data_quality": {
+            "confidence": "MEDIUM",
+            "missing_fields": [
+              "hot_ths_normal_rank",
+              "hot_dfcf_biaos_rank",
+              "hot_xq_resou_rank",
+              "hot_tdx_resou_rank",
+              "historical_pattern_window_lt_20"
+            ],
+            "vwap_conflict": false,
+            "unit_validation": "PASS",
+            "source_latest_time": "20261126 1450"
+          },
+          "execution_constraints": {
+            "up_limit": 4.43,
+            "down_limit": 3.63
+          }
+        }
+      ],
+      "source_snapshot_sha256": "ed57e39d7eb2c6c139077ab0d69a77ed9251d63f724171696644e6633ae7cac6",
+      "snapshot_time": "2026-11-26T14:50:13.107946+08:00",
+      "recorded_at_cn": "2026-11-26T14:50:13.114548+08:00",
+      "run_context": "LIVE_EXPERIMENT",
+      "market_regime": "BELOW_MINUS_1PCT_MA5",
+      "actual_fill": false,
+      "gpt_confirmed": false,
+      "timing_note": "Locked with original 14:50 snapshot"
     }
   ],
   "attempts": [
@@ -9435,8 +9501,8 @@
     }
   ],
   "summary": {
-    "machine_proposal_count": 50,
-    "unobserved_proposal_count": 0,
+    "machine_proposal_count": 52,
+    "unobserved_proposal_count": 2,
     "complete_observation_count": 50,
     "missing_observation_count": 0,
     "retrospective_sample_count": 12,
