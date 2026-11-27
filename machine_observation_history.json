@@ -1755,6 +1755,72 @@
       "actual_fill": false,
       "gpt_confirmed": false,
       "timing_note": "Locked with original 14:50 snapshot"
+    },
+    {
+      "schema": "ashare-machine-proposals-v1",
+      "strategy_version": "V1.2",
+      "trade_date": "20261127",
+      "classification": "MACHINE_PROPOSAL_OBSERVATION",
+      "proposals": [
+        {
+          "code": "000833",
+          "name": "粤桂股份",
+          "reference_price": 14.66,
+          "rank": 1,
+          "score": 80,
+          "reference_time": "20261127 14:50",
+          "data_quality": {
+            "confidence": "MEDIUM",
+            "missing_fields": [
+              "hot_ths_normal_rank",
+              "hot_dfcf_biaos_rank",
+              "hot_xq_resou_rank",
+              "hot_tdx_resou_rank",
+              "historical_pattern_window_lt_20"
+            ],
+            "vwap_conflict": false,
+            "unit_validation": "PASS",
+            "source_latest_time": "20261127 1450"
+          },
+          "execution_constraints": {
+            "up_limit": 15.42,
+            "down_limit": 12.62
+          }
+        },
+        {
+          "code": "000926",
+          "name": "福星股份",
+          "reference_price": 1.3,
+          "rank": 2,
+          "score": 77,
+          "reference_time": "20261127 14:50",
+          "data_quality": {
+            "confidence": "MEDIUM",
+            "missing_fields": [
+              "hot_ths_normal_rank",
+              "hot_dfcf_biaos_rank",
+              "hot_xq_resou_rank",
+              "hot_tdx_resou_rank",
+              "historical_pattern_window_lt_20"
+            ],
+            "vwap_conflict": false,
+            "unit_validation": "PASS",
+            "source_latest_time": "20261127 1450"
+          },
+          "execution_constraints": {
+            "up_limit": 1.39,
+            "down_limit": 1.13
+          }
+        }
+      ],
+      "source_snapshot_sha256": "27205d374ac08ee96a11f22cfca92a60006b9703a80e288c5b95e9f281bb540c",
+      "snapshot_time": "2026-11-27T14:50:19.271514+08:00",
+      "recorded_at_cn": "2026-11-27T14:50:19.280068+08:00",
+      "run_context": "LIVE_EXPERIMENT",
+      "market_regime": "ABOVE_MA5",
+      "actual_fill": false,
+      "gpt_confirmed": false,
+      "timing_note": "Locked with original 14:50 snapshot"
     }
   ],
   "attempts": [
@@ -9767,8 +9833,8 @@
     }
   ],
   "summary": {
-    "machine_proposal_count": 52,
-    "unobserved_proposal_count": 0,
+    "machine_proposal_count": 54,
+    "unobserved_proposal_count": 2,
     "complete_observation_count": 52,
     "missing_observation_count": 0,
     "retrospective_sample_count": 12,
